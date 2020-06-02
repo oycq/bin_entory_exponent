@@ -1,5 +1,4 @@
-pip install wandb 
-pip install pytorch
+pip install wandb  #wandb can help you log train info, you can disable wandb by setting IF_WANDB=0 in entropy.py
 
 `python entroy.py` train with multiprocesses
 `python entroy_single_thread.py` train with single process # old version not recommend
