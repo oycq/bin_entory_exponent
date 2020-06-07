@@ -4,111 +4,15 @@ import numpy as np
 import random
 import sys
 from multiprocessing import Pool
-import wandb
 
-IF_WANDB = 1
+IF_WANDB = 0
 if IF_WANDB:
+    import wandb
     wandb.init()
 random.seed(0)
 np.random.seed(0)
-#w1 = np.load('w1.npy')
-project_name = 'w1_bunch'
-
-class DataLoader():
-    def __init__(self,batch_size = 1000, train = True):
-        self.batch_size = batch_size
-        self.classes = 10
-        if train:
-            self.images, self.labels, _, _= mnist_web.mnist(path='.')
-        else:
-            _, _, self.images, self.labels = mnist_web.mnist(path='.')
-        self.n = self.images.shape[0]
-        self.images *= 255
-        self.images = self.images.astype(int)
-        self.images[self.images<=128] = -1
-        self.images[self.images>128] = 1
-        #dot w1
-        #self.images = np.dot(self.images,w1)
-    
-    def get_batch(self):
-        #shaffle to batch
-        batch_mask = np.random.choice(self.n, self.batch_size, replace=False)
-        return self.images[batch_mask],self.labels[batch_mask]
-                
-    def get_all(self):
-        return self.images,self.labels
-
-class Cradle():
-    def __init__(self,k, mutation_rate = 0.005, fading_rate = 0.9999):
-        self.k = k
-        self.w_id = -1
-        self.total_params = 0
-        self.w_start_end = []
-        self.current_w = None
-        self.parents_w = None
-        self.fading_rate = fading_rate
-        self.top_values = None
-        self.mutation_rate = mutation_rate
-    
-    
-    def set_fading_rate(self,rate):
-        self.fading_rate = rate
-    
-    def register(self,size):
-        self.w_id += 1
-        self.w_start_end.append([self.total_params,self.total_params + size])
-        self.total_params += size
-        return self.w_id 
-    
-    def get_w(self,w_id):
-        a, b = self.w_start_end[w_id]
-        w = self.current_w[a:b]
-        return w
-    
-    def get_parents(self):
-        return self.parents_w
-
-    def reproduce(self):
-        a,b = 0,0
-        while(a == b):
-            a, b = random.randint(0, self.k - 1), random.randint(0, self.k - 1)
-        A, B = self.parents_w[a], self.parents_w[b]
-        add = A + B 
-        self.current_w = np.random.choice(a=[-1, 1], size=(self.total_params), p=[0.5, 0.5]) 
-        self.current_w[add > 0] = 1
-        self.current_w[add < 0] = -1
-        mutation_mask = np.random.choice(a=[-1, 1], size=(self.total_params), \
-                                    p=[self.mutation_rate, 1 - self.mutation_rate])
-        self.current_w *= mutation_mask
-        self.top_values /= self.fading_rate
-        return
-
-    def bunch_pk(self,wv_list):
-        for item in wv_list:
-            w = item[0]
-            w = w.reshape(w.size)
-            value = item[1]
-            max_pos = np.argmax(self.top_values)
-            max_grade = (self.top_values)[max_pos]
-            if value < max_grade:
-                self.top_values[max_pos] = value
-                self.parents_w[max_pos] = w
-
-    def from_strach(self):
-        a = self.total_params
-        k = self.k
-        self.parents_w = np.random.choice(a=[-1, 1], size=(k,a), p=[0.5, 0.5])  
-        self.top_values = np.zeros((k)) + 9999
-    
-    def save(self,path):
-        np.save('%s.npy'%project_name,self.parents_w)
-        pass
-    
-    def load(self,path):
-        k = self.k
-        self.parents_w = np.load('%s/res.npy'%path)
-        self.top_values = np.zeros((k)) + 9999
-
+from dataloader import DataLoader
+from cradle import Cradle
 
 
 def caculate_w_loss(w): #global dl, global loss_debug
@@ -161,7 +65,7 @@ w_width = 784
 w_n = 1 
 BATCH_SIZE = 60000
 CRADLE_N = 50
-PROCESSES = 14 
+PROCESSES = 1 
 loss_debug = 0
 
 cradle =  Cradle(CRADLE_N, mutation_rate = 0.005, fading_rate = 0.99995)
@@ -186,7 +90,7 @@ while(1):
         cradle.set_fading_rate(0.999999)
     if j == 100:
         cradle.set_fading_rate(0.9999995)
-    for i in range(500/PROCESSES):
+    for i in range(60/PROCESSES):
         pool_inputs = []
         for k in range(PROCESSES):
             cradle.reproduce()
@@ -200,11 +104,11 @@ while(1):
             if key_number == 0:
                 terminate_state = 1
                 break
-    average_top_loss = np.average(cradle.top_values)
-    best_top_loss = np.min(cradle.top_values)
-    print("%d   %10.4f  %10.4f" %(j,average_top_loss,best_top_loss))
+    average_loss  = cradle.get_average_value()
+    best_loss = cradle.get_best_value()
+    print("%d   %10.4f  %10.4f" %(j,average_loss,best_loss))
     if IF_WANDB:
-        wandb.log({'average':average_top_loss,'best':best_top_loss})
+        wandb.log({'average':average_loss,'best':best_loss})
     if j == 99:
         print('summary')
         pool_inputs = []
