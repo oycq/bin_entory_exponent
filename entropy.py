@@ -28,7 +28,7 @@ class Training():
 
     def analyse_bins(self,bins):#analyse:[1]correct_rate [2]global_entroy [3]single_w_entroy
         #classificaion by outputs
-        class1 = bins.reshape((-1,10)) + 0.0001
+        class1 = bins.reshape((-1,10)).float() + 0.0001
         class1_sum = torch.sum(class1,1).reshape(-1,1)
         global_entorypy = -torch.sum(class1 * torch.log(class1 / class1_sum))
         global_entorypy /= torch.sum(class1)
@@ -89,17 +89,16 @@ class Training():
 
 CRADLE_N = 50
 INPUTS_N = 784 
-REPRO_N = 50
-REPRO_BUNCH = 10
+REPRO_N = 500
+REPRO_BUNCH = 14
 
 t = Training(inputs_n = INPUTS_N ,cradle_n= CRADLE_N,\
         repro_n = CRADLE_N, repro_bunch = REPRO_BUNCH)
 for i in range(10):
-    for j in range(5):
+    for j in range(50):
         t.adjust_fading_rate(j)
         for k in range(REPRO_N//REPRO_BUNCH):
             t.train_one_bunch()
         t.show_loss(show_type=0, i=j)
-
     t.show_loss(show_type=1)
     t.accumulate()
