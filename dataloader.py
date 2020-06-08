@@ -18,7 +18,7 @@ class DataLoader():
         self.images = torch.from_numpy(self.images)
         self.labels = torch.from_numpy(self.labels)
         if cuda:
-            self.images = self.images.cuda()
+            self.images = self.images.float().cuda()
             self.labels = self.labels.cuda()
                 
     def get_all(self):

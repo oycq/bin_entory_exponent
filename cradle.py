@@ -56,6 +56,9 @@ class Cradle():
         outputs[C > 0] = 1
         outputs[C < 0] = -1
         outputs *= mutation_mask
+        if self.cuda:
+            outputs = outputs.float()
+            outputs
         return outputs
 
     def pk(self,bunch_w,bunch_loss):
@@ -65,7 +68,7 @@ class Cradle():
             if loss < self.best_loss:
                 self.best_loss = loss
                 self.best_w = w
-            worst_pos = np.argmax(self.rank_loss)
+            worst_pos = torch.argmax(self.rank_loss)
             worst_loss = (self.rank_loss)[worst_pos]
             if loss < worst_loss:
                 self.rank_loss[worst_pos] = loss

@@ -17,14 +17,16 @@ torch.manual_seed(0)
 
 
 class Training(): 
-    def __init__(self, inputs_n ,cradle_n=50, repro_n = 500, repro_bunch = 20):
-        self.cradle = Cradle(cradle_n, inputs_n, mutation_rate = 0.005, fading_rate = 0.99995)
-        self.dl = DataLoader(train = True)
+    def __init__(self, inputs_n ,cradle_n=50, repro_n = 500, repro_bunch = 20, cuda = False):
+        self.cradle = Cradle(cradle_n, inputs_n, mutation_rate = 0.005,
+                fading_rate = 0.99995,cuda=cuda)
+        self.dl = DataLoader(train = True, cuda=cuda)
         _, self.prior_labels = self.dl.get_all()
         self.prior_n = 0
         self.repro_n = repro_n
         self.repro_bunch = repro_bunch
         self.best_result = {'loss':9999}
+        self.cuda = cuda
 
     def analyse_bins(self,bins):#analyse:[1]correct_rate [2]global_entroy [3]single_w_entroy
         #classificaion by outputs
@@ -45,10 +47,13 @@ class Training():
         bunch_w = self.cradle.get_w(self.repro_bunch)
         bunch_w = bunch_w.permute(1, 0)
         outputs = torch.mm(inputs, bunch_w)
+        outputs = outputs.type(torch.int32)
         outputs[outputs > 0] = 1
         outputs[outputs <= 0] = 0
         new_labels = self.prior_labels + outputs * 10 * (2 ** self.prior_n)
         bunch_loss = torch.zeros((self.repro_bunch,1))
+        if self.cuda:
+            bunch_loss = bunch_loss.cuda()
         for i in range(self.repro_bunch):
             label = new_labels[:,i]
             bins = torch.bincount(label,minlength=10 * (2 ** self.prior_n) * 2)
@@ -90,12 +95,12 @@ class Training():
 CRADLE_N = 50
 INPUTS_N = 784 
 REPRO_N = 500
-REPRO_BUNCH = 14
+REPRO_BUNCH = 50
 
 t = Training(inputs_n = INPUTS_N ,cradle_n= CRADLE_N,\
-        repro_n = CRADLE_N, repro_bunch = REPRO_BUNCH)
+        repro_n = CRADLE_N, repro_bunch = REPRO_BUNCH,cuda=True)
 for i in range(10):
-    for j in range(50):
+    for j in range(100):
         t.adjust_fading_rate(j)
         for k in range(REPRO_N//REPRO_BUNCH):
             t.train_one_bunch()
