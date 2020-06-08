@@ -3,7 +3,9 @@ import select
 import numpy as np
 import random
 import sys
-from multiprocessing import Pool
+from dataloader import DataLoader
+from cradle import Cradle
+import torch
 
 IF_WANDB = 0
 if IF_WANDB:
@@ -11,137 +13,93 @@ if IF_WANDB:
     wandb.init()
 random.seed(0)
 np.random.seed(0)
-from dataloader import DataLoader
-from cradle import Cradle
+torch.manual_seed(0)
 
 
-def caculate_w_loss(w): #global dl, global loss_debug
-    inputs, labels = dl.get_all()
-    ww = np.concatenate((prior_w, w), axis=1)
-    output = np.dot(inputs,ww)
-    output[output > 0] = 1
-    output[output <= 0] = -1
-    n = output.shape[1]
-    labels_len = labels.shape[1]
-    groups = [(output,labels)]
-    labels_ptable = np.zeros((2 ** n,labels_len))
-    labels_ptable += 1.0 / labels_len
-    entropy = 0
-    correct_count = 0
-    for i in range(n):
-        new_groups = []
-        for group in groups:
-            o = group[0]
-            l  = group[1]
-            mask0 = o[:,i] == -1
-            mask1 = o[:,i] ==  1
-            new_groups.append((o[mask0],l[mask0]))
-            new_groups.append((o[mask1],l[mask1]))
-        groups = new_groups
-    for i,group in enumerate(groups):
-        items_count = group[0].shape[0]
-        if items_count == 0:
-            continue
-        else:
-            correct_count += np.max(np.sum(group[1],0))
-            if loss_debug == True:
-                a = np.max(np.sum(group[1],0)) 
-                print(i,a,items_count,np.sum(group[1],0))
-            labels_p = np.sum(group[1],0) * 1.0 / items_count 
-            labels_ptable[i] = labels_p
-            e = labels_p.copy()
-            e = e[e>0]
-            e = - e * np.log(e) #/ np.log(2)
-            e = np.sum(e) 
-            e *= items_count
-            entropy += e
-    entropy /= output.shape[0]
-    correct_rate = correct_count * 1.0 / output.shape[0]
-    loss = entropy
-    return (w, loss, correct_rate, labels_ptable)
+class Training(): 
+    def __init__(self, inputs_n ,cradle_n=50, repro_n = 500, repro_bunch = 20):
+        self.cradle = Cradle(cradle_n, inputs_n, mutation_rate = 0.005, fading_rate = 0.99995)
+        self.dl = DataLoader(train = True)
+        _, self.prior_labels = self.dl.get_all()
+        self.prior_n = 0
+        self.repro_n = repro_n
+        self.repro_bunch = repro_bunch
+        self.best_result = {'loss':9999}
 
+    def analyse_bins(self,bins):#analyse:[1]correct_rate [2]global_entroy [3]single_w_entroy
+        #classificaion by outputs
+        class1 = bins.reshape((-1,10)) + 0.0001
+        class1_sum = torch.sum(class1,1).reshape(-1,1)
+        global_entorypy = -torch.sum(class1 * torch.log(class1 / class1_sum))
+        global_entorypy /= torch.sum(class1)
+        class1_max, _ = torch.max(class1,1)
+        correct_rate = torch.sum(class1_max) / torch.sum(class1_sum)
+        bins_min = torch.min(class1_sum) 
+        bins_max = torch.max(class1_sum)
+        loss1 = bins_max / bins_min
+        return global_entorypy, correct_rate, bins.reshape(-1,10)
+        #print(correct_rate,global_entorypy)
 
-w_width = 784 
-w_n = 1 
-BATCH_SIZE = 60000
+    def train_one_bunch(self):
+        inputs, _ = self.dl.get_all()
+        bunch_w = self.cradle.get_w(self.repro_bunch)
+        bunch_w = bunch_w.permute(1, 0)
+        outputs = torch.mm(inputs, bunch_w)
+        outputs[outputs > 0] = 1
+        outputs[outputs <= 0] = 0
+        new_labels = self.prior_labels + outputs * 10 * (2 ** self.prior_n)
+        bunch_loss = torch.zeros((self.repro_bunch,1))
+        for i in range(self.repro_bunch):
+            label = new_labels[:,i]
+            bins = torch.bincount(label,minlength=10 * (2 ** self.prior_n) * 2)
+            bunch_loss[i],correct_rate,class1 = self.analyse_bins(bins)
+            if bunch_loss[i] < self.best_result['loss']:
+                self.best_result['loss'] = bunch_loss[i]
+                self.best_result['w'] = bunch_w[i]
+                self.best_result['label'] = new_labels[:,i].reshape(-1,1)
+                self.best_result['correct_rate'] = correct_rate
+                self.best_result['bins'] = class1
+        bunch_w = bunch_w.permute(1, 0)
+        self.cradle.pk(bunch_w,bunch_loss)
+
+    def accumulate(self):
+        self.prior_labels = self.best_result['label'] 
+        self.prior_n += 1
+        self.cradle.from_strach()
+        self.best_result = {'loss':9999}
+
+    def show_loss(self, i = 0 ,show_type = 0):
+        if show_type == 0:
+            print('%3d %6.3f   %6.3f%%'%(i,self.best_result['loss'],self.best_result['correct_rate'] * 100))
+        if show_type == 1:
+            print('%6.3f   %6.3f%%'%(self.best_result['loss'],self.best_result['correct_rate'] * 100))
+            print(self.best_result['bins'])
+    
+    def adjust_fading_rate(self,j):
+        if j == 0:
+            self.cradle.set_fading_rate(0.99995)
+        if j == 10:
+            self.cradle.set_fading_rate(0.99999)
+        if j == 30:
+            self.cradle.set_fading_rate(0.999995)
+        if j == 50:
+            self.cradle.set_fading_rate(0.999999)
+        if j == 100:
+            self.cradle.set_fading_rate(0.9999995)
+
 CRADLE_N = 50
-PROCESSES = 1 
-loss_debug = 0
+INPUTS_N = 784 
+REPRO_N = 50
+REPRO_BUNCH = 10
 
-cradle =  Cradle(CRADLE_N, mutation_rate = 0.005, fading_rate = 0.99995)
-dl = DataLoader(BATCH_SIZE,train = True)
-w_id = cradle.register(w_width * w_n)
-cradle.from_strach()
-prior_w = np.zeros((w_width,0),dtype=int)
-pool = Pool(PROCESSES)
-terminate_state = False
+t = Training(inputs_n = INPUTS_N ,cradle_n= CRADLE_N,\
+        repro_n = CRADLE_N, repro_bunch = REPRO_BUNCH)
+for i in range(10):
+    for j in range(5):
+        t.adjust_fading_rate(j)
+        for k in range(REPRO_N//REPRO_BUNCH):
+            t.train_one_bunch()
+        t.show_loss(show_type=0, i=j)
 
-j = -1
-nnn = 1
-while(1):
-    if nnn == 30 or terminate_state:
-        break
-    j += 1
-    if j == 10:
-        cradle.set_fading_rate(0.99999)
-    if j == 30:
-        cradle.set_fading_rate(0.999995)
-    if j == 50:
-        cradle.set_fading_rate(0.999999)
-    if j == 100:
-        cradle.set_fading_rate(0.9999995)
-    for i in range(60/PROCESSES):
-        pool_inputs = []
-        for k in range(PROCESSES):
-            cradle.reproduce()
-            w = cradle.get_w(w_id)
-            w = w.reshape(w_width,w_n)
-            pool_inputs.append(w)
-        pool_outputs = pool.map(caculate_w_loss,pool_inputs)
-        cradle.bunch_pk(pool_outputs)
-        if select.select([sys.stdin,],[],[],0.0)[0]:
-            key_number = input()
-            if key_number == 0:
-                terminate_state = 1
-                break
-    average_loss  = cradle.get_average_value()
-    best_loss = cradle.get_best_value()
-    print("%d   %10.4f  %10.4f" %(j,average_loss,best_loss))
-    if IF_WANDB:
-        wandb.log({'average':average_loss,'best':best_loss})
-    if j == 99:
-        print('summary')
-        pool_inputs = []
-        parents_w = cradle.get_parents()
-        for k in range(parents_w.shape[0]):
-            cradle.reproduce()
-            w = parents_w[k]
-            w = w.reshape(w_width,w_n)
-            pool_inputs.append(w)
-        pool_outputs = pool.map(caculate_w_loss,pool_inputs)
-        best_loss = 9999
-        for(w, loss, correct_rate, labels_ptable) in pool_outputs:
-            if loss < best_loss:
-                best_loss = loss
-                best_w = w
-                best_correct_rate = correct_rate
-        loss_debug = 1
-        caculate_w_loss(best_w)
-        loss_debug = 0
-        prior_w = np.concatenate((prior_w, best_w), axis=1)
-        print('best loss: %8.3f correct_rate: %8.3f'%(best_loss,best_correct_rate))
-        if IF_WANDB:
-            wandb.log({'correct_rate':best_correct_rate})
-        cradle =  Cradle(CRADLE_N, mutation_rate = 0.005, fading_rate = 0.99995)
-        pool.terminate()
-        pool.join()
-        pool = Pool(PROCESSES)
-        w_id = cradle.register(w_width * w_n)
-        cradle.from_strach()
-        j = -1
-        nnn += 1
-        np.save('entropy.npy',prior_w)
-
-
- 
-
+    t.show_loss(show_type=1)
+    t.accumulate()
