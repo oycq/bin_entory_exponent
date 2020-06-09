@@ -6,6 +6,7 @@ import sys
 from dataloader import DataLoader
 from cradle import Cradle
 import torch
+import time
 
 IF_WANDB = 0
 if IF_WANDB:
@@ -45,12 +46,21 @@ class Training():
         bins_min = torch.min(bins_sum) 
         bins_max = torch.max(bins_sum)
         loss_k = bins_max / bins_min
-        loss = global_entorypy #+ loss_k * 0.1
+        loss = bins2_entorypy + loss_k * 0.1
         return loss, correct_rate, ori_bins.reshape(-1,10),\
                 bins2,bins2_entorypy,global_entorypy,loss_k
         #print(correct_rate,global_entorypy)
 
+    last_time = time.time() * 1000 
+    def pt(self,name):
+        torch.cuda.synchronize()
+        t = time.time() * 1000
+        print('%10s  %10.3f'%(name,t-self.last_time))
+        self.last_time = t
+
+
     def train_one_bunch(self):
+        self.pt('init')
         inputs, _ = self.dl.get_all()
         bunch_w = self.cradle.get_w(self.repro_bunch)
         bunch_w = bunch_w.permute(1, 0)
@@ -58,15 +68,24 @@ class Training():
         outputs = outputs.type(torch.int32)
         outputs[outputs > 0] = 1
         outputs[outputs <= 0] = 0
+        self.pt('1')
         new_labels = self.prior_labels + outputs * 10 * (2 ** self.prior_n)
         bunch_loss = torch.zeros((self.repro_bunch,1))
+        self.pt('2')
         if self.cuda:
             bunch_loss = bunch_loss.cuda()
+        self.pt('---')
         for i in range(self.repro_bunch):
+            if i % 100 == 0:
+                self.pt('....')
             label = new_labels[:,i]
             bins = torch.bincount(label,minlength=10 * (2 ** self.prior_n) * 2)
+            if i % 100 == 0:
+                self.pt('++++')
             bunch_loss[i],correct_rate,bins,bins2,bins2_entorypy,\
                     global_entorypy,loss_k = self.analyse_bins(bins)
+            if i % 100 == 0:
+                self.pt('----')
             if bunch_loss[i] < self.best_result['loss']:
                 self.best_result['loss'] = bunch_loss[i]
                 self.best_result['w'] = bunch_w[i]
@@ -77,8 +96,13 @@ class Training():
                 self.best_result['global_entorypy'] = global_entorypy 
                 self.best_result['bins2_entorypy'] = bins2_entorypy 
                 self.best_result['loss_k'] = loss_k
+                self.pt('---%d'%i)
+            if i % 100 == 0:
+                self.pt('----')
+        self.pt('3')
         bunch_w = bunch_w.permute(1, 0)
         self.cradle.pk(bunch_w,bunch_loss)
+        self.pt('4')
 
     def accumulate(self):
         self.prior_labels = self.best_result['label'] 
@@ -116,12 +140,12 @@ class Training():
 CRADLE_N = 50
 INPUTS_N = 784 
 REPRO_N = 5000
-REPRO_BUNCH = 50
+REPRO_BUNCH = 500
 
 t = Training(inputs_n = INPUTS_N ,cradle_n= CRADLE_N,\
         repro_n = CRADLE_N, repro_bunch = REPRO_BUNCH,cuda=True)
 for i in range(10):
-    for j in range(10):
+    for j in range(3):
         t.adjust_fading_rate(j)
         for k in range(REPRO_N//REPRO_BUNCH):
             t.train_one_bunch()
