@@ -28,18 +28,26 @@ class Training():
         self.best_result = {'loss':9999}
         self.cuda = cuda
 
-    def analyse_bins(self,bins):#analyse:[1]correct_rate [2]global_entroy [3]single_w_entroy
+    def analyse_bins(self,ori_bins):#analyse:[1]correct_rate [2]global_entroy [3]single_w_entroy
         #classificaion by outputs
-        class1 = bins.reshape((-1,10)).float() + 0.0001
-        class1_sum = torch.sum(class1,1).reshape(-1,1)
-        global_entorypy = -torch.sum(class1 * torch.log(class1 / class1_sum))
-        global_entorypy /= torch.sum(class1)
-        class1_max, _ = torch.max(class1,1)
-        correct_rate = torch.sum(class1_max) / torch.sum(class1_sum)
-        bins_min = torch.min(class1_sum) 
-        bins_max = torch.max(class1_sum)
-        loss1 = bins_max / bins_min
-        return global_entorypy, correct_rate, bins.reshape(-1,10)
+        bins = ori_bins.reshape((-1,10)).float() + 0.000001
+        bins_sum = torch.sum(bins,1).reshape(-1,1)
+        global_entorypy = -torch.sum(bins* torch.log(bins/ bins_sum))
+        global_entorypy /= torch.sum(bins)
+
+        bins2 = torch.sum(bins.reshape(2,-1,10),1)
+        bins2_sum = torch.sum(bins2,1).reshape(-1,1)
+        bins2_entorypy = -torch.sum(bins2* torch.log(bins2/ bins2_sum))
+        bins2_entorypy /= torch.sum(bins2)
+
+        bins_max_ax1, _ = torch.max(bins,1)
+        correct_rate = torch.sum(bins_max_ax1) / torch.sum(bins_sum)
+        bins_min = torch.min(bins_sum) 
+        bins_max = torch.max(bins_sum)
+        loss_k = bins_max / bins_min
+        loss = bins2_entorypy + loss_k
+        return loss, correct_rate, ori_bins.reshape(-1,10),\
+                bins2,bins2_entorypy,global_entorypy,loss_k
         #print(correct_rate,global_entorypy)
 
     def train_one_bunch(self):
@@ -57,13 +65,18 @@ class Training():
         for i in range(self.repro_bunch):
             label = new_labels[:,i]
             bins = torch.bincount(label,minlength=10 * (2 ** self.prior_n) * 2)
-            bunch_loss[i],correct_rate,class1 = self.analyse_bins(bins)
+            bunch_loss[i],correct_rate,bins,bins2,bins2_entorypy,\
+                    global_entorypy,loss_k = self.analyse_bins(bins)
             if bunch_loss[i] < self.best_result['loss']:
                 self.best_result['loss'] = bunch_loss[i]
                 self.best_result['w'] = bunch_w[i]
                 self.best_result['label'] = new_labels[:,i].reshape(-1,1)
                 self.best_result['correct_rate'] = correct_rate
-                self.best_result['bins'] = class1
+                self.best_result['bins'] = bins 
+                self.best_result['bins2'] = bins2
+                self.best_result['global_entorypy'] = global_entorypy 
+                self.best_result['bins2_entorypy'] = bins2_entorypy 
+                self.best_result['loss_k'] = loss_k
         bunch_w = bunch_w.permute(1, 0)
         self.cradle.pk(bunch_w,bunch_loss)
 
@@ -75,10 +88,18 @@ class Training():
 
     def show_loss(self, i = 0 ,show_type = 0):
         if show_type == 0:
-            print('%3d %6.3f   %6.3f%%'%(i,self.best_result['loss'],self.best_result['correct_rate'] * 100))
+            print('%3d %6.3f   %6.3f%%'%(i,self.best_result['loss'],\
+                    self.best_result['correct_rate'] * 100))
         if show_type == 1:
             print('%6.3f   %6.3f%%'%(self.best_result['loss'],self.best_result['correct_rate'] * 100))
+
             print(self.best_result['bins'])
+            print(torch.sum(self.best_result['bins'],1))
+            print(self.best_result['bins'].shape[0])
+
+            print(self.best_result['bins2'])
+            print('bins2_entorypy',self.best_result['bins2_entorypy'])
+            print('loss_k',self.best_result['loss_k'])
     
     def adjust_fading_rate(self,j):
         if j == 0:
@@ -94,13 +115,13 @@ class Training():
 
 CRADLE_N = 50
 INPUTS_N = 784 
-REPRO_N = 500
+REPRO_N = 5000
 REPRO_BUNCH = 50
 
 t = Training(inputs_n = INPUTS_N ,cradle_n= CRADLE_N,\
         repro_n = CRADLE_N, repro_bunch = REPRO_BUNCH,cuda=True)
 for i in range(10):
-    for j in range(100):
+    for j in range(10):
         t.adjust_fading_rate(j)
         for k in range(REPRO_N//REPRO_BUNCH):
             t.train_one_bunch()
