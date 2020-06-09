@@ -15,13 +15,40 @@ random.seed(0)
 np.random.seed(0)
 torch.manual_seed(0)
 
+class Bifurcate_loader():
+    def __init__(self,train=True,cuda=False):
+        self.dl = DataLoader(train,cuda)
+        images,labels = self.dl.get_all()
+        self.images_leaves = [images]
+        self.labels_leaves = [labels]
+    
+    def bifurcate(self,outputs_list):
+        new_images_leaves = []
+        new_labels_leaves = []
+        for i in range(len(outputs_list)):
+            images_leaf = self.images_leaves[i]
+            labels_leaf = self.labels_leaves[i]
+            outputs = outputs_list[i]
+            new_images_leaves.append(images_leaf[outputs == 0])
+            new_labels_leaves.append(labels_leaf[outputs == 0])
+            new_images_leaves.append(images_leaf[outputs == 1])
+            new_labels_leaves.append(labels_leaf[outputs == 1])
+        self.images_leaves = new_images_leaves
+        self.labels_leaves = new_labels_leaves 
+        
+    def get_leaves_n(self):
+        return len(self.images_leaves)
+    
+    def get_leaf(self,leaf_i):
+        return self.images_leaves[leaf_i],self.labels_leaves[leaf_i]
+
 
 class Training(): 
     def __init__(self, inputs_n ,cradle_n=50, repro_n = 500, repro_bunch = 20, cuda = False):
         self.cradle = Cradle(cradle_n, inputs_n, mutation_rate = 0.005,
                 fading_rate = 0.99995,cuda=cuda)
-        self.dl = DataLoader(train = True, cuda=cuda)
-        _, self.prior_labels = self.dl.get_all()
+        self.dl = Bifurcate_loader(train = True, cuda=cuda)
+        _, self.prior_labels = self.dl.get_leaf(0)
         self.prior_n = 0
         self.repro_n = repro_n
         self.repro_bunch = repro_bunch
@@ -50,15 +77,15 @@ class Training():
                 bins2,bins2_entorypy,global_entorypy,loss_k
         #print(correct_rate,global_entorypy)
 
-    def train_one_bunch(self):
-        inputs, _ = self.dl.get_all()
+    def train_one_bunch(self,leaf_i):
+        inputs, labels = self.dl.get_leaf(leaf_i)
         bunch_w = self.cradle.get_w(self.repro_bunch)
         bunch_w = bunch_w.permute(1, 0)
         outputs = torch.mm(inputs, bunch_w)
         outputs = outputs.type(torch.int32)
         outputs[outputs > 0] = 1
         outputs[outputs <= 0] = 0
-        new_labels = self.prior_labels + outputs * 10 * (2 ** self.prior_n)
+        new_labels = labels + outputs * 10 * (2 ** self.prior_n)
         bunch_loss = torch.zeros((self.repro_bunch,1))
         if self.cuda:
             bunch_loss = bunch_loss.cuda()
@@ -77,12 +104,13 @@ class Training():
                 self.best_result['global_entorypy'] = global_entorypy 
                 self.best_result['bins2_entorypy'] = bins2_entorypy 
                 self.best_result['loss_k'] = loss_k
+                self.best_result['outputs'] = outputs[:,i]
         bunch_w = bunch_w.permute(1, 0)
         self.cradle.pk(bunch_w,bunch_loss)
 
     def accumulate(self):
-        self.prior_labels = self.best_result['label'] 
-        self.prior_n += 1
+        #self.prior_labels = self.best_result['label'] 
+        #self.prior_n += 1
         self.cradle.from_strach()
         self.best_result = {'loss':9999}
 
@@ -97,9 +125,9 @@ class Training():
             print(torch.sum(self.best_result['bins'],1))
             print(self.best_result['bins'].shape[0])
 
-            print(self.best_result['bins2'])
-            print('bins2_entorypy',self.best_result['bins2_entorypy'])
-            print('loss_k',self.best_result['loss_k'])
+            #print(self.best_result['bins2'])
+            #print('bins2_entorypy',self.best_result['bins2_entorypy'])
+            #print('loss_k',self.best_result['loss_k'])
     
     def adjust_fading_rate(self,j):
         if j == 0:
@@ -115,16 +143,22 @@ class Training():
 
 CRADLE_N = 50
 INPUTS_N = 784 
-REPRO_N = 5000
-REPRO_BUNCH = 50
+REPRO_N = 50
+REPRO_BUNCH = 5 
 
 t = Training(inputs_n = INPUTS_N ,cradle_n= CRADLE_N,\
-        repro_n = CRADLE_N, repro_bunch = REPRO_BUNCH,cuda=True)
-for i in range(10):
-    for j in range(10):
-        t.adjust_fading_rate(j)
-        for k in range(REPRO_N//REPRO_BUNCH):
-            t.train_one_bunch()
-        t.show_loss(show_type=0, i=j)
-    t.show_loss(show_type=1)
-    t.accumulate()
+        repro_n = CRADLE_N, repro_bunch = REPRO_BUNCH,cuda=False)
+
+for bintree_deep in range(5):
+    outputs_list = []
+    for i in range(2**bintree_deep):
+        for j in range(4):
+            t.adjust_fading_rate(j)
+            for k in range(REPRO_N//REPRO_BUNCH):
+                t.train_one_bunch(leaf_i=i)
+            t.show_loss(show_type=0, i=j)
+        print('bintree_deep:%3d    leaf_i:%3d'%(bintree_deep,i))
+        outputs_list.append(t.best_result['outputs'])
+        t.show_loss(show_type=1)
+        t.accumulate()
+    t.dl.bifurcate(outputs_list)
