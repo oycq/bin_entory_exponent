@@ -21,26 +21,56 @@ class Bifurcate_loader():
         images,labels = self.dl.get_all()
         self.images_leaves = [images]
         self.labels_leaves = [labels]
+        self.entropy_leaves = [999999]
+        self.bins_leaves = [None]
+        self.name_leaves= ['']
+        self.leaf_i = 0
     
-    def bifurcate(self,outputs_list):
-        new_images_leaves = []
-        new_labels_leaves = []
-        for i in range(len(outputs_list)):
-            images_leaf = self.images_leaves[i]
-            labels_leaf = self.labels_leaves[i]
-            outputs = outputs_list[i]
-            new_images_leaves.append(images_leaf[outputs == 0])
-            new_labels_leaves.append(labels_leaf[outputs == 0])
-            new_images_leaves.append(images_leaf[outputs == 1])
-            new_labels_leaves.append(labels_leaf[outputs == 1])
-        self.images_leaves = new_images_leaves
-        self.labels_leaves = new_labels_leaves 
-        
-    def get_leaves_n(self):
-        return len(self.images_leaves)
-    
-    def get_leaf(self,leaf_i):
-        return self.images_leaves[leaf_i],self.labels_leaves[leaf_i]
+    def bifurcate(self,outputs,lr_entropy,bins):
+        name = self.name_leaves[self.leaf_i]
+        l_entropy = lr_entropy[0].cpu().item()
+        r_entropy = lr_entropy[1].cpu().item()
+        l_bins = bins[0].cpu()
+        r_bins = bins[1].cpu()
+        images_leaf = self.images_leaves[self.leaf_i]
+        labels_leaf = self.labels_leaves[self.leaf_i]
+        self.images_leaves.insert(self.leaf_i+1,images_leaf[outputs == 1])
+        self.labels_leaves.insert(self.leaf_i+1,labels_leaf[outputs == 1])
+        self.bins_leaves.insert(self.leaf_i+1,r_bins)
+        self.name_leaves.insert(self.leaf_i+1,name + '1')
+        self.entropy_leaves.insert(self.leaf_i+1,r_entropy)
+        self.images_leaves.insert(self.leaf_i+1,images_leaf[outputs == 0])
+        self.labels_leaves.insert(self.leaf_i+1,labels_leaf[outputs == 0])
+        self.bins_leaves.insert(self.leaf_i+1,l_bins)
+        self.name_leaves.insert(self.leaf_i+1,name + '0')
+        self.entropy_leaves.insert(self.leaf_i+1,l_entropy)
+        del self.images_leaves[self.leaf_i]
+        del self.labels_leaves[self.leaf_i]
+        del self.entropy_leaves[self.leaf_i]
+        del self.name_leaves[self.leaf_i]
+        del self.bins_leaves[self.leaf_i]
+        self.leaf_i = self.entropy_leaves.index(max(self.entropy_leaves))
+
+    def get_leaf(self):
+        return self.images_leaves[self.leaf_i],self.labels_leaves[self.leaf_i]
+
+    def print_statue(self):
+        correct_count = 0
+        total_count = 0
+        for i in range(len(self.entropy_leaves)):
+            name = self.name_leaves[i]
+            e_n = self.images_leaves[i].shape[0]
+            e_sum = self.entropy_leaves[i] 
+            e = e_sum / e_n
+            bins = self.bins_leaves[i]
+            correct_count += torch.max(bins)
+            total_count += torch.sum(bins)
+            bins_string = ''
+            for i in range(bins.shape[0]):
+                bins_string += '%5d'%bins[i]
+            print('== %-10s e_n=%6d   e=%6.3f   sum_j=%8.0f   %s'%\
+                    (name,e_n,e,e_sum,bins_string))
+        print('total correct_rate = %6.2f%%'%(correct_count.item() * 100.0 / total_count.item()))
 
 
 class Training(): 
@@ -48,7 +78,7 @@ class Training():
         self.cradle = Cradle(cradle_n, inputs_n, mutation_rate = 0.005,
                 fading_rate = 0.99995,cuda=cuda)
         self.dl = Bifurcate_loader(train = True, cuda=cuda)
-        _, self.prior_labels = self.dl.get_leaf(0)
+        _, self.prior_labels = self.dl.get_leaf()
         self.prior_n = 0
         self.repro_n = repro_n
         self.repro_bunch = repro_bunch
@@ -62,7 +92,8 @@ class Training():
         global_entropy = -torch.sum(bins* torch.log(bins/ bins_sum))
         global_entropy /= torch.sum(bins)
         
-        worse_entroypy=torch.max(-torch.sum(bins* torch.log(bins/ bins_sum),1)/torch.sum(bins,1))
+        lr_entropy = -torch.sum(bins* torch.log(bins/ bins_sum),1)
+        worse_entroypy=torch.max(lr_entropy/torch.sum(bins,1))
 
         bins2 = torch.sum(bins.reshape(2,-1,10),1)
         bins2_sum = torch.sum(bins2,1).reshape(-1,1)
@@ -78,11 +109,11 @@ class Training():
         #loss = worse_entroypy
         loss = global_entropy 
         return loss, correct_rate, ori_bins.reshape(-1,10),\
-                bins2,bins2_entropy,global_entropy,loss_k
+                bins2,bins2_entropy,global_entropy,loss_k,lr_entropy
         #print(correct_rate,global_entropy)
 
-    def train_one_bunch(self,leaf_i):
-        inputs, labels = self.dl.get_leaf(leaf_i)
+    def train_one_bunch(self):
+        inputs, labels = self.dl.get_leaf()
         bunch_w = self.cradle.get_w(self.repro_bunch)
         bunch_w = bunch_w.permute(1, 0)
         outputs = torch.mm(inputs, bunch_w)
@@ -97,7 +128,7 @@ class Training():
             label = new_labels[:,i]
             bins = torch.bincount(label,minlength=10 * (2 ** self.prior_n) * 2)
             bunch_loss[i],correct_rate,bins,bins2,bins2_entropy,\
-                    global_entropy,loss_k = self.analyse_bins(bins)
+                    global_entropy,loss_k,lr_entropy = self.analyse_bins(bins)
             if bunch_loss[i] < self.best_result['loss']:
                 self.best_result['loss'] = bunch_loss[i]
                 self.best_result['w'] = bunch_w[i]
@@ -109,12 +140,11 @@ class Training():
                 self.best_result['bins2_entropy'] = bins2_entropy 
                 self.best_result['loss_k'] = loss_k
                 self.best_result['outputs'] = outputs[:,i]
+                self.best_result['lr_entropy'] = lr_entropy
         bunch_w = bunch_w.permute(1, 0)
         self.cradle.pk(bunch_w,bunch_loss)
 
-    def accumulate(self):
-        #self.prior_labels = self.best_result['label'] 
-        #self.prior_n += 1
+    def reset(self):
         self.cradle.from_strach()
         self.best_result = {'loss':9999}
 
@@ -149,25 +179,22 @@ CRADLE_N = 50
 INPUTS_N = 784 
 REPRO_N = 5000
 REPRO_BUNCH = 50
+J = 10
+CUDA = 1
+LEAVES_N = 64
 
 t = Training(inputs_n = INPUTS_N ,cradle_n= CRADLE_N,\
-        repro_n = CRADLE_N, repro_bunch = REPRO_BUNCH,cuda=True)
+        repro_n = CRADLE_N, repro_bunch = REPRO_BUNCH,cuda=CUDA)
 
-for bintree_deep in range(6):
-    outputs_list = []
+for bar in range(LEAVES_N):
+    print(bar)
     correct_account = 0
-    for i in range(2**bintree_deep):
-        for j in range(10):
-            t.adjust_fading_rate(j)
-            for k in range(REPRO_N//REPRO_BUNCH):
-                t.train_one_bunch(leaf_i=i)
-            t.show_loss(show_type=0, i=j)
-        print('bintree_deep:%3d    leaf_i:%3d'%(bintree_deep,i))
-        outputs_list.append(t.best_result['outputs'])
-        bar = t.best_result['bins']
-        bar,_ = torch.max(bar,1)
-        correct_account += torch.sum(bar)
-        t.show_loss(show_type=1)
-        t.accumulate()
-    t.dl.bifurcate(outputs_list)
-    print('------use %d -----correct_rate=%5.2f%%---'%(2**bintree_deep,correct_account/600.0))
+    for j in range(J):
+        t.adjust_fading_rate(j)
+        for k in range(REPRO_N//REPRO_BUNCH):
+            t.train_one_bunch()
+        t.show_loss(show_type=0, i=j)
+    t.dl.bifurcate(t.best_result['outputs'],t.best_result['lr_entropy'],\
+            t.best_result['bins'])
+    t.reset()
+    t.dl.print_statue()
