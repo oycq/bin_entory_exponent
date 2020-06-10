@@ -59,23 +59,27 @@ class Training():
         #classificaion by outputs
         bins = ori_bins.reshape((-1,10)).float() + 0.000001
         bins_sum = torch.sum(bins,1).reshape(-1,1)
-        global_entorypy = -torch.sum(bins* torch.log(bins/ bins_sum))
-        global_entorypy /= torch.sum(bins)
+        global_entropy = -torch.sum(bins* torch.log(bins/ bins_sum))
+        global_entropy /= torch.sum(bins)
+        
+        worse_entroypy=torch.max(-torch.sum(bins* torch.log(bins/ bins_sum),1)/torch.sum(bins,1))
 
         bins2 = torch.sum(bins.reshape(2,-1,10),1)
         bins2_sum = torch.sum(bins2,1).reshape(-1,1)
-        bins2_entorypy = -torch.sum(bins2* torch.log(bins2/ bins2_sum))
-        bins2_entorypy /= torch.sum(bins2)
+        bins2_entropy = -torch.sum(bins2* torch.log(bins2/ bins2_sum))
+        bins2_entropy /= torch.sum(bins2)
 
         bins_max_ax1, _ = torch.max(bins,1)
         correct_rate = torch.sum(bins_max_ax1) / torch.sum(bins_sum)
         bins_min = torch.min(bins_sum) 
         bins_max = torch.max(bins_sum)
         loss_k = bins_max / bins_min
-        loss = global_entorypy #+ loss_k * 0.1
+        #loss = global_entropy + loss_k * 0.1
+        #loss = worse_entroypy
+        loss = global_entropy 
         return loss, correct_rate, ori_bins.reshape(-1,10),\
-                bins2,bins2_entorypy,global_entorypy,loss_k
-        #print(correct_rate,global_entorypy)
+                bins2,bins2_entropy,global_entropy,loss_k
+        #print(correct_rate,global_entropy)
 
     def train_one_bunch(self,leaf_i):
         inputs, labels = self.dl.get_leaf(leaf_i)
@@ -92,8 +96,8 @@ class Training():
         for i in range(self.repro_bunch):
             label = new_labels[:,i]
             bins = torch.bincount(label,minlength=10 * (2 ** self.prior_n) * 2)
-            bunch_loss[i],correct_rate,bins,bins2,bins2_entorypy,\
-                    global_entorypy,loss_k = self.analyse_bins(bins)
+            bunch_loss[i],correct_rate,bins,bins2,bins2_entropy,\
+                    global_entropy,loss_k = self.analyse_bins(bins)
             if bunch_loss[i] < self.best_result['loss']:
                 self.best_result['loss'] = bunch_loss[i]
                 self.best_result['w'] = bunch_w[i]
@@ -101,8 +105,8 @@ class Training():
                 self.best_result['correct_rate'] = correct_rate
                 self.best_result['bins'] = bins 
                 self.best_result['bins2'] = bins2
-                self.best_result['global_entorypy'] = global_entorypy 
-                self.best_result['bins2_entorypy'] = bins2_entorypy 
+                self.best_result['global_entropy'] = global_entropy 
+                self.best_result['bins2_entropy'] = bins2_entropy 
                 self.best_result['loss_k'] = loss_k
                 self.best_result['outputs'] = outputs[:,i]
         bunch_w = bunch_w.permute(1, 0)
@@ -126,7 +130,7 @@ class Training():
             print(self.best_result['bins'].shape[0])
 
             #print(self.best_result['bins2'])
-            #print('bins2_entorypy',self.best_result['bins2_entorypy'])
+            #print('bins2_entropy',self.best_result['bins2_entropy'])
             #print('loss_k',self.best_result['loss_k'])
     
     def adjust_fading_rate(self,j):
@@ -143,22 +147,27 @@ class Training():
 
 CRADLE_N = 50
 INPUTS_N = 784 
-REPRO_N = 50
-REPRO_BUNCH = 5 
+REPRO_N = 5000
+REPRO_BUNCH = 50
 
 t = Training(inputs_n = INPUTS_N ,cradle_n= CRADLE_N,\
-        repro_n = CRADLE_N, repro_bunch = REPRO_BUNCH,cuda=False)
+        repro_n = CRADLE_N, repro_bunch = REPRO_BUNCH,cuda=True)
 
-for bintree_deep in range(5):
+for bintree_deep in range(6):
     outputs_list = []
+    correct_account = 0
     for i in range(2**bintree_deep):
-        for j in range(4):
+        for j in range(10):
             t.adjust_fading_rate(j)
             for k in range(REPRO_N//REPRO_BUNCH):
                 t.train_one_bunch(leaf_i=i)
             t.show_loss(show_type=0, i=j)
         print('bintree_deep:%3d    leaf_i:%3d'%(bintree_deep,i))
         outputs_list.append(t.best_result['outputs'])
+        bar = t.best_result['bins']
+        bar,_ = torch.max(bar,1)
+        correct_account += torch.sum(bar)
         t.show_loss(show_type=1)
         t.accumulate()
     t.dl.bifurcate(outputs_list)
+    print('------use %d -----correct_rate=%5.2f%%---'%(2**bintree_deep,correct_account/600.0))
