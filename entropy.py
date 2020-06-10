@@ -176,13 +176,13 @@ class Training():
             self.cradle.set_fading_rate(0.9999995)
 
 CRADLE_N = 50
-INPUTS_N = 784 
+INPUTS_N = 128
 REPRO_N = 5000
 REPRO_BUNCH = 50
 J = 10
 CUDA = 1
 LEAVES_N = 128
-SAVE_PATH = './maxsume_leaf.npy'
+SAVE_PATH = './maxsume_leaf_l2.npy'
 
 t = Training(inputs_n = INPUTS_N ,cradle_n= CRADLE_N,\
         repro_n = CRADLE_N, repro_bunch = REPRO_BUNCH,cuda=CUDA)
