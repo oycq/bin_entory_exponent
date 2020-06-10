@@ -131,7 +131,7 @@ class Training():
                     global_entropy,loss_k,lr_entropy = self.analyse_bins(bins)
             if bunch_loss[i] < self.best_result['loss']:
                 self.best_result['loss'] = bunch_loss[i]
-                self.best_result['w'] = bunch_w[i]
+                self.best_result['w'] = bunch_w[:,i]
                 self.best_result['label'] = new_labels[:,i].reshape(-1,1)
                 self.best_result['correct_rate'] = correct_rate
                 self.best_result['bins'] = bins 
@@ -181,13 +181,15 @@ REPRO_N = 5000
 REPRO_BUNCH = 50
 J = 10
 CUDA = 1
-LEAVES_N = 64
+LEAVES_N = 128
+SAVE_PATH = './maxsume_leaf.npy'
 
 t = Training(inputs_n = INPUTS_N ,cradle_n= CRADLE_N,\
         repro_n = CRADLE_N, repro_bunch = REPRO_BUNCH,cuda=CUDA)
+need_save = np.zeros((INPUTS_N, LEAVES_N),dtype = int)
 
-for bar in range(LEAVES_N):
-    print(bar)
+for leaves_n in range(LEAVES_N):
+    print(leaves_n)
     correct_account = 0
     for j in range(J):
         t.adjust_fading_rate(j)
@@ -196,5 +198,7 @@ for bar in range(LEAVES_N):
         t.show_loss(show_type=0, i=j)
     t.dl.bifurcate(t.best_result['outputs'],t.best_result['lr_entropy'],\
             t.best_result['bins'])
+    need_save[:,leaves_n] = t.best_result['w'].cpu()
+    np.save(SAVE_PATH, need_save)
     t.reset()
     t.dl.print_statue()
