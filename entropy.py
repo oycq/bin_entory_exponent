@@ -25,6 +25,7 @@ class Bifurcate_loader():
         self.bins_leaves = [None]
         self.name_leaves= ['']
         self.leaf_i = 0
+        self.current_split_bins = []
     
     def bifurcate(self,outputs,lr_entropy,bins):
         name = self.name_leaves[self.leaf_i]
@@ -32,6 +33,7 @@ class Bifurcate_loader():
         r_entropy = lr_entropy[1].cpu().item()
         l_bins = bins[0].cpu()
         r_bins = bins[1].cpu()
+        self.current_split_bins = [l_bins+r_bins,l_bins,r_bins]
         images_leaf = self.images_leaves[self.leaf_i]
         labels_leaf = self.labels_leaves[self.leaf_i]
         self.images_leaves.insert(self.leaf_i+1,images_leaf[outputs == 1])
@@ -66,10 +68,17 @@ class Bifurcate_loader():
             correct_count += torch.max(bins)
             total_count += torch.sum(bins)
             bins_string = ''
-            for i in range(bins.shape[0]):
-                bins_string += '%5d'%bins[i]
+            for j in range(bins.shape[0]):
+                bins_string += '%5d'%bins[j]
             print('== %-10s e_n=%6d   e=%6.3f   sum_j=%8.0f   %s'%\
                     (name,e_n,e,e_sum,bins_string))
+        print('')
+        for bins in self.current_split_bins:
+            bins_string = ''
+            for j in range(bins.shape[0]):
+                bins_string += '%5d'%bins[j]
+            print('%s'%(bins_string))
+
         print('total correct_rate = %6.2f%%'%(correct_count.item() * 100.0 / total_count.item()))
 
 
@@ -117,9 +126,15 @@ class Training():
         bunch_w = self.cradle.get_w(self.repro_bunch)
         bunch_w = bunch_w.permute(1, 0)
         outputs = torch.mm(inputs, bunch_w)
+        outputs_mean = torch.mean(outputs, 0)
+        outputs_std = torch.std(outputs, 0)
+        outputs = (outputs - outputs_mean) / outputs_std
+        larger_mask = outputs > 1
+        outputs[larger_mask] = 1
+        outputs[~larger_mask] = 0
+        #outputs[outputs<=0] = 0
+        #outputs[outputs>0] = 1
         outputs = outputs.type(torch.int32)
-        outputs[outputs > 0] = 1
-        outputs[outputs <= 0] = 0
         new_labels = labels + outputs * 10 * (2 ** self.prior_n)
         bunch_loss = torch.zeros((self.repro_bunch,1))
         if self.cuda:
@@ -166,13 +181,13 @@ class Training():
     def adjust_fading_rate(self,j):
         if j == 0:
             self.cradle.set_fading_rate(0.99995)
-        if j == 10:
+        if j == 1:
             self.cradle.set_fading_rate(0.99999)
-        if j == 30:
+        if j == 3:
             self.cradle.set_fading_rate(0.999995)
-        if j == 50:
+        if j == 5:
             self.cradle.set_fading_rate(0.999999)
-        if j == 100:
+        if j == 9:
             self.cradle.set_fading_rate(0.9999995)
 
 CRADLE_N = 50
