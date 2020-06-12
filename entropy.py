@@ -124,17 +124,21 @@ class Training():
     def train_one_bunch(self):
         inputs, labels = self.dl.get_leaf()
         bunch_w = self.cradle.get_w(self.repro_bunch)
-        bunch_w = bunch_w.permute(1, 0)
-        outputs = torch.mm(inputs, bunch_w)
-        outputs_mean = torch.mean(outputs, 0)
-        outputs_std = torch.std(outputs, 0)
-        outputs = (outputs - outputs_mean) / outputs_std
-        larger_mask = outputs > 1
-        outputs[larger_mask] = 1
-        outputs[~larger_mask] = 0
-        #outputs[outputs<=0] = 0
-        #outputs[outputs>0] = 1
+        bunch_w = bunch_w.reshape(-1,1,7,7)
+        outputs = torch.nn.functional.conv2d(inputs, bunch_w, bias=None,\
+                stride=1, padding=0, dilation=1, groups=1)
+        outputs = outputs.reshape(outputs.shape[0],outputs.shape[1],-1)
+        outputs = (outputs - outputs.mean(2).unsqueeze(-1)) / outputs.std(2).unsqueeze(-1)
+        mask = outputs > 1
+        outputs[mask] = 1
+        outputs[~mask] = 0
+        outputs = outputs.sum(2)
+        outputs = (outputs - outputs.mean(0)) / outputs.std(0)
+        mask = outputs > 0
+        outputs[mask] = 1
+        outputs[~mask] = 0
         outputs = outputs.type(torch.int32)
+        bunch_w = bunch_w.reshape(-1,bunch_w.shape[0])
         new_labels = labels + outputs * 10 * (2 ** self.prior_n)
         bunch_loss = torch.zeros((self.repro_bunch,1))
         if self.cuda:
@@ -191,17 +195,17 @@ class Training():
             self.cradle.set_fading_rate(0.9999995)
 
 CRADLE_N = 50
-INPUTS_N = 784 
-REPRO_N = 5000
-REPRO_BUNCH = 50
-J = 10
-CUDA = 1
+PARAMS = 49 
+REPRO_N = 50
+REPRO_BUNCH = 5
+J = 3
+CUDA = 0
 LEAVES_N = 128
 SAVE_PATH = './maxsume_leaf.npy'
 
-t = Training(inputs_n = INPUTS_N ,cradle_n= CRADLE_N,\
+t = Training(inputs_n = PARAMS,cradle_n= CRADLE_N,\
         repro_n = CRADLE_N, repro_bunch = REPRO_BUNCH,cuda=CUDA)
-need_save = np.zeros((INPUTS_N, LEAVES_N),dtype = int)
+need_save = np.zeros((PARAMS, LEAVES_N),dtype = int)
 
 for leaves_n in range(LEAVES_N):
     print(leaves_n)

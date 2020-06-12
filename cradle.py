@@ -56,9 +56,7 @@ class Cradle():
         outputs[C > 0] = 1
         outputs[C < 0] = -1
         outputs *= mutation_mask
-        if self.cuda:
-            outputs = outputs.float()
-            outputs
+        outputs = outputs.float()
         return outputs
 
     def pk(self,bunch_w,bunch_loss):
