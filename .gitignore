@@ -1,2 +1,4 @@
 *.pyc
 wandb
+img_show
+*.zip
