@@ -83,8 +83,8 @@ class Bifurcate_loader():
 
 
 class Training(): 
-    def __init__(self, inputs_n ,cradle_n=50, repro_n = 500, repro_bunch = 20, cuda = False):
-        self.cradle = Cradle(cradle_n, inputs_n, mutation_rate = 0.005,
+    def __init__(self, inputs_n ,cradle_n=50, repro_n = 500, repro_bunch = 20, mutation_rate = 0.005, cuda = False):
+        self.cradle = Cradle(cradle_n, inputs_n, mutation_rate = mutation_rate,
                 fading_rate = 0.99995,cuda=cuda)
         self.dl = Bifurcate_loader(train = True, cuda=cuda)
         _, self.prior_labels = self.dl.get_leaf()
@@ -124,12 +124,13 @@ class Training():
     def train_one_bunch(self):
         inputs, labels = self.dl.get_leaf()
         bunch_w = self.cradle.get_w(self.repro_bunch)
-        bunch_w = bunch_w.reshape(-1,1,7,7)
+        kernal_n = int(bunch_w.shape[1]**0.5)
+        bunch_w = bunch_w.reshape(-1,1,kernal_n,kernal_n)
         outputs = torch.nn.functional.conv2d(inputs, bunch_w, bias=None,\
                 stride=1, padding=0, dilation=1, groups=1)
         outputs = outputs.reshape(outputs.shape[0],outputs.shape[1],-1)
         outputs = (outputs - outputs.mean(2).unsqueeze(-1)) / outputs.std(2).unsqueeze(-1)
-        mask = outputs > 1
+        mask = outputs > 1.4
         outputs[mask] = 1
         outputs[~mask] = 0
         outputs = outputs.sum(2)
@@ -196,15 +197,17 @@ class Training():
 
 CRADLE_N = 50
 PARAMS = 49 
-REPRO_N = 50
+REPRO_N = 500
 REPRO_BUNCH = 5
-J = 3
-CUDA = 0
+J = 10
+CUDA = 1
 LEAVES_N = 128
-SAVE_PATH = './maxsume_leaf.npy'
+SAVE_PATH = './cnn_0.npy'
+MUTATION_RATE = 0.05
 
 t = Training(inputs_n = PARAMS,cradle_n= CRADLE_N,\
-        repro_n = CRADLE_N, repro_bunch = REPRO_BUNCH,cuda=CUDA)
+        repro_n = CRADLE_N, repro_bunch = REPRO_BUNCH,cuda=CUDA,\
+        mutation_rate=MUTATION_RATE)
 need_save = np.zeros((PARAMS, LEAVES_N),dtype = int)
 
 for leaves_n in range(LEAVES_N):
