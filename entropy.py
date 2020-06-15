@@ -116,7 +116,7 @@ class Training():
         loss_k = bins_max / bins_min
         #loss = global_entropy + loss_k * 0.1
         #loss = worse_entroypy
-        loss = global_entropy 
+        loss = global_entropy + 1 - correct_rate
         return loss, correct_rate, ori_bins.reshape(-1,10),\
                 bins2,bins2_entropy,global_entropy,loss_k,lr_entropy
         #print(correct_rate,global_entropy)
