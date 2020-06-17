@@ -63,7 +63,10 @@ class Bifurcate_loader():
             name = self.name_leaves[i]
             e_n = self.images_leaves[i].shape[0]
             e_sum = self.entropy_leaves[i] 
-            e = e_sum / e_n
+            if e_n >0:
+                e = e_sum / e_n
+            else:
+                e = 0
             bins = self.bins_leaves[i]
             correct_count += torch.max(bins)
             total_count += torch.sum(bins)
@@ -87,7 +90,7 @@ class Training():
         self.cradle = Cradle(cradle_n, inputs_n, mutation_rate = 0.005,
                 fading_rate = 0.99995,cuda=cuda)
         self.dl = Bifurcate_loader(train = True, cuda=cuda)
-        _, self.prior_labels = self.dl.get_leaf()
+        self.dl_test = Bifurcate_loader(train = False, cuda=cuda)
         self.prior_n = 0
         self.repro_n = repro_n
         self.repro_bunch = repro_bunch
@@ -116,7 +119,7 @@ class Training():
         loss_k = bins_max / bins_min
         #loss = global_entropy + loss_k * 0.1
         #loss = worse_entroypy
-        loss = global_entropy + 1 - correct_rate
+        loss = global_entropy
         return loss, correct_rate, ori_bins.reshape(-1,10),\
                 bins2,bins2_entropy,global_entropy,loss_k,lr_entropy
         #print(correct_rate,global_entropy)
@@ -126,14 +129,14 @@ class Training():
         bunch_w = self.cradle.get_w(self.repro_bunch)
         bunch_w = bunch_w.permute(1, 0)
         outputs = torch.mm(inputs, bunch_w)
-        outputs_mean = torch.mean(outputs, 0)
-        outputs_std = torch.std(outputs, 0)
-        outputs = (outputs - outputs_mean) / outputs_std
-        larger_mask = outputs > 1
-        outputs[larger_mask] = 1
-        outputs[~larger_mask] = 0
-        #outputs[outputs<=0] = 0
-        #outputs[outputs>0] = 1
+        #outputs_mean = torch.mean(outputs, 0)
+        #outputs_std = torch.std(outputs, 0)
+        #outputs = (outputs - outputs_mean) / outputs_std
+        #larger_mask = outputs > 1
+        #outputs[larger_mask] = 1
+        #outputs[~larger_mask] = 0
+        outputs[outputs<=0] = 0
+        outputs[outputs>0] = 1
         outputs = outputs.type(torch.int32)
         new_labels = labels + outputs * 10 * (2 ** self.prior_n)
         bunch_loss = torch.zeros((self.repro_bunch,1))
@@ -158,6 +161,24 @@ class Training():
                 self.best_result['lr_entropy'] = lr_entropy
         bunch_w = bunch_w.permute(1, 0)
         self.cradle.pk(bunch_w,bunch_loss)
+
+    def validation(self):
+        print('validation result:')
+        inputs, labels = self.dl_test.get_leaf()
+        w = self.best_result['w'].reshape(-1,1)
+        outputs = torch.mm(inputs,w)
+        outputs[outputs<=0] = 0
+        outputs[outputs>0] = 1
+        outputs = outputs.type(torch.int32)
+        labels = labels + outputs * 10 * (2 ** self.prior_n)
+        labels = labels[:,0]
+        outputs = outputs[:,0]
+        bins = torch.bincount(labels,minlength=10 * (2 ** self.prior_n) * 2)
+        _ ,_ ,bins,_,_,_,_,lr_entropy = self.analyse_bins(bins)
+        self.dl_test.bifurcate(outputs,lr_entropy,bins)
+        self.dl_test.print_statue()
+
+
 
     def reset(self):
         self.cradle.from_strach()
@@ -196,7 +217,7 @@ REPRO_N = 5000
 REPRO_BUNCH = 50
 J = 10
 CUDA = 1
-LEAVES_N = 128
+LEAVES_N = 256
 SAVE_PATH = './maxsume_leaf.npy'
 
 t = Training(inputs_n = INPUTS_N ,cradle_n= CRADLE_N,\
@@ -213,6 +234,7 @@ for leaves_n in range(LEAVES_N):
         t.show_loss(show_type=0, i=j)
     t.dl.bifurcate(t.best_result['outputs'],t.best_result['lr_entropy'],\
             t.best_result['bins'])
+    t.validation()
     need_save[:,leaves_n] = t.best_result['w'].cpu()
     np.save(SAVE_PATH, need_save)
     t.reset()
