@@ -62,17 +62,19 @@ class Cradle():
         return outputs
 
     def pk(self,bunch_w,bunch_loss):
-        for i in range(bunch_w.shape[0]):
-            w = bunch_w[i]
-            loss = bunch_loss[i]
+        best = torch.argmin(bunch_loss)
+        w = bunch_w[best]
+        loss = bunch_loss[best]
+        w = bunch_w[best]
+        worst_pos = torch.argmax(self.rank_loss)
+        worst_loss = (self.rank_loss)[worst_pos]
+        if loss < worst_loss:
+            self.rank_loss[worst_pos] = loss
+            self.parents_w[worst_pos] = w
             if loss < self.best_loss:
                 self.best_loss = loss
                 self.best_w = w
-            worst_pos = torch.argmax(self.rank_loss)
-            worst_loss = (self.rank_loss)[worst_pos]
-            if loss < worst_loss:
-                self.rank_loss[worst_pos] = loss
-                self.parents_w[worst_pos] = w
+
 
     def set_fading_rate(self,rate):
         self.fading_rate = rate

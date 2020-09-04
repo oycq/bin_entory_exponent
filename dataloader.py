@@ -2,6 +2,7 @@ import mnist_web
 import numpy as np
 import random
 import torch
+import sys
 
 class DataLoader():
     def __init__(self, train = True, cuda = False):
@@ -11,7 +12,7 @@ class DataLoader():
             _, _, self.images, self.labels = mnist_web.mnist(path='.')
         self.images *= 255
         self.images = self.images.astype('int32')
-        self.labels = np.sum(self.labels * np.arange(0,10),1).reshape(-1,1)
+        #self.labels = np.sum(self.labels * np.arange(0,10),1).reshape(-1,1)
         self.labels = self.labels.astype('int32')
         self.images[self.images<=128] = -1
         self.images[self.images>128] = 1
@@ -19,7 +20,7 @@ class DataLoader():
         self.labels = torch.from_numpy(self.labels)
         if cuda:
             self.images = self.images.float().cuda()
-            self.labels = self.labels.cuda()
+            self.labels = self.labels.float().cuda()
                 
     def get_all(self):
         return self.images,self.labels
