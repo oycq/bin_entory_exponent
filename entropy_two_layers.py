@@ -17,17 +17,22 @@ random.seed(0)
 np.random.seed(0)
 torch.manual_seed(0)
 CRADLE_SIZE = 50
-INPUT_SIZE = 784
+INPUT_SIZE = 50
 REPRO_SIZE = 5 
 CUDA = 1
 
 dl = DataLoader(False,CUDA)
 images,labels = dl.get_all()
+w = np.load('./exp1_4.npy')[:INPUT_SIZE]
+w = torch.from_numpy(w).type(torch.float32).cuda().t()[:,:INPUT_SIZE]
+images = images.mm(w)
+images[images>0] = 1
+images[images<0] = 0
 cradle = Cradle(CRADLE_SIZE, INPUT_SIZE, mutation_rate = 0.005,
             fading_rate = 0.99995,cuda=CUDA)
 
 accumulate = torch.zeros((labels.shape[0],labels.shape[0]),dtype = torch.float32) + 0.01
-to_save = np.zeros((60,784),dtype = np.float32)
+to_save = np.zeros((60,INPUT_SIZE),dtype = np.float32)
 
 if CUDA:
     accumulate = accumulate.cuda()
