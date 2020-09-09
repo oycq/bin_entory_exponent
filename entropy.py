@@ -10,7 +10,7 @@ import time
 
 IF_WANDB = 0
 IF_SAVE = 1
-save_npy_name = 'similar_1.npy'
+save_npy_name = 'similar_eye.npy'
 if IF_WANDB:
     import wandb
     wandb.init()
@@ -33,6 +33,7 @@ cradle = Cradle(CRADLE_SIZE, INPUT_SIZE, mutation_rate = 0.005,
 
 
 accumulate = torch.zeros((labels.shape[0],labels.shape[0]),dtype = torch.float32)
+accumulate -= 100 * torch.eye(labels.shape[0])
 accumulate_t = torch.zeros((labels_t.shape[0],labels.shape[0]),dtype = torch.float32)
 to_save = np.zeros((100,784),dtype = np.float32)
 
