@@ -10,7 +10,7 @@ import time
 
 IF_WANDB = 0
 IF_SAVE = 1
-save_npy_name = 'similar_eye.npy'
+save_npy_name = 'similar_more_train.npy'
 if IF_WANDB:
     import wandb
     wandb.init()
@@ -23,11 +23,11 @@ REPRO_SIZE = 1
 CUDA = 1
 top_k_rate = 0.5
 
-dl = DataLoader(False,CUDA)
-images,labels = dl.get_all()
-dl_test = DataLoader(True,CUDA)
+dl_test = DataLoader(False,CUDA)
 images_t,labels_t = dl_test.get_all()
-images_t, labels_t = images_t[:30000],labels_t[:30000]
+dl = DataLoader(True,CUDA)
+images,labels = dl.get_all()
+images, labels = images[:18000],labels[:18000]
 cradle = Cradle(CRADLE_SIZE, INPUT_SIZE, mutation_rate = 0.005,
             fading_rate = 0.99995,cuda=CUDA)
 
@@ -119,7 +119,7 @@ def img_show(img):#[784]
 for j in range(100):
     print(j)
     cradle.from_strach()
-    for i in range(7500):
+    for i in range(5000):
         brunch_w = cradle.get_w(REPRO_SIZE)
         o = get_images_output(brunch_w, images)
         r = get_similarity_table(o,o)
