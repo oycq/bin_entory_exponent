@@ -10,7 +10,7 @@ import time
 
 IF_WANDB = 0
 IF_SAVE = 1
-save_npy_name = 'similar_eye.npy'
+save_npy_name = 'similar_0.3.npy'
 if IF_WANDB:
     import wandb
     wandb.init()
@@ -21,7 +21,7 @@ CRADLE_SIZE = 50
 INPUT_SIZE = 784
 REPRO_SIZE = 1 
 CUDA = 1
-top_k_rate = 0.5
+top_k_rate = 0.3
 
 dl = DataLoader(False,CUDA)
 images,labels = dl.get_all()
