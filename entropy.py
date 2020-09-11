@@ -10,7 +10,7 @@ import time
 
 IF_WANDB = 0
 IF_SAVE = 1
-save_npy_name = 'similar_0.3.npy'
+save_npy_name = 'exp_similar_fast.npy'
 if IF_WANDB:
     import wandb
     wandb.init()
@@ -19,58 +19,70 @@ np.random.seed(0)
 torch.manual_seed(0)
 CRADLE_SIZE = 50
 INPUT_SIZE = 784
-REPRO_SIZE = 1 
+REPRO_SIZE = 3 
 CUDA = 1
-top_k_rate = 0.3
+top_k_rate = 0.5
 
-dl = DataLoader(False,CUDA)
+dl = DataLoader(True,CUDA)
 images,labels = dl.get_all()
-dl_test = DataLoader(True,CUDA)
+dl_test = DataLoader(False,CUDA)
 images_t,labels_t = dl_test.get_all()
-images_t, labels_t = images_t[:30000],labels_t[:30000]
 cradle = Cradle(CRADLE_SIZE, INPUT_SIZE, mutation_rate = 0.005,
             fading_rate = 0.99995,cuda=CUDA)
 
 
-accumulate = torch.zeros((labels.shape[0],labels.shape[0]),dtype = torch.float32)
-accumulate -= 100 * torch.eye(labels.shape[0])
-accumulate_t = torch.zeros((labels_t.shape[0],labels.shape[0]),dtype = torch.float32)
+accumulate = torch.zeros((labels.shape[0],0),dtype = torch.float32)
+accumulate_t = torch.zeros((labels_t.shape[0],0),dtype = torch.float32)
 to_save = np.zeros((100,784),dtype = np.float32)
 
 if CUDA:
     accumulate = accumulate.cuda()
     accumulate_t = accumulate_t.cuda()
 
-def get_images_output(brunch_w, images):
+def get_images_output(brunch_w, images, train=True):
     if len(brunch_w.shape) == 1:
         w = brunch_w.unsqueeze(1)
     else:
         w =  brunch_w.t()#[784*N]
     o = images.mm(w)#[60000*N]
-    top_k_elements,_ = torch.topk(o.flatten(), int(o.numel()*top_k_rate))
-    throat = top_k_elements.min()
-    select = (o >= throat)
-    o[select] = 1
-    select = ~select
-    o[select] = 0
+    o[o>0] = 1
+    o[o<0] = 0
+    #top_k_elements,_ = torch.topk(o.flatten(), int(o.numel()*top_k_rate))
+    #throat = top_k_elements.min()
+    #select = (o >= throat)
+    #o[select] = 1
+    #select = ~select
+    #o[select] = 0
+    o = o.t().unsqueeze(2)
+    if train:
+        accum = accumulate
+    else:
+        accum = accumulate_t
+    accum = accum.repeat(brunch_w.shape[0],1,1)
+    o = torch.cat((accum,o), 2)
     return o
 
 
-def get_similarity_table(o1,o2):
-    r = o1.t().unsqueeze(2).bmm(o2.t().unsqueeze(1))
-    if not CUDA:
-        r = r.float()
-    return r
-
-
-def get_classfication_score_table(similar_table, labels, accumulate):
-    r = similar_table + accumulate
-    r = 2 ** r #[N,10000,10000]
-    l = labels.repeat(r.shape[0],1,1)
+def get_classfication_score_table(o1, o2, labels):
+    #assume o1->[N,20000,4]
+    #                (                   c                 )
+    #                (      a      )           (      b    )       
+    #    o1          o2t          o2           o2t         l
+    #[N,20000,4] [N,4,10000] [N,10000,4]  [N,4,10000]  [N,10000,10]
+    o1t = o1.transpose(1,2)
+    o2t = o2.transpose(1,2)
+    l = labels.repeat(o1.shape[0],1,1)
     if not CUDA:
         l = l.float()
-    r = r.bmm(l) #[N,60000,10]
+    a = o2t.bmm(o2)
+    b = o2t.bmm(l)
+    c = a.bmm(b)
+    r1 = o1.bmm(b)
+    r2 = o1.bmm(c) / o2.shape[1]
+    r = r1
+    r += 1
     r /= labels.sum(0).unsqueeze(0).unsqueeze(0)
+    r = torch.exp(r)
     return r
 
 def show_gather(images_o, labels):
@@ -119,37 +131,27 @@ def img_show(img):#[784]
 for j in range(100):
     print(j)
     cradle.from_strach()
-    for i in range(7500):
+    for i in range(2500):
         brunch_w = cradle.get_w(REPRO_SIZE)
         o = get_images_output(brunch_w, images)
-        r = get_similarity_table(o,o)
-        r = get_classfication_score_table(r, labels, accumulate)
+        r = get_classfication_score_table(o, o, labels)
         r = get_loss(r, labels)
         cradle.pk(brunch_w,r)
         if i % 500 == 0:
             print('loss:%8.4f'%cradle.get_best()[0].item())
-            show_gather(o[:,0].unsqueeze(1),labels)
-
+            show_gather(o[0,:,-1].unsqueeze(1),labels)
     w = cradle.get_best()[1]
     if IF_SAVE:
         to_save[j,:] = w.cpu().numpy()
         np.save(save_npy_name,to_save)
+    w = w.unsqueeze(0)
     o = get_images_output(w, images)
-    similar_table = get_similarity_table(o, o)
-    show_gather(o, labels)
-    r = get_classfication_score_table(similar_table, labels, accumulate)
+    show_gather(o[0,:,-1].unsqueeze(1),labels)
+    r = get_classfication_score_table(o, o, labels)
     show_accuarcate(r, labels)
-    accumulate += similar_table[0]
-    del r,similar_table
+    accumulate = torch.cat((accumulate, o[0:,:,-1].reshape(-1,1)),1)
 
-    o_t = get_images_output(w, images_t)
-    similar_table_t = get_similarity_table(o_t,o)
-    r = get_classfication_score_table(similar_table_t, labels, accumulate_t)
+    ot = get_images_output(w, images_t, train=False)
+    r = get_classfication_score_table(ot, o, labels)
     show_accuarcate(r, labels_t,train=False)
-    accumulate_t += similar_table_t[0]
-    del r,similar_table_t
-
-    #r= get_similarity_table(w, images_test)
-    #r = get_classfication_score_table(r, labels_test, accumulate_test)
-    #show_accuarcate(r, labels_test)
-    #accumulate_test += get_similarity_table(w, images_test)[0]
+    accumulate_t = torch.cat((accumulate_t, ot[0:,:,-1].reshape(-1,1)),1)
