@@ -10,7 +10,7 @@ import time
 
 IF_WANDB = 0
 IF_SAVE = 1
-save_npy_name = 'similar_0.3.npy'
+save_npy_name = 'most_similar_0.5_0.05.npy'
 if IF_WANDB:
     import wandb
     wandb.init()
@@ -21,13 +21,14 @@ CRADLE_SIZE = 50
 INPUT_SIZE = 784
 REPRO_SIZE = 1 
 CUDA = 1
-top_k_rate = 0.3
+top_k_rate = 0.5
+similar_k_rate = 0.05
 
 dl = DataLoader(False,CUDA)
 images,labels = dl.get_all()
 dl_test = DataLoader(True,CUDA)
 images_t,labels_t = dl_test.get_all()
-images_t, labels_t = images_t[:30000],labels_t[:30000]
+images_t, labels_t = images_t[:10000],labels_t[:10000]
 cradle = Cradle(CRADLE_SIZE, INPUT_SIZE, mutation_rate = 0.005,
             fading_rate = 0.99995,cuda=CUDA)
 
@@ -47,12 +48,16 @@ def get_images_output(brunch_w, images):
     else:
         w =  brunch_w.t()#[784*N]
     o = images.mm(w)#[60000*N]
-    top_k_elements,_ = torch.topk(o.flatten(), int(o.numel()*top_k_rate))
-    throat = top_k_elements.min()
-    select = (o >= throat)
-    o[select] = 1
-    select = ~select
-    o[select] = 0
+
+    o = o.t()
+    o += 9999
+    top_k_elements,_ = torch.topk(o, int(o.shape[1]*top_k_rate))
+    throat,_ = top_k_elements.min(1)
+    throat = throat.unsqueeze(1)
+    o[o <  throat] = 0
+    o[o >= throat] = 1 
+    o = o.t()
+
     return o
 
 
@@ -65,6 +70,12 @@ def get_similarity_table(o1,o2):
 
 def get_classfication_score_table(similar_table, labels, accumulate):
     r = similar_table + accumulate
+    top_k_elements,_ = torch.topk(r, int(labels.shape[0]*similar_k_rate))
+    throat,_ = top_k_elements.min(2)
+    throat = throat.unsqueeze(2)
+    mask = (r >= throat).float()
+    r *= mask
+
     r = 2 ** r #[N,10000,10000]
     l = labels.repeat(r.shape[0],1,1)
     if not CUDA:
@@ -119,14 +130,26 @@ def img_show(img):#[784]
 for j in range(100):
     print(j)
     cradle.from_strach()
-    for i in range(7500):
+    for i in range(750):
+        t = [0,0,0,0,0,0,0]
+        t[0] = time.time() * 1000
         brunch_w = cradle.get_w(REPRO_SIZE)
+        t[1] = time.time() * 1000
         o = get_images_output(brunch_w, images)
+        t[2] = time.time() * 1000
         r = get_similarity_table(o,o)
+        t[3] = time.time() * 1000
         r = get_classfication_score_table(r, labels, accumulate)
+        t[4] = time.time() * 1000
         r = get_loss(r, labels)
+        t[5] = time.time() * 1000
         cradle.pk(brunch_w,r)
-        if i % 500 == 0:
+        t[6] = time.time() * 1000
+        string = ''
+        for j in range(6):
+            string += '%10.4f'%(t[j+1]-t[j])
+        #print(string)
+        if i % 50 == 0:
             print('loss:%8.4f'%cradle.get_best()[0].item())
             show_gather(o[:,0].unsqueeze(1),labels)
 
