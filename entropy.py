@@ -10,7 +10,7 @@ import time
 
 IF_WANDB = 0
 IF_SAVE = 1
-save_npy_name = 'most_similar_0.3_0.05.npy'
+save_npy_name = 'most_similar_0.5_0.005.npy'
 if IF_WANDB:
     import wandb
     wandb.init()
@@ -21,8 +21,8 @@ CRADLE_SIZE = 50
 INPUT_SIZE = 784
 REPRO_SIZE = 1 
 CUDA = 1
-top_k_rate = 0.3
-similar_k_rate = 0.05
+top_k_rate = 0.5
+similar_k_rate = 0.005
 
 dl = DataLoader(False,CUDA)
 images,labels = dl.get_all()
