@@ -146,13 +146,15 @@ for j in range(100):
         cradle.pk(brunch_w,r)
         t[6] = time.time() * 1000
         string = ''
-        for j in range(6):
-            string += '%10.4f'%(t[j+1]-t[j])
-        #print(string)
+        for n in range(6):
+            string += '%10.4f'%(t[n+1]-t[n])
         if i % 50 == 0:
             print('loss:%8.4f'%cradle.get_best()[0].item())
             show_gather(o[:,0].unsqueeze(1),labels)
-
+        w = cradle.get_best()[1]
+        if IF_SAVE:
+            to_save[j,:] = w.cpu().numpy()
+            np.save(save_npy_name,to_save)
     w = cradle.get_best()[1]
     if IF_SAVE:
         to_save[j,:] = w.cpu().numpy()
