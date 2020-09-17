@@ -13,10 +13,10 @@ while(1):
         R = int(w.shape[1]**0.5)
         w = w.reshape(w.shape[0],R,R)
 
-        curtain = np.zeros((1500,1500)) + 0.5
+        curtain = np.zeros((1500,3000)) + 0.5
         for i in range(10):
-            for j in range(10):
-                k = i * 10 + j
+            for j in range(20):
+                k = j * 10 + i
                 img = cv2.resize(w[k],(100,100),interpolation=cv2.INTER_NEAREST)
                 curtain[i*150:i*150+100,j*150:j*150+100] = img
         cv2.imshow('curtain',curtain)

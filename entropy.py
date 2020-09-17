@@ -10,7 +10,8 @@ import time
 
 IF_WANDB = 0
 IF_SAVE = 1
-save_npy_name = 'most_similar_0.5_0.005.npy'
+IF_SAVE_TEMP_W = 1
+save_npy_name = 'most_similar_0.5_0.005_7500_200.npy'
 if IF_WANDB:
     import wandb
     wandb.init()
@@ -23,6 +24,8 @@ REPRO_SIZE = 1
 CUDA = 1
 top_k_rate = 0.5
 similar_k_rate = 0.005
+HIDDEN_UNITS_SIZE = 200
+EPOCH = 7500
 
 dl = DataLoader(False,CUDA)
 images,labels = dl.get_all()
@@ -34,9 +37,9 @@ cradle = Cradle(CRADLE_SIZE, INPUT_SIZE, mutation_rate = 0.005,
 
 
 accumulate = torch.zeros((labels.shape[0],labels.shape[0]),dtype = torch.float32)
-accumulate -= 100 * torch.eye(labels.shape[0])
+accumulate -= 9999 * torch.eye(labels.shape[0])
 accumulate_t = torch.zeros((labels_t.shape[0],labels.shape[0]),dtype = torch.float32)
-to_save = np.zeros((100,784),dtype = np.float32)
+to_save = np.zeros((HIDDEN_UNITS_SIZE,784),dtype = np.float32)
 
 if CUDA:
     accumulate = accumulate.cuda()
@@ -48,7 +51,6 @@ def get_images_output(brunch_w, images):
     else:
         w =  brunch_w.t()#[784*N]
     o = images.mm(w)#[60000*N]
-
     o = o.t()
     o += 9999
     top_k_elements,_ = torch.topk(o, int(o.shape[1]*top_k_rate))
@@ -127,10 +129,10 @@ def img_show(img):#[784]
 
 
 
-for j in range(100):
+for j in range(HIDDEN_UNITS_SIZE):
     print(j)
     cradle.from_strach()
-    for i in range(750):
+    for i in range(EPOCH):
         t = [0,0,0,0,0,0,0]
         t[0] = time.time() * 1000
         brunch_w = cradle.get_w(REPRO_SIZE)
@@ -148,17 +150,17 @@ for j in range(100):
         string = ''
         for n in range(6):
             string += '%10.4f'%(t[n+1]-t[n])
-        if i % 50 == 0:
+        if i % (EPOCH//20) == 0:
             print('loss:%8.4f'%cradle.get_best()[0].item())
             show_gather(o[:,0].unsqueeze(1),labels)
-        w = cradle.get_best()[1]
-        if IF_SAVE:
-            to_save[j,:] = w.cpu().numpy()
-            np.save(save_npy_name,to_save)
+            w = cradle.get_best()[1]
+            w = w.cpu().numpy()
+            if IF_SAVE_TEMP_W:
+                np.save('temp_w/%d_%d.npy'%(j+1000,i+100000),w)
+            if IF_SAVE:
+                to_save[j,:] = w
+                np.save(save_npy_name,to_save)
     w = cradle.get_best()[1]
-    if IF_SAVE:
-        to_save[j,:] = w.cpu().numpy()
-        np.save(save_npy_name,to_save)
     o = get_images_output(w, images)
     similar_table = get_similarity_table(o, o)
     show_gather(o, labels)
