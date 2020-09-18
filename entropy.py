@@ -128,55 +128,55 @@ def img_show(img):#[784]
         print(st)
 
 
+if __name__ == '__main__':
+    for j in range(HIDDEN_UNITS_SIZE):
+        print(j)
+        cradle.from_strach()
+        for i in range(EPOCH):
+            t = [0,0,0,0,0,0,0]
+            t[0] = time.time() * 1000
+            brunch_w = cradle.get_w(REPRO_SIZE)
+            t[1] = time.time() * 1000
+            o = get_images_output(brunch_w, images)
+            t[2] = time.time() * 1000
+            r = get_similarity_table(o,o)
+            t[3] = time.time() * 1000
+            r = get_classfication_score_table(r, labels, accumulate)
+            t[4] = time.time() * 1000
+            r = get_loss(r, labels)
+            t[5] = time.time() * 1000
+            cradle.pk(brunch_w,r)
+            t[6] = time.time() * 1000
+            string = ''
+            for n in range(6):
+                string += '%10.4f'%(t[n+1]-t[n])
+            if i % (EPOCH//20) == 0:
+                print('loss:%8.4f'%cradle.get_best()[0].item())
+                show_gather(o[:,0].unsqueeze(1),labels)
+                w = cradle.get_best()[1]
+                w = w.cpu().numpy()
+                if IF_SAVE_TEMP_W:
+                    np.save('temp_w/%d_%d.npy'%(j+1000,i+100000),w)
+                if IF_SAVE:
+                    to_save[j,:] = w
+                    np.save(save_npy_name,to_save)
+        w = cradle.get_best()[1]
+        o = get_images_output(w, images)
+        similar_table = get_similarity_table(o, o)
+        show_gather(o, labels)
+        r = get_classfication_score_table(similar_table, labels, accumulate)
+        show_accuarcate(r, labels)
+        accumulate += similar_table[0]
+        del r,similar_table
 
-for j in range(HIDDEN_UNITS_SIZE):
-    print(j)
-    cradle.from_strach()
-    for i in range(EPOCH):
-        t = [0,0,0,0,0,0,0]
-        t[0] = time.time() * 1000
-        brunch_w = cradle.get_w(REPRO_SIZE)
-        t[1] = time.time() * 1000
-        o = get_images_output(brunch_w, images)
-        t[2] = time.time() * 1000
-        r = get_similarity_table(o,o)
-        t[3] = time.time() * 1000
-        r = get_classfication_score_table(r, labels, accumulate)
-        t[4] = time.time() * 1000
-        r = get_loss(r, labels)
-        t[5] = time.time() * 1000
-        cradle.pk(brunch_w,r)
-        t[6] = time.time() * 1000
-        string = ''
-        for n in range(6):
-            string += '%10.4f'%(t[n+1]-t[n])
-        if i % (EPOCH//20) == 0:
-            print('loss:%8.4f'%cradle.get_best()[0].item())
-            show_gather(o[:,0].unsqueeze(1),labels)
-            w = cradle.get_best()[1]
-            w = w.cpu().numpy()
-            if IF_SAVE_TEMP_W:
-                np.save('temp_w/%d_%d.npy'%(j+1000,i+100000),w)
-            if IF_SAVE:
-                to_save[j,:] = w
-                np.save(save_npy_name,to_save)
-    w = cradle.get_best()[1]
-    o = get_images_output(w, images)
-    similar_table = get_similarity_table(o, o)
-    show_gather(o, labels)
-    r = get_classfication_score_table(similar_table, labels, accumulate)
-    show_accuarcate(r, labels)
-    accumulate += similar_table[0]
-    del r,similar_table
+        o_t = get_images_output(w, images_t)
+        similar_table_t = get_similarity_table(o_t,o)
+        r = get_classfication_score_table(similar_table_t, labels, accumulate_t)
+        show_accuarcate(r, labels_t,train=False)
+        accumulate_t += similar_table_t[0]
+        del r,similar_table_t
 
-    o_t = get_images_output(w, images_t)
-    similar_table_t = get_similarity_table(o_t,o)
-    r = get_classfication_score_table(similar_table_t, labels, accumulate_t)
-    show_accuarcate(r, labels_t,train=False)
-    accumulate_t += similar_table_t[0]
-    del r,similar_table_t
-
-    #r= get_similarity_table(w, images_test)
-    #r = get_classfication_score_table(r, labels_test, accumulate_test)
-    #show_accuarcate(r, labels_test)
-    #accumulate_test += get_similarity_table(w, images_test)[0]
+        #r= get_similarity_table(w, images_test)
+        #r = get_classfication_score_table(r, labels_test, accumulate_test)
+        #show_accuarcate(r, labels_test)
+        #accumulate_test += get_similarity_table(w, images_test)[0]
