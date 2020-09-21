@@ -11,7 +11,7 @@ import time
 IF_WANDB = 0
 IF_SAVE = 1
 IF_SAVE_TEMP_W = 1
-save_npy_name = 'most_similar_0.5_0.005_7500_200.npy'
+save_npy_name = 'most_similar_0.5_0.005_7500_200_Ltrainset.npy'
 if IF_WANDB:
     import wandb
     wandb.init()
@@ -27,11 +27,11 @@ similar_k_rate = 0.005
 HIDDEN_UNITS_SIZE = 200
 EPOCH = 7500
 
-dl = DataLoader(False,CUDA)
+dl = DataLoader(True,CUDA)
 images,labels = dl.get_all()
-dl_test = DataLoader(True,CUDA)
+images, labels = images[:20000],labels[:20000]
+dl_test = DataLoader(False,CUDA)
 images_t,labels_t = dl_test.get_all()
-images_t, labels_t = images_t[:10000],labels_t[:10000]
 cradle = Cradle(CRADLE_SIZE, INPUT_SIZE, mutation_rate = 0.005,
             fading_rate = 0.99995,cuda=CUDA)
 

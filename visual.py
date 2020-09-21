@@ -7,18 +7,19 @@ from tqdm import tqdm
 from dataloader import DataLoader
 from sklearn.metrics import confusion_matrix
 from entropy import get_images_output,images,labels,images_t,labels_t,\
-        get_similarity_table,get_classfication_score_table, get_loss,similar_k_rate
+        get_similarity_table,get_classfication_score_table, get_loss,similar_k_rate,\
+        save_npy_name
 
 
 CLASS = 10
 CURTAIN_W = 3600
 CURTAIN_H = 1800
 IMAGES_PER_PAGE = 15
-W_LEN = 120
+W_LEN = 200
 
 images_t, labels_t = images_t[:1000], labels_t[:1000]
 
-weights = np.load('most_similar_0.5_0.005_7500_200.npy')
+weights = np.load(save_npy_name)
 weights = torch.from_numpy(weights).cuda()[:W_LEN]
 
 
