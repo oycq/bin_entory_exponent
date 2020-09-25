@@ -114,6 +114,7 @@ def show_accuarcate(r, labels, train=True):#r:classfication_score_table
         print('Test accuarcate:%6.2f%%\n\n'%(accuarcate))
         if IF_WANDB:
             wandb.log({'test':accuarcate})
+    return accuarcate
 
 
 def img_show(img):#[784]
