@@ -12,6 +12,7 @@ from entropy import get_images_output,get_loss,show_accuarcate
 
 
 save_npy_name = 'most_similar_0.5_0.005_7500_200_Ltrainset.npy'
+save_npy_name2 = 'most_similar_0.5_0.005_7500_200_Ltrainset_2.npy'
 
 CLASS = 10
 W_LEN = 200
@@ -21,6 +22,9 @@ REPRO_SIZE = 30
 
 weights = np.load(save_npy_name)
 weights = torch.from_numpy(weights).cuda()[:W_LEN]
+weights2 = np.load(save_npy_name2)
+weights2 = torch.from_numpy(weights2).cuda()[:W_LEN]
+
 
 dl = DataLoader(True,CUDA)
 images,labels = dl.get_all()
@@ -29,6 +33,9 @@ images_t,labels_t = dl_test.get_all()
 
 images = get_images_output(weights,images)
 images_t = get_images_output(weights,images_t)
+images = get_images_output(weights2,images)
+images_t = get_images_output(weights2,images_t)
+
 
 images[images == 0] = -1
 images_t[images_t == 0] = -1
