@@ -16,14 +16,14 @@ save_npy_name2 = 'most_similar_0.5_0.005_7500_200_Ltrainset_2.npy'
 save_npy_name3 = 'most_similar_0.5_0.005_7500_200_Ltrainset_3.npy'
 
 
-output_save_npy_name = 'direct_output_union_40_layer1.npy'
+output_save_npy_name = 'direct_output_union_10_layer1.npy'
 
 CLASS = 10
 W_LEN = 200
 CUDA = 1
 CRADLE_SIZE = 50
-REPRO_SIZE = 8
-UNION = 40
+REPRO_SIZE = 20
+UNION = 10
 
 weights = np.load(save_npy_name)
 weights = torch.from_numpy(weights).cuda()[:W_LEN]
