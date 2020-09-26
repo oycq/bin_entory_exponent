@@ -16,7 +16,7 @@ save_npy_name2 = 'most_similar_0.5_0.005_7500_200_Ltrainset_2.npy'
 save_npy_name3 = 'most_similar_0.5_0.005_7500_200_Ltrainset_3.npy'
 
 
-output_save_npy_name = 'direct_output_union_10_layer1.npy'
+output_save_npy_name = 'direct_output_union_10_layer3.npy'
 
 CLASS = 10
 W_LEN = 200
@@ -41,10 +41,10 @@ images_t,labels_t = dl_test.get_all()
 
 images = get_images_output(weights,images)
 images_t = get_images_output(weights,images_t)
-#images = get_images_output(weights2,images)
-#images_t = get_images_output(weights2,images_t)
-#images = get_images_output(weights3,images)
-#images_t = get_images_output(weights3,images_t)
+images = get_images_output(weights2,images)
+images_t = get_images_output(weights2,images_t)
+images = get_images_output(weights3,images)
+images_t = get_images_output(weights3,images_t)
 
 
 
