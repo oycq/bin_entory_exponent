@@ -31,6 +31,7 @@ images_t, labels_t = images_t,labels_t
 accumulate = torch.zeros((labels.shape[0],labels.shape[0]),dtype = torch.float32)
 accumulate -= 9999 * torch.eye(labels.shape[0])
 accumulate_t = torch.zeros((labels_t.shape[0],labels_t.shape[0]),dtype = torch.float32)
+accumulate_t -= 9999 * torch.eye(labels_t.shape[0])
 
 accumulate = accumulate.cuda()
 accumulate_t = accumulate_t.cuda()
