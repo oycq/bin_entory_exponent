@@ -108,7 +108,8 @@ if __name__ == '__main__':
                     (f,best['column'],best['bit_w'],best['loss']))
             out_accumu += combine_input[:,best['column']] * best['bit_w']
             avoid_repeat_list.append(best['column'])
-        out_accumu = (out_accumu > 0).float().unsqueeze(1)
+
+        o = (out_accumu > 0).float().unsqueeze(1)
         r = get_similarity_table(o,o)
         accumulate += r
         r = get_classfication_score_table(r, labels, accumulate)
