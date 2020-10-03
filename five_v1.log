@@ -1,0 +1,7594 @@
+iteration:
+    0
+    0   378   bit_w: 1  loss: 2.24758
+    1   350   bit_w: 1  loss: 2.24967
+    2   429   bit_w:-1  loss: 2.24073
+    3   558   bit_w: 1  loss: 2.24284
+    4   626   bit_w: 1  loss: 2.23575
+     47   1072    179    796     39    317     88     53    548    136
+Train accuarcate: 20.26%
+
+
+Test accuarcate: 20.36%
+
+
+iteration:
+    1
+    0   461   bit_w: 1  loss: 2.16916
+    1   489   bit_w: 1  loss: 2.17201
+    2   655   bit_w:-1  loss: 2.16022
+    3   434   bit_w: 1  loss: 2.16343
+    4   240   bit_w:-1  loss: 2.15151
+      8   1092    780    165    806    221    710    205    698    469
+Train accuarcate: 20.63%
+
+
+Test accuarcate: 20.79%
+
+
+iteration:
+    2
+    0   378   bit_w:-1  loss: 2.06957
+    1   350   bit_w:-1  loss: 2.07430
+    2   456   bit_w: 1  loss: 2.06255
+    3   405   bit_w:-1  loss: 2.06493
+    4   428   bit_w: 1  loss: 2.05306
+    954     19    682     65    773    234    729    948    118    487
+Train accuarcate: 27.48%
+
+
+Test accuarcate: 27.61%
+
+
+iteration:
+    3
+    0   101   bit_w:-1  loss: 1.94902
+    1   100   bit_w:-1  loss: 1.94905
+    2   271   bit_w: 1  loss: 1.94445
+    3   514   bit_w:-1  loss: 1.94255
+    4   269   bit_w: 1  loss: 1.92274
+    962   1116    746   1015    934    820    143   1064    759    959
+Train accuarcate: 27.73%
+
+
+Test accuarcate: 27.65%
+
+
+iteration:
+    4
+    0   460   bit_w:-1  loss: 1.82943
+    1   459   bit_w:-1  loss: 1.83288
+    2   572   bit_w: 1  loss: 1.82188
+    3   432   bit_w:-1  loss: 1.82274
+    4   156   bit_w: 1  loss: 1.81086
+    948    741    448    771    198    572    579    967    242    351
+Train accuarcate: 37.47%
+
+
+Test accuarcate: 31.35%
+
+
+iteration:
+    5
+    0   409   bit_w: 1  loss: 1.71189
+    1   437   bit_w: 1  loss: 1.71781
+    2   276   bit_w:-1  loss: 1.69724
+    3   381   bit_w: 1  loss: 1.69971
+    4   482   bit_w:-1  loss: 1.68379
+    109    121    660    839    902    436    866    906    675    902
+Train accuarcate: 47.93%
+
+
+Test accuarcate: 48.40%
+
+
+iteration:
+    6
+    0   183   bit_w: 1  loss: 1.59231
+    1   182   bit_w: 1  loss: 1.59610
+    2   709   bit_w:-1  loss: 1.58003
+    3   569   bit_w: 1  loss: 1.57682
+    4   353   bit_w:-1  loss: 1.55649
+    918    660    751    805     86    600    722     91    777    387
+Train accuarcate: 53.63%
+
+
+Test accuarcate: 52.60%
+
+
+iteration:
+    7
+    0   151   bit_w:-1  loss: 1.45728
+    1   149   bit_w:-1  loss: 1.45823
+    2   344   bit_w: 1  loss: 1.44565
+    3   594   bit_w:-1  loss: 1.44384
+    4   346   bit_w: 1  loss: 1.42032
+    928   1072    342    409    972    766    974   1056    794    972
+Train accuarcate: 57.63%
+
+
+Test accuarcate: 57.11%
+
+
+iteration:
+    8
+    0    77   bit_w:-1  loss: 1.34912
+    1   692   bit_w:-1  loss: 1.34853
+    2   433   bit_w: 1  loss: 1.34766
+    3   363   bit_w:-1  loss: 1.34773
+    4   498   bit_w: 1  loss: 1.34742
+   1001   1127    987   1031    972    860   1003   1061    941    936
+Train accuarcate: 57.03%
+
+
+Test accuarcate: 56.48%
+
+
+iteration:
+    9
+    0   568   bit_w: 1  loss: 1.28601
+    1   596   bit_w: 1  loss: 1.28819
+    2   679   bit_w:-1  loss: 1.26810
+    3   624   bit_w: 1  loss: 1.27265
+    4   680   bit_w:-1  loss: 1.26227
+    842    202    721    649     17    542    236     14    439     18
+Train accuarcate: 59.15%
+
+
+Test accuarcate: 58.39%
+
+
+iteration:
+   10
+    0   543   bit_w:-1  loss: 1.20448
+    1   542   bit_w:-1  loss: 1.20977
+    2   681   bit_w: 1  loss: 1.18886
+    3   541   bit_w:-1  loss: 1.19504
+    4   707   bit_w: 1  loss: 1.17470
+    414    603    200    884    882    635     51   1017    226    912
+Train accuarcate: 62.49%
+
+
+Test accuarcate: 60.75%
+
+
+iteration:
+   11
+    0   374   bit_w: 1  loss: 1.12423
+    1   375   bit_w: 1  loss: 1.12590
+    2   714   bit_w:-1  loss: 1.11053
+    3   400   bit_w: 1  loss: 1.11582
+    4   509   bit_w:-1  loss: 1.10211
+    753     29    120    571    894    717    918    212    573    781
+Train accuarcate: 64.88%
+
+
+Test accuarcate: 63.47%
+
+
+iteration:
+   12
+    0   400   bit_w:-1  loss: 1.04007
+    1   372   bit_w:-1  loss: 1.03931
+    2   543   bit_w: 1  loss: 1.03444
+    3   188   bit_w:-1  loss: 1.03084
+    4   127   bit_w: 1  loss: 1.02150
+    257   1115    912    766    233    449    838    859    664    418
+Train accuarcate: 67.43%
+
+
+Test accuarcate: 65.96%
+
+
+iteration:
+   13
+    0   299   bit_w: 1  loss: 0.97557
+    1   298   bit_w: 1  loss: 0.97752
+    2   220   bit_w:-1  loss: 0.96092
+    3   300   bit_w: 1  loss: 0.96553
+    4   388   bit_w:-1  loss: 0.95066
+    752    210    707    573    743    142     72    909    708    752
+Train accuarcate: 68.52%
+
+
+Test accuarcate: 68.20%
+
+
+iteration:
+   14
+    0   657   bit_w:-1  loss: 0.90267
+    1   656   bit_w:-1  loss: 0.90249
+    2   455   bit_w: 1  loss: 0.89678
+    3   660   bit_w:-1  loss: 0.89758
+    4   371   bit_w: 1  loss: 0.88968
+    561    533    859    233    697    383    975    388    137    485
+Train accuarcate: 72.04%
+
+
+Test accuarcate: 70.46%
+
+
+iteration:
+   15
+    0   211   bit_w: 1  loss: 0.85723
+    1   210   bit_w: 1  loss: 0.86003
+    2   464   bit_w:-1  loss: 0.85286
+    3   455   bit_w:-1  loss: 0.85522
+    4   515   bit_w: 1  loss: 0.84492
+    743    962    562    657     77    451    698    453    711    746
+Train accuarcate: 73.69%
+
+
+Test accuarcate: 72.67%
+
+
+iteration:
+   16
+    0   486   bit_w: 1  loss: 0.81759
+    1   487   bit_w: 1  loss: 0.81971
+    2   268   bit_w:-1  loss: 0.81145
+    3   485   bit_w: 1  loss: 0.81110
+    4   716   bit_w:-1  loss: 0.80405
+    388    137    693     60    454     92    933     61    693    271
+Train accuarcate: 74.90%
+
+
+Test accuarcate: 73.50%
+
+
+iteration:
+   17
+    0   296   bit_w: 1  loss: 0.77133
+    1   295   bit_w: 1  loss: 0.77720
+    2   574   bit_w:-1  loss: 0.76885
+    3   297   bit_w: 1  loss: 0.77284
+    4   153   bit_w: 1  loss: 0.76584
+    231    630    375    714    196    195     25    480    282    246
+Train accuarcate: 76.49%
+
+
+Test accuarcate: 74.70%
+
+
+iteration:
+   18
+    0   291   bit_w: 1  loss: 0.74396
+    1   290   bit_w: 1  loss: 0.74511
+    2   525   bit_w:-1  loss: 0.73568
+    3   316   bit_w: 1  loss: 0.73892
+    4   121   bit_w:-1  loss: 0.72615
+    819     28    132    104    789    589    623    699    704    882
+Train accuarcate: 78.28%
+
+
+Test accuarcate: 76.60%
+
+
+iteration:
+   19
+    0   238   bit_w:-1  loss: 0.70060
+    1   237   bit_w:-1  loss: 0.70071
+    2   212   bit_w:-1  loss: 0.69190
+    3   326   bit_w:-1  loss: 0.69100
+    4   235   bit_w:-1  loss: 0.68431
+    312   1024    677    690    857    503    740    292    435    146
+Train accuarcate: 78.81%
+
+
+Test accuarcate: 77.46%
+
+
+iteration:
+   20
+    0   456   bit_w:-1  loss: 0.66321
+    1   455   bit_w:-1  loss: 0.66398
+    2   432   bit_w: 1  loss: 0.65831
+    3   457   bit_w:-1  loss: 0.65945
+    4   680   bit_w: 1  loss: 0.65353
+    122   1123    579    974    350    763    366    976    835    659
+Train accuarcate: 79.78%
+
+
+Test accuarcate: 78.79%
+
+
+iteration:
+   21
+    0   550   bit_w: 1  loss: 0.62805
+    1   578   bit_w: 1  loss: 0.62891
+    2   714   bit_w:-1  loss: 0.61908
+    3   523   bit_w: 1  loss: 0.62137
+    4   715   bit_w:-1  loss: 0.61469
+    785     30    699    717    282    411    770    104    367    236
+Train accuarcate: 81.39%
+
+
+Test accuarcate: 80.26%
+
+
+iteration:
+   22
+    0   266   bit_w: 1  loss: 0.59516
+    1   293   bit_w: 1  loss: 0.59690
+    2   181   bit_w:-1  loss: 0.59283
+    3   312   bit_w: 1  loss: 0.59392
+    4   130   bit_w:-1  loss: 0.59160
+    464    575    132    250    175    425    415    798    236    343
+Train accuarcate: 81.77%
+
+
+Test accuarcate: 80.72%
+
+
+iteration:
+   23
+    0   294   bit_w:-1  loss: 0.57541
+    1   322   bit_w:-1  loss: 0.57561
+    2   630   bit_w: 1  loss: 0.57156
+    3   295   bit_w:-1  loss: 0.57182
+    4   380   bit_w: 1  loss: 0.56945
+    708    211    820    562    922    542    781    672    751    881
+Train accuarcate: 82.79%
+
+
+Test accuarcate: 81.42%
+
+
+iteration:
+   24
+    0   246   bit_w: 1  loss: 0.55557
+    1   245   bit_w: 1  loss: 0.55631
+    2   437   bit_w:-1  loss: 0.55382
+    3   302   bit_w: 1  loss: 0.55465
+    4   441   bit_w:-1  loss: 0.55065
+    494     22    146    102    179    331     20    151    363     58
+Train accuarcate: 83.55%
+
+
+Test accuarcate: 82.31%
+
+
+iteration:
+   25
+    0   544   bit_w:-1  loss: 0.53940
+    1   516   bit_w:-1  loss: 0.53976
+    2   426   bit_w: 1  loss: 0.53588
+    3   330   bit_w:-1  loss: 0.53672
+    4   425   bit_w: 1  loss: 0.53513
+    735    392    235    925    747    687    211    688    417    761
+Train accuarcate: 84.10%
+
+
+Test accuarcate: 82.89%
+
+
+iteration:
+   26
+    0   491   bit_w: 1  loss: 0.52354
+    1   518   bit_w: 1  loss: 0.52431
+    2   658   bit_w:-1  loss: 0.52070
+    3   501   bit_w: 1  loss: 0.52091
+    4   186   bit_w:-1  loss: 0.51732
+     80    536    668     82    516    239    535    683    203    505
+Train accuarcate: 84.51%
+
+
+Test accuarcate: 83.56%
+
+
+iteration:
+   27
+    0   187   bit_w: 1  loss: 0.50588
+    1   188   bit_w: 1  loss: 0.50658
+    2   437   bit_w:-1  loss: 0.50355
+    3   186   bit_w: 1  loss: 0.50420
+    4   355   bit_w:-1  loss: 0.50153
+    611    493    357    438    181    371     88     60    531     97
+Train accuarcate: 84.98%
+
+
+Test accuarcate: 84.08%
+
+
+iteration:
+   28
+    0   240   bit_w: 1  loss: 0.49128
+    1   241   bit_w: 1  loss: 0.49419
+    2   293   bit_w:-1  loss: 0.48690
+    3    24   bit_w: 1  loss: 0.48645
+    4   159   bit_w:-1  loss: 0.48359
+    490    611    530    595    266    345     29    809    354    722
+Train accuarcate: 86.09%
+
+
+Test accuarcate: 85.06%
+
+
+iteration:
+   29
+    0   403   bit_w: 1  loss: 0.47580
+    1   431   bit_w: 1  loss: 0.47648
+    2   297   bit_w:-1  loss: 0.47154
+    3   404   bit_w: 1  loss: 0.47265
+    4   375   bit_w:-1  loss: 0.46983
+    155    184    415    448    575    473    571     34    602    495
+Train accuarcate: 86.52%
+
+
+Test accuarcate: 85.82%
+
+
+iteration:
+   30
+    0   497   bit_w: 1  loss: 0.46146
+    1   526   bit_w: 1  loss: 0.46211
+    2   340   bit_w:-1  loss: 0.45823
+    3   126   bit_w: 1  loss: 0.45945
+    4   465   bit_w:-1  loss: 0.45614
+    567    164    404    277     23    149    452     18     73     15
+Train accuarcate: 87.12%
+
+
+Test accuarcate: 86.14%
+
+
+iteration:
+   31
+    0   259   bit_w: 1  loss: 0.44940
+    1   232   bit_w: 1  loss: 0.44877
+    2   401   bit_w:-1  loss: 0.44645
+    3   234   bit_w: 1  loss: 0.44704
+    4   516   bit_w: 1  loss: 0.44487
+    157      7    259    159     88     69    100    505    295    134
+Train accuarcate: 87.74%
+
+
+Test accuarcate: 86.55%
+
+
+iteration:
+   32
+    0   330   bit_w:-1  loss: 0.43987
+    1   302   bit_w:-1  loss: 0.44034
+    2   438   bit_w: 1  loss: 0.43802
+    3   153   bit_w:-1  loss: 0.43741
+    4   129   bit_w: 1  loss: 0.43454
+    350    919    709    783    904    737    845    971    588    932
+Train accuarcate: 87.74%
+
+
+Test accuarcate: 86.99%
+
+
+iteration:
+   33
+    0   511   bit_w: 1  loss: 0.42932
+    1   539   bit_w: 1  loss: 0.42969
+    2   383   bit_w:-1  loss: 0.42786
+    3   219   bit_w: 1  loss: 0.42795
+    4   328   bit_w:-1  loss: 0.42472
+    516      7    335    153     49    418    142      6    150      4
+Train accuarcate: 88.16%
+
+
+Test accuarcate: 87.28%
+
+
+iteration:
+   34
+    0   329   bit_w: 1  loss: 0.41947
+    1   301   bit_w: 1  loss: 0.41950
+    2   328   bit_w: 1  loss: 0.41864
+    3   572   bit_w:-1  loss: 0.41817
+    4   579   bit_w:-1  loss: 0.41722
+    688      1    199     94    269     36     91    369    342    258
+Train accuarcate: 88.26%
+
+
+Test accuarcate: 87.50%
+
+
+iteration:
+   35
+    0   157   bit_w: 1  loss: 0.41337
+    1   156   bit_w: 1  loss: 0.41410
+    2   313   bit_w:-1  loss: 0.41103
+    3   593   bit_w: 1  loss: 0.41190
+    4   471   bit_w:-1  loss: 0.41025
+    683    535    675    649    116    328    543      6    635     32
+Train accuarcate: 88.29%
+
+
+Test accuarcate: 87.77%
+
+
+iteration:
+   36
+    0   435   bit_w: 1  loss: 0.40698
+    1   407   bit_w: 1  loss: 0.40780
+    2   354   bit_w: 1  loss: 0.40604
+    3   348   bit_w:-1  loss: 0.40650
+    4   324   bit_w: 1  loss: 0.40414
+     37    844    664    526    744    131    420    608    711    807
+Train accuarcate: 88.50%
+
+
+Test accuarcate: 87.83%
+
+
+iteration:
+   37
+    0   411   bit_w: 1  loss: 0.39790
+    1   383   bit_w: 1  loss: 0.39953
+    2   272   bit_w:-1  loss: 0.39725
+    3   520   bit_w: 1  loss: 0.39774
+    4   512   bit_w:-1  loss: 0.39592
+    360    107    399    503    689    383    682    705    294    655
+Train accuarcate: 88.99%
+
+
+Test accuarcate: 88.05%
+
+
+iteration:
+   38
+    0   190   bit_w: 1  loss: 0.39232
+    1   189   bit_w: 1  loss: 0.39228
+    2   186   bit_w:-1  loss: 0.39071
+    3   213   bit_w:-1  loss: 0.39058
+    4   211   bit_w:-1  loss: 0.38615
+     90    226    164    112    603    402    519    462    196     86
+Train accuarcate: 89.19%
+
+
+Test accuarcate: 88.35%
+
+
+iteration:
+   39
+    0   180   bit_w: 1  loss: 0.38082
+    1   179   bit_w: 1  loss: 0.38078
+    2   403   bit_w:-1  loss: 0.37924
+    3   181   bit_w: 1  loss: 0.37934
+    4   317   bit_w:-1  loss: 0.37710
+    474    256    644    764    127    287    318    128    497    160
+Train accuarcate: 89.50%
+
+
+Test accuarcate: 88.65%
+
+
+iteration:
+   40
+    0   342   bit_w: 1  loss: 0.37403
+    1   315   bit_w: 1  loss: 0.37431
+    2   209   bit_w: 1  loss: 0.37324
+    3   642   bit_w: 1  loss: 0.37280
+    4   490   bit_w:-1  loss: 0.37255
+    292      2      6     17     74     77     35    119     57    197
+Train accuarcate: 89.68%
+
+
+Test accuarcate: 88.87%
+
+
+iteration:
+   41
+    0   247   bit_w: 1  loss: 0.36981
+    1   248   bit_w: 1  loss: 0.36986
+    2   537   bit_w:-1  loss: 0.36897
+    3   219   bit_w: 1  loss: 0.36841
+    4   481   bit_w:-1  loss: 0.36723
+     60      1      7      9    108    320      6     31    171      6
+Train accuarcate: 89.80%
+
+
+Test accuarcate: 88.98%
+
+
+iteration:
+   42
+    0   581   bit_w: 1  loss: 0.36457
+    1   582   bit_w: 1  loss: 0.36466
+    2   428   bit_w:-1  loss: 0.36390
+    3   527   bit_w: 1  loss: 0.36387
+    4   593   bit_w:-1  loss: 0.36235
+    107      6    333    130     17     76     56      6     59     14
+Train accuarcate: 89.98%
+
+
+Test accuarcate: 89.15%
+
+
+iteration:
+   43
+    0   565   bit_w: 1  loss: 0.36002
+    1   593   bit_w: 1  loss: 0.36034
+    2   300   bit_w: 1  loss: 0.35968
+    3   508   bit_w: 1  loss: 0.35981
+    4   243   bit_w: 1  loss: 0.35842
+    182      2    247    231      4     19      1      2     29      3
+Train accuarcate: 90.07%
+
+
+Test accuarcate: 89.19%
+
+
+iteration:
+   44
+    0   161   bit_w: 1  loss: 0.35617
+    1   162   bit_w: 1  loss: 0.35645
+    2   245   bit_w:-1  loss: 0.35514
+    3   103   bit_w: 1  loss: 0.35507
+    4   300   bit_w:-1  loss: 0.35312
+     47     71     28     23     65    185    232      0     63      1
+Train accuarcate: 90.21%
+
+
+Test accuarcate: 89.36%
+
+
+iteration:
+   45
+    0   321   bit_w: 1  loss: 0.35096
+    1   319   bit_w: 1  loss: 0.35143
+    2   595   bit_w:-1  loss: 0.34815
+    3   348   bit_w: 1  loss: 0.35041
+    4   243   bit_w:-1  loss: 0.34716
+    354    419     87    450    339    555    789    265    540    280
+Train accuarcate: 90.37%
+
+
+Test accuarcate: 89.50%
+
+
+iteration:
+   46
+    0   374   bit_w:-1  loss: 0.34460
+    1   346   bit_w:-1  loss: 0.34311
+    2   489   bit_w: 1  loss: 0.34186
+    3   402   bit_w:-1  loss: 0.34205
+    4   683   bit_w: 1  loss: 0.34053
+    329   1115    866    546    292    210    312    861    546    385
+Train accuarcate: 90.74%
+
+
+Test accuarcate: 89.44%
+
+
+iteration:
+   47
+    0   344   bit_w: 1  loss: 0.33797
+    1   371   bit_w: 1  loss: 0.33826
+    2   567   bit_w:-1  loss: 0.33644
+    3   316   bit_w: 1  loss: 0.33716
+    4   234   bit_w:-1  loss: 0.33616
+    545      4     19     44    525    210    228    376    167    530
+Train accuarcate: 90.83%
+
+
+Test accuarcate: 89.55%
+
+
+iteration:
+   48
+    0   176   bit_w: 1  loss: 0.33366
+    1   122   bit_w: 1  loss: 0.33392
+    2   260   bit_w:-1  loss: 0.33202
+    3   177   bit_w: 1  loss: 0.33294
+    4   238   bit_w: 1  loss: 0.33192
+     26      6    255    350     10     39     34     52     26      8
+Train accuarcate: 90.86%
+
+
+Test accuarcate: 89.66%
+
+
+iteration:
+   49
+    0   242   bit_w: 1  loss: 0.32929
+    1   243   bit_w: 1  loss: 0.33040
+    2   605   bit_w:-1  loss: 0.32733
+    3   216   bit_w: 1  loss: 0.32751
+    4   260   bit_w:-1  loss: 0.32532
+    697    411    581    552    489    403     20    622    543    564
+Train accuarcate: 90.95%
+
+
+Test accuarcate: 89.72%
+
+
+iteration:
+   50
+    0   442   bit_w: 1  loss: 0.32263
+    1   414   bit_w: 1  loss: 0.32277
+    2   596   bit_w:-1  loss: 0.32176
+    3   441   bit_w: 1  loss: 0.32175
+    4   690   bit_w:-1  loss: 0.32097
+    579      0     66     78    166     49    429     69     22     29
+Train accuarcate: 91.13%
+
+
+Test accuarcate: 89.79%
+
+
+iteration:
+   51
+    0   275   bit_w: 1  loss: 0.31937
+    1   276   bit_w: 1  loss: 0.31967
+    2   466   bit_w:-1  loss: 0.31900
+    3   655   bit_w: 1  loss: 0.31873
+    4   600   bit_w:-1  loss: 0.31695
+    243     30     26    154     18    257      4     21    403     18
+Train accuarcate: 91.22%
+
+
+Test accuarcate: 89.89%
+
+
+iteration:
+   52
+    0   680   bit_w: 1  loss: 0.31527
+    1   679   bit_w: 1  loss: 0.31539
+    2   513   bit_w:-1  loss: 0.31419
+    3   580   bit_w: 1  loss: 0.31404
+    4   572   bit_w:-1  loss: 0.31345
+    118     24     42    337     49    167     12     96     88     70
+Train accuarcate: 91.29%
+
+
+Test accuarcate: 90.21%
+
+
+iteration:
+   53
+    0   661   bit_w: 1  loss: 0.31166
+    1   688   bit_w: 1  loss: 0.31202
+    2   383   bit_w:-1  loss: 0.31057
+    3   248   bit_w: 1  loss: 0.31100
+    4   440   bit_w:-1  loss: 0.30933
+     87     58     45    165    153    277     14    120    259    223
+Train accuarcate: 91.48%
+
+
+Test accuarcate: 90.39%
+
+
+iteration:
+   54
+    0   123   bit_w: 1  loss: 0.30803
+    1   122   bit_w: 1  loss: 0.30797
+    2   659   bit_w:-1  loss: 0.30770
+    3   528   bit_w: 1  loss: 0.30742
+    4   632   bit_w:-1  loss: 0.30675
+     17      5    315     85     12     15    121      0      3      0
+Train accuarcate: 91.45%
+
+
+Test accuarcate: 90.41%
+
+
+iteration:
+   55
+    0   162   bit_w: 1  loss: 0.30569
+    1   192   bit_w: 1  loss: 0.30544
+    2   275   bit_w:-1  loss: 0.30413
+    3   163   bit_w: 1  loss: 0.30494
+    4   564   bit_w:-1  loss: 0.30391
+     21     30     16      8    152    215     21      1     58      0
+Train accuarcate: 91.49%
+
+
+Test accuarcate: 90.49%
+
+
+iteration:
+   56
+    0   415   bit_w:-1  loss: 0.30287
+    1   651   bit_w:-1  loss: 0.30299
+    2   240   bit_w: 1  loss: 0.30194
+    3   650   bit_w:-1  loss: 0.30226
+    4   682   bit_w: 1  loss: 0.30165
+    830   1080    891    872    944    824    894   1048    871    969
+Train accuarcate: 91.51%
+
+
+Test accuarcate: 90.53%
+
+
+iteration:
+   57
+    0    97   bit_w: 1  loss: 0.30064
+    1    99   bit_w: 1  loss: 0.30069
+    2    72   bit_w:-1  loss: 0.30008
+    3    98   bit_w: 1  loss: 0.30046
+    4   627   bit_w:-1  loss: 0.29996
+     16     10    210     24      3     11    328      0      3      0
+Train accuarcate: 91.58%
+
+
+Test accuarcate: 90.60%
+
+
+iteration:
+   58
+    0   508   bit_w: 1  loss: 0.29900
+    1   564   bit_w: 1  loss: 0.29894
+    2   427   bit_w:-1  loss: 0.29836
+    3   537   bit_w: 1  loss: 0.29827
+    4   357   bit_w:-1  loss: 0.29784
+     72      0    228    248      3    110      1      1     17      2
+Train accuarcate: 91.64%
+
+
+Test accuarcate: 90.67%
+
+
+iteration:
+   59
+    0   303   bit_w: 1  loss: 0.29695
+    1   710   bit_w: 1  loss: 0.29692
+    2   287   bit_w:-1  loss: 0.29634
+    3   275   bit_w: 1  loss: 0.29678
+    4   713   bit_w:-1  loss: 0.29586
+    230      2     20     29     57    160      7    220    153    167
+Train accuarcate: 91.71%
+
+
+Test accuarcate: 90.75%
+
+
+iteration:
+   60
+    0   103   bit_w: 1  loss: 0.29511
+    1   102   bit_w: 1  loss: 0.29489
+    2   261   bit_w:-1  loss: 0.29432
+    3   160   bit_w: 1  loss: 0.29432
+    4   271   bit_w:-1  loss: 0.29281
+     99     76    108     20     22    145    376      0     92      2
+Train accuarcate: 91.74%
+
+
+Test accuarcate: 90.85%
+
+
+iteration:
+   61
+    0   379   bit_w: 1  loss: 0.29198
+    1   282   bit_w: 1  loss: 0.29180
+    2   321   bit_w:-1  loss: 0.28804
+    3   323   bit_w: 1  loss: 0.29066
+    4   569   bit_w:-1  loss: 0.28679
+     16    934    249    633    315    154    192    246    334    571
+Train accuarcate: 91.99%
+
+
+Test accuarcate: 91.10%
+
+
+iteration:
+   62
+    0   257   bit_w: 1  loss: 0.28595
+    1   471   bit_w: 1  loss: 0.28581
+    2   370   bit_w:-1  loss: 0.28495
+    3   260   bit_w: 1  loss: 0.28518
+    4   208   bit_w:-1  loss: 0.28419
+     64      3     91     58    137     44     92    420     61      9
+Train accuarcate: 92.16%
+
+
+Test accuarcate: 91.30%
+
+
+iteration:
+   63
+    0   708   bit_w: 1  loss: 0.28302
+    1   679   bit_w: 1  loss: 0.28282
+    2   540   bit_w:-1  loss: 0.28181
+    3   654   bit_w: 1  loss: 0.28221
+    4   327   bit_w:-1  loss: 0.28096
+    111    362     54    460     40    303      4    214    130     95
+Train accuarcate: 92.21%
+
+
+Test accuarcate: 91.48%
+
+
+iteration:
+   64
+    0   484   bit_w: 1  loss: 0.28004
+    1   694   bit_w: 1  loss: 0.27969
+    2   626   bit_w: 1  loss: 0.27867
+    3   146   bit_w: 1  loss: 0.27964
+    4   202   bit_w:-1  loss: 0.27848
+    564      2    172     58     25     34     67      3    131     17
+Train accuarcate: 92.27%
+
+
+Test accuarcate: 91.51%
+
+
+iteration:
+   65
+    0   636   bit_w: 1  loss: 0.27774
+    1   713   bit_w: 1  loss: 0.27769
+    2   318   bit_w:-1  loss: 0.27653
+    3   608   bit_w: 1  loss: 0.27675
+    4   317   bit_w:-1  loss: 0.27582
+     63      7    278    176     68     34     12    192     50     74
+Train accuarcate: 92.35%
+
+
+Test accuarcate: 91.42%
+
+
+iteration:
+   66
+    0   472   bit_w: 1  loss: 0.27517
+    1   471   bit_w: 1  loss: 0.27479
+    2   384   bit_w:-1  loss: 0.27460
+    3   511   bit_w: 1  loss: 0.27448
+    4   405   bit_w: 1  loss: 0.27361
+    160      3    199     48     33     98     79      5    102      2
+Train accuarcate: 92.42%
+
+
+Test accuarcate: 91.42%
+
+
+iteration:
+   67
+    0   481   bit_w:-1  loss: 0.27300
+    1   453   bit_w:-1  loss: 0.27297
+    2   492   bit_w: 1  loss: 0.27266
+    3   754   bit_w:-1  loss: 0.27268
+    4   538   bit_w:-1  loss: 0.27246
+    662   1127    893    991    953    836   1000   1063    940    972
+Train accuarcate: 92.56%
+
+
+Test accuarcate: 91.37%
+
+
+iteration:
+   68
+    0   426   bit_w: 1  loss: 0.27099
+    1   454   bit_w: 1  loss: 0.27091
+    2   237   bit_w:-1  loss: 0.27053
+    3   481   bit_w: 1  loss: 0.27033
+    4   355   bit_w:-1  loss: 0.26987
+    470      1    164     40    257     47     78     32      5     30
+Train accuarcate: 92.60%
+
+
+Test accuarcate: 91.39%
+
+
+iteration:
+   69
+    0   717   bit_w: 1  loss: 0.26916
+    1   719   bit_w: 1  loss: 0.26906
+    2   210   bit_w: 1  loss: 0.26772
+    3   457   bit_w: 1  loss: 0.26799
+    4   600   bit_w:-1  loss: 0.26687
+     78      1    141     41     76     50     41     53     64    356
+Train accuarcate: 92.53%
+
+
+Test accuarcate: 91.33%
+
+
+iteration:
+   70
+    0   472   bit_w: 1  loss: 0.26628
+    1   498   bit_w: 1  loss: 0.26618
+    2   290   bit_w:-1  loss: 0.26567
+    3   485   bit_w: 1  loss: 0.26562
+    4   208   bit_w:-1  loss: 0.26473
+    189     17    348     35    197     44    411     21     99     19
+Train accuarcate: 92.61%
+
+
+Test accuarcate: 91.44%
+
+
+iteration:
+   71
+    0    71   bit_w:-1  loss: 0.26363
+    1   621   bit_w:-1  loss: 0.26345
+    2   431   bit_w:-1  loss: 0.26344
+    3   447   bit_w:-1  loss: 0.26352
+    4   209   bit_w:-1  loss: 0.26333
+    998   1127    958    981    980    859    965   1070    930    978
+Train accuarcate: 92.57%
+
+
+Test accuarcate: 91.50%
+
+
+iteration:
+   72
+    0   220   bit_w: 1  loss: 0.26264
+    1   192   bit_w: 1  loss: 0.26267
+    2   159   bit_w:-1  loss: 0.26203
+    3   713   bit_w: 1  loss: 0.26207
+    4   350   bit_w:-1  loss: 0.26125
+     13      0      1     14     89    201      2    299     38    173
+Train accuarcate: 92.61%
+
+
+Test accuarcate: 91.58%
+
+
+iteration:
+   73
+    0   665   bit_w: 1  loss: 0.26065
+    1   369   bit_w: 1  loss: 0.26063
+    2   470   bit_w:-1  loss: 0.26036
+    3   480   bit_w: 1  loss: 0.26043
+    4   191   bit_w:-1  loss: 0.26023
+     72      1    102     47     85     24      6     72     25     87
+Train accuarcate: 92.68%
+
+
+Test accuarcate: 91.61%
+
+
+iteration:
+   74
+    0   387   bit_w: 1  loss: 0.25960
+    1   416   bit_w: 1  loss: 0.25959
+    2   244   bit_w:-1  loss: 0.25928
+    3   274   bit_w: 1  loss: 0.25922
+    4   606   bit_w:-1  loss: 0.25865
+    235      0     42      6    103     54    102     41    123     11
+Train accuarcate: 92.83%
+
+
+Test accuarcate: 91.64%
+
+
+iteration:
+   75
+    0   159   bit_w: 1  loss: 0.25810
+    1   158   bit_w: 1  loss: 0.25774
+    2   271   bit_w:-1  loss: 0.25714
+    3   137   bit_w: 1  loss: 0.25717
+    4   299   bit_w:-1  loss: 0.25620
+    255    383    143    152    115    282    279      1    212      5
+Train accuarcate: 92.79%
+
+
+Test accuarcate: 91.77%
+
+
+iteration:
+   76
+    0   369   bit_w:-1  loss: 0.25563
+    1   397   bit_w:-1  loss: 0.25553
+    2   601   bit_w: 1  loss: 0.25523
+    3   281   bit_w:-1  loss: 0.25523
+    4   346   bit_w: 1  loss: 0.25509
+    879   1126    985   1027    899    856    996   1024    931    908
+Train accuarcate: 92.81%
+
+
+Test accuarcate: 91.83%
+
+
+iteration:
+   77
+    0   258   bit_w: 1  loss: 0.25448
+    1   286   bit_w: 1  loss: 0.25446
+    2   517   bit_w: 1  loss: 0.25416
+    3   659   bit_w: 1  loss: 0.25355
+    4   411   bit_w:-1  loss: 0.25254
+     63    174     73     52     55     40     27    226    199     37
+Train accuarcate: 92.88%
+
+
+Test accuarcate: 91.89%
+
+
+iteration:
+   78
+    0   148   bit_w: 1  loss: 0.25214
+    1   229   bit_w: 1  loss: 0.25203
+    2   262   bit_w:-1  loss: 0.25152
+    3   147   bit_w: 1  loss: 0.25160
+    4   261   bit_w:-1  loss: 0.25139
+      3      2    159    212     49     11     22     19      9      4
+Train accuarcate: 92.94%
+
+
+Test accuarcate: 91.95%
+
+
+iteration:
+   79
+    0   693   bit_w: 1  loss: 0.25097
+    1   554   bit_w: 1  loss: 0.25097
+    2   317   bit_w:-1  loss: 0.25049
+    3   453   bit_w: 1  loss: 0.25077
+    4   342   bit_w:-1  loss: 0.25007
+     37      1    310     82     36     24     15     10      9     10
+Train accuarcate: 93.04%
+
+
+Test accuarcate: 91.97%
+
+
+iteration:
+   80
+    0   693   bit_w: 1  loss: 0.24964
+    1   721   bit_w: 1  loss: 0.24965
+    2   185   bit_w:-1  loss: 0.24955
+    3   517   bit_w: 1  loss: 0.24924
+    4   240   bit_w:-1  loss: 0.24827
+      3    286    111      9    288     55    411     55     50     49
+Train accuarcate: 93.10%
+
+
+Test accuarcate: 92.07%
+
+
+iteration:
+   81
+    0   102   bit_w: 1  loss: 0.24791
+    1   716   bit_w: 1  loss: 0.24787
+    2   205   bit_w:-1  loss: 0.24702
+    3   718   bit_w: 1  loss: 0.24737
+    4   215   bit_w:-1  loss: 0.24630
+      3      7     26      4     20      8    289    115      5    197
+Train accuarcate: 93.10%
+
+
+Test accuarcate: 92.08%
+
+
+iteration:
+   82
+    0   493   bit_w: 1  loss: 0.24590
+    1   465   bit_w: 1  loss: 0.24593
+    2   411   bit_w:-1  loss: 0.24498
+    3   521   bit_w: 1  loss: 0.24551
+    4   434   bit_w:-1  loss: 0.24499
+    453     17    565    574    566    395    442    626    350    550
+Train accuarcate: 93.10%
+
+
+Test accuarcate: 92.11%
+
+
+iteration:
+   83
+    0   285   bit_w: 1  loss: 0.24455
+    1   312   bit_w: 1  loss: 0.24449
+    2   499   bit_w:-1  loss: 0.24435
+    3   397   bit_w: 1  loss: 0.24436
+    4   482   bit_w:-1  loss: 0.24423
+     24      0     21     19     90     11      5    233     26     58
+Train accuarcate: 93.12%
+
+
+Test accuarcate: 92.13%
+
+
+iteration:
+   84
+    0   718   bit_w:-1  loss: 0.24375
+    1   719   bit_w:-1  loss: 0.24366
+    2   524   bit_w: 1  loss: 0.24331
+    3    26   bit_w:-1  loss: 0.24339
+    4   284   bit_w: 1  loss: 0.24325
+   1001   1127    990   1027    959    858   1014   1039    937    844
+Train accuarcate: 93.11%
+
+
+Test accuarcate: 92.15%
+
+
+iteration:
+   85
+    0   248   bit_w: 1  loss: 0.24283
+    1   691   bit_w: 1  loss: 0.24284
+    2   174   bit_w:-1  loss: 0.24247
+    3   191   bit_w: 1  loss: 0.24268
+    4   195   bit_w:-1  loss: 0.24194
+     58      6     13     10    167    364      9     32    134    112
+Train accuarcate: 93.13%
+
+
+Test accuarcate: 92.16%
+
+
+iteration:
+   86
+    0   354   bit_w: 1  loss: 0.24131
+    1   326   bit_w: 1  loss: 0.24165
+    2   436   bit_w: 1  loss: 0.24090
+    3   327   bit_w: 1  loss: 0.24105
+    4   544   bit_w:-1  loss: 0.24046
+    248     38    522    399    694     57    162    823    574    756
+Train accuarcate: 93.10%
+
+
+Test accuarcate: 92.19%
+
+
+iteration:
+   87
+    0   387   bit_w: 1  loss: 0.24000
+    1   592   bit_w: 1  loss: 0.23990
+    2   538   bit_w:-1  loss: 0.23953
+    3   622   bit_w: 1  loss: 0.23964
+    4   156   bit_w:-1  loss: 0.23906
+     92     20     38    140     18     55     77     15     52      7
+Train accuarcate: 93.19%
+
+
+Test accuarcate: 92.24%
+
+
+iteration:
+   88
+    0   124   bit_w: 1  loss: 0.23869
+    1   408   bit_w:-1  loss: 0.23839
+    2   631   bit_w: 1  loss: 0.23643
+    3   710   bit_w: 1  loss: 0.23715
+    4   517   bit_w:-1  loss: 0.23580
+    641     98    120    374     47    281     92    193    116     37
+Train accuarcate: 93.30%
+
+
+Test accuarcate: 92.26%
+
+
+iteration:
+   89
+    0   321   bit_w:-1  loss: 0.23486
+    1   293   bit_w:-1  loss: 0.23603
+    2   289   bit_w: 1  loss: 0.23468
+    3   413   bit_w:-1  loss: 0.23525
+    4   161   bit_w: 1  loss: 0.23450
+    465    686    827    516    775    433    420    751    591    804
+Train accuarcate: 93.48%
+
+
+Test accuarcate: 92.27%
+
+
+iteration:
+   90
+    0   349   bit_w: 1  loss: 0.23287
+    1   175   bit_w: 1  loss: 0.23333
+    2   290   bit_w:-1  loss: 0.23165
+    3   644   bit_w: 1  loss: 0.23262
+    4   288   bit_w:-1  loss: 0.23099
+    101    545    189    706     67    222    253     54    238     20
+Train accuarcate: 93.69%
+
+
+Test accuarcate: 92.15%
+
+
+iteration:
+   91
+    0   268   bit_w:-1  loss: 0.23027
+    1   269   bit_w:-1  loss: 0.23055
+    2   405   bit_w: 1  loss: 0.22828
+    3    40   bit_w: 1  loss: 0.22818
+    4   434   bit_w: 1  loss: 0.22687
+     11    563    373    318    494    324    674     45    677    388
+Train accuarcate: 93.85%
+
+
+Test accuarcate: 92.14%
+
+
+iteration:
+   92
+    0   233   bit_w: 1  loss: 0.22635
+    1   337   bit_w: 1  loss: 0.22630
+    2   521   bit_w:-1  loss: 0.22537
+    3   468   bit_w: 1  loss: 0.22560
+    4   576   bit_w:-1  loss: 0.22497
+    245      0    124    215    163    163     66    289    136     84
+Train accuarcate: 93.89%
+
+
+Test accuarcate: 92.32%
+
+
+iteration:
+   93
+    0   467   bit_w: 1  loss: 0.22429
+    1   365   bit_w: 1  loss: 0.22424
+    2   352   bit_w:-1  loss: 0.22334
+    3   363   bit_w: 1  loss: 0.22399
+    4   359   bit_w:-1  loss: 0.22312
+    415      0    197    130    237    128    419    162     37    103
+Train accuarcate: 93.90%
+
+
+Test accuarcate: 92.37%
+
+
+iteration:
+   94
+    0   554   bit_w: 1  loss: 0.22266
+    1   580   bit_w: 1  loss: 0.22259
+    2   545   bit_w: 1  loss: 0.22173
+    3   225   bit_w: 1  loss: 0.22198
+    4   370   bit_w:-1  loss: 0.22162
+     40      7    354     72      4     25    133      3     36      4
+Train accuarcate: 93.92%
+
+
+Test accuarcate: 92.45%
+
+
+iteration:
+   95
+    0   304   bit_w: 1  loss: 0.22127
+    1   680   bit_w: 1  loss: 0.22113
+    2   219   bit_w:-1  loss: 0.22084
+    3   706   bit_w: 1  loss: 0.22089
+    4   736   bit_w:-1  loss: 0.22037
+     55     36     13    154     13     58      5    103     96     65
+Train accuarcate: 93.95%
+
+
+Test accuarcate: 92.47%
+
+
+iteration:
+   96
+    0   332   bit_w: 1  loss: 0.22001
+    1   359   bit_w: 1  loss: 0.21995
+    2   412   bit_w:-1  loss: 0.21970
+    3   515   bit_w: 1  loss: 0.21925
+    4   545   bit_w:-1  loss: 0.21792
+    232    211    205     10     58     23    171     44    418     73
+Train accuarcate: 94.05%
+
+
+Test accuarcate: 92.53%
+
+
+iteration:
+   97
+    0   711   bit_w: 1  loss: 0.21750
+    1   739   bit_w: 1  loss: 0.21744
+    2   375   bit_w:-1  loss: 0.21704
+    3   238   bit_w: 1  loss: 0.21685
+    4   573   bit_w:-1  loss: 0.21505
+    195    116    125    141     31    111     13    551    104    397
+Train accuarcate: 94.03%
+
+
+Test accuarcate: 92.57%
+
+
+iteration:
+   98
+    0   127   bit_w: 1  loss: 0.21457
+    1   339   bit_w: 1  loss: 0.21459
+    2   298   bit_w:-1  loss: 0.21397
+    3   128   bit_w: 1  loss: 0.21431
+    4   464   bit_w:-1  loss: 0.21352
+    256    235    241    186      6    107    496      0     87      2
+Train accuarcate: 94.06%
+
+
+Test accuarcate: 92.56%
+
+
+iteration:
+   99
+    0   637   bit_w: 1  loss: 0.21312
+    1   609   bit_w: 1  loss: 0.21306
+    2   516   bit_w: 1  loss: 0.21287
+    3   632   bit_w: 1  loss: 0.21256
+    4   461   bit_w: 1  loss: 0.21229
+     17     25    233     50     56     28     70     13    238     54
+Train accuarcate: 94.09%
+
+
+Test accuarcate: 92.53%
+
+
+iteration:
+  100
+    0   402   bit_w: 1  loss: 0.21181
+    1   430   bit_w: 1  loss: 0.21141
+    2   383   bit_w:-1  loss: 0.21065
+    3   144   bit_w: 1  loss: 0.21023
+    4   355   bit_w:-1  loss: 0.20987
+    193     19    196    351    450    467    513     62    253    354
+Train accuarcate: 94.22%
+
+
+Test accuarcate: 92.73%
+
+
+iteration:
+  101
+    0   385   bit_w: 1  loss: 0.20925
+    1   332   bit_w: 1  loss: 0.20916
+    2   632   bit_w:-1  loss: 0.20882
+    3   369   bit_w: 1  loss: 0.20905
+    4   258   bit_w:-1  loss: 0.20864
+    395      0     76     20     96     12    278     66     56     79
+Train accuarcate: 94.28%
+
+
+Test accuarcate: 92.71%
+
+
+iteration:
+  102
+    0   270   bit_w: 1  loss: 0.20818
+    1   269   bit_w: 1  loss: 0.20831
+    2   636   bit_w:-1  loss: 0.20705
+    3   297   bit_w: 1  loss: 0.20722
+    4   355   bit_w:-1  loss: 0.20684
+    482    550    540    718    510    326     36    894    478    621
+Train accuarcate: 94.24%
+
+
+Test accuarcate: 92.65%
+
+
+iteration:
+  103
+    0    97   bit_w: 1  loss: 0.20647
+    1    70   bit_w: 1  loss: 0.20646
+    2   592   bit_w:-1  loss: 0.20628
+    3    96   bit_w: 1  loss: 0.20631
+    4   634   bit_w:-1  loss: 0.20604
+     15      4    173     24      1      3    201      0      1      0
+Train accuarcate: 94.25%
+
+
+Test accuarcate: 92.62%
+
+
+iteration:
+  104
+    0   571   bit_w:-1  loss: 0.20561
+    1   599   bit_w:-1  loss: 0.20590
+    2   290   bit_w: 1  loss: 0.20491
+    3   533   bit_w:-1  loss: 0.20524
+    4   161   bit_w: 1  loss: 0.20467
+    495    537    281    567    872    517    297    794    542    861
+Train accuarcate: 94.36%
+
+
+Test accuarcate: 92.83%
+
+
+iteration:
+  105
+    0   514   bit_w: 1  loss: 0.20397
+    1   542   bit_w: 1  loss: 0.20364
+    2   272   bit_w: 1  loss: 0.20351
+    3   421   bit_w: 1  loss: 0.20358
+    4   456   bit_w:-1  loss: 0.20282
+    221    240    437     46     38     84    375     34    545     40
+Train accuarcate: 94.26%
+
+
+Test accuarcate: 92.85%
+
+
+iteration:
+  106
+    0   349   bit_w: 1  loss: 0.20234
+    1   107   bit_w: 1  loss: 0.20241
+    2   267   bit_w:-1  loss: 0.20147
+    3   706   bit_w: 1  loss: 0.20184
+    4   297   bit_w:-1  loss: 0.20134
+      8    107     22     71     27    242    110     18    193     25
+Train accuarcate: 94.33%
+
+
+Test accuarcate: 92.95%
+
+
+iteration:
+  107
+    0   209   bit_w:-1  loss: 0.20082
+    1   283   bit_w: 1  loss: 0.20037
+    2   181   bit_w:-1  loss: 0.19835
+    3   295   bit_w: 1  loss: 0.19911
+    4   237   bit_w:-1  loss: 0.19749
+    165    848    322    313    706    305    311    408    153     90
+Train accuarcate: 94.39%
+
+
+Test accuarcate: 93.06%
+
+
+iteration:
+  108
+    0   184   bit_w: 1  loss: 0.19702
+    1   600   bit_w: 1  loss: 0.19691
+    2   682   bit_w:-1  loss: 0.19573
+    3   502   bit_w: 1  loss: 0.19604
+    4   512   bit_w:-1  loss: 0.19490
+    662    632    567    675    238    503    615    254    544    445
+Train accuarcate: 94.39%
+
+
+Test accuarcate: 93.15%
+
+
+iteration:
+  109
+    0   355   bit_w: 1  loss: 0.19409
+    1   382   bit_w: 1  loss: 0.19408
+    2   488   bit_w:-1  loss: 0.19316
+    3   475   bit_w: 1  loss: 0.19317
+    4   260   bit_w:-1  loss: 0.19253
+    353      3    417    398    510    172    385    609    273    562
+Train accuarcate: 94.45%
+
+
+Test accuarcate: 93.17%
+
+
+iteration:
+  110
+    0   206   bit_w: 1  loss: 0.19131
+    1   231   bit_w: 1  loss: 0.19161
+    2   465   bit_w:-1  loss: 0.19041
+    3   207   bit_w: 1  loss: 0.19064
+    4   290   bit_w:-1  loss: 0.18972
+    316     43    385    497     68    181    162    300    292    158
+Train accuarcate: 94.52%
+
+
+Test accuarcate: 93.31%
+
+
+iteration:
+  111
+    0   512   bit_w: 1  loss: 0.18923
+    1   364   bit_w: 1  loss: 0.18909
+    2   458   bit_w: 1  loss: 0.18874
+    3   127   bit_w: 1  loss: 0.18881
+    4   430   bit_w: 1  loss: 0.18829
+    236      5    350     21     85     27    444      2    166      9
+Train accuarcate: 94.56%
+
+
+Test accuarcate: 93.35%
+
+
+iteration:
+  112
+    0   376   bit_w: 1  loss: 0.18774
+    1   404   bit_w: 1  loss: 0.18783
+    2   513   bit_w:-1  loss: 0.18609
+    3   112   bit_w: 1  loss: 0.18630
+    4   486   bit_w:-1  loss: 0.18525
+     75    222    114    794    408    632    179     68    413    497
+Train accuarcate: 94.72%
+
+
+Test accuarcate: 93.46%
+
+
+iteration:
+  113
+    0   357   bit_w: 1  loss: 0.18459
+    1    95   bit_w: 1  loss: 0.18461
+    2   129   bit_w:-1  loss: 0.18441
+    3   437   bit_w:-1  loss: 0.18429
+    4   625   bit_w:-1  loss: 0.18330
+    572    659    304    175    230    278    370    338    320    261
+Train accuarcate: 94.75%
+
+
+Test accuarcate: 93.49%
+
+
+iteration:
+  114
+    0   436   bit_w: 1  loss: 0.18259
+    1   464   bit_w: 1  loss: 0.18282
+    2   575   bit_w:-1  loss: 0.18174
+    3   463   bit_w: 1  loss: 0.18214
+    4   353   bit_w:-1  loss: 0.18148
+     35    348    659    413    853    413    554    768    534    781
+Train accuarcate: 94.81%
+
+
+Test accuarcate: 93.54%
+
+
+iteration:
+  115
+    0   266   bit_w: 1  loss: 0.18047
+    1     0   bit_w: 1  loss: 0.18033
+    2   490   bit_w:-1  loss: 0.17917
+    3   575   bit_w:-1  loss: 0.17997
+    4   265   bit_w: 1  loss: 0.17907
+    552    124    103    239     73    315    208    565    170    307
+Train accuarcate: 94.97%
+
+
+Test accuarcate: 93.75%
+
+
+iteration:
+  116
+    0   430   bit_w:-1  loss: 0.17831
+    1   449   bit_w: 1  loss: 0.17864
+    2   376   bit_w:-1  loss: 0.17714
+    3   577   bit_w: 1  loss: 0.17753
+    4   457   bit_w:-1  loss: 0.17660
+    609    985    524    593    173    361    277    958    400    255
+Train accuarcate: 95.02%
+
+
+Test accuarcate: 93.94%
+
+
+iteration:
+  117
+    0   483   bit_w: 1  loss: 0.17581
+    1   427   bit_w: 1  loss: 0.17560
+    2   602   bit_w:-1  loss: 0.17504
+    3   488   bit_w: 1  loss: 0.17528
+    4   624   bit_w:-1  loss: 0.17454
+    328    351    466     38    566    101    328    120    258    292
+Train accuarcate: 95.07%
+
+
+Test accuarcate: 93.98%
+
+
+iteration:
+  118
+    0   517   bit_w:-1  loss: 0.17356
+    1   490   bit_w:-1  loss: 0.17364
+    2   239   bit_w: 1  loss: 0.17320
+    3   477   bit_w: 1  loss: 0.17313
+    4   184   bit_w: 1  loss: 0.17197
+    886     69    185    837     78    517    215    334    370    489
+Train accuarcate: 95.13%
+
+
+Test accuarcate: 94.03%
+
+
+iteration:
+  119
+    0   547   bit_w: 1  loss: 0.17123
+    1   602   bit_w: 1  loss: 0.17137
+    2   322   bit_w:-1  loss: 0.17070
+    3   241   bit_w:-1  loss: 0.17101
+    4   658   bit_w: 1  loss: 0.17082
+    619    374    428    402    436    508    860    565    591    462
+Train accuarcate: 95.16%
+
+
+Test accuarcate: 94.22%
+
+
+iteration:
+  120
+    0   353   bit_w: 1  loss: 0.17002
+    1   613   bit_w: 1  loss: 0.17001
+    2   270   bit_w:-1  loss: 0.16926
+    3   599   bit_w: 1  loss: 0.16957
+    4   628   bit_w:-1  loss: 0.16942
+     55    187    383    189    228    164    543    184    238    264
+Train accuarcate: 95.26%
+
+
+Test accuarcate: 94.32%
+
+
+iteration:
+  121
+    0   433   bit_w: 1  loss: 0.16862
+    1   406   bit_w: 1  loss: 0.16850
+    2   184   bit_w:-1  loss: 0.16810
+    3   434   bit_w: 1  loss: 0.16789
+    4   458   bit_w:-1  loss: 0.16780
+     14   1116    524    498    671    443    504    215    809    616
+Train accuarcate: 95.29%
+
+
+Test accuarcate: 94.30%
+
+
+iteration:
+  122
+    0   466   bit_w: 1  loss: 0.16702
+    1   438   bit_w: 1  loss: 0.16729
+    2   355   bit_w:-1  loss: 0.16681
+    3   467   bit_w: 1  loss: 0.16681
+    4   289   bit_w:-1  loss: 0.16639
+    418      6    429    694    551    311    607    341    188    273
+Train accuarcate: 95.34%
+
+
+Test accuarcate: 94.43%
+
+
+iteration:
+  123
+    0   567   bit_w: 1  loss: 0.16573
+    1   589   bit_w: 1  loss: 0.16575
+    2   523   bit_w:-1  loss: 0.16502
+    3   486   bit_w: 1  loss: 0.16522
+    4   298   bit_w:-1  loss: 0.16462
+    201     60    365     60    121    216    298     17    320     63
+Train accuarcate: 95.40%
+
+
+Test accuarcate: 94.48%
+
+
+iteration:
+  124
+    0   606   bit_w: 1  loss: 0.16398
+    1   608   bit_w: 1  loss: 0.16406
+    2   717   bit_w:-1  loss: 0.16348
+    3   634   bit_w: 1  loss: 0.16363
+    4   402   bit_w:-1  loss: 0.16310
+    365     36    402    420    218    247    130     67    285    172
+Train accuarcate: 95.55%
+
+
+Test accuarcate: 94.41%
+
+
+iteration:
+  125
+    0   247   bit_w: 1  loss: 0.16258
+    1   246   bit_w: 1  loss: 0.16244
+    2   570   bit_w:-1  loss: 0.16237
+    3   567   bit_w: 1  loss: 0.16232
+    4   512   bit_w: 1  loss: 0.16195
+    401      3    155     47     87    240     11     21    231     11
+Train accuarcate: 95.60%
+
+
+Test accuarcate: 94.41%
+
+
+iteration:
+  126
+    0   681   bit_w: 1  loss: 0.16155
+    1   260   bit_w: 1  loss: 0.16141
+    2   578   bit_w:-1  loss: 0.16093
+    3   710   bit_w: 1  loss: 0.16109
+    4   189   bit_w:-1  loss: 0.16020
+     86     74     64    141    126    104     26    736    167    311
+Train accuarcate: 95.63%
+
+
+Test accuarcate: 94.45%
+
+
+iteration:
+  127
+    0   398   bit_w: 1  loss: 0.15989
+    1   367   bit_w: 1  loss: 0.15982
+    2   236   bit_w: 1  loss: 0.15968
+    3   571   bit_w: 1  loss: 0.15970
+    4   322   bit_w:-1  loss: 0.15939
+    476      1    185     22    107     90    444    177    173    173
+Train accuarcate: 95.70%
+
+
+Test accuarcate: 94.47%
+
+
+iteration:
+  128
+    0   357   bit_w:-1  loss: 0.15894
+    1   443   bit_w:-1  loss: 0.15902
+    2   326   bit_w: 1  loss: 0.15867
+    3   737   bit_w:-1  loss: 0.15877
+    4   454   bit_w:-1  loss: 0.15863
+    552   1127    936   1032    929    860    930   1049    936    951
+Train accuarcate: 95.70%
+
+
+Test accuarcate: 94.52%
+
+
+iteration:
+  129
+    0   189   bit_w: 1  loss: 0.15827
+    1   190   bit_w: 1  loss: 0.15823
+    2   267   bit_w:-1  loss: 0.15803
+    3   347   bit_w: 1  loss: 0.15798
+    4   211   bit_w:-1  loss: 0.15704
+    170     62    106    167    451    388    268     42    318     15
+Train accuarcate: 95.68%
+
+
+Test accuarcate: 94.53%
+
+
+iteration:
+  130
+    0   441   bit_w: 1  loss: 0.15666
+    1   469   bit_w: 1  loss: 0.15658
+    2   605   bit_w:-1  loss: 0.15638
+    3   498   bit_w: 1  loss: 0.15635
+    4   259   bit_w:-1  loss: 0.15612
+    622      0    210    145    146     85    431     42     28     22
+Train accuarcate: 95.73%
+
+
+Test accuarcate: 94.49%
+
+
+iteration:
+  131
+    0   687   bit_w: 1  loss: 0.15575
+    1   247   bit_w: 1  loss: 0.15564
+    2   405   bit_w:-1  loss: 0.15511
+    3   239   bit_w: 1  loss: 0.15528
+    4   213   bit_w:-1  loss: 0.15467
+    224    133    108    123    128    196    128    517    102    220
+Train accuarcate: 95.84%
+
+
+Test accuarcate: 94.50%
+
+
+iteration:
+  132
+    0   292   bit_w:-1  loss: 0.15431
+    1   320   bit_w:-1  loss: 0.15445
+    2   621   bit_w: 1  loss: 0.15402
+    3   347   bit_w:-1  loss: 0.15364
+    4   103   bit_w: 1  loss: 0.15291
+    352   1002    876    539    540    159    322    499    225    504
+Train accuarcate: 95.92%
+
+
+Test accuarcate: 94.66%
+
+
+iteration:
+  133
+    0   380   bit_w: 1  loss: 0.15230
+    1   352   bit_w: 1  loss: 0.15253
+    2   511   bit_w:-1  loss: 0.15182
+    3   353   bit_w: 1  loss: 0.15192
+    4   629   bit_w: 1  loss: 0.15156
+     66    519    449    791    590    276    356    656    726    769
+Train accuarcate: 95.99%
+
+
+Test accuarcate: 94.75%
+
+
+iteration:
+  134
+    0   318   bit_w: 1  loss: 0.15085
+    1   345   bit_w: 1  loss: 0.15056
+    2   266   bit_w:-1  loss: 0.14988
+    3    56   bit_w: 1  loss: 0.15012
+    4   546   bit_w:-1  loss: 0.14969
+    512      3     26    116    569    424    365    131    389    447
+Train accuarcate: 96.01%
+
+
+Test accuarcate: 94.77%
+
+
+iteration:
+  135
+    0   351   bit_w:-1  loss: 0.14916
+    1   324   bit_w:-1  loss: 0.14932
+    2   244   bit_w: 1  loss: 0.14853
+    3   237   bit_w: 1  loss: 0.14857
+    4   492   bit_w:-1  loss: 0.14825
+    951    224    462    267    491    605    724    667    508    538
+Train accuarcate: 96.03%
+
+
+Test accuarcate: 94.75%
+
+
+iteration:
+  136
+    0   398   bit_w:-1  loss: 0.14753
+    1   590   bit_w:-1  loss: 0.14762
+    2   294   bit_w: 1  loss: 0.14722
+    3   342   bit_w:-1  loss: 0.14732
+    4   460   bit_w:-1  loss: 0.14719
+    833   1127    974   1028    743    838    956   1056    912    841
+Train accuarcate: 96.04%
+
+
+Test accuarcate: 94.73%
+
+
+iteration:
+  137
+    0   484   bit_w: 1  loss: 0.14668
+    1   672   bit_w: 1  loss: 0.14675
+    2   127   bit_w:-1  loss: 0.14590
+    3   457   bit_w: 1  loss: 0.14618
+    4   426   bit_w: 1  loss: 0.14599
+    461      4    216     25    438     46    258     42    120    154
+Train accuarcate: 96.10%
+
+
+Test accuarcate: 94.74%
+
+
+iteration:
+  138
+    0   122   bit_w: 1  loss: 0.14563
+    1   123   bit_w: 1  loss: 0.14570
+    2   551   bit_w:-1  loss: 0.14552
+    3   413   bit_w: 1  loss: 0.14544
+    4   288   bit_w:-1  loss: 0.14515
+    190     18    264    179     90     27    175     26     24      6
+Train accuarcate: 96.13%
+
+
+Test accuarcate: 94.77%
+
+
+iteration:
+  139
+    0   498   bit_w:-1  loss: 0.14484
+    1   583   bit_w:-1  loss: 0.14473
+    2   351   bit_w: 1  loss: 0.14476
+    3   480   bit_w:-1  loss: 0.14470
+    4   663   bit_w: 1  loss: 0.14457
+    654   1127    790   1004    950    836    855   1060    934    972
+Train accuarcate: 96.11%
+
+
+Test accuarcate: 94.81%
+
+
+iteration:
+  140
+    0   678   bit_w: 1  loss: 0.14430
+    1   201   bit_w: 1  loss: 0.14422
+    2   566   bit_w:-1  loss: 0.14403
+    3   497   bit_w: 1  loss: 0.14411
+    4   127   bit_w:-1  loss: 0.14366
+    178      5    126    205     72     78    148    103     43     29
+Train accuarcate: 96.15%
+
+
+Test accuarcate: 94.80%
+
+
+iteration:
+  141
+    0   597   bit_w: 1  loss: 0.14336
+    1   280   bit_w: 1  loss: 0.14341
+    2   458   bit_w:-1  loss: 0.14292
+    3    14   bit_w: 1  loss: 0.14305
+    4   428   bit_w:-1  loss: 0.14259
+    147    294    256    475      7    351     12     74    225     27
+Train accuarcate: 96.10%
+
+
+Test accuarcate: 94.80%
+
+
+iteration:
+  142
+    0   546   bit_w: 1  loss: 0.14223
+    1   490   bit_w: 1  loss: 0.14227
+    2   469   bit_w:-1  loss: 0.14198
+    3   519   bit_w: 1  loss: 0.14209
+    4   631   bit_w: 1  loss: 0.14179
+    161    603    681    222    581    337    492    810    529    621
+Train accuarcate: 96.09%
+
+
+Test accuarcate: 94.86%
+
+
+iteration:
+  143
+    0   185   bit_w: 1  loss: 0.14127
+    1   213   bit_w: 1  loss: 0.14127
+    2   289   bit_w:-1  loss: 0.14059
+    3   186   bit_w: 1  loss: 0.14039
+    4   740   bit_w:-1  loss: 0.14007
+    820    596    732    805    273    465    272    284    744    512
+Train accuarcate: 96.15%
+
+
+Test accuarcate: 94.84%
+
+
+iteration:
+  144
+    0   407   bit_w:-1  loss: 0.13938
+    1   116   bit_w: 1  loss: 0.13939
+    2   511   bit_w:-1  loss: 0.13863
+    3   379   bit_w:-1  loss: 0.13871
+    4   177   bit_w: 1  loss: 0.13812
+    359    125    300    233    329    331    295    693    100    184
+Train accuarcate: 96.24%
+
+
+Test accuarcate: 94.91%
+
+
+iteration:
+  145
+    0   459   bit_w: 1  loss: 0.13759
+    1   701   bit_w: 1  loss: 0.13765
+    2   185   bit_w:-1  loss: 0.13695
+    3   458   bit_w: 1  loss: 0.13709
+    4   401   bit_w:-1  loss: 0.13684
+     42    104    485     78    516    115    501     77    346    302
+Train accuarcate: 96.28%
+
+
+Test accuarcate: 94.96%
+
+
+iteration:
+  146
+    0   377   bit_w: 1  loss: 0.13622
+    1   398   bit_w: 1  loss: 0.13618
+    2   488   bit_w:-1  loss: 0.13545
+    3   349   bit_w: 1  loss: 0.13574
+    4   489   bit_w:-1  loss: 0.13496
+    543    259     93    863    238    558    205    128    340    324
+Train accuarcate: 96.40%
+
+
+Test accuarcate: 94.93%
+
+
+iteration:
+  147
+    0   572   bit_w: 1  loss: 0.13442
+    1    81   bit_w: 1  loss: 0.13436
+    2   541   bit_w:-1  loss: 0.13409
+    3    51   bit_w: 1  loss: 0.13416
+    4   548   bit_w:-1  loss: 0.13385
+     21    547    123     46    186     80    133    347    105    180
+Train accuarcate: 96.41%
+
+
+Test accuarcate: 94.98%
+
+
+iteration:
+  148
+    0   235   bit_w: 1  loss: 0.13345
+    1   744   bit_w: 1  loss: 0.13342
+    2   518   bit_w:-1  loss: 0.13253
+    3   701   bit_w: 1  loss: 0.13281
+    4   441   bit_w:-1  loss: 0.13204
+    169      8     67    245    139    290     75    258    297    352
+Train accuarcate: 96.48%
+
+
+Test accuarcate: 95.01%
+
+
+iteration:
+  149
+    0   401   bit_w: 1  loss: 0.13160
+    1   398   bit_w: 1  loss: 0.13148
+    2   207   bit_w:-1  loss: 0.13071
+    3   411   bit_w: 1  loss: 0.13107
+    4   289   bit_w:-1  loss: 0.13054
+    480      7    237    279    635    250    529    165     81    345
+Train accuarcate: 96.46%
+
+
+Test accuarcate: 95.14%
+
+
+iteration:
+  150
+    0   514   bit_w: 1  loss: 0.13018
+    1   709   bit_w: 1  loss: 0.13002
+    2   572   bit_w:-1  loss: 0.12951
+    3   550   bit_w:-1  loss: 0.12967
+    4   542   bit_w: 1  loss: 0.12940
+    153    265    362     45    100     66    271     78    526    110
+Train accuarcate: 96.58%
+
+
+Test accuarcate: 95.20%
+
+
+iteration:
+  151
+    0   130   bit_w: 1  loss: 0.12900
+    1   449   bit_w: 1  loss: 0.12896
+    2   273   bit_w:-1  loss: 0.12878
+    3   124   bit_w: 1  loss: 0.12883
+    4   636   bit_w:-1  loss: 0.12868
+     98    238    367    303     37    114    499      0     89      3
+Train accuarcate: 96.62%
+
+
+Test accuarcate: 95.20%
+
+
+iteration:
+  152
+    0   233   bit_w: 1  loss: 0.12831
+    1   688   bit_w: 1  loss: 0.12833
+    2   494   bit_w:-1  loss: 0.12795
+    3   232   bit_w: 1  loss: 0.12809
+    4   182   bit_w: 1  loss: 0.12796
+    244     27    174    222     90    138     58    352    294    189
+Train accuarcate: 96.71%
+
+
+Test accuarcate: 95.24%
+
+
+iteration:
+  153
+    0   303   bit_w: 1  loss: 0.12764
+    1   572   bit_w: 1  loss: 0.12749
+    2   463   bit_w:-1  loss: 0.12720
+    3   620   bit_w: 1  loss: 0.12728
+    4   469   bit_w:-1  loss: 0.12693
+    298    320    186    159     20    167    238     54    144     21
+Train accuarcate: 96.77%
+
+
+Test accuarcate: 95.26%
+
+
+iteration:
+  154
+    0   482   bit_w: 1  loss: 0.12663
+    1   329   bit_w: 1  loss: 0.12662
+    2   546   bit_w:-1  loss: 0.12640
+    3   422   bit_w: 1  loss: 0.12638
+    4   610   bit_w:-1  loss: 0.12634
+    681      0    188     47    147     41     56     80    106     75
+Train accuarcate: 96.78%
+
+
+Test accuarcate: 95.26%
+
+
+iteration:
+  155
+    0   357   bit_w:-1  loss: 0.12605
+    1   332   bit_w:-1  loss: 0.12596
+    2   286   bit_w: 1  loss: 0.12580
+    3   329   bit_w:-1  loss: 0.12586
+    4   598   bit_w:-1  loss: 0.12551
+    297   1127    844    991    914    848    880    973    786    887
+Train accuarcate: 96.77%
+
+
+Test accuarcate: 95.20%
+
+
+iteration:
+  156
+    0   653   bit_w: 1  loss: 0.12527
+    1   148   bit_w: 1  loss: 0.12512
+    2   318   bit_w:-1  loss: 0.12480
+    3   159   bit_w: 1  loss: 0.12499
+    4   291   bit_w:-1  loss: 0.12475
+    133    375    440    599     95    124     99     84    229     13
+Train accuarcate: 96.81%
+
+
+Test accuarcate: 95.23%
+
+
+iteration:
+  157
+    0   358   bit_w: 1  loss: 0.12451
+    1   581   bit_w: 1  loss: 0.12435
+    2   289   bit_w:-1  loss: 0.12418
+    3   372   bit_w: 1  loss: 0.12433
+    4   216   bit_w:-1  loss: 0.12392
+    363      5    230    157    201     86    213     66     68    118
+Train accuarcate: 96.86%
+
+
+Test accuarcate: 95.20%
+
+
+iteration:
+  158
+    0   300   bit_w: 1  loss: 0.12370
+    1   639   bit_w: 1  loss: 0.12356
+    2   375   bit_w: 1  loss: 0.12329
+    3   607   bit_w:-1  loss: 0.12343
+    4   237   bit_w:-1  loss: 0.12314
+    312     19    209    343    453    280    193    183    408    162
+Train accuarcate: 96.89%
+
+
+Test accuarcate: 95.16%
+
+
+iteration:
+  159
+    0   384   bit_w: 1  loss: 0.12292
+    1   194   bit_w: 1  loss: 0.12282
+    2   373   bit_w: 1  loss: 0.12263
+    3   343   bit_w: 1  loss: 0.12256
+    4   183   bit_w: 1  loss: 0.12238
+    537      0     16     48     99     95    184     62     91    165
+Train accuarcate: 96.96%
+
+
+Test accuarcate: 95.19%
+
+
+iteration:
+  160
+    0   248   bit_w: 1  loss: 0.12218
+    1   131   bit_w: 1  loss: 0.12210
+    2   153   bit_w:-1  loss: 0.12191
+    3   236   bit_w:-1  loss: 0.12199
+    4   577   bit_w: 1  loss: 0.12144
+    189    148    156     97    262    244    345     69    133     41
+Train accuarcate: 97.00%
+
+
+Test accuarcate: 95.22%
+
+
+iteration:
+  161
+    0   102   bit_w:-1  loss: 0.12116
+    1   161   bit_w:-1  loss: 0.12107
+    2   491   bit_w: 1  loss: 0.12083
+    3   218   bit_w:-1  loss: 0.12085
+    4   436   bit_w: 1  loss: 0.12047
+    775   1059    951    974    965    706    942   1065    849    978
+Train accuarcate: 97.07%
+
+
+Test accuarcate: 95.19%
+
+
+iteration:
+  162
+    0   510   bit_w: 1  loss: 0.12024
+    1   509   bit_w: 1  loss: 0.12013
+    2   273   bit_w:-1  loss: 0.12003
+    3   482   bit_w: 1  loss: 0.12010
+    4   384   bit_w:-1  loss: 0.11988
+    450      1    360    113    103    140     79     13     28     18
+Train accuarcate: 97.07%
+
+
+Test accuarcate: 95.20%
+
+
+iteration:
+  163
+    0   102   bit_w:-1  loss: 0.11964
+    1   611   bit_w:-1  loss: 0.11961
+    2   158   bit_w:-1  loss: 0.11952
+    3   412   bit_w:-1  loss: 0.11946
+    4   397   bit_w: 1  loss: 0.11926
+    705   1121    827    958    945    782    767   1070    922    971
+Train accuarcate: 97.05%
+
+
+Test accuarcate: 95.26%
+
+
+iteration:
+  164
+    0   651   bit_w: 1  loss: 0.11904
+    1   679   bit_w: 1  loss: 0.11900
+    2   539   bit_w:-1  loss: 0.11885
+    3   303   bit_w: 1  loss: 0.11881
+    4   686   bit_w:-1  loss: 0.11868
+    104     65     50    242     26     88     11     96    116     40
+Train accuarcate: 97.03%
+
+
+Test accuarcate: 95.29%
+
+
+iteration:
+  165
+    0   605   bit_w: 1  loss: 0.11848
+    1   123   bit_w: 1  loss: 0.11843
+    2   495   bit_w:-1  loss: 0.11776
+    3   633   bit_w: 1  loss: 0.11796
+    4   467   bit_w:-1  loss: 0.11754
+    301     80    381    348    176    243    196     80    340    190
+Train accuarcate: 97.03%
+
+
+Test accuarcate: 95.31%
+
+
+iteration:
+  166
+    0   266   bit_w: 1  loss: 0.11726
+    1   305   bit_w: 1  loss: 0.11695
+    2   320   bit_w:-1  loss: 0.11679
+    3   175   bit_w: 1  loss: 0.11703
+    4   525   bit_w:-1  loss: 0.11678
+     53    522    172    183     50    125     44    549    126    214
+Train accuarcate: 97.07%
+
+
+Test accuarcate: 95.30%
+
+
+iteration:
+  167
+    0   359   bit_w: 1  loss: 0.11661
+    1   469   bit_w: 1  loss: 0.11653
+    2   242   bit_w:-1  loss: 0.11637
+    3   468   bit_w: 1  loss: 0.11638
+    4   566   bit_w:-1  loss: 0.11603
+    470      0    110    176    174    155    626     89     54     48
+Train accuarcate: 97.15%
+
+
+Test accuarcate: 95.27%
+
+
+iteration:
+  168
+    0   472   bit_w: 1  loss: 0.11586
+    1   321   bit_w: 1  loss: 0.11578
+    2   406   bit_w:-1  loss: 0.11510
+    3   433   bit_w:-1  loss: 0.11537
+    4   540   bit_w: 1  loss: 0.11496
+    781      2    210    280     58    259    304    208     64     49
+Train accuarcate: 97.18%
+
+
+Test accuarcate: 95.16%
+
+
+iteration:
+  169
+    0   404   bit_w: 1  loss: 0.11467
+    1   403   bit_w: 1  loss: 0.11458
+    2   432   bit_w: 1  loss: 0.11442
+    3    72   bit_w:-1  loss: 0.11426
+    4   377   bit_w: 1  loss: 0.11417
+    124    404    355    670    517    551    451     38    773    525
+Train accuarcate: 97.18%
+
+
+Test accuarcate: 95.25%
+
+
+iteration:
+  170
+    0   712   bit_w: 1  loss: 0.11392
+    1   683   bit_w: 1  loss: 0.11382
+    2   597   bit_w:-1  loss: 0.11339
+    3   457   bit_w: 1  loss: 0.11345
+    4   371   bit_w:-1  loss: 0.11267
+    123     99    187    252    396    169    428    518    195    456
+Train accuarcate: 97.23%
+
+
+Test accuarcate: 95.37%
+
+
+iteration:
+  171
+    0   349   bit_w:-1  loss: 0.11241
+    1   321   bit_w:-1  loss: 0.11243
+    2   459   bit_w:-1  loss: 0.11223
+    3   387   bit_w:-1  loss: 0.11240
+    4   315   bit_w: 1  loss: 0.11211
+    778    666    881    539    886    566    651   1025    503    931
+Train accuarcate: 97.31%
+
+
+Test accuarcate: 95.36%
+
+
+iteration:
+  172
+    0   323   bit_w: 1  loss: 0.11172
+    1   294   bit_w: 1  loss: 0.11155
+    2   624   bit_w: 1  loss: 0.11137
+    3   268   bit_w: 1  loss: 0.11129
+    4   234   bit_w: 1  loss: 0.11109
+    290    528    166    490     55    187     49    333    202    129
+Train accuarcate: 97.36%
+
+
+Test accuarcate: 95.25%
+
+
+iteration:
+  173
+    0   160   bit_w: 1  loss: 0.11082
+    1   716   bit_w: 1  loss: 0.11073
+    2   300   bit_w:-1  loss: 0.11058
+    3   482   bit_w: 1  loss: 0.11050
+    4   654   bit_w:-1  loss: 0.11033
+    166     64    232     37    195    121    135    119     38    156
+Train accuarcate: 97.37%
+
+
+Test accuarcate: 95.28%
+
+
+iteration:
+  174
+    0   215   bit_w: 1  loss: 0.11007
+    1   308   bit_w: 1  loss: 0.11010
+    2   298   bit_w:-1  loss: 0.10956
+    3   191   bit_w: 1  loss: 0.10985
+    4   274   bit_w:-1  loss: 0.10945
+    227     93    117    100     42    389     34     68    155    129
+Train accuarcate: 97.38%
+
+
+Test accuarcate: 95.29%
+
+
+iteration:
+  175
+    0   470   bit_w:-1  loss: 0.10924
+    1   535   bit_w:-1  loss: 0.10913
+    2   120   bit_w: 1  loss: 0.10907
+    3   361   bit_w:-1  loss: 0.10901
+    4   551   bit_w:-1  loss: 0.10906
+    680   1127    944    978    970    839    824   1061    941    971
+Train accuarcate: 97.37%
+
+
+Test accuarcate: 95.36%
+
+
+iteration:
+  176
+    0   512   bit_w: 1  loss: 0.10883
+    1   312   bit_w: 1  loss: 0.10873
+    2   427   bit_w:-1  loss: 0.10848
+    3   485   bit_w: 1  loss: 0.10853
+    4   487   bit_w:-1  loss: 0.10834
+    437     11    417     99     92    131    421    114    268     33
+Train accuarcate: 97.35%
+
+
+Test accuarcate: 95.30%
+
+
+iteration:
+  177
+    0   272   bit_w: 1  loss: 0.10816
+    1   271   bit_w: 1  loss: 0.10807
+    2   268   bit_w:-1  loss: 0.10782
+    3   273   bit_w: 1  loss: 0.10779
+    4   683   bit_w:-1  loss: 0.10747
+    767     49    525    360    562    223     32    450    557    378
+Train accuarcate: 97.40%
+
+
+Test accuarcate: 95.29%
+
+
+iteration:
+  178
+    0   511   bit_w:-1  loss: 0.10725
+    1   764   bit_w:-1  loss: 0.10707
+    2   546   bit_w: 1  loss: 0.10693
+    3   650   bit_w:-1  loss: 0.10696
+    4   512   bit_w:-1  loss: 0.10680
+    623   1122    830   1006    915    826    966   1065    863    955
+Train accuarcate: 97.41%
+
+
+Test accuarcate: 95.35%
+
+
+iteration:
+  179
+    0   161   bit_w: 1  loss: 0.10656
+    1   343   bit_w: 1  loss: 0.10643
+    2   300   bit_w:-1  loss: 0.10619
+    3   372   bit_w: 1  loss: 0.10624
+    4   315   bit_w:-1  loss: 0.10595
+    323     73     37    104    441    345    303     93    119    360
+Train accuarcate: 97.48%
+
+
+Test accuarcate: 95.41%
+
+
+iteration:
+  180
+    0   303   bit_w: 1  loss: 0.10574
+    1   332   bit_w: 1  loss: 0.10568
+    2   206   bit_w:-1  loss: 0.10559
+    3   567   bit_w: 1  loss: 0.10553
+    4   300   bit_w: 1  loss: 0.10543
+    464      5    182     47     10     75     15     29    188     10
+Train accuarcate: 97.48%
+
+
+Test accuarcate: 95.39%
+
+
+iteration:
+  181
+    0   207   bit_w: 1  loss: 0.10521
+    1   206   bit_w: 1  loss: 0.10506
+    2   317   bit_w:-1  loss: 0.10488
+    3   758   bit_w: 1  loss: 0.10477
+    4   515   bit_w:-1  loss: 0.10455
+    300     46    385    584    167    259     48    343    253    210
+Train accuarcate: 97.55%
+
+
+Test accuarcate: 95.35%
+
+
+iteration:
+  182
+    0   398   bit_w: 1  loss: 0.10434
+    1   516   bit_w: 1  loss: 0.10413
+    2   520   bit_w:-1  loss: 0.10381
+    3   544   bit_w: 1  loss: 0.10393
+    4   661   bit_w: 1  loss: 0.10372
+    159    628    256     26    146     63    312    139    248    115
+Train accuarcate: 97.56%
+
+
+Test accuarcate: 95.37%
+
+
+iteration:
+  183
+    0   603   bit_w: 1  loss: 0.10352
+    1   475   bit_w: 1  loss: 0.10354
+    2   431   bit_w:-1  loss: 0.10294
+    3   274   bit_w: 1  loss: 0.10322
+    4   458   bit_w:-1  loss: 0.10278
+    631    307    193    473     76    312    167    490    224    113
+Train accuarcate: 97.57%
+
+
+Test accuarcate: 95.33%
+
+
+iteration:
+  184
+    0   573   bit_w:-1  loss: 0.10255
+    1   432   bit_w: 1  loss: 0.10235
+    2   576   bit_w:-1  loss: 0.10222
+    3   518   bit_w:-1  loss: 0.10232
+    4   430   bit_w: 1  loss: 0.10206
+    398    362    423    568    704    490    312    166    621    602
+Train accuarcate: 97.61%
+
+
+Test accuarcate: 95.43%
+
+
+iteration:
+  185
+    0   128   bit_w: 1  loss: 0.10182
+    1   127   bit_w: 1  loss: 0.10170
+    2   239   bit_w:-1  loss: 0.10153
+    3   610   bit_w: 1  loss: 0.10150
+    4   233   bit_w:-1  loss: 0.10147
+    220     85    485    262     19    101    491      0    145      3
+Train accuarcate: 97.64%
+
+
+Test accuarcate: 95.43%
+
+
+iteration:
+  186
+    0   715   bit_w: 1  loss: 0.10129
+    1   383   bit_w: 1  loss: 0.10118
+    2   212   bit_w: 1  loss: 0.10085
+    3   722   bit_w: 1  loss: 0.10087
+    4   189   bit_w:-1  loss: 0.10065
+    245      1    137    162     64     42    111    316    104    439
+Train accuarcate: 97.65%
+
+
+Test accuarcate: 95.46%
+
+
+iteration:
+  187
+    0   348   bit_w: 1  loss: 0.10041
+    1   320   bit_w: 1  loss: 0.10011
+    2   575   bit_w:-1  loss: 0.09988
+    3   212   bit_w:-1  loss: 0.09975
+    4   717   bit_w: 1  loss: 0.09935
+     85     75     31    262    211    372    288    191    327    115
+Train accuarcate: 97.67%
+
+
+Test accuarcate: 95.55%
+
+
+iteration:
+  188
+    0   359   bit_w: 1  loss: 0.09916
+    1   709   bit_w: 1  loss: 0.09907
+    2   189   bit_w:-1  loss: 0.09896
+    3   522   bit_w:-1  loss: 0.09896
+    4   547   bit_w:-1  loss: 0.09873
+    346    726    231    273    244    227    199    413    284    298
+Train accuarcate: 97.69%
+
+
+Test accuarcate: 95.52%
+
+
+iteration:
+  189
+    0   492   bit_w: 1  loss: 0.09851
+    1   142   bit_w: 1  loss: 0.09848
+    2   317   bit_w:-1  loss: 0.09813
+    3     8   bit_w: 1  loss: 0.09821
+    4   355   bit_w:-1  loss: 0.09781
+     19     96    262    267    165    219    188    208    165    110
+Train accuarcate: 97.73%
+
+
+Test accuarcate: 95.55%
+
+
+iteration:
+  190
+    0   398   bit_w: 1  loss: 0.09760
+    1   359   bit_w: 1  loss: 0.09753
+    2   265   bit_w: 1  loss: 0.09744
+    3   458   bit_w:-1  loss: 0.09726
+    4   186   bit_w: 1  loss: 0.09724
+    586     20     55     69     35    178     55    109    129    133
+Train accuarcate: 97.73%
+
+
+Test accuarcate: 95.55%
+
+
+iteration:
+  191
+    0   269   bit_w: 1  loss: 0.09706
+    1   479   bit_w: 1  loss: 0.09697
+    2   209   bit_w:-1  loss: 0.09659
+    3   288   bit_w: 1  loss: 0.09669
+    4   346   bit_w: 1  loss: 0.09660
+    182      3     25    104    305    173     24    428    131    155
+Train accuarcate: 97.76%
+
+
+Test accuarcate: 95.51%
+
+
+iteration:
+  192
+    0   408   bit_w: 1  loss: 0.09637
+    1   214   bit_w:-1  loss: 0.09644
+    2   575   bit_w: 1  loss: 0.09594
+    3   490   bit_w: 1  loss: 0.09603
+    4   429   bit_w: 1  loss: 0.09585
+     89    350    545    243    764    228    846    471    378    618
+Train accuarcate: 97.81%
+
+
+Test accuarcate: 95.51%
+
+
+iteration:
+  193
+    0   349   bit_w: 1  loss: 0.09563
+    1   658   bit_w: 1  loss: 0.09545
+    2   714   bit_w:-1  loss: 0.09503
+    3   410   bit_w:-1  loss: 0.09494
+    4   353   bit_w:-1  loss: 0.09470
+    877    975    301    738    212    763    385    213    747    198
+Train accuarcate: 97.72%
+
+
+Test accuarcate: 95.36%
+
+
+iteration:
+  194
+    0   631   bit_w:-1  loss: 0.09432
+    1   434   bit_w:-1  loss: 0.09421
+    2   487   bit_w: 1  loss: 0.09364
+    3   717   bit_w: 1  loss: 0.09387
+    4   159   bit_w:-1  loss: 0.09323
+    257    162    530    149    387    238    608    580    248    467
+Train accuarcate: 97.79%
+
+
+Test accuarcate: 95.55%
+
+
+iteration:
+  195
+    0   212   bit_w: 1  loss: 0.09298
+    1   703   bit_w: 1  loss: 0.09289
+    2   296   bit_w:-1  loss: 0.09248
+    3   112   bit_w: 1  loss: 0.09270
+    4   542   bit_w:-1  loss: 0.09227
+    378     76     92    210     24    338     46    288    153    560
+Train accuarcate: 97.78%
+
+
+Test accuarcate: 95.58%
+
+
+iteration:
+  196
+    0   686   bit_w: 1  loss: 0.09203
+    1   303   bit_w: 1  loss: 0.09184
+    2   434   bit_w: 1  loss: 0.09175
+    3   219   bit_w: 1  loss: 0.09171
+    4   569   bit_w:-1  loss: 0.09172
+     35    103      7    109    182    149      5     88    251    173
+Train accuarcate: 97.80%
+
+
+Test accuarcate: 95.56%
+
+
+iteration:
+  197
+    0   354   bit_w: 1  loss: 0.09150
+    1   326   bit_w: 1  loss: 0.09144
+    2   426   bit_w:-1  loss: 0.09115
+    3   271   bit_w: 1  loss: 0.09118
+    4   187   bit_w: 1  loss: 0.09104
+    324    135    549    511    556    112    125    780    655    680
+Train accuarcate: 97.80%
+
+
+Test accuarcate: 95.60%
+
+
+iteration:
+  198
+    0   456   bit_w: 1  loss: 0.09078
+    1   183   bit_w:-1  loss: 0.09059
+    2   236   bit_w: 1  loss: 0.09040
+    3   676   bit_w: 1  loss: 0.09047
+    4   626   bit_w:-1  loss: 0.09010
+    133     77    226     75    624    113    494    538     46    442
+Train accuarcate: 97.86%
+
+
+Test accuarcate: 95.55%
+
+
+iteration:
+  199
+    0   578   bit_w: 1  loss: 0.08989
+    1   170   bit_w: 1  loss: 0.08980
+    2   546   bit_w: 1  loss: 0.08958
+    3   406   bit_w:-1  loss: 0.08965
+    4   293   bit_w:-1  loss: 0.08937
+    425     12    504    164    294    155    382    362     89    201
+Train accuarcate: 97.83%
+
+
+Test accuarcate: 95.56%
+
+
+iteration:
+  200
+    0   597   bit_w: 1  loss: 0.08921
+    1   569   bit_w: 1  loss: 0.08911
+    2   455   bit_w:-1  loss: 0.08875
+    3   438   bit_w:-1  loss: 0.08884
+    4   577   bit_w: 1  loss: 0.08853
+    756    375    612    607     65    577    527     79    671    112
+Train accuarcate: 97.86%
+
+
+Test accuarcate: 95.51%
+
+
+iteration:
+  201
+    0   592   bit_w:-1  loss: 0.08839
+    1   614   bit_w:-1  loss: 0.08834
+    2   133   bit_w: 1  loss: 0.08833
+    3   622   bit_w:-1  loss: 0.08831
+    4   630   bit_w: 1  loss: 0.08826
+    930   1121    801    871    979    834   1014   1064    889    976
+Train accuarcate: 97.85%
+
+
+Test accuarcate: 95.50%
+
+
+iteration:
+  202
+    0   536   bit_w: 1  loss: 0.08808
+    1   324   bit_w: 1  loss: 0.08797
+    2   209   bit_w: 1  loss: 0.08749
+    3   558   bit_w: 1  loss: 0.08766
+    4   292   bit_w:-1  loss: 0.08714
+     38     36    233    426     12     35      6    147    138    229
+Train accuarcate: 97.92%
+
+
+Test accuarcate: 95.52%
+
+
+iteration:
+  203
+    0   409   bit_w: 1  loss: 0.08700
+    1   694   bit_w: 1  loss: 0.08685
+    2   237   bit_w:-1  loss: 0.08664
+    3    96   bit_w: 1  loss: 0.08665
+    4   182   bit_w:-1  loss: 0.08613
+     14     17    206     77    634     62    236    152     57     65
+Train accuarcate: 97.89%
+
+
+Test accuarcate: 95.47%
+
+
+iteration:
+  204
+    0   267   bit_w: 1  loss: 0.08595
+    1   103   bit_w: 1  loss: 0.08557
+    2   154   bit_w: 1  loss: 0.08556
+    3   201   bit_w:-1  loss: 0.08557
+    4   245   bit_w: 1  loss: 0.08531
+    472    254    296    355     26    255    160    196    234     47
+Train accuarcate: 97.84%
+
+
+Test accuarcate: 95.48%
+
+
+iteration:
+  205
+    0   439   bit_w: 1  loss: 0.08517
+    1   231   bit_w: 1  loss: 0.08498
+    2   547   bit_w:-1  loss: 0.08497
+    3   741   bit_w: 1  loss: 0.08490
+    4   296   bit_w: 1  loss: 0.08478
+     55      0     61    289    115     55      2    235     58     80
+Train accuarcate: 97.83%
+
+
+Test accuarcate: 95.48%
+
+
+iteration:
+  206
+    0   304   bit_w: 1  loss: 0.08465
+    1   267   bit_w: 1  loss: 0.08455
+    2   596   bit_w: 1  loss: 0.08439
+    3   296   bit_w:-1  loss: 0.08437
+    4   209   bit_w:-1  loss: 0.08435
+    363    203    276    201     31    299    188    205    183     88
+Train accuarcate: 97.83%
+
+
+Test accuarcate: 95.49%
+
+
+iteration:
+  207
+    0   264   bit_w: 1  loss: 0.08417
+    1   622   bit_w: 1  loss: 0.08409
+    2   489   bit_w:-1  loss: 0.08383
+    3    42   bit_w: 1  loss: 0.08388
+    4   329   bit_w:-1  loss: 0.08354
+    365     43     95    373    118    394    228    453    190    363
+Train accuarcate: 97.86%
+
+
+Test accuarcate: 95.51%
+
+
+iteration:
+  208
+    0   464   bit_w: 1  loss: 0.08338
+    1   116   bit_w: 1  loss: 0.08332
+    2   573   bit_w:-1  loss: 0.08301
+    3   196   bit_w:-1  loss: 0.08315
+    4   511   bit_w: 1  loss: 0.08291
+    400     37    516    330    563    283    179    312    389    496
+Train accuarcate: 97.91%
+
+
+Test accuarcate: 95.52%
+
+
+iteration:
+  209
+    0   398   bit_w: 1  loss: 0.08277
+    1     1   bit_w: 1  loss: 0.08265
+    2   385   bit_w:-1  loss: 0.08267
+    3   567   bit_w: 1  loss: 0.08265
+    4   347   bit_w:-1  loss: 0.08236
+    307     28    449    157    181    102     42     38    121    110
+Train accuarcate: 97.91%
+
+
+Test accuarcate: 95.47%
+
+
+iteration:
+  210
+    0   604   bit_w: 1  loss: 0.08221
+    1    93   bit_w: 1  loss: 0.08206
+    2   215   bit_w:-1  loss: 0.08179
+    3   371   bit_w: 1  loss: 0.08181
+    4   486   bit_w:-1  loss: 0.08165
+    476    158    108    373    301    259    234    311    131    288
+Train accuarcate: 97.95%
+
+
+Test accuarcate: 95.46%
+
+
+iteration:
+  211
+    0   678   bit_w: 1  loss: 0.08151
+    1   467   bit_w: 1  loss: 0.08136
+    2   371   bit_w:-1  loss: 0.08112
+    3   508   bit_w: 1  loss: 0.08117
+    4   262   bit_w:-1  loss: 0.08087
+    228      7    287    478     92    104    370     59     49     18
+Train accuarcate: 97.96%
+
+
+Test accuarcate: 95.41%
+
+
+iteration:
+  212
+    0   469   bit_w:-1  loss: 0.08073
+    1   724   bit_w:-1  loss: 0.08061
+    2   242   bit_w:-1  loss: 0.08051
+    3     9   bit_w:-1  loss: 0.08055
+    4   285   bit_w: 1  loss: 0.08038
+    609   1127    924    941    931    846   1010   1058    930    963
+Train accuarcate: 97.98%
+
+
+Test accuarcate: 95.44%
+
+
+iteration:
+  213
+    0   571   bit_w: 1  loss: 0.08025
+    1   600   bit_w: 1  loss: 0.08006
+    2   270   bit_w:-1  loss: 0.08016
+    3   273   bit_w: 1  loss: 0.07997
+    4   268   bit_w:-1  loss: 0.07994
+    636    305    510    232    272    352    869    180    507    201
+Train accuarcate: 97.96%
+
+
+Test accuarcate: 95.46%
+
+
+iteration:
+  214
+    0   242   bit_w: 1  loss: 0.07980
+    1    89   bit_w: 1  loss: 0.07972
+    2   239   bit_w: 1  loss: 0.07942
+    3   697   bit_w: 1  loss: 0.07948
+    4   240   bit_w: 1  loss: 0.07932
+    462    124    129    192     15    270     10    611    168    365
+Train accuarcate: 98.00%
+
+
+Test accuarcate: 95.50%
+
+
+iteration:
+  215
+    0   434   bit_w: 1  loss: 0.07915
+    1   715   bit_w:-1  loss: 0.07896
+    2   461   bit_w: 1  loss: 0.07886
+    3   487   bit_w: 1  loss: 0.07888
+    4   174   bit_w:-1  loss: 0.07863
+    107   1119    855    403    865    457    812    253    891    631
+Train accuarcate: 98.05%
+
+
+Test accuarcate: 95.53%
+
+
+iteration:
+  216
+    0   351   bit_w: 1  loss: 0.07841
+    1   746   bit_w: 1  loss: 0.07826
+    2   514   bit_w:-1  loss: 0.07795
+    3   422   bit_w: 1  loss: 0.07802
+    4   356   bit_w:-1  loss: 0.07782
+     12    760     82    715    164    208     23    141    177    320
+Train accuarcate: 98.05%
+
+
+Test accuarcate: 95.57%
+
+
+iteration:
+  217
+    0   233   bit_w: 1  loss: 0.07764
+    1   202   bit_w: 1  loss: 0.07745
+    2   541   bit_w:-1  loss: 0.07749
+    3   135   bit_w: 1  loss: 0.07756
+    4   201   bit_w:-1  loss: 0.07738
+     97      9    105    293    290    199     71    531    185    226
+Train accuarcate: 98.05%
+
+
+Test accuarcate: 95.61%
+
+
+iteration:
+  218
+    0   661   bit_w:-1  loss: 0.07721
+    1   605   bit_w:-1  loss: 0.07705
+    2   346   bit_w: 1  loss: 0.07685
+    3   665   bit_w:-1  loss: 0.07680
+    4   486   bit_w: 1  loss: 0.07660
+    750   1055    787    519    782    676    965    924    733    766
+Train accuarcate: 97.99%
+
+
+Test accuarcate: 95.61%
+
+
+iteration:
+  219
+    0   158   bit_w: 1  loss: 0.07644
+    1   440   bit_w: 1  loss: 0.07631
+    2   496   bit_w:-1  loss: 0.07628
+    3   723   bit_w: 1  loss: 0.07621
+    4   542   bit_w:-1  loss: 0.07601
+    372    134    172    334    272    216     83    108    179     49
+Train accuarcate: 98.03%
+
+
+Test accuarcate: 95.68%
+
+
+iteration:
+  220
+    0   299   bit_w: 1  loss: 0.07585
+    1   327   bit_w: 1  loss: 0.07580
+    2   570   bit_w:-1  loss: 0.07565
+    3   695   bit_w: 1  loss: 0.07557
+    4   459   bit_w:-1  loss: 0.07542
+    427      7    273    330    477     66     48    709    288    528
+Train accuarcate: 98.06%
+
+
+Test accuarcate: 95.69%
+
+
+iteration:
+  221
+    0   147   bit_w: 1  loss: 0.07528
+    1   484   bit_w: 1  loss: 0.07516
+    2   411   bit_w:-1  loss: 0.07497
+    3   349   bit_w: 1  loss: 0.07488
+    4   461   bit_w:-1  loss: 0.07493
+    470     58    142    449     84    284    190     28    212     90
+Train accuarcate: 98.11%
+
+
+Test accuarcate: 95.72%
+
+
+iteration:
+  222
+    0   579   bit_w: 1  loss: 0.07477
+    1   678   bit_w: 1  loss: 0.07461
+    2   456   bit_w:-1  loss: 0.07440
+    3   524   bit_w: 1  loss: 0.07453
+    4   469   bit_w:-1  loss: 0.07430
+    172     21    406    455     66    238    183     68    223     96
+Train accuarcate: 98.11%
+
+
+Test accuarcate: 95.73%
+
+
+iteration:
+  223
+    0   147   bit_w: 1  loss: 0.07417
+    1   517   bit_w: 1  loss: 0.07405
+    2   604   bit_w: 1  loss: 0.07376
+    3    74   bit_w: 1  loss: 0.07383
+    4   455   bit_w:-1  loss: 0.07362
+      4     93    205     85     22     22    267     33    162     21
+Train accuarcate: 98.13%
+
+
+Test accuarcate: 95.72%
+
+
+iteration:
+  224
+    0   269   bit_w: 1  loss: 0.07346
+    1   612   bit_w: 1  loss: 0.07336
+    2   349   bit_w:-1  loss: 0.07310
+    3   497   bit_w: 1  loss: 0.07317
+    4   551   bit_w:-1  loss: 0.07296
+    312    359    355    120    315    160     52    754    136    375
+Train accuarcate: 98.16%
+
+
+Test accuarcate: 95.73%
+
+
+iteration:
+  225
+    0   201   bit_w: 1  loss: 0.07284
+    1   383   bit_w: 1  loss: 0.07274
+    2   407   bit_w:-1  loss: 0.07270
+    3   613   bit_w:-1  loss: 0.07258
+    4   385   bit_w: 1  loss: 0.07262
+    821      1    280    175    288    109    342    481     92    184
+Train accuarcate: 98.16%
+
+
+Test accuarcate: 95.73%
+
+
+iteration:
+  226
+    0   186   bit_w: 1  loss: 0.07247
+    1   362   bit_w: 1  loss: 0.07236
+    2   484   bit_w:-1  loss: 0.07224
+    3   256   bit_w: 1  loss: 0.07229
+    4   514   bit_w:-1  loss: 0.07203
+    167    249     86    482    150    325      8    171    143    196
+Train accuarcate: 98.23%
+
+
+Test accuarcate: 95.76%
+
+
+iteration:
+  227
+    0   102   bit_w: 1  loss: 0.07190
+    1   207   bit_w: 1  loss: 0.07158
+    2   373   bit_w: 1  loss: 0.07154
+    3   680   bit_w: 1  loss: 0.07163
+    4   679   bit_w:-1  loss: 0.07155
+    307      1     58    151    209    198    374     95    177    230
+Train accuarcate: 98.24%
+
+
+Test accuarcate: 95.78%
+
+
+iteration:
+  228
+    0   201   bit_w: 1  loss: 0.07144
+    1   263   bit_w:-1  loss: 0.07130
+    2   484   bit_w: 1  loss: 0.07118
+    3   437   bit_w:-1  loss: 0.07117
+    4   181   bit_w: 1  loss: 0.07107
+    520    232    454    332     60    102    230     40    205     43
+Train accuarcate: 98.25%
+
+
+Test accuarcate: 95.75%
+
+
+iteration:
+  229
+    0   538   bit_w:-1  loss: 0.07093
+    1   329   bit_w:-1  loss: 0.07077
+    2   597   bit_w:-1  loss: 0.07074
+    3   171   bit_w:-1  loss: 0.07062
+    4   439   bit_w: 1  loss: 0.07061
+    439   1126    761    950    976    728    988   1048    821    961
+Train accuarcate: 98.25%
+
+
+Test accuarcate: 95.71%
+
+
+iteration:
+  230
+    0   426   bit_w: 1  loss: 0.07050
+    1     8   bit_w: 1  loss: 0.07031
+    2   656   bit_w:-1  loss: 0.07037
+    3   402   bit_w: 1  loss: 0.07028
+    4   214   bit_w: 1  loss: 0.07006
+    311      2    143     63    305     88     72     32     42    158
+Train accuarcate: 98.27%
+
+
+Test accuarcate: 95.71%
+
+
+iteration:
+  231
+    0   404   bit_w: 1  loss: 0.06995
+    1   476   bit_w: 1  loss: 0.06990
+    2   462   bit_w: 1  loss: 0.06976
+    3   211   bit_w:-1  loss: 0.06957
+    4   317   bit_w:-1  loss: 0.06944
+     11    651    516    333    511    284    348    110    474    107
+Train accuarcate: 98.31%
+
+
+Test accuarcate: 95.70%
+
+
+iteration:
+  232
+    0   304   bit_w: 1  loss: 0.06933
+    1   286   bit_w: 1  loss: 0.06924
+    2   550   bit_w:-1  loss: 0.06915
+    3   182   bit_w: 1  loss: 0.06920
+    4   297   bit_w: 1  loss: 0.06894
+    106     34    151    206     36     47      9    233    235    211
+Train accuarcate: 98.34%
+
+
+Test accuarcate: 95.75%
+
+
+iteration:
+  233
+    0   101   bit_w:-1  loss: 0.06884
+    1   525   bit_w:-1  loss: 0.06874
+    2   260   bit_w:-1  loss: 0.06865
+    3    53   bit_w:-1  loss: 0.06860
+    4   246   bit_w: 1  loss: 0.06858
+    844   1127    919    985    967    801    858   1054    910    964
+Train accuarcate: 98.31%
+
+
+Test accuarcate: 95.81%
+
+
+iteration:
+  234
+    0   472   bit_w: 1  loss: 0.06846
+    1   541   bit_w: 1  loss: 0.06835
+    2   411   bit_w:-1  loss: 0.06817
+    3   441   bit_w:-1  loss: 0.06819
+    4   511   bit_w: 1  loss: 0.06799
+    382    139    610    104     53    212    254      8    492     24
+Train accuarcate: 98.35%
+
+
+Test accuarcate: 95.87%
+
+
+iteration:
+  235
+    0   517   bit_w:-1  loss: 0.06788
+    1    93   bit_w: 1  loss: 0.06780
+    2   272   bit_w:-1  loss: 0.06738
+    3   745   bit_w: 1  loss: 0.06733
+    4   515   bit_w:-1  loss: 0.06713
+    283    121    103    700    401    572    156    392    121    508
+Train accuarcate: 98.35%
+
+
+Test accuarcate: 95.88%
+
+
+iteration:
+  236
+    0   102   bit_w: 1  loss: 0.06701
+    1   464   bit_w:-1  loss: 0.06692
+    2   596   bit_w:-1  loss: 0.06673
+    3   262   bit_w:-1  loss: 0.06651
+    4   342   bit_w: 1  loss: 0.06653
+    183    844    171    257    195    187    495    148    168    126
+Train accuarcate: 98.37%
+
+
+Test accuarcate: 95.82%
+
+
+iteration:
+  237
+    0   215   bit_w: 1  loss: 0.06641
+    1    94   bit_w: 1  loss: 0.06628
+    2   377   bit_w: 1  loss: 0.06621
+    3   212   bit_w:-1  loss: 0.06621
+    4   207   bit_w: 1  loss: 0.06607
+     85    129    179    384    162    206     79     19    342     60
+Train accuarcate: 98.44%
+
+
+Test accuarcate: 95.82%
+
+
+iteration:
+  238
+    0   718   bit_w:-1  loss: 0.06596
+    1   332   bit_w:-1  loss: 0.06591
+    2   546   bit_w: 1  loss: 0.06585
+    3   228   bit_w:-1  loss: 0.06582
+    4   200   bit_w: 1  loss: 0.06575
+    952   1127    988   1012    957    859   1013   1019    916    870
+Train accuarcate: 98.44%
+
+
+Test accuarcate: 95.80%
+
+
+iteration:
+  239
+    0   303   bit_w: 1  loss: 0.06563
+    1   658   bit_w: 1  loss: 0.06545
+    2   297   bit_w: 1  loss: 0.06528
+    3   300   bit_w: 1  loss: 0.06525
+    4   371   bit_w:-1  loss: 0.06504
+    316     34    109    465    136    110     20    472    499    210
+Train accuarcate: 98.50%
+
+
+Test accuarcate: 95.71%
+
+
+iteration:
+  240
+    0   248   bit_w: 1  loss: 0.06494
+    1   292   bit_w: 1  loss: 0.06487
+    2   267   bit_w:-1  loss: 0.06461
+    3   104   bit_w: 1  loss: 0.06465
+    4   317   bit_w:-1  loss: 0.06447
+    101     46     56     29    203    236    401     33    303    114
+Train accuarcate: 98.52%
+
+
+Test accuarcate: 95.71%
+
+
+iteration:
+  241
+    0   565   bit_w: 1  loss: 0.06436
+    1   315   bit_w: 1  loss: 0.06427
+    2   265   bit_w:-1  loss: 0.06420
+    3   213   bit_w: 1  loss: 0.06419
+    4   346   bit_w: 1  loss: 0.06413
+    413      0    124    249    184    196     26     64    247    237
+Train accuarcate: 98.54%
+
+
+Test accuarcate: 95.68%
+
+
+iteration:
+  242
+    0   472   bit_w: 1  loss: 0.06404
+    1   342   bit_w: 1  loss: 0.06399
+    2   344   bit_w:-1  loss: 0.06384
+    3   181   bit_w: 1  loss: 0.06382
+    4   404   bit_w:-1  loss: 0.06353
+    314    194    421    239     81    126    238    126    140    130
+Train accuarcate: 98.54%
+
+
+Test accuarcate: 95.68%
+
+
+iteration:
+  243
+    0   472   bit_w:-1  loss: 0.06343
+    1   526   bit_w:-1  loss: 0.06334
+    2   580   bit_w: 1  loss: 0.06325
+    3   155   bit_w:-1  loss: 0.06325
+    4   272   bit_w: 1  loss: 0.06305
+    789    752    633    643    932    671    488   1056    689    959
+Train accuarcate: 98.55%
+
+
+Test accuarcate: 95.71%
+
+
+iteration:
+  244
+    0   693   bit_w:-1  loss: 0.06293
+    1   341   bit_w:-1  loss: 0.06286
+    2   410   bit_w:-1  loss: 0.06277
+    3   555   bit_w:-1  loss: 0.06275
+    4    99   bit_w: 1  loss: 0.06279
+    985   1127    942   1019    916    851    999    983    925    908
+Train accuarcate: 98.54%
+
+
+Test accuarcate: 95.73%
+
+
+iteration:
+  245
+    0   304   bit_w:-1  loss: 0.06269
+    1   218   bit_w:-1  loss: 0.06268
+    2   483   bit_w:-1  loss: 0.06261
+    3   623   bit_w:-1  loss: 0.06257
+    4   455   bit_w:-1  loss: 0.06251
+    637   1127    887   1018    910    834   1003   1068    904    972
+Train accuarcate: 98.54%
+
+
+Test accuarcate: 95.71%
+
+
+iteration:
+  246
+    0   304   bit_w: 1  loss: 0.06240
+    1   599   bit_w:-1  loss: 0.06232
+    2   236   bit_w: 1  loss: 0.06215
+    3   750   bit_w: 1  loss: 0.06216
+    4   238   bit_w: 1  loss: 0.06199
+    163     91    118    120     50    152     64    440    144    482
+Train accuarcate: 98.59%
+
+
+Test accuarcate: 95.74%
+
+
+iteration:
+  247
+    0   456   bit_w: 1  loss: 0.06184
+    1   534   bit_w: 1  loss: 0.06177
+    2   234   bit_w:-1  loss: 0.06156
+    3   155   bit_w: 1  loss: 0.06160
+    4   179   bit_w:-1  loss: 0.06139
+    504    372    416    207    417    120    578     34    217    142
+Train accuarcate: 98.53%
+
+
+Test accuarcate: 95.85%
+
+
+iteration:
+  248
+    0   304   bit_w: 1  loss: 0.06128
+    1   214   bit_w:-1  loss: 0.06118
+    2   654   bit_w: 1  loss: 0.06110
+    3   290   bit_w: 1  loss: 0.06106
+    4   234   bit_w:-1  loss: 0.06095
+    300     90     51    213    230    248    183    306    273    255
+Train accuarcate: 98.59%
+
+
+Test accuarcate: 95.86%
+
+
+iteration:
+  249
+    0   134   bit_w:-1  loss: 0.06084
+    1   563   bit_w:-1  loss: 0.06079
+    2   259   bit_w: 1  loss: 0.06074
+    3   609   bit_w:-1  loss: 0.06072
+    4   234   bit_w: 1  loss: 0.06064
+    987   1107    827    935    937    816    988   1069    924    977
+Train accuarcate: 98.59%
+
+
+Test accuarcate: 95.86%
+
+
+iteration:
+  250
+    0   129   bit_w:-1  loss: 0.06054
+    1   442   bit_w:-1  loss: 0.06040
+    2   548   bit_w: 1  loss: 0.06040
+    3   131   bit_w:-1  loss: 0.06030
+    4   233   bit_w: 1  loss: 0.06027
+    746    825    762    914    906    780    705   1064    849    975
+Train accuarcate: 98.66%
+
+
+Test accuarcate: 95.82%
+
+
+iteration:
+  251
+    0   292   bit_w:-1  loss: 0.06014
+    1   437   bit_w: 1  loss: 0.06008
+    2   487   bit_w:-1  loss: 0.05991
+    3   140   bit_w: 1  loss: 0.05981
+    4   463   bit_w: 1  loss: 0.05979
+     27    378    551    654    713    270    287    749    241    669
+Train accuarcate: 98.66%
+
+
+Test accuarcate: 95.88%
+
+
+iteration:
+  252
+    0   430   bit_w:-1  loss: 0.05969
+    1   457   bit_w:-1  loss: 0.05947
+    2   160   bit_w: 1  loss: 0.05931
+    3   403   bit_w:-1  loss: 0.05932
+    4   571   bit_w: 1  loss: 0.05909
+    581   1110    603    552    108    437    289    951    554    183
+Train accuarcate: 98.66%
+
+
+Test accuarcate: 95.88%
+
+
+iteration:
+  253
+    0   347   bit_w: 1  loss: 0.05893
+    1   237   bit_w:-1  loss: 0.05874
+    2   154   bit_w:-1  loss: 0.05857
+    3   375   bit_w: 1  loss: 0.05858
+    4   210   bit_w:-1  loss: 0.05841
+    283    630    163    504    871    604    566    321    486    317
+Train accuarcate: 98.64%
+
+
+Test accuarcate: 95.89%
+
+
+iteration:
+  254
+    0   181   bit_w: 1  loss: 0.05829
+    1   375   bit_w:-1  loss: 0.05810
+    2   516   bit_w: 1  loss: 0.05801
+    3   295   bit_w:-1  loss: 0.05787
+    4   260   bit_w: 1  loss: 0.05777
+    466    213    728    233    303    176    497    442    517    330
+Train accuarcate: 98.64%
+
+
+Test accuarcate: 95.90%
+
+
+iteration:
+  255
+    0   371   bit_w:-1  loss: 0.05762
+    1   529   bit_w:-1  loss: 0.05748
+    2   260   bit_w:-1  loss: 0.05742
+    3   738   bit_w:-1  loss: 0.05735
+    4   596   bit_w: 1  loss: 0.05730
+    931   1126    980   1032    799    815    931    894    914    819
+Train accuarcate: 98.69%
+
+
+Test accuarcate: 95.93%
+
+
+iteration:
+  256
+    0   256   bit_w:-1  loss: 0.05716
+    1     0   bit_w:-1  loss: 0.05711
+    2   682   bit_w: 1  loss: 0.05711
+    3   530   bit_w:-1  loss: 0.05710
+    4   150   bit_w: 1  loss: 0.05708
+   1001   1127    984   1016    966    862   1013    983    941    976
+Train accuarcate: 98.68%
+
+
+Test accuarcate: 95.88%
+
+
+iteration:
+  257
+    0   379   bit_w: 1  loss: 0.05696
+    1   387   bit_w: 1  loss: 0.05681
+    2   296   bit_w:-1  loss: 0.05651
+    3   690   bit_w: 1  loss: 0.05664
+    4   680   bit_w:-1  loss: 0.05628
+    254    260    162    273    241    303    435     51    466    436
+Train accuarcate: 98.67%
+
+
+Test accuarcate: 95.89%
+
+
+iteration:
+  258
+    0   241   bit_w: 1  loss: 0.05613
+    1   687   bit_w: 1  loss: 0.05609
+    2   458   bit_w: 1  loss: 0.05595
+    3    98   bit_w:-1  loss: 0.05591
+    4   435   bit_w:-1  loss: 0.05581
+    723    203    375    428    398    329    227    533    387    537
+Train accuarcate: 98.76%
+
+
+Test accuarcate: 95.90%
+
+
+iteration:
+  259
+    0   101   bit_w: 1  loss: 0.05570
+    1   489   bit_w: 1  loss: 0.05552
+    2   467   bit_w: 1  loss: 0.05554
+    3    52   bit_w: 1  loss: 0.05553
+    4   359   bit_w:-1  loss: 0.05546
+     20      6    253     27    218      9    490     61     46     78
+Train accuarcate: 98.78%
+
+
+Test accuarcate: 95.88%
+
+
+iteration:
+  260
+    0   357   bit_w: 1  loss: 0.05536
+    1   129   bit_w: 1  loss: 0.05531
+    2   572   bit_w:-1  loss: 0.05511
+    3   462   bit_w: 1  loss: 0.05514
+    4   461   bit_w:-1  loss: 0.05516
+    475    119    214    183    160    128    193    181    170    113
+Train accuarcate: 98.80%
+
+
+Test accuarcate: 95.86%
+
+
+iteration:
+  261
+    0   121   bit_w: 1  loss: 0.05507
+    1   494   bit_w: 1  loss: 0.05492
+    2   345   bit_w:-1  loss: 0.05486
+    3   390   bit_w: 1  loss: 0.05475
+    4   230   bit_w:-1  loss: 0.05474
+    132      6    441    529    117    140    351    102    141    113
+Train accuarcate: 98.82%
+
+
+Test accuarcate: 95.94%
+
+
+iteration:
+  262
+    0   286   bit_w: 1  loss: 0.05464
+    1   116   bit_w: 1  loss: 0.05455
+    2   545   bit_w:-1  loss: 0.05455
+    3   318   bit_w:-1  loss: 0.05445
+    4   625   bit_w: 1  loss: 0.05439
+    212    185    135    548     86    127     13    151    204     79
+Train accuarcate: 98.82%
+
+
+Test accuarcate: 95.91%
+
+
+iteration:
+  263
+    0   621   bit_w: 1  loss: 0.05431
+    1   514   bit_w: 1  loss: 0.05422
+    2   346   bit_w:-1  loss: 0.05426
+    3   269   bit_w: 1  loss: 0.05412
+    4   274   bit_w:-1  loss: 0.05405
+    234    549    712    510    246     98    307    589    373    306
+Train accuarcate: 98.84%
+
+
+Test accuarcate: 95.84%
+
+
+iteration:
+  264
+    0   348   bit_w: 1  loss: 0.05393
+    1   563   bit_w: 1  loss: 0.05383
+    2   266   bit_w:-1  loss: 0.05364
+    3   723   bit_w: 1  loss: 0.05373
+    4   663   bit_w:-1  loss: 0.05351
+     21      6     60    394    100    261    140     29    398     58
+Train accuarcate: 98.86%
+
+
+Test accuarcate: 95.86%
+
+
+iteration:
+  265
+    0   400   bit_w: 1  loss: 0.05339
+    1   735   bit_w: 1  loss: 0.05325
+    2   431   bit_w:-1  loss: 0.05317
+    3   378   bit_w:-1  loss: 0.05312
+    4   570   bit_w: 1  loss: 0.05300
+    756     10    326     40    174    153    400    234     90    153
+Train accuarcate: 98.89%
+
+
+Test accuarcate: 95.91%
+
+
+iteration:
+  266
+    0   189   bit_w: 1  loss: 0.05289
+    1   319   bit_w: 1  loss: 0.05280
+    2   516   bit_w:-1  loss: 0.05262
+    3   734   bit_w: 1  loss: 0.05253
+    4   457   bit_w:-1  loss: 0.05238
+    352     24     23    291    196    564     46    276    279    255
+Train accuarcate: 98.97%
+
+
+Test accuarcate: 95.91%
+
+
+iteration:
+  267
+    0   275   bit_w: 1  loss: 0.05229
+    1   485   bit_w: 1  loss: 0.05224
+    2   317   bit_w: 1  loss: 0.05216
+    3   429   bit_w: 1  loss: 0.05210
+    4   210   bit_w:-1  loss: 0.05194
+    352      2     90      5    545    126    378     57    142    161
+Train accuarcate: 98.96%
+
+
+Test accuarcate: 95.93%
+
+
+iteration:
+  268
+    0   129   bit_w:-1  loss: 0.05183
+    1   108   bit_w:-1  loss: 0.05174
+    2   462   bit_w: 1  loss: 0.05162
+    3   502   bit_w:-1  loss: 0.05160
+    4   621   bit_w: 1  loss: 0.05159
+    786   1111    920    898    972    779    845   1070    902    978
+Train accuarcate: 99.01%
+
+
+Test accuarcate: 95.91%
+
+
+iteration:
+  269
+    0   215   bit_w: 1  loss: 0.05150
+    1    48   bit_w: 1  loss: 0.05131
+    2   270   bit_w:-1  loss: 0.05123
+    3   187   bit_w: 1  loss: 0.05129
+    4   598   bit_w:-1  loss: 0.05118
+    348     40    216    222    262    328     39     67    335    192
+Train accuarcate: 99.04%
+
+
+Test accuarcate: 95.94%
+
+
+iteration:
+  270
+    0   572   bit_w: 1  loss: 0.05109
+    1   112   bit_w: 1  loss: 0.05088
+    2   657   bit_w: 1  loss: 0.05089
+    3   212   bit_w:-1  loss: 0.05085
+    4   189   bit_w:-1  loss: 0.05061
+    248    382    274    285    275    290    615    411    369     90
+Train accuarcate: 99.07%
+
+
+Test accuarcate: 95.89%
+
+
+iteration:
+  271
+    0   102   bit_w: 1  loss: 0.05052
+    1   323   bit_w: 1  loss: 0.05045
+    2   606   bit_w: 1  loss: 0.05042
+    3   544   bit_w: 1  loss: 0.05037
+    4   345   bit_w: 1  loss: 0.05032
+    100     13    105     96     46     65    221     28    125     57
+Train accuarcate: 99.07%
+
+
+Test accuarcate: 95.91%
+
+
+iteration:
+  272
+    0   711   bit_w: 1  loss: 0.05023
+    1   651   bit_w: 1  loss: 0.05015
+    2   595   bit_w:-1  loss: 0.05004
+    3   439   bit_w: 1  loss: 0.05001
+    4   513   bit_w:-1  loss: 0.04992
+     97     21     64    356    381    202    143    557     63    360
+Train accuarcate: 99.10%
+
+
+Test accuarcate: 95.93%
+
+
+iteration:
+  273
+    0   248   bit_w: 1  loss: 0.04984
+    1   712   bit_w: 1  loss: 0.04980
+    2   410   bit_w:-1  loss: 0.04969
+    3   434   bit_w:-1  loss: 0.04961
+    4   234   bit_w:-1  loss: 0.04951
+    398     22    111    210     96    337    162    246     87    185
+Train accuarcate: 99.06%
+
+
+Test accuarcate: 95.92%
+
+
+iteration:
+  274
+    0   130   bit_w: 1  loss: 0.04942
+    1   771   bit_w:-1  loss: 0.04931
+    2   124   bit_w: 1  loss: 0.04926
+    3   627   bit_w: 1  loss: 0.04924
+    4   542   bit_w: 1  loss: 0.04914
+    463    297    560    364      8    150    498     11    450      6
+Train accuarcate: 99.05%
+
+
+Test accuarcate: 95.89%
+
+
+iteration:
+  275
+    0   492   bit_w: 1  loss: 0.04904
+    1   649   bit_w: 1  loss: 0.04889
+    2   292   bit_w:-1  loss: 0.04882
+    3   647   bit_w: 1  loss: 0.04883
+    4   316   bit_w:-1  loss: 0.04865
+     20     50    548    342    185     97     86    281    144    171
+Train accuarcate: 99.06%
+
+
+Test accuarcate: 95.93%
+
+
+iteration:
+  276
+    0   356   bit_w:-1  loss: 0.04857
+    1   481   bit_w:-1  loss: 0.04841
+    2   715   bit_w: 1  loss: 0.04840
+    3   394   bit_w:-1  loss: 0.04843
+    4   129   bit_w: 1  loss: 0.04834
+    365   1126    759    934    698    804    803    761    760    750
+Train accuarcate: 99.05%
+
+
+Test accuarcate: 95.87%
+
+
+iteration:
+  277
+    0   302   bit_w: 1  loss: 0.04824
+    1   329   bit_w: 1  loss: 0.04816
+    2   633   bit_w: 1  loss: 0.04813
+    3   377   bit_w:-1  loss: 0.04810
+    4   549   bit_w:-1  loss: 0.04807
+    609      7    198     85    138    116     90    202    195    108
+Train accuarcate: 99.06%
+
+
+Test accuarcate: 95.83%
+
+
+iteration:
+  278
+    0   370   bit_w: 1  loss: 0.04798
+    1   546   bit_w: 1  loss: 0.04791
+    2   520   bit_w:-1  loss: 0.04777
+    3   415   bit_w: 1  loss: 0.04762
+    4   386   bit_w:-1  loss: 0.04757
+    271    493    162     55    322    152    270    357    232    294
+Train accuarcate: 99.07%
+
+
+Test accuarcate: 95.86%
+
+
+iteration:
+  279
+    0   121   bit_w: 1  loss: 0.04750
+    1   343   bit_w: 1  loss: 0.04744
+    2   457   bit_w:-1  loss: 0.04731
+    3   242   bit_w:-1  loss: 0.04727
+    4   345   bit_w: 1  loss: 0.04725
+    315      8     56    103    257    267    166    210    149    255
+Train accuarcate: 99.08%
+
+
+Test accuarcate: 95.90%
+
+
+iteration:
+  280
+    0   101   bit_w: 1  loss: 0.04718
+    1   296   bit_w: 1  loss: 0.04703
+    2   234   bit_w: 1  loss: 0.04712
+    3   132   bit_w: 1  loss: 0.04701
+    4   521   bit_w:-1  loss: 0.04702
+     65     84     81    101     49     39     39    175     67     55
+Train accuarcate: 99.10%
+
+
+Test accuarcate: 95.88%
+
+
+iteration:
+  281
+    0   101   bit_w: 1  loss: 0.04695
+    1   259   bit_w: 1  loss: 0.04687
+    2   233   bit_w:-1  loss: 0.04685
+    3    98   bit_w: 1  loss: 0.04682
+    4   622   bit_w:-1  loss: 0.04672
+     31     13    178     40     71     19    535    119     26      6
+Train accuarcate: 99.12%
+
+
+Test accuarcate: 95.90%
+
+
+iteration:
+  282
+    0   201   bit_w: 1  loss: 0.04665
+    1   240   bit_w: 1  loss: 0.04657
+    2   354   bit_w: 1  loss: 0.04640
+    3   521   bit_w: 1  loss: 0.04642
+    4   235   bit_w:-1  loss: 0.04624
+    286     23    372    390    261    125    228    388    200    385
+Train accuarcate: 99.13%
+
+
+Test accuarcate: 95.99%
+
+
+iteration:
+  283
+    0   405   bit_w: 1  loss: 0.04617
+    1   128   bit_w: 1  loss: 0.04602
+    2   486   bit_w:-1  loss: 0.04591
+    3   116   bit_w: 1  loss: 0.04594
+    4   514   bit_w:-1  loss: 0.04573
+    202    710    198    729    344    454    144     40    270    457
+Train accuarcate: 99.15%
+
+
+Test accuarcate: 95.98%
+
+
+iteration:
+  284
+    0   121   bit_w: 1  loss: 0.04565
+    1   486   bit_w: 1  loss: 0.04554
+    2   185   bit_w: 1  loss: 0.04553
+    3   328   bit_w: 1  loss: 0.04548
+    4   572   bit_w:-1  loss: 0.04532
+    368     16    311    107    175     28     61     20    439    203
+Train accuarcate: 99.18%
+
+
+Test accuarcate: 95.97%
+
+
+iteration:
+  285
+    0   304   bit_w: 1  loss: 0.04524
+    1   202   bit_w: 1  loss: 0.04517
+    2   634   bit_w:-1  loss: 0.04516
+    3   597   bit_w: 1  loss: 0.04513
+    4   156   bit_w:-1  loss: 0.04513
+    252    251    180    145     56    284     87    153    159     34
+Train accuarcate: 99.17%
+
+
+Test accuarcate: 95.98%
+
+
+iteration:
+  286
+    0   121   bit_w: 1  loss: 0.04506
+    1   246   bit_w: 1  loss: 0.04499
+    2   624   bit_w:-1  loss: 0.04496
+    3   600   bit_w:-1  loss: 0.04483
+    4   544   bit_w: 1  loss: 0.04480
+     67     81    330     33    173    151    268     87    147     60
+Train accuarcate: 99.18%
+
+
+Test accuarcate: 95.97%
+
+
+iteration:
+  287
+    0   158   bit_w: 1  loss: 0.04472
+    1   567   bit_w: 1  loss: 0.04462
+    2   326   bit_w:-1  loss: 0.04462
+    3   129   bit_w: 1  loss: 0.04453
+    4   322   bit_w:-1  loss: 0.04453
+    628    225    497    250     66    375    439      1    280      8
+Train accuarcate: 99.17%
+
+
+Test accuarcate: 95.99%
+
+
+iteration:
+  288
+    0   469   bit_w:-1  loss: 0.04446
+    1    96   bit_w:-1  loss: 0.04435
+    2   581   bit_w: 1  loss: 0.04428
+    3   281   bit_w:-1  loss: 0.04432
+    4   121   bit_w: 1  loss: 0.04426
+    531   1125    847    940    895    805    646   1019    933    960
+Train accuarcate: 99.16%
+
+
+Test accuarcate: 95.88%
+
+
+iteration:
+  289
+    0   201   bit_w: 1  loss: 0.04419
+    1   205   bit_w: 1  loss: 0.04405
+    2   181   bit_w:-1  loss: 0.04400
+    3   262   bit_w: 1  loss: 0.04401
+    4   209   bit_w:-1  loss: 0.04381
+     85      7     91     67    428    109    143    577     83     82
+Train accuarcate: 99.17%
+
+
+Test accuarcate: 95.88%
+
+
+iteration:
+  290
+    0   459   bit_w: 1  loss: 0.04372
+    1   681   bit_w: 1  loss: 0.04360
+    2   572   bit_w:-1  loss: 0.04342
+    3   700   bit_w: 1  loss: 0.04348
+    4   570   bit_w:-1  loss: 0.04323
+     71     21    144    254    490    189     34     75    257    418
+Train accuarcate: 99.15%
+
+
+Test accuarcate: 95.85%
+
+
+iteration:
+  291
+    0   201   bit_w: 1  loss: 0.04316
+    1   269   bit_w:-1  loss: 0.04307
+    2   263   bit_w:-1  loss: 0.04298
+    3   499   bit_w: 1  loss: 0.04291
+    4   380   bit_w: 1  loss: 0.04283
+     35     77    236    282    176    104    279     52    228     83
+Train accuarcate: 99.13%
+
+
+Test accuarcate: 95.79%
+
+
+iteration:
+  292
+    0   631   bit_w: 1  loss: 0.04273
+    1   106   bit_w: 1  loss: 0.04258
+    2   401   bit_w:-1  loss: 0.04248
+    3   608   bit_w: 1  loss: 0.04249
+    4   580   bit_w:-1  loss: 0.04240
+    187    298    175    485     78    238    101    338    410    115
+Train accuarcate: 99.13%
+
+
+Test accuarcate: 95.88%
+
+
+iteration:
+  293
+    0   456   bit_w: 1  loss: 0.04230
+    1    93   bit_w: 1  loss: 0.04223
+    2   204   bit_w:-1  loss: 0.04214
+    3   685   bit_w: 1  loss: 0.04209
+    4   428   bit_w: 1  loss: 0.04218
+    621      2    180     36    493     75    396     64     53    262
+Train accuarcate: 99.15%
+
+
+Test accuarcate: 95.91%
+
+
+iteration:
+  294
+    0   304   bit_w: 1  loss: 0.04211
+    1   124   bit_w: 1  loss: 0.04206
+    2   157   bit_w:-1  loss: 0.04197
+    3   320   bit_w: 1  loss: 0.04196
+    4   210   bit_w: 1  loss: 0.04174
+    185     89     98    208     82    148    233     65    127    121
+Train accuarcate: 99.17%
+
+
+Test accuarcate: 95.93%
+
+
+iteration:
+  295
+    0   133   bit_w: 1  loss: 0.04167
+    1   208   bit_w: 1  loss: 0.04157
+    2   153   bit_w:-1  loss: 0.04129
+    3   247   bit_w: 1  loss: 0.04124
+    4   650   bit_w:-1  loss: 0.04123
+    368     63    192    222    286    445    133    424    409    500
+Train accuarcate: 99.15%
+
+
+Test accuarcate: 95.87%
+
+
+iteration:
+  296
+    0   201   bit_w: 1  loss: 0.04117
+    1   377   bit_w: 1  loss: 0.04105
+    2   460   bit_w:-1  loss: 0.04091
+    3   168   bit_w: 1  loss: 0.04092
+    4   325   bit_w: 1  loss: 0.04077
+     18      5     38    461     77     45     17     38     99    210
+Train accuarcate: 99.19%
+
+
+Test accuarcate: 95.90%
+
+
+iteration:
+  297
+    0   201   bit_w: 1  loss: 0.04071
+    1   260   bit_w: 1  loss: 0.04065
+    2   318   bit_w:-1  loss: 0.04063
+    3   762   bit_w: 1  loss: 0.04051
+    4   712   bit_w:-1  loss: 0.04056
+    156      2    137    162    201     59     81    314     89    175
+Train accuarcate: 99.16%
+
+
+Test accuarcate: 95.91%
+
+
+iteration:
+  298
+    0    97   bit_w: 1  loss: 0.04050
+    1   571   bit_w: 1  loss: 0.04039
+    2   525   bit_w:-1  loss: 0.04023
+    3   302   bit_w:-1  loss: 0.04022
+    4   442   bit_w: 1  loss: 0.04013
+    288    575    522    165    147    220    783    190    303     93
+Train accuarcate: 99.21%
+
+
+Test accuarcate: 95.88%
+
+
+iteration:
+  299
+    0   102   bit_w:-1  loss: 0.04008
+    1   203   bit_w:-1  loss: 0.03998
+    2   318   bit_w: 1  loss: 0.03988
+    3   101   bit_w:-1  loss: 0.03984
+    4   157   bit_w: 1  loss: 0.03978
+    979   1124    850    889    923    850    803    944    929    961
+Train accuarcate: 99.24%
+
+
+Test accuarcate: 95.91%
+
+
+iteration:
+  300
+    0   242   bit_w: 1  loss: 0.03972
+    1   332   bit_w: 1  loss: 0.03958
+    2   461   bit_w:-1  loss: 0.03953
+    3   256   bit_w: 1  loss: 0.03949
+    4   405   bit_w:-1  loss: 0.03935
+    678      7    106    165     45     89     13    647     26     82
+Train accuarcate: 99.24%
+
+
+Test accuarcate: 95.91%
+
+
+iteration:
+  301
+    0   742   bit_w:-1  loss: 0.03924
+    1   636   bit_w:-1  loss: 0.03915
+    2   634   bit_w: 1  loss: 0.03912
+    3    89   bit_w:-1  loss: 0.03911
+    4   716   bit_w: 1  loss: 0.03906
+    994   1127    927   1017    935    857   1013    945    929    899
+Train accuarcate: 99.24%
+
+
+Test accuarcate: 95.88%
+
+
+iteration:
+  302
+    0   579   bit_w: 1  loss: 0.03899
+    1   773   bit_w: 1  loss: 0.03887
+    2   354   bit_w:-1  loss: 0.03887
+    3   682   bit_w:-1  loss: 0.03886
+    4   712   bit_w: 1  loss: 0.03877
+    311     16    206    233     32    140    211     76     98     74
+Train accuarcate: 99.26%
+
+
+Test accuarcate: 95.83%
+
+
+iteration:
+  303
+    0   286   bit_w: 1  loss: 0.03871
+    1   466   bit_w: 1  loss: 0.03862
+    2   322   bit_w: 1  loss: 0.03856
+    3   294   bit_w: 1  loss: 0.03852
+    4   408   bit_w: 1  loss: 0.03842
+    125    179     84    428     96    134    183    307    166    129
+Train accuarcate: 99.28%
+
+
+Test accuarcate: 95.85%
+
+
+iteration:
+  304
+    0   268   bit_w:-1  loss: 0.03834
+    1   645   bit_w: 1  loss: 0.03817
+    2   184   bit_w: 1  loss: 0.03804
+    3   103   bit_w: 1  loss: 0.03810
+    4   246   bit_w:-1  loss: 0.03793
+    327     61    356    317     16    340    418     52    397    349
+Train accuarcate: 99.27%
+
+
+Test accuarcate: 95.85%
+
+
+iteration:
+  305
+    0   693   bit_w: 1  loss: 0.03787
+    1   383   bit_w: 1  loss: 0.03776
+    2   401   bit_w: 1  loss: 0.03768
+    3   248   bit_w: 1  loss: 0.03769
+    4   229   bit_w:-1  loss: 0.03765
+    338      0     79     57    349    144    353     80     83    278
+Train accuarcate: 99.27%
+
+
+Test accuarcate: 95.87%
+
+
+iteration:
+  306
+    0   201   bit_w: 1  loss: 0.03759
+    1   440   bit_w: 1  loss: 0.03752
+    2   326   bit_w:-1  loss: 0.03743
+    3   663   bit_w: 1  loss: 0.03733
+    4   608   bit_w:-1  loss: 0.03735
+    435      7     97    144    156     95    401     77     44     71
+Train accuarcate: 99.25%
+
+
+Test accuarcate: 95.90%
+
+
+iteration:
+  307
+    0   275   bit_w: 1  loss: 0.03729
+    1   230   bit_w: 1  loss: 0.03720
+    2   206   bit_w:-1  loss: 0.03719
+    3   598   bit_w:-1  loss: 0.03718
+    4   511   bit_w: 1  loss: 0.03716
+    209      2    168     32    160    129     63    129    115     31
+Train accuarcate: 99.26%
+
+
+Test accuarcate: 95.90%
+
+
+iteration:
+  308
+    0   528   bit_w: 1  loss: 0.03711
+    1   514   bit_w: 1  loss: 0.03709
+    2   354   bit_w:-1  loss: 0.03706
+    3   227   bit_w: 1  loss: 0.03693
+    4   376   bit_w: 1  loss: 0.03692
+     53     45     95     15      9     47    258      1    133      3
+Train accuarcate: 99.28%
+
+
+Test accuarcate: 95.89%
+
+
+iteration:
+  309
+    0   738   bit_w: 1  loss: 0.03687
+    1   438   bit_w: 1  loss: 0.03682
+    2   401   bit_w:-1  loss: 0.03675
+    3   469   bit_w: 1  loss: 0.03671
+    4   215   bit_w:-1  loss: 0.03661
+    110      2    214    299    137    147    420    442     80    133
+Train accuarcate: 99.31%
+
+
+Test accuarcate: 95.92%
+
+
+iteration:
+  310
+    0   442   bit_w:-1  loss: 0.03654
+    1   229   bit_w:-1  loss: 0.03644
+    2   377   bit_w: 1  loss: 0.03643
+    3    59   bit_w:-1  loss: 0.03640
+    4   187   bit_w: 1  loss: 0.03640
+    803   1127    943   1003    921    857    807    940    941    964
+Train accuarcate: 99.32%
+
+
+Test accuarcate: 95.95%
+
+
+iteration:
+  311
+    0   201   bit_w: 1  loss: 0.03635
+    1   287   bit_w: 1  loss: 0.03627
+    2   265   bit_w:-1  loss: 0.03633
+    3   152   bit_w: 1  loss: 0.03623
+    4   124   bit_w:-1  loss: 0.03620
+    219      3    236    378    237    124    133     97    241    129
+Train accuarcate: 99.32%
+
+
+Test accuarcate: 95.92%
+
+
+iteration:
+  312
+    0   359   bit_w: 1  loss: 0.03616
+    1   336   bit_w: 1  loss: 0.03611
+    2   483   bit_w: 1  loss: 0.03611
+    3   308   bit_w:-1  loss: 0.03607
+    4   384   bit_w:-1  loss: 0.03608
+    397      1    284     34    177     81    134     18     57     34
+Train accuarcate: 99.32%
+
+
+Test accuarcate: 95.92%
+
+
+iteration:
+  313
+    0   331   bit_w:-1  loss: 0.03603
+    1   349   bit_w:-1  loss: 0.03579
+    2   609   bit_w: 1  loss: 0.03590
+    3   102   bit_w:-1  loss: 0.03586
+    4   234   bit_w:-1  loss: 0.03577
+    806   1113    945    851    958    734    856   1041    704    922
+Train accuarcate: 99.29%
+
+
+Test accuarcate: 95.90%
+
+
+iteration:
+  314
+    0   550   bit_w: 1  loss: 0.03572
+    1   763   bit_w: 1  loss: 0.03562
+    2   456   bit_w:-1  loss: 0.03556
+    3   275   bit_w: 1  loss: 0.03551
+    4   718   bit_w:-1  loss: 0.03547
+    283     19    293    557    102    417    291    123    358     80
+Train accuarcate: 99.29%
+
+
+Test accuarcate: 95.93%
+
+
+iteration:
+  315
+    0    99   bit_w: 1  loss: 0.03542
+    1   147   bit_w: 1  loss: 0.03536
+    2   491   bit_w:-1  loss: 0.03533
+    3   317   bit_w: 1  loss: 0.03530
+    4   264   bit_w:-1  loss: 0.03524
+    174      4     82    123    137    150    182     39    122     77
+Train accuarcate: 99.32%
+
+
+Test accuarcate: 95.92%
+
+
+iteration:
+  316
+    0   242   bit_w: 1  loss: 0.03519
+    1   224   bit_w: 1  loss: 0.03506
+    2   351   bit_w:-1  loss: 0.03505
+    3   445   bit_w: 1  loss: 0.03498
+    4   495   bit_w:-1  loss: 0.03492
+    250      5    226     63    223    249     16    577    189    313
+Train accuarcate: 99.31%
+
+
+Test accuarcate: 95.87%
+
+
+iteration:
+  317
+    0   651   bit_w: 1  loss: 0.03488
+    1   613   bit_w: 1  loss: 0.03481
+    2   270   bit_w: 1  loss: 0.03479
+    3   454   bit_w:-1  loss: 0.03471
+    4   403   bit_w: 1  loss: 0.03469
+    148     80    133    424    199    234      5     63    299    278
+Train accuarcate: 99.34%
+
+
+Test accuarcate: 95.94%
+
+
+iteration:
+  318
+    0   304   bit_w:-1  loss: 0.03465
+    1   484   bit_w: 1  loss: 0.03459
+    2   286   bit_w: 1  loss: 0.03459
+    3   312   bit_w: 1  loss: 0.03454
+    4   126   bit_w:-1  loss: 0.03446
+    524      4    275     60    392     93    298    331    178    201
+Train accuarcate: 99.35%
+
+
+Test accuarcate: 95.93%
+
+
+iteration:
+  319
+    0   100   bit_w: 1  loss: 0.03442
+    1   579   bit_w: 1  loss: 0.03433
+    2   384   bit_w:-1  loss: 0.03432
+    3   181   bit_w: 1  loss: 0.03425
+    4   544   bit_w:-1  loss: 0.03417
+    398    212    407    752    148    364    307     58    432    271
+Train accuarcate: 99.39%
+
+
+Test accuarcate: 95.89%
+
+
+iteration:
+  320
+    0   215   bit_w: 1  loss: 0.03412
+    1   282   bit_w: 1  loss: 0.03395
+    2   240   bit_w:-1  loss: 0.03399
+    3   332   bit_w: 1  loss: 0.03399
+    4   288   bit_w:-1  loss: 0.03387
+    173    123    320    279    234     96     15     40    259    107
+Train accuarcate: 99.41%
+
+
+Test accuarcate: 95.87%
+
+
+iteration:
+  321
+    0   677   bit_w:-1  loss: 0.03383
+    1   652   bit_w:-1  loss: 0.03378
+    2   377   bit_w:-1  loss: 0.03369
+    3   764   bit_w:-1  loss: 0.03364
+    4   524   bit_w: 1  loss: 0.03361
+    978   1023    984    789    973    799   1013   1066    778    954
+Train accuarcate: 99.42%
+
+
+Test accuarcate: 95.83%
+
+
+iteration:
+  322
+    0   651   bit_w: 1  loss: 0.03356
+    1   300   bit_w: 1  loss: 0.03349
+    2   376   bit_w: 1  loss: 0.03342
+    3   461   bit_w:-1  loss: 0.03327
+    4   600   bit_w:-1  loss: 0.03337
+    349     22    124    505    184    296     57    221    324    243
+Train accuarcate: 99.49%
+
+
+Test accuarcate: 95.82%
+
+
+iteration:
+  323
+    0   133   bit_w: 1  loss: 0.03333
+    1   491   bit_w:-1  loss: 0.03321
+    2   460   bit_w: 1  loss: 0.03327
+    3   682   bit_w: 1  loss: 0.03321
+    4   346   bit_w:-1  loss: 0.03314
+     48    494    234    250    121     94    177     57    326    151
+Train accuarcate: 99.48%
+
+
+Test accuarcate: 95.86%
+
+
+iteration:
+  324
+    0   592   bit_w: 1  loss: 0.03310
+    1   189   bit_w: 1  loss: 0.03304
+    2   541   bit_w:-1  loss: 0.03301
+    3   132   bit_w: 1  loss: 0.03299
+    4   268   bit_w:-1  loss: 0.03298
+    152     16    123    160    230    213     19      7     85     10
+Train accuarcate: 99.49%
+
+
+Test accuarcate: 95.86%
+
+
+iteration:
+  325
+    0   592   bit_w:-1  loss: 0.03294
+    1   203   bit_w:-1  loss: 0.03286
+    2   465   bit_w: 1  loss: 0.03286
+    3   714   bit_w:-1  loss: 0.03283
+    4   235   bit_w: 1  loss: 0.03283
+    975   1118    926    906    964    840    994   1031    924    959
+Train accuarcate: 99.49%
+
+
+Test accuarcate: 95.90%
+
+
+iteration:
+  326
+    0   738   bit_w: 1  loss: 0.03280
+    1   520   bit_w: 1  loss: 0.03273
+    2   377   bit_w:-1  loss: 0.03265
+    3   425   bit_w:-1  loss: 0.03258
+    4   488   bit_w: 1  loss: 0.03256
+    219    238    737    110    578    208    623    725    464    494
+Train accuarcate: 99.50%
+
+
+Test accuarcate: 95.97%
+
+
+iteration:
+  327
+    0   379   bit_w: 1  loss: 0.03250
+    1   407   bit_w: 1  loss: 0.03239
+    2   240   bit_w: 1  loss: 0.03225
+    3   290   bit_w:-1  loss: 0.03224
+    4   375   bit_w:-1  loss: 0.03212
+     79   1027    666    836    383    298    367    517    618    677
+Train accuarcate: 99.49%
+
+
+Test accuarcate: 95.97%
+
+
+iteration:
+  328
+    0   248   bit_w: 1  loss: 0.03208
+    1   657   bit_w: 1  loss: 0.03204
+    2   576   bit_w:-1  loss: 0.03187
+    3    77   bit_w: 1  loss: 0.03188
+    4   343   bit_w:-1  loss: 0.03179
+    112    304     47    281    158    248      9    225    355    179
+Train accuarcate: 99.49%
+
+
+Test accuarcate: 95.95%
+
+
+iteration:
+  329
+    0   204   bit_w: 1  loss: 0.03175
+    1   226   bit_w: 1  loss: 0.03159
+    2   627   bit_w:-1  loss: 0.03156
+    3   651   bit_w: 1  loss: 0.03154
+    4   206   bit_w: 1  loss: 0.03147
+     16      2    105    168     47     37     30    102     43     40
+Train accuarcate: 99.49%
+
+
+Test accuarcate: 95.97%
+
+
+iteration:
+  330
+    0    92   bit_w:-1  loss: 0.03143
+    1   332   bit_w:-1  loss: 0.03137
+    2   462   bit_w:-1  loss: 0.03139
+    3   230   bit_w: 1  loss: 0.03133
+    4   296   bit_w:-1  loss: 0.03124
+    978    469    756    923    809    752    980    889    771    848
+Train accuarcate: 99.55%
+
+
+Test accuarcate: 96.01%
+
+
+iteration:
+  331
+    0   707   bit_w: 1  loss: 0.03120
+    1   267   bit_w: 1  loss: 0.03110
+    2   270   bit_w: 1  loss: 0.03112
+    3   433   bit_w: 1  loss: 0.03105
+    4   179   bit_w: 1  loss: 0.03099
+     83    145    273    310     56    130      5    127    219    163
+Train accuarcate: 99.57%
+
+
+Test accuarcate: 96.01%
+
+
+iteration:
+  332
+    0   458   bit_w: 1  loss: 0.03095
+    1   575   bit_w: 1  loss: 0.03081
+    2   297   bit_w: 1  loss: 0.03087
+    3   601   bit_w:-1  loss: 0.03081
+    4   573   bit_w: 1  loss: 0.03081
+    265    148    533    285    508    156    623    449    296    451
+Train accuarcate: 99.56%
+
+
+Test accuarcate: 96.04%
+
+
+iteration:
+  333
+    0   248   bit_w: 1  loss: 0.03078
+    1   404   bit_w: 1  loss: 0.03068
+    2   349   bit_w:-1  loss: 0.03060
+    3   465   bit_w: 1  loss: 0.03060
+    4   658   bit_w:-1  loss: 0.03059
+    150     45    588    281    698    358    503    367    260    619
+Train accuarcate: 99.55%
+
+
+Test accuarcate: 95.99%
+
+
+iteration:
+  334
+    0   215   bit_w: 1  loss: 0.03054
+    1   302   bit_w: 1  loss: 0.03042
+    2   300   bit_w:-1  loss: 0.03040
+    3   559   bit_w: 1  loss: 0.03039
+    4   680   bit_w:-1  loss: 0.03032
+    455    234    214    256    296    349     41    139    297    148
+Train accuarcate: 99.55%
+
+
+Test accuarcate: 95.96%
+
+
+iteration:
+  335
+    0   738   bit_w: 1  loss: 0.03028
+    1   436   bit_w: 1  loss: 0.03016
+    2   490   bit_w: 1  loss: 0.03018
+    3   612   bit_w: 1  loss: 0.03010
+    4   651   bit_w:-1  loss: 0.03006
+     11    172    462     37    507     37    401    539    221    422
+Train accuarcate: 99.55%
+
+
+Test accuarcate: 95.93%
+
+
+iteration:
+  336
+    0   320   bit_w: 1  loss: 0.03001
+    1   381   bit_w:-1  loss: 0.02976
+    2   213   bit_w: 1  loss: 0.02985
+    3   638   bit_w: 1  loss: 0.02983
+    4   100   bit_w:-1  loss: 0.02972
+    823    544    262    465    134    563    268    231    467    231
+Train accuarcate: 99.54%
+
+
+Test accuarcate: 95.92%
+
+
+iteration:
+  337
+    0   707   bit_w: 1  loss: 0.02969
+    1   455   bit_w: 1  loss: 0.02963
+    2   494   bit_w:-1  loss: 0.02960
+    3   211   bit_w:-1  loss: 0.02953
+    4   288   bit_w:-1  loss: 0.02949
+    242    567    406    180    579    304    338    242    244    116
+Train accuarcate: 99.55%
+
+
+Test accuarcate: 95.87%
+
+
+iteration:
+  338
+    0   454   bit_w:-1  loss: 0.02944
+    1   397   bit_w:-1  loss: 0.02932
+    2   578   bit_w: 1  loss: 0.02935
+    3   511   bit_w:-1  loss: 0.02932
+    4   352   bit_w: 1  loss: 0.02929
+    369   1127    708   1022    751    747    879   1018    900    918
+Train accuarcate: 99.53%
+
+
+Test accuarcate: 95.83%
+
+
+iteration:
+  339
+    0   430   bit_w:-1  loss: 0.02923
+    1   307   bit_w: 1  loss: 0.02915
+    2   631   bit_w:-1  loss: 0.02906
+    3   211   bit_w: 1  loss: 0.02881
+    4   384   bit_w:-1  loss: 0.02887
+    382   1003    624    543    179    426    369    686    524    615
+Train accuarcate: 99.54%
+
+
+Test accuarcate: 95.85%
+
+
+iteration:
+  340
+    0   304   bit_w: 1  loss: 0.02882
+    1   569   bit_w:-1  loss: 0.02876
+    2   177   bit_w: 1  loss: 0.02874
+    3   620   bit_w: 1  loss: 0.02872
+    4   496   bit_w:-1  loss: 0.02870
+     10      7     82    204     83     38     26     58     60     10
+Train accuarcate: 99.55%
+
+
+Test accuarcate: 95.86%
+
+
+iteration:
+  341
+    0   304   bit_w: 1  loss: 0.02866
+    1   492   bit_w:-1  loss: 0.02855
+    2   233   bit_w: 1  loss: 0.02851
+    3   310   bit_w: 1  loss: 0.02851
+    4   577   bit_w:-1  loss: 0.02846
+    126      0     40     60     34     95     13     94    121     34
+Train accuarcate: 99.55%
+
+
+Test accuarcate: 95.91%
+
+
+iteration:
+  342
+    0   304   bit_w: 1  loss: 0.02842
+    1   205   bit_w: 1  loss: 0.02833
+    2   627   bit_w:-1  loss: 0.02831
+    3   218   bit_w: 1  loss: 0.02826
+    4   294   bit_w:-1  loss: 0.02823
+     82     11    172    111    272    119    113    119    133     82
+Train accuarcate: 99.58%
+
+
+Test accuarcate: 95.87%
+
+
+iteration:
+  343
+    0   304   bit_w: 1  loss: 0.02819
+    1   192   bit_w:-1  loss: 0.02807
+    2   399   bit_w: 1  loss: 0.02812
+    3   501   bit_w: 1  loss: 0.02810
+    4   684   bit_w:-1  loss: 0.02805
+    536      0    117     28    404     87    187     95     51    235
+Train accuarcate: 99.58%
+
+
+Test accuarcate: 95.88%
+
+
+iteration:
+  344
+    0   738   bit_w: 1  loss: 0.02801
+    1   319   bit_w: 1  loss: 0.02794
+    2   238   bit_w:-1  loss: 0.02786
+    3   110   bit_w:-1  loss: 0.02784
+    4   411   bit_w: 1  loss: 0.02779
+    421      6    253    309    664    344    595    345    338    246
+Train accuarcate: 99.59%
+
+
+Test accuarcate: 95.92%
+
+
+iteration:
+  345
+    0   300   bit_w: 1  loss: 0.02775
+    1   765   bit_w: 1  loss: 0.02766
+    2   287   bit_w:-1  loss: 0.02765
+    3   755   bit_w:-1  loss: 0.02758
+    4   201   bit_w: 1  loss: 0.02760
+    509      9    362    265    297    101     41    285    397    231
+Train accuarcate: 99.60%
+
+
+Test accuarcate: 95.91%
+
+
+iteration:
+  346
+    0   276   bit_w: 1  loss: 0.02757
+    1   402   bit_w: 1  loss: 0.02751
+    2   487   bit_w: 1  loss: 0.02750
+    3   737   bit_w: 1  loss: 0.02749
+    4   245   bit_w:-1  loss: 0.02747
+     69      0     72     11    152     57    412     10    130     93
+Train accuarcate: 99.61%
+
+
+Test accuarcate: 95.93%
+
+
+iteration:
+  347
+    0   738   bit_w: 1  loss: 0.02744
+    1   266   bit_w: 1  loss: 0.02735
+    2   154   bit_w: 1  loss: 0.02730
+    3    39   bit_w:-1  loss: 0.02727
+    4   661   bit_w: 1  loss: 0.02722
+    262    315    122    299     30    137    127    227    228    122
+Train accuarcate: 99.60%
+
+
+Test accuarcate: 95.93%
+
+
+iteration:
+  348
+    0   693   bit_w: 1  loss: 0.02719
+    1   327   bit_w: 1  loss: 0.02711
+    2   461   bit_w:-1  loss: 0.02708
+    3   368   bit_w: 1  loss: 0.02705
+    4   324   bit_w:-1  loss: 0.02703
+    391      1    136     57    170     13     38    475     48    215
+Train accuarcate: 99.61%
+
+
+Test accuarcate: 95.93%
+
+
+iteration:
+  349
+    0   102   bit_w: 1  loss: 0.02700
+    1   437   bit_w:-1  loss: 0.02695
+    2   288   bit_w: 1  loss: 0.02692
+    3   186   bit_w: 1  loss: 0.02686
+    4   513   bit_w: 1  loss: 0.02687
+    464     44    157     23     29     63    201     11    277     28
+Train accuarcate: 99.61%
+
+
+Test accuarcate: 95.95%
+
+
+iteration:
+  350
+    0   102   bit_w: 1  loss: 0.02684
+    1   434   bit_w:-1  loss: 0.02676
+    2   603   bit_w:-1  loss: 0.02670
+    3   531   bit_w: 1  loss: 0.02661
+    4   430   bit_w:-1  loss: 0.02659
+    190     22    188    164    104    173    105    423     50    173
+Train accuarcate: 99.61%
+
+
+Test accuarcate: 95.98%
+
+
+iteration:
+  351
+    0   148   bit_w: 1  loss: 0.02656
+    1   712   bit_w: 1  loss: 0.02652
+    2   317   bit_w:-1  loss: 0.02646
+    3   296   bit_w: 1  loss: 0.02640
+    4   323   bit_w:-1  loss: 0.02640
+     29     23    234    198     88     94     22    388     51    125
+Train accuarcate: 99.60%
+
+
+Test accuarcate: 95.93%
+
+
+iteration:
+  352
+    0   472   bit_w: 1  loss: 0.02637
+    1   569   bit_w: 1  loss: 0.02629
+    2   326   bit_w:-1  loss: 0.02624
+    3   430   bit_w: 1  loss: 0.02619
+    4   519   bit_w: 1  loss: 0.02620
+    308     19    384     70    138    265    490     14    176     81
+Train accuarcate: 99.60%
+
+
+Test accuarcate: 95.97%
+
+
+iteration:
+  353
+    0   693   bit_w: 1  loss: 0.02617
+    1   538   bit_w: 1  loss: 0.02612
+    2   573   bit_w:-1  loss: 0.02610
+    3   320   bit_w:-1  loss: 0.02606
+    4   265   bit_w: 1  loss: 0.02599
+    342     81    266    142     63    162     13    241    118    208
+Train accuarcate: 99.60%
+
+
+Test accuarcate: 95.98%
+
+
+iteration:
+  354
+    0   276   bit_w: 1  loss: 0.02597
+    1   602   bit_w: 1  loss: 0.02589
+    2   461   bit_w: 1  loss: 0.02589
+    3   151   bit_w: 1  loss: 0.02581
+    4   605   bit_w:-1  loss: 0.02576
+     41    347    352    154    236    129    316     61    335    168
+Train accuarcate: 99.58%
+
+
+Test accuarcate: 96.00%
+
+
+iteration:
+  355
+    0   719   bit_w: 1  loss: 0.02574
+    1   205   bit_w:-1  loss: 0.02567
+    2   716   bit_w: 1  loss: 0.02570
+    3   213   bit_w:-1  loss: 0.02561
+    4   320   bit_w: 1  loss: 0.02563
+     63     83     24     78    211    239    441    253    156    136
+Train accuarcate: 99.60%
+
+
+Test accuarcate: 96.05%
+
+
+iteration:
+  356
+    0   454   bit_w:-1  loss: 0.02561
+    1   457   bit_w:-1  loss: 0.02547
+    2   380   bit_w: 1  loss: 0.02544
+    3   126   bit_w:-1  loss: 0.02538
+    4   241   bit_w: 1  loss: 0.02540
+    498    996    650    996    636    779    457   1039    890    909
+Train accuarcate: 99.63%
+
+
+Test accuarcate: 96.01%
+
+
+iteration:
+  357
+    0   133   bit_w: 1  loss: 0.02537
+    1   236   bit_w:-1  loss: 0.02529
+    2   262   bit_w: 1  loss: 0.02531
+    3   126   bit_w: 1  loss: 0.02527
+    4   345   bit_w: 1  loss: 0.02519
+    194      3     53     54    238    111    261     46     86     30
+Train accuarcate: 99.63%
+
+
+Test accuarcate: 96.02%
+
+
+iteration:
+  358
+    0   102   bit_w: 1  loss: 0.02517
+    1   160   bit_w: 1  loss: 0.02513
+    2   241   bit_w:-1  loss: 0.02513
+    3   484   bit_w:-1  loss: 0.02502
+    4   346   bit_w: 1  loss: 0.02508
+    154     39    106    196    320    371    484     75    299    159
+Train accuarcate: 99.64%
+
+
+Test accuarcate: 95.95%
+
+
+iteration:
+  359
+    0   528   bit_w: 1  loss: 0.02505
+    1   154   bit_w: 1  loss: 0.02496
+    2   264   bit_w: 1  loss: 0.02501
+    3   156   bit_w: 1  loss: 0.02494
+    4   323   bit_w: 1  loss: 0.02495
+    304    107    204    410     15    128    222      3    259     13
+Train accuarcate: 99.63%
+
+
+Test accuarcate: 95.94%
+
+
+iteration:
+  360
+    0   276   bit_w: 1  loss: 0.02493
+    1   486   bit_w:-1  loss: 0.02472
+    2   379   bit_w: 1  loss: 0.02473
+    3   670   bit_w: 1  loss: 0.02469
+    4   285   bit_w:-1  loss: 0.02467
+     53    866    164    750    248    392     98    189    318    470
+Train accuarcate: 99.63%
+
+
+Test accuarcate: 95.92%
+
+
+iteration:
+  361
+    0    99   bit_w: 1  loss: 0.02464
+    1   686   bit_w: 1  loss: 0.02458
+    2   206   bit_w:-1  loss: 0.02447
+    3   362   bit_w: 1  loss: 0.02443
+    4   243   bit_w:-1  loss: 0.02437
+     22    104     61     48     46     33    258    120     61    129
+Train accuarcate: 99.65%
+
+
+Test accuarcate: 95.90%
+
+
+iteration:
+  362
+    0    97   bit_w: 1  loss: 0.02434
+    1   264   bit_w:-1  loss: 0.02432
+    2   489   bit_w: 1  loss: 0.02425
+    3   606   bit_w: 1  loss: 0.02417
+    4   179   bit_w:-1  loss: 0.02414
+     37    909    479    108    342    112    290     76    249    142
+Train accuarcate: 99.65%
+
+
+Test accuarcate: 95.94%
+
+
+iteration:
+  363
+    0   276   bit_w: 1  loss: 0.02411
+    1   378   bit_w: 1  loss: 0.02403
+    2   372   bit_w: 1  loss: 0.02407
+    3   241   bit_w:-1  loss: 0.02402
+    4   299   bit_w: 1  loss: 0.02400
+    113     24     59    205    356    147    110     63    327    240
+Train accuarcate: 99.66%
+
+
+Test accuarcate: 95.90%
+
+
+iteration:
+  364
+    0   528   bit_w: 1  loss: 0.02398
+    1   239   bit_w: 1  loss: 0.02386
+    2   459   bit_w: 1  loss: 0.02388
+    3   641   bit_w: 1  loss: 0.02384
+    4   287   bit_w:-1  loss: 0.02380
+     77     97    255     65     55     92    223     39    223    250
+Train accuarcate: 99.65%
+
+
+Test accuarcate: 95.89%
+
+
+iteration:
+  365
+    0   276   bit_w: 1  loss: 0.02378
+    1   403   bit_w: 1  loss: 0.02363
+    2   289   bit_w: 1  loss: 0.02371
+    3   591   bit_w: 1  loss: 0.02367
+    4   518   bit_w:-1  loss: 0.02362
+     73      0      6     55    126    177     31     10    141    131
+Train accuarcate: 99.65%
+
+
+Test accuarcate: 95.83%
+
+
+iteration:
+  366
+    0   721   bit_w: 1  loss: 0.02360
+    1   468   bit_w: 1  loss: 0.02355
+    2   524   bit_w:-1  loss: 0.02352
+    3   158   bit_w: 1  loss: 0.02352
+    4   242   bit_w:-1  loss: 0.02348
+    294     90    190    156    122    222    393     46    263     37
+Train accuarcate: 99.65%
+
+
+Test accuarcate: 95.83%
+
+
+iteration:
+  367
+    0   721   bit_w: 1  loss: 0.02346
+    1   235   bit_w:-1  loss: 0.02337
+    2   261   bit_w: 1  loss: 0.02339
+    3   408   bit_w:-1  loss: 0.02330
+    4   269   bit_w: 1  loss: 0.02332
+    365    300    161    177    166    209     39    312    116     93
+Train accuarcate: 99.65%
+
+
+Test accuarcate: 95.83%
+
+
+iteration:
+  368
+    0   133   bit_w: 1  loss: 0.02329
+    1   486   bit_w: 1  loss: 0.02323
+    2   178   bit_w: 1  loss: 0.02324
+    3   259   bit_w: 1  loss: 0.02319
+    4   378   bit_w:-1  loss: 0.02320
+    121      3    203     11    116     25    116     35     74     57
+Train accuarcate: 99.65%
+
+
+Test accuarcate: 95.82%
+
+
+iteration:
+  369
+    0   535   bit_w: 1  loss: 0.02317
+    1   596   bit_w: 1  loss: 0.02310
+    2   458   bit_w: 1  loss: 0.02310
+    3   273   bit_w: 1  loss: 0.02309
+    4   383   bit_w: 1  loss: 0.02307
+    265      3    254     81    135     32     38     17    217     72
+Train accuarcate: 99.65%
+
+
+Test accuarcate: 95.82%
+
+
+iteration:
+  370
+    0   719   bit_w: 1  loss: 0.02305
+    1   710   bit_w: 1  loss: 0.02302
+    2   240   bit_w: 1  loss: 0.02298
+    3   346   bit_w: 1  loss: 0.02295
+    4   204   bit_w: 1  loss: 0.02296
+     12      0      3     66     14     38      0    111     37    104
+Train accuarcate: 99.65%
+
+
+Test accuarcate: 95.80%
+
+
+iteration:
+  371
+    0   705   bit_w: 1  loss: 0.02294
+    1   411   bit_w:-1  loss: 0.02289
+    2   201   bit_w: 1  loss: 0.02291
+    3   398   bit_w: 1  loss: 0.02286
+    4   609   bit_w:-1  loss: 0.02286
+    261      0     23     27     72     23     42     46      7     43
+Train accuarcate: 99.65%
+
+
+Test accuarcate: 95.82%
+
+
+iteration:
+  372
+    0   719   bit_w: 1  loss: 0.02284
+    1   151   bit_w: 1  loss: 0.02279
+    2   236   bit_w: 1  loss: 0.02279
+    3   295   bit_w: 1  loss: 0.02274
+    4   687   bit_w: 1  loss: 0.02270
+     25     33     30    108      8     25      1    111     56     74
+Train accuarcate: 99.66%
+
+
+Test accuarcate: 95.80%
+
+
+iteration:
+  373
+    0   133   bit_w: 1  loss: 0.02268
+    1   538   bit_w: 1  loss: 0.02264
+    2   400   bit_w:-1  loss: 0.02264
+    3   377   bit_w:-1  loss: 0.02263
+    4   406   bit_w: 1  loss: 0.02254
+    150    398    539    207    114    248    196    104    226    175
+Train accuarcate: 99.68%
+
+
+Test accuarcate: 95.78%
+
+
+iteration:
+  374
+    0   535   bit_w: 1  loss: 0.02251
+    1   275   bit_w: 1  loss: 0.02248
+    2   512   bit_w:-1  loss: 0.02249
+    3   547   bit_w:-1  loss: 0.02242
+    4   235   bit_w: 1  loss: 0.02237
+    194      5     72    242    131    311     81    237    290    261
+Train accuarcate: 99.68%
+
+
+Test accuarcate: 95.77%
+
+
+iteration:
+  375
+    0   507   bit_w: 1  loss: 0.02235
+    1   681   bit_w: 1  loss: 0.02229
+    2   574   bit_w: 1  loss: 0.02231
+    3   513   bit_w: 1  loss: 0.02226
+    4   549   bit_w:-1  loss: 0.02226
+     62     14     93     43     53     37    101    142    221     68
+Train accuarcate: 99.69%
+
+
+Test accuarcate: 95.73%
+
+
+iteration:
+  376
+    0   535   bit_w: 1  loss: 0.02224
+    1   181   bit_w: 1  loss: 0.02221
+    2   147   bit_w: 1  loss: 0.02222
+    3   519   bit_w: 1  loss: 0.02218
+    4   546   bit_w:-1  loss: 0.02220
+      9     15    130    159     36     39     14      6    124     53
+Train accuarcate: 99.68%
+
+
+Test accuarcate: 95.74%
+
+
+iteration:
+  377
+    0   507   bit_w: 1  loss: 0.02218
+    1   129   bit_w: 1  loss: 0.02212
+    2   350   bit_w:-1  loss: 0.02212
+    3   257   bit_w: 1  loss: 0.02209
+    4   457   bit_w:-1  loss: 0.02208
+     96     12    176     52     15     43    115    167     53      1
+Train accuarcate: 99.69%
+
+
+Test accuarcate: 95.74%
+
+
+iteration:
+  378
+    0   507   bit_w: 1  loss: 0.02205
+    1   206   bit_w: 1  loss: 0.02197
+    2   551   bit_w:-1  loss: 0.02195
+    3   385   bit_w: 1  loss: 0.02193
+    4   330   bit_w:-1  loss: 0.02193
+    184     16    213    250    241     96    192    314    220    149
+Train accuarcate: 99.69%
+
+
+Test accuarcate: 95.76%
+
+
+iteration:
+  379
+    0   507   bit_w: 1  loss: 0.02190
+    1   426   bit_w: 1  loss: 0.02187
+    2   427   bit_w:-1  loss: 0.02188
+    3   514   bit_w:-1  loss: 0.02182
+    4   125   bit_w: 1  loss: 0.02186
+    110     97    150    279      9     60     44     13     24      5
+Train accuarcate: 99.71%
+
+
+Test accuarcate: 95.77%
+
+
+iteration:
+  380
+    0   507   bit_w: 1  loss: 0.02184
+    1   594   bit_w: 1  loss: 0.02183
+    2   602   bit_w:-1  loss: 0.02182
+    3   206   bit_w:-1  loss: 0.02173
+    4   376   bit_w: 1  loss: 0.02179
+    125     73    260    280     91    264     93     24    231    115
+Train accuarcate: 99.72%
+
+
+Test accuarcate: 95.81%
+
+
+iteration:
+  381
+    0   738   bit_w: 1  loss: 0.02177
+    1   623   bit_w: 1  loss: 0.02173
+    2   183   bit_w:-1  loss: 0.02175
+    3   399   bit_w:-1  loss: 0.02164
+    4   100   bit_w: 1  loss: 0.02172
+     34     70    168     84      5     83    110    164     61     33
+Train accuarcate: 99.72%
+
+
+Test accuarcate: 95.78%
+
+
+iteration:
+  382
+    0   744   bit_w: 1  loss: 0.02170
+    1   371   bit_w: 1  loss: 0.02167
+    2   427   bit_w:-1  loss: 0.02168
+    3   736   bit_w: 1  loss: 0.02164
+    4   320   bit_w:-1  loss: 0.02162
+     43      1      8      9     68     56      7    178     42    155
+Train accuarcate: 99.72%
+
+
+Test accuarcate: 95.81%
+
+
+iteration:
+  383
+    0   705   bit_w: 1  loss: 0.02161
+    1   201   bit_w: 1  loss: 0.02157
+    2   298   bit_w:-1  loss: 0.02158
+    3   320   bit_w: 1  loss: 0.02152
+    4   180   bit_w: 1  loss: 0.02154
+     51     52     24    192     13    132     83      6    103      7
+Train accuarcate: 99.70%
+
+
+Test accuarcate: 95.84%
+
+
+iteration:
+  384
+    0   705   bit_w: 1  loss: 0.02152
+    1   680   bit_w: 1  loss: 0.02149
+    2   466   bit_w:-1  loss: 0.02147
+    3   159   bit_w:-1  loss: 0.02144
+    4   458   bit_w: 1  loss: 0.02144
+     82     28    178    105    184    138    274    148    209    257
+Train accuarcate: 99.71%
+
+
+Test accuarcate: 95.79%
+
+
+iteration:
+  385
+    0   744   bit_w: 1  loss: 0.02142
+    1   286   bit_w: 1  loss: 0.02141
+    2   552   bit_w:-1  loss: 0.02138
+    3   717   bit_w: 1  loss: 0.02135
+    4   401   bit_w:-1  loss: 0.02135
+     20      0     17      8     22      8      5    324     17     98
+Train accuarcate: 99.71%
+
+
+Test accuarcate: 95.78%
+
+
+iteration:
+  386
+    0   705   bit_w: 1  loss: 0.02133
+    1   541   bit_w: 1  loss: 0.02132
+    2   570   bit_w:-1  loss: 0.02130
+    3    17   bit_w: 1  loss: 0.02130
+    4   291   bit_w:-1  loss: 0.02129
+     28      6    119     23     17     17     36      4    106      9
+Train accuarcate: 99.71%
+
+
+Test accuarcate: 95.76%
+
+
+iteration:
+  387
+    0   705   bit_w: 1  loss: 0.02127
+    1   571   bit_w: 1  loss: 0.02119
+    2   374   bit_w: 1  loss: 0.02123
+    3   771   bit_w:-1  loss: 0.02118
+    4   712   bit_w: 1  loss: 0.02121
+    280      5     46    100    100    219    578     98    185    221
+Train accuarcate: 99.72%
+
+
+Test accuarcate: 95.70%
+
+
+iteration:
+  388
+    0   705   bit_w: 1  loss: 0.02119
+    1   176   bit_w: 1  loss: 0.02118
+    2   293   bit_w: 1  loss: 0.02118
+    3   375   bit_w:-1  loss: 0.02108
+    4   711   bit_w: 1  loss: 0.02116
+      1      3     10     38      1      7      0    151     10     16
+Train accuarcate: 99.72%
+
+
+Test accuarcate: 95.69%
+
+
+iteration:
+  389
+    0   705   bit_w: 1  loss: 0.02115
+    1   275   bit_w: 1  loss: 0.02113
+    2   512   bit_w:-1  loss: 0.02114
+    3   401   bit_w: 1  loss: 0.02109
+    4   323   bit_w: 1  loss: 0.02112
+     63      6      5    176    117    119     16     64     59    115
+Train accuarcate: 99.74%
+
+
+Test accuarcate: 95.68%
+
+
+iteration:
+  390
+    0   705   bit_w: 1  loss: 0.02111
+    1   429   bit_w: 1  loss: 0.02107
+    2   397   bit_w: 1  loss: 0.02108
+    3   432   bit_w:-1  loss: 0.02103
+    4   407   bit_w: 1  loss: 0.02098
+     30      5     26     32    132     31    220     19     32    105
+Train accuarcate: 99.74%
+
+
+Test accuarcate: 95.68%
+
+
+iteration:
+  391
+    0   705   bit_w: 1  loss: 0.02097
+    1   230   bit_w: 1  loss: 0.02093
+    2   515   bit_w: 1  loss: 0.02096
+    3   319   bit_w: 1  loss: 0.02093
+    4   373   bit_w:-1  loss: 0.02085
+     30      2     79     20     17     23    175     52    285     15
+Train accuarcate: 99.76%
+
+
+Test accuarcate: 95.73%
+
+
+iteration:
+  392
+    0   705   bit_w: 1  loss: 0.02084
+    1   710   bit_w: 1  loss: 0.02082
+    2   348   bit_w:-1  loss: 0.02081
+    3   540   bit_w: 1  loss: 0.02076
+    4   542   bit_w:-1  loss: 0.02079
+    291      1    134     67     29     54     32    272     75    138
+Train accuarcate: 99.76%
+
+
+Test accuarcate: 95.70%
+
+
+iteration:
+  393
+    0   707   bit_w: 1  loss: 0.02078
+    1   272   bit_w: 1  loss: 0.02072
+    2   649   bit_w: 1  loss: 0.02074
+    3   402   bit_w:-1  loss: 0.02066
+    4   184   bit_w:-1  loss: 0.02072
+     99     29     99     67    133     59     19    436     77     66
+Train accuarcate: 99.78%
+
+
+Test accuarcate: 95.69%
+
+
+iteration:
+  394
+    0   744   bit_w: 1  loss: 0.02071
+    1   174   bit_w: 1  loss: 0.02069
+    2   660   bit_w: 1  loss: 0.02069
+    3   381   bit_w:-1  loss: 0.02062
+    4   490   bit_w: 1  loss: 0.02060
+      1    113     37     52     31     41      9     54     64     23
+Train accuarcate: 99.79%
+
+
+Test accuarcate: 95.70%
+
+
+iteration:
+  395
+    0   721   bit_w: 1  loss: 0.02059
+    1   293   bit_w: 1  loss: 0.02053
+    2   178   bit_w: 1  loss: 0.02053
+    3   495   bit_w:-1  loss: 0.02050
+    4   466   bit_w: 1  loss: 0.02049
+     72     13     92    217    118     83    109    199     79     73
+Train accuarcate: 99.77%
+
+
+Test accuarcate: 95.74%
+
+
+iteration:
+  396
+    0   707   bit_w: 1  loss: 0.02047
+    1   503   bit_w: 1  loss: 0.02043
+    2   371   bit_w:-1  loss: 0.02044
+    3   185   bit_w: 1  loss: 0.02043
+    4   343   bit_w: 1  loss: 0.02045
+      4      1      6     19      5     16      0     19     24     23
+Train accuarcate: 99.78%
+
+
+Test accuarcate: 95.74%
+
+
+iteration:
+  397
+    0    68   bit_w: 1  loss: 0.02044
+    1   292   bit_w:-1  loss: 0.02035
+    2   368   bit_w: 1  loss: 0.02042
+    3   712   bit_w: 1  loss: 0.02038
+    4   465   bit_w:-1  loss: 0.02037
+      5      2      7     18      5     11     28     60     13     53
+Train accuarcate: 99.80%
+
+
+Test accuarcate: 95.75%
+
+
+iteration:
+  398
+    0    68   bit_w: 1  loss: 0.02036
+    1   202   bit_w: 1  loss: 0.02033
+    2   204   bit_w:-1  loss: 0.02036
+    3   328   bit_w: 1  loss: 0.02032
+    4   298   bit_w:-1  loss: 0.02033
+    310      1    198     51    202      2    118    136    218    135
+Train accuarcate: 99.79%
+
+
+Test accuarcate: 95.79%
+
+
+iteration:
+  399
+    0   721   bit_w: 1  loss: 0.02032
+    1   472   bit_w: 1  loss: 0.02030
+    2   203   bit_w:-1  loss: 0.02030
+    3   575   bit_w:-1  loss: 0.02026
+    4   603   bit_w: 1  loss: 0.02023
+    224     26     73    166     18    137    107     24    120     52
+Train accuarcate: 99.80%
+
+
+Test accuarcate: 95.74%
+
+
+iteration:
+  400
+    0   745   bit_w: 1  loss: 0.02022
+    1   133   bit_w: 1  loss: 0.02019
+    2   218   bit_w:-1  loss: 0.02018
+    3   201   bit_w: 1  loss: 0.02018
+    4   547   bit_w: 1  loss: 0.02016
+      8      3     24      8     24     21     29     54     13     13
+Train accuarcate: 99.79%
+
+
+Test accuarcate: 95.72%
+
+
+iteration:
+  401
+    0   745   bit_w: 1  loss: 0.02015
+    1   689   bit_w: 1  loss: 0.02011
+    2   292   bit_w: 1  loss: 0.02012
+    3   350   bit_w: 1  loss: 0.02003
+    4   207   bit_w:-1  loss: 0.02006
+     67     72     15     78     37    104     59     98    104    110
+Train accuarcate: 99.79%
+
+
+Test accuarcate: 95.72%
+
+
+iteration:
+  402
+    0   719   bit_w: 1  loss: 0.02006
+    1   132   bit_w: 1  loss: 0.02003
+    2   262   bit_w: 1  loss: 0.02003
+    3   267   bit_w: 1  loss: 0.01999
+    4   687   bit_w: 1  loss: 0.01999
+     35      1      0     15      7     24      3    195     40    101
+Train accuarcate: 99.79%
+
+
+Test accuarcate: 95.73%
+
+
+iteration:
+  403
+    0   707   bit_w: 1  loss: 0.01998
+    1   444   bit_w: 1  loss: 0.01996
+    2   371   bit_w:-1  loss: 0.01996
+    3   507   bit_w: 1  loss: 0.01995
+    4   563   bit_w:-1  loss: 0.01994
+     11      0     40     48      5      3     12     78      5     24
+Train accuarcate: 99.79%
+
+
+Test accuarcate: 95.72%
+
+
+iteration:
+  404
+    0   368   bit_w: 1  loss: 0.01994
+    1   729   bit_w: 1  loss: 0.01991
+    2   435   bit_w: 1  loss: 0.01991
+    3   351   bit_w: 1  loss: 0.01990
+    4   433   bit_w:-1  loss: 0.01985
+      6    100     50     98     49     24     14    102     40    122
+Train accuarcate: 99.79%
+
+
+Test accuarcate: 95.74%
+
+
+iteration:
+  405
+    0    99   bit_w: 1  loss: 0.01984
+    1   332   bit_w: 1  loss: 0.01979
+    2   522   bit_w:-1  loss: 0.01980
+    3   268   bit_w: 1  loss: 0.01980
+    4   513   bit_w: 1  loss: 0.01981
+     96     46    133     20     14     36     98     11     82     15
+Train accuarcate: 99.79%
+
+
+Test accuarcate: 95.74%
+
+
+iteration:
+  406
+    0   705   bit_w: 1  loss: 0.01981
+    1   650   bit_w: 1  loss: 0.01979
+    2   178   bit_w: 1  loss: 0.01979
+    3   297   bit_w:-1  loss: 0.01974
+    4   351   bit_w:-1  loss: 0.01971
+    176      4    162    103     73     99     83     24    112     16
+Train accuarcate: 99.80%
+
+
+Test accuarcate: 95.72%
+
+
+iteration:
+  407
+    0   738   bit_w: 1  loss: 0.01970
+    1   714   bit_w: 1  loss: 0.01967
+    2   687   bit_w:-1  loss: 0.01969
+    3   642   bit_w: 1  loss: 0.01966
+    4   372   bit_w:-1  loss: 0.01966
+      0      5      0      1     13      1      0    229      2     40
+Train accuarcate: 99.80%
+
+
+Test accuarcate: 95.72%
+
+
+iteration:
+  408
+    0   227   bit_w: 1  loss: 0.01966
+    1   326   bit_w:-1  loss: 0.01963
+    2   369   bit_w: 1  loss: 0.01965
+    3   353   bit_w: 1  loss: 0.01954
+    4   432   bit_w:-1  loss: 0.01960
+    109     42     63    140     74    113     98    136     31    103
+Train accuarcate: 99.81%
+
+
+Test accuarcate: 95.68%
+
+
+iteration:
+  409
+    0   227   bit_w: 1  loss: 0.01959
+    1   715   bit_w: 1  loss: 0.01956
+    2   262   bit_w: 1  loss: 0.01957
+    3   209   bit_w:-1  loss: 0.01953
+    4   325   bit_w: 1  loss: 0.01951
+     13      1     27     13    219     21     42    383     61    144
+Train accuarcate: 99.81%
+
+
+Test accuarcate: 95.65%
+
+
+iteration:
+  410
+    0   255   bit_w: 1  loss: 0.01950
+    1   708   bit_w: 1  loss: 0.01948
+    2   188   bit_w:-1  loss: 0.01948
+    3   368   bit_w: 1  loss: 0.01946
+    4   260   bit_w:-1  loss: 0.01945
+      0      0      3     18     14      7      1    112      1     51
+Train accuarcate: 99.81%
+
+
+Test accuarcate: 95.63%
+
+
+iteration:
+  411
+    0   255   bit_w: 1  loss: 0.01944
+    1   348   bit_w: 1  loss: 0.01939
+    2   316   bit_w: 1  loss: 0.01937
+    3   710   bit_w: 1  loss: 0.01935
+    4   518   bit_w:-1  loss: 0.01936
+     47      0      1     31     14    118      6     70     59     41
+Train accuarcate: 99.81%
+
+
+Test accuarcate: 95.59%
+
+
+iteration:
+  412
+    0   255   bit_w: 1  loss: 0.01934
+    1   101   bit_w: 1  loss: 0.01934
+    2    99   bit_w:-1  loss: 0.01932
+    3    41   bit_w: 1  loss: 0.01932
+    4   260   bit_w:-1  loss: 0.01932
+      4      7     47      9      2      2    259      2      6      0
+Train accuarcate: 99.81%
+
+
+Test accuarcate: 95.59%
+
+
+iteration:
+  413
+    0   255   bit_w: 1  loss: 0.01930
+    1   201   bit_w: 1  loss: 0.01928
+    2   199   bit_w: 1  loss: 0.01930
+    3   532   bit_w:-1  loss: 0.01926
+    4   310   bit_w: 1  loss: 0.01930
+      0      0      2     17      2      0      0     15      0      0
+Train accuarcate: 99.81%
+
+
+Test accuarcate: 95.60%
+
+
+iteration:
+  414
+    0   255   bit_w: 1  loss: 0.01929
+    1   217   bit_w: 1  loss: 0.01927
+    2   150   bit_w: 1  loss: 0.01928
+    3   382   bit_w:-1  loss: 0.01924
+    4   411   bit_w: 1  loss: 0.01926
+    126      0     70     46     35     11     11     10     18      3
+Train accuarcate: 99.81%
+
+
+Test accuarcate: 95.60%
+
+
+iteration:
+  415
+    0   255   bit_w: 1  loss: 0.01925
+    1   320   bit_w: 1  loss: 0.01921
+    2    97   bit_w: 1  loss: 0.01925
+    3   268   bit_w:-1  loss: 0.01921
+    4   188   bit_w: 1  loss: 0.01920
+    127      2     33     35     59    121     57      5    154      8
+Train accuarcate: 99.81%
+
+
+Test accuarcate: 95.62%
+
+
+iteration:
+  416
+    0   255   bit_w: 1  loss: 0.01919
+    1   322   bit_w: 1  loss: 0.01911
+    2    99   bit_w: 1  loss: 0.01917
+    3   544   bit_w:-1  loss: 0.01909
+    4   546   bit_w: 1  loss: 0.01913
+     44    339     45     91     17     62     53    107     60     22
+Train accuarcate: 99.82%
+
+
+Test accuarcate: 95.63%
+
+
+iteration:
+  417
+    0   719   bit_w: 1  loss: 0.01912
+    1   229   bit_w: 1  loss: 0.01910
+    2   544   bit_w: 1  loss: 0.01911
+    3   526   bit_w: 1  loss: 0.01910
+    4   153   bit_w:-1  loss: 0.01909
+     30      0     86     24     13      6     49     26     10     12
+Train accuarcate: 99.81%
+
+
+Test accuarcate: 95.63%
+
+
+iteration:
+  418
+    0   719   bit_w: 1  loss: 0.01908
+    1   471   bit_w: 1  loss: 0.01907
+    2   182   bit_w:-1  loss: 0.01906
+    3   660   bit_w: 1  loss: 0.01902
+    4   429   bit_w: 1  loss: 0.01902
+     42      0     17     13    187     29     53     38     12    104
+Train accuarcate: 99.81%
+
+
+Test accuarcate: 95.59%
+
+
+iteration:
+  419
+    0   719   bit_w: 1  loss: 0.01901
+    1   713   bit_w: 1  loss: 0.01897
+    2   714   bit_w:-1  loss: 0.01897
+    3   738   bit_w: 1  loss: 0.01894
+    4   401   bit_w:-1  loss: 0.01891
+      1      1      1     18      4      6      0    260      6     98
+Train accuarcate: 99.82%
+
+
+Test accuarcate: 95.58%
+
+
+iteration:
+  420
+    0    66   bit_w: 1  loss: 0.01890
+    1   453   bit_w: 1  loss: 0.01888
+    2   523   bit_w:-1  loss: 0.01888
+    3   697   bit_w: 1  loss: 0.01887
+    4   485   bit_w:-1  loss: 0.01887
+     88      0     21      7     42     14      9     14      1      5
+Train accuarcate: 99.82%
+
+
+Test accuarcate: 95.58%
+
+
+iteration:
+  421
+    0    66   bit_w: 1  loss: 0.01887
+    1   130   bit_w: 1  loss: 0.01884
+    2   242   bit_w: 1  loss: 0.01883
+    3   315   bit_w: 1  loss: 0.01879
+    4   349   bit_w: 1  loss: 0.01880
+     74     49     11     80     25     27      8     17     47     14
+Train accuarcate: 99.83%
+
+
+Test accuarcate: 95.57%
+
+
+iteration:
+  422
+    0    66   bit_w: 1  loss: 0.01880
+    1   425   bit_w: 1  loss: 0.01879
+    2   685   bit_w: 1  loss: 0.01878
+    3   517   bit_w: 1  loss: 0.01875
+    4   182   bit_w: 1  loss: 0.01870
+     43     55     23     10     11      5      5     24    146     43
+Train accuarcate: 99.83%
+
+
+Test accuarcate: 95.57%
+
+
+iteration:
+  423
+    0   718   bit_w: 1  loss: 0.01869
+    1   200   bit_w: 1  loss: 0.01867
+    2   315   bit_w:-1  loss: 0.01867
+    3   582   bit_w: 1  loss: 0.01867
+    4   154   bit_w:-1  loss: 0.01865
+      4      1     57     46     11     16      8     32      8     53
+Train accuarcate: 99.83%
+
+
+Test accuarcate: 95.57%
+
+
+iteration:
+  424
+    0   255   bit_w: 1  loss: 0.01865
+    1   715   bit_w: 1  loss: 0.01863
+    2   238   bit_w:-1  loss: 0.01863
+    3   154   bit_w: 1  loss: 0.01861
+    4   268   bit_w: 1  loss: 0.01855
+     27      5    158    275     20      8      2     71     76     28
+Train accuarcate: 99.83%
+
+
+Test accuarcate: 95.58%
+
+
+iteration:
+  425
+    0    66   bit_w: 1  loss: 0.01854
+    1   133   bit_w: 1  loss: 0.01853
+    2   218   bit_w:-1  loss: 0.01851
+    3   709   bit_w: 1  loss: 0.01852
+    4   378   bit_w:-1  loss: 0.01848
+     13      3     16     12     31     27     44    207      8     55
+Train accuarcate: 99.83%
+
+
+Test accuarcate: 95.58%
+
+
+iteration:
+  426
+    0    68   bit_w: 1  loss: 0.01848
+    1   719   bit_w: 1  loss: 0.01847
+    2   178   bit_w:-1  loss: 0.01846
+    3   636   bit_w: 1  loss: 0.01845
+    4   268   bit_w: 1  loss: 0.01846
+     11      1     27     13     19      6      0     27      8     76
+Train accuarcate: 99.83%
+
+
+Test accuarcate: 95.58%
+
+
+iteration:
+  427
+    0   706   bit_w: 1  loss: 0.01846
+    1   707   bit_w: 1  loss: 0.01844
+    2   652   bit_w: 1  loss: 0.01844
+    3   272   bit_w:-1  loss: 0.01841
+    4   318   bit_w:-1  loss: 0.01838
+     16    152     54    217      2     48      3     63     46     19
+Train accuarcate: 99.83%
+
+
+Test accuarcate: 95.58%
+
+
+iteration:
+  428
+    0    68   bit_w: 1  loss: 0.01838
+    1   220   bit_w: 1  loss: 0.01837
+    2   273   bit_w:-1  loss: 0.01836
+    3   415   bit_w: 1  loss: 0.01835
+    4   524   bit_w:-1  loss: 0.01832
+     44      0     19      1     34    129     48     11     14      4
+Train accuarcate: 99.83%
+
+
+Test accuarcate: 95.57%
+
+
+iteration:
+  429
+    0    66   bit_w: 1  loss: 0.01831
+    1   368   bit_w: 1  loss: 0.01829
+    2   430   bit_w: 1  loss: 0.01829
+    3   550   bit_w:-1  loss: 0.01823
+    4   408   bit_w:-1  loss: 0.01823
+    118      2     58     39     78    152     89     22     81     26
+Train accuarcate: 99.83%
+
+
+Test accuarcate: 95.58%
+
+
+iteration:
+  430
+    0    66   bit_w: 1  loss: 0.01822
+    1   304   bit_w: 1  loss: 0.01821
+    2   540   bit_w:-1  loss: 0.01820
+    3   692   bit_w: 1  loss: 0.01820
+    4   464   bit_w:-1  loss: 0.01820
+     21      0      2      5     14     16     10      8      8     20
+Train accuarcate: 99.83%
+
+
+Test accuarcate: 95.58%
+
+
+iteration:
+  431
+    0   227   bit_w: 1  loss: 0.01819
+    1   712   bit_w: 1  loss: 0.01816
+    2   299   bit_w:-1  loss: 0.01815
+    3   677   bit_w: 1  loss: 0.01811
+    4   317   bit_w:-1  loss: 0.01810
+      2      4      2     41      1      8      0     75      3     28
+Train accuarcate: 99.83%
+
+
+Test accuarcate: 95.59%
+
+
+iteration:
+  432
+    0   227   bit_w: 1  loss: 0.01810
+    1   428   bit_w: 1  loss: 0.01806
+    2   689   bit_w: 1  loss: 0.01808
+    3   194   bit_w: 1  loss: 0.01805
+    4   207   bit_w: 1  loss: 0.01806
+     12      0      1     11     26     16      0     11      8     65
+Train accuarcate: 99.83%
+
+
+Test accuarcate: 95.59%
+
+
+iteration:
+  433
+    0   227   bit_w: 1  loss: 0.01805
+    1   740   bit_w: 1  loss: 0.01805
+    2   234   bit_w:-1  loss: 0.01804
+    3   315   bit_w: 1  loss: 0.01803
+    4   466   bit_w:-1  loss: 0.01801
+     48      1      3      6     34     26     32    109     19     45
+Train accuarcate: 99.83%
+
+
+Test accuarcate: 95.57%
+
+
+iteration:
+  434
+    0   249   bit_w: 1  loss: 0.01801
+    1    97   bit_w: 1  loss: 0.01799
+    2   461   bit_w:-1  loss: 0.01797
+    3   638   bit_w: 1  loss: 0.01796
+    4   174   bit_w:-1  loss: 0.01796
+     21      4     79     21      3     66     76      0      9      3
+Train accuarcate: 99.83%
+
+
+Test accuarcate: 95.58%
+
+
+iteration:
+  435
+    0   249   bit_w: 1  loss: 0.01795
+    1   203   bit_w: 1  loss: 0.01792
+    2   231   bit_w:-1  loss: 0.01794
+    3   741   bit_w: 1  loss: 0.01793
+    4   287   bit_w:-1  loss: 0.01792
+      1      2     43     86     14     97      0     76     19     40
+Train accuarcate: 99.83%
+
+
+Test accuarcate: 95.59%
+
+
+iteration:
+  436
+    0   227   bit_w: 1  loss: 0.01792
+    1   453   bit_w: 1  loss: 0.01790
+    2   212   bit_w:-1  loss: 0.01790
+    3   301   bit_w: 1  loss: 0.01788
+    4   682   bit_w: 1  loss: 0.01791
+     65      0     29      4     73      2      5     99     26      9
+Train accuarcate: 99.83%
+
+
+Test accuarcate: 95.59%
+
+
+iteration:
+  437
+    0   227   bit_w: 1  loss: 0.01791
+    1   133   bit_w: 1  loss: 0.01790
+    2   218   bit_w:-1  loss: 0.01788
+    3   682   bit_w: 1  loss: 0.01786
+    4   383   bit_w: 1  loss: 0.01786
+     43      1     16     42     33     28      7    185     38    102
+Train accuarcate: 99.83%
+
+
+Test accuarcate: 95.55%
+
+
+iteration:
+  438
+    0   745   bit_w: 1  loss: 0.01786
+    1   481   bit_w: 1  loss: 0.01785
+    2   662   bit_w: 1  loss: 0.01785
+    3   403   bit_w: 1  loss: 0.01783
+    4   379   bit_w:-1  loss: 0.01780
+     53      0     62     23     69     27      6     26     31     27
+Train accuarcate: 99.83%
+
+
+Test accuarcate: 95.53%
+
+
+iteration:
+  439
+    0   134   bit_w: 1  loss: 0.01779
+    1   528   bit_w: 1  loss: 0.01778
+    2   428   bit_w:-1  loss: 0.01778
+    3   470   bit_w: 1  loss: 0.01777
+    4   147   bit_w:-1  loss: 0.01775
+    151     20    125     43     14     72     72     24     15      5
+Train accuarcate: 99.83%
+
+
+Test accuarcate: 95.56%
+
+
+iteration:
+  440
+    0   720   bit_w: 1  loss: 0.01775
+    1   565   bit_w: 1  loss: 0.01773
+    2   216   bit_w:-1  loss: 0.01773
+    3   684   bit_w: 1  loss: 0.01766
+    4   263   bit_w:-1  loss: 0.01764
+     32     85     67    243     27     56      2     75     82     61
+Train accuarcate: 99.83%
+
+
+Test accuarcate: 95.57%
+
+
+iteration:
+  441
+    0   534   bit_w: 1  loss: 0.01764
+    1   719   bit_w: 1  loss: 0.01762
+    2   232   bit_w:-1  loss: 0.01762
+    3   374   bit_w:-1  loss: 0.01758
+    4   414   bit_w: 1  loss: 0.01761
+    194      0     17     10     41      4     47     17      4     36
+Train accuarcate: 99.83%
+
+
+Test accuarcate: 95.57%
+
+
+iteration:
+  442
+    0   534   bit_w: 1  loss: 0.01760
+    1   715   bit_w: 1  loss: 0.01760
+    2   322   bit_w: 1  loss: 0.01758
+    3   462   bit_w:-1  loss: 0.01751
+    4   439   bit_w:-1  loss: 0.01750
+     68     49     53    227     25    116     52    191    105    121
+Train accuarcate: 99.83%
+
+
+Test accuarcate: 95.55%
+
+
+iteration:
+  443
+    0   534   bit_w: 1  loss: 0.01750
+    1   718   bit_w: 1  loss: 0.01748
+    2   405   bit_w:-1  loss: 0.01749
+    3   517   bit_w: 1  loss: 0.01744
+    4   465   bit_w:-1  loss: 0.01739
+     23    142    199     19     69     67    213    211     68     62
+Train accuarcate: 99.84%
+
+
+Test accuarcate: 95.58%
+
+
+iteration:
+  444
+    0   249   bit_w: 1  loss: 0.01739
+    1   102   bit_w: 1  loss: 0.01737
+    2   513   bit_w:-1  loss: 0.01736
+    3   124   bit_w: 1  loss: 0.01736
+    4   122   bit_w:-1  loss: 0.01734
+     32     57    107    122     12    113    126      0     26      2
+Train accuarcate: 99.84%
+
+
+Test accuarcate: 95.59%
+
+
+iteration:
+  445
+    0   249   bit_w: 1  loss: 0.01734
+    1   288   bit_w: 1  loss: 0.01730
+    2   623   bit_w: 1  loss: 0.01732
+    3   687   bit_w: 1  loss: 0.01730
+    4   490   bit_w: 1  loss: 0.01729
+     10      1     18      4     28     40      0     53     81     34
+Train accuarcate: 99.84%
+
+
+Test accuarcate: 95.59%
+
+
+iteration:
+  446
+    0   105   bit_w: 1  loss: 0.01728
+    1   100   bit_w: 1  loss: 0.01727
+    2   404   bit_w: 1  loss: 0.01725
+    3    98   bit_w: 1  loss: 0.01725
+    4   440   bit_w:-1  loss: 0.01724
+      4      2    116     13      1      7    144      0      5      0
+Train accuarcate: 99.84%
+
+
+Test accuarcate: 95.59%
+
+
+iteration:
+  447
+    0   105   bit_w: 1  loss: 0.01724
+    1   603   bit_w:-1  loss: 0.01720
+    2   164   bit_w: 1  loss: 0.01723
+    3   345   bit_w: 1  loss: 0.01717
+    4   155   bit_w: 1  loss: 0.01719
+     76      1     20     18     32     56     68      1     89     12
+Train accuarcate: 99.84%
+
+
+Test accuarcate: 95.59%
+
+
+iteration:
+  448
+    0   105   bit_w: 1  loss: 0.01719
+    1   313   bit_w: 1  loss: 0.01718
+    2   515   bit_w: 1  loss: 0.01717
+    3   451   bit_w:-1  loss: 0.01713
+    4   407   bit_w:-1  loss: 0.01714
+    155     59    256     16    119     42    284    153     94     88
+Train accuarcate: 99.83%
+
+
+Test accuarcate: 95.58%
+
+
+iteration:
+  449
+    0   105   bit_w: 1  loss: 0.01713
+    1   736   bit_w: 1  loss: 0.01713
+    2   432   bit_w: 1  loss: 0.01712
+    3   541   bit_w: 1  loss: 0.01710
+    4   539   bit_w:-1  loss: 0.01705
+     18    122    115     16     13     19    208      7    303     15
+Train accuarcate: 99.83%
+
+
+Test accuarcate: 95.57%
+
+
+iteration:
+  450
+    0   105   bit_w: 1  loss: 0.01704
+    1   507   bit_w: 1  loss: 0.01704
+    2   218   bit_w:-1  loss: 0.01702
+    3   711   bit_w: 1  loss: 0.01702
+    4   184   bit_w: 1  loss: 0.01700
+      2      0     13     39      2     12     38     33     10    118
+Train accuarcate: 99.83%
+
+
+Test accuarcate: 95.55%
+
+
+iteration:
+  451
+    0   105   bit_w: 1  loss: 0.01699
+    1   304   bit_w: 1  loss: 0.01698
+    2   190   bit_w:-1  loss: 0.01698
+    3   341   bit_w: 1  loss: 0.01697
+    4   356   bit_w:-1  loss: 0.01698
+     62      1     10      5     26     41     56     19     24     24
+Train accuarcate: 99.83%
+
+
+Test accuarcate: 95.54%
+
+
+iteration:
+  452
+    0   105   bit_w: 1  loss: 0.01697
+    1   743   bit_w: 1  loss: 0.01696
+    2   375   bit_w: 1  loss: 0.01696
+    3   354   bit_w:-1  loss: 0.01692
+    4   712   bit_w: 1  loss: 0.01692
+      2      2      0      6      2     27     41     13      3     17
+Train accuarcate: 99.83%
+
+
+Test accuarcate: 95.54%
+
+
+iteration:
+  453
+    0   479   bit_w: 1  loss: 0.01691
+    1   129   bit_w: 1  loss: 0.01687
+    2   241   bit_w: 1  loss: 0.01687
+    3   667   bit_w: 1  loss: 0.01685
+    4   404   bit_w:-1  loss: 0.01684
+     84     98     83     50     16      3      5      1     10      3
+Train accuarcate: 99.83%
+
+
+Test accuarcate: 95.53%
+
+
+iteration:
+  454
+    0   249   bit_w: 1  loss: 0.01684
+    1   715   bit_w: 1  loss: 0.01683
+    2   372   bit_w: 1  loss: 0.01682
+    3   234   bit_w:-1  loss: 0.01677
+    4   206   bit_w: 1  loss: 0.01681
+     14      0      3     22     42     47      9     37     16     73
+Train accuarcate: 99.83%
+
+
+Test accuarcate: 95.55%
+
+
+iteration:
+  455
+    0   745   bit_w: 1  loss: 0.01681
+    1   740   bit_w: 1  loss: 0.01679
+    2   213   bit_w: 1  loss: 0.01680
+    3   217   bit_w: 1  loss: 0.01678
+    4   290   bit_w:-1  loss: 0.01676
+     66     10     73     94      1    109      1     63     85     21
+Train accuarcate: 99.84%
+
+
+Test accuarcate: 95.55%
+
+
+iteration:
+  456
+    0   745   bit_w: 1  loss: 0.01676
+    1   121   bit_w: 1  loss: 0.01675
+    2   120   bit_w:-1  loss: 0.01674
+    3   132   bit_w: 1  loss: 0.01673
+    4   539   bit_w:-1  loss: 0.01672
+     13     80     55     46     54     38    104     49     33     46
+Train accuarcate: 99.84%
+
+
+Test accuarcate: 95.51%
+
+
+iteration:
+  457
+    0    68   bit_w: 1  loss: 0.01672
+    1   508   bit_w: 1  loss: 0.01671
+    2   323   bit_w: 1  loss: 0.01671
+    3   487   bit_w: 1  loss: 0.01670
+    4   488   bit_w:-1  loss: 0.01670
+     30      1     36     52      6     16     29      9     52      6
+Train accuarcate: 99.84%
+
+
+Test accuarcate: 95.52%
+
+
+iteration:
+  458
+    0   501   bit_w: 1  loss: 0.01670
+    1   175   bit_w: 1  loss: 0.01669
+    2   350   bit_w:-1  loss: 0.01668
+    3   422   bit_w: 1  loss: 0.01665
+    4   628   bit_w:-1  loss: 0.01666
+      1      0     55     21     42      6     21     20      4      3
+Train accuarcate: 99.85%
+
+
+Test accuarcate: 95.51%
+
+
+iteration:
+  459
+    0   105   bit_w: 1  loss: 0.01665
+    1   387   bit_w: 1  loss: 0.01664
+    2   345   bit_w:-1  loss: 0.01664
+    3   485   bit_w: 1  loss: 0.01658
+    4   660   bit_w: 1  loss: 0.01662
+     67      2     33     11     32      8     64     17     63     20
+Train accuarcate: 99.85%
+
+
+Test accuarcate: 95.50%
+
+
+iteration:
+  460
+    0   705   bit_w: 1  loss: 0.01661
+    1   739   bit_w: 1  loss: 0.01660
+    2   378   bit_w:-1  loss: 0.01660
+    3   180   bit_w: 1  loss: 0.01653
+    4   348   bit_w: 1  loss: 0.01659
+     62      0     10     65     10     62     36     19     32      9
+Train accuarcate: 99.85%
+
+
+Test accuarcate: 95.47%
+
+
+iteration:
+  461
+    0   705   bit_w: 1  loss: 0.01659
+    1   707   bit_w: 1  loss: 0.01658
+    2   400   bit_w:-1  loss: 0.01657
+    3   129   bit_w: 1  loss: 0.01656
+    4   157   bit_w:-1  loss: 0.01656
+      4      5     24     25      0      8     85     84      9     28
+Train accuarcate: 99.85%
+
+
+Test accuarcate: 95.47%
+
+
+iteration:
+  462
+    0   534   bit_w: 1  loss: 0.01656
+    1   174   bit_w: 1  loss: 0.01655
+    2   436   bit_w:-1  loss: 0.01655
+    3   128   bit_w: 1  loss: 0.01652
+    4   378   bit_w:-1  loss: 0.01649
+    245      1     98     53      9     34     93      4     11      2
+Train accuarcate: 99.85%
+
+
+Test accuarcate: 95.47%
+
+
+iteration:
+  463
+    0   501   bit_w: 1  loss: 0.01648
+    1   190   bit_w: 1  loss: 0.01645
+    2   274   bit_w:-1  loss: 0.01645
+    3   672   bit_w: 1  loss: 0.01644
+    4   542   bit_w:-1  loss: 0.01642
+     17      2     22     25     98    202      7      5     24      2
+Train accuarcate: 99.85%
+
+
+Test accuarcate: 95.46%
+
+
+iteration:
+  464
+    0   501   bit_w: 1  loss: 0.01642
+    1   741   bit_w: 1  loss: 0.01641
+    2   379   bit_w: 1  loss: 0.01640
+    3   414   bit_w: 1  loss: 0.01640
+    4   383   bit_w:-1  loss: 0.01639
+     10      0     35      4     17      1     31     32      4     23
+Train accuarcate: 99.85%
+
+
+Test accuarcate: 95.43%
+
+
+iteration:
+  465
+    0   451   bit_w: 1  loss: 0.01639
+    1   680   bit_w: 1  loss: 0.01636
+    2   329   bit_w: 1  loss: 0.01638
+    3   706   bit_w: 1  loss: 0.01636
+    4   436   bit_w: 1  loss: 0.01637
+      2      0      3     16      5      0      0     62     38     35
+Train accuarcate: 99.85%
+
+
+Test accuarcate: 95.41%
+
+
+iteration:
+  466
+    0   451   bit_w: 1  loss: 0.01636
+    1   739   bit_w: 1  loss: 0.01636
+    2   213   bit_w: 1  loss: 0.01635
+    3   457   bit_w: 1  loss: 0.01633
+    4   215   bit_w:-1  loss: 0.01634
+    108      2    122     28     95     10     93     49     37    158
+Train accuarcate: 99.86%
+
+
+Test accuarcate: 95.41%
+
+
+iteration:
+  467
+    0   451   bit_w: 1  loss: 0.01634
+    1   219   bit_w: 1  loss: 0.01633
+    2   483   bit_w:-1  loss: 0.01632
+    3   245   bit_w: 1  loss: 0.01631
+    4   397   bit_w: 1  loss: 0.01632
+     56      1      9     14     89    163      3     30     78      5
+Train accuarcate: 99.86%
+
+
+Test accuarcate: 95.41%
+
+
+iteration:
+  468
+    0   451   bit_w: 1  loss: 0.01631
+    1   678   bit_w: 1  loss: 0.01631
+    2   706   bit_w:-1  loss: 0.01630
+    3   680   bit_w: 1  loss: 0.01628
+    4   244   bit_w:-1  loss: 0.01630
+     15     27     13     97     14     32      0     34     50     20
+Train accuarcate: 99.86%
+
+
+Test accuarcate: 95.42%
+
+
+iteration:
+  469
+    0   451   bit_w: 1  loss: 0.01629
+    1   203   bit_w: 1  loss: 0.01628
+    2   567   bit_w: 1  loss: 0.01628
+    3   161   bit_w: 1  loss: 0.01628
+    4   217   bit_w:-1  loss: 0.01627
+     26      7     38     64      3     62      7      0     29      0
+Train accuarcate: 99.86%
+
+
+Test accuarcate: 95.42%
+
+
+iteration:
+  470
+    0   451   bit_w: 1  loss: 0.01626
+    1   285   bit_w: 1  loss: 0.01625
+    2   154   bit_w: 1  loss: 0.01625
+    3   179   bit_w:-1  loss: 0.01623
+    4   656   bit_w: 1  loss: 0.01622
+    187     68     27    129     14     65      2     81    155      7
+Train accuarcate: 99.86%
+
+
+Test accuarcate: 95.41%
+
+
+iteration:
+  471
+    0   451   bit_w: 1  loss: 0.01622
+    1   482   bit_w: 1  loss: 0.01621
+    2   456   bit_w:-1  loss: 0.01619
+    3    67   bit_w: 1  loss: 0.01618
+    4   387   bit_w:-1  loss: 0.01618
+     75      0     60     46     20     69     11     13      2     21
+Train accuarcate: 99.86%
+
+
+Test accuarcate: 95.41%
+
+
+iteration:
+  472
+    0   451   bit_w: 1  loss: 0.01618
+    1   637   bit_w: 1  loss: 0.01617
+    2   546   bit_w: 1  loss: 0.01617
+    3   686   bit_w: 1  loss: 0.01614
+    4   381   bit_w:-1  loss: 0.01613
+      7     85     23     12     18     18      2     47     37     18
+Train accuarcate: 99.86%
+
+
+Test accuarcate: 95.39%
+
+
+iteration:
+  473
+    0   451   bit_w: 1  loss: 0.01612
+    1   743   bit_w: 1  loss: 0.01611
+    2   402   bit_w: 1  loss: 0.01611
+    3   662   bit_w: 1  loss: 0.01607
+    4   407   bit_w:-1  loss: 0.01606
+     16      0      3     14     39     29      4     16     14     21
+Train accuarcate: 99.87%
+
+
+Test accuarcate: 95.38%
+
+
+iteration:
+  474
+    0   451   bit_w: 1  loss: 0.01605
+    1   678   bit_w: 1  loss: 0.01605
+    2   548   bit_w: 1  loss: 0.01605
+    3   440   bit_w: 1  loss: 0.01603
+    4   495   bit_w:-1  loss: 0.01602
+     19      0     34     28     74      9     58     41      9      7
+Train accuarcate: 99.87%
+
+
+Test accuarcate: 95.38%
+
+
+iteration:
+  475
+    0   451   bit_w: 1  loss: 0.01602
+    1   162   bit_w: 1  loss: 0.01601
+    2   539   bit_w:-1  loss: 0.01601
+    3   409   bit_w:-1  loss: 0.01599
+    4   547   bit_w: 1  loss: 0.01593
+     87    345    134    120    104    198    180    120    191     59
+Train accuarcate: 99.88%
+
+
+Test accuarcate: 95.40%
+
+
+iteration:
+  476
+    0   451   bit_w: 1  loss: 0.01593
+    1   743   bit_w: 1  loss: 0.01591
+    2   375   bit_w: 1  loss: 0.01591
+    3   373   bit_w:-1  loss: 0.01586
+    4   400   bit_w: 1  loss: 0.01591
+      4      0     17     15     14      7      1      9      2     14
+Train accuarcate: 99.88%
+
+
+Test accuarcate: 95.40%
+
+
+iteration:
+  477
+    0   451   bit_w: 1  loss: 0.01591
+    1   228   bit_w: 1  loss: 0.01590
+    2   686   bit_w:-1  loss: 0.01590
+    3   147   bit_w: 1  loss: 0.01589
+    4   350   bit_w:-1  loss: 0.01588
+      4      0     66     22     37      2      9     31      2      2
+Train accuarcate: 99.88%
+
+
+Test accuarcate: 95.40%
+
+
+iteration:
+  478
+    0   479   bit_w: 1  loss: 0.01588
+    1   228   bit_w: 1  loss: 0.01588
+    2   686   bit_w:-1  loss: 0.01588
+    3   684   bit_w: 1  loss: 0.01585
+    4   317   bit_w:-1  loss: 0.01581
+     30     79     35    153     70     43      2    198    115     68
+Train accuarcate: 99.87%
+
+
+Test accuarcate: 95.41%
+
+
+iteration:
+  479
+    0    66   bit_w: 1  loss: 0.01580
+    1   592   bit_w: 1  loss: 0.01579
+    2   566   bit_w:-1  loss: 0.01579
+    3   740   bit_w: 1  loss: 0.01579
+    4   268   bit_w:-1  loss: 0.01579
+      2      1     14     53      1      4     15     20      0     21
+Train accuarcate: 99.87%
+
+
+Test accuarcate: 95.42%
+
+
+iteration:
+  480
+    0   534   bit_w: 1  loss: 0.01578
+    1   621   bit_w: 1  loss: 0.01578
+    2   150   bit_w: 1  loss: 0.01577
+    3   406   bit_w:-1  loss: 0.01575
+    4   578   bit_w:-1  loss: 0.01575
+     66      2    125     79     19     31     11      7      9      2
+Train accuarcate: 99.87%
+
+
+Test accuarcate: 95.42%
+
+
+iteration:
+  481
+    0   534   bit_w: 1  loss: 0.01575
+    1   499   bit_w: 1  loss: 0.01574
+    2   455   bit_w:-1  loss: 0.01574
+    3    99   bit_w: 1  loss: 0.01572
+    4   567   bit_w:-1  loss: 0.01572
+     14      5     81     20      3     13    287      7      9      2
+Train accuarcate: 99.87%
+
+
+Test accuarcate: 95.42%
+
+
+iteration:
+  482
+    0   534   bit_w: 1  loss: 0.01571
+    1   738   bit_w: 1  loss: 0.01570
+    2   273   bit_w:-1  loss: 0.01570
+    3   216   bit_w: 1  loss: 0.01567
+    4   625   bit_w:-1  loss: 0.01564
+     17     16     63     44    234    152      8    168     72     89
+Train accuarcate: 99.86%
+
+
+Test accuarcate: 95.43%
+
+
+iteration:
+  483
+    0   534   bit_w: 1  loss: 0.01563
+    1   650   bit_w: 1  loss: 0.01563
+    2   272   bit_w:-1  loss: 0.01563
+    3   713   bit_w: 1  loss: 0.01562
+    4   493   bit_w: 1  loss: 0.01561
+      6      0      4     37      8     18      0     88      8     69
+Train accuarcate: 99.86%
+
+
+Test accuarcate: 95.43%
+
+
+iteration:
+  484
+    0   534   bit_w: 1  loss: 0.01561
+    1   359   bit_w: 1  loss: 0.01561
+    2   426   bit_w:-1  loss: 0.01560
+    3   349   bit_w: 1  loss: 0.01555
+    4   348   bit_w:-1  loss: 0.01558
+     54    426     57    155     11     32     41     13    122     34
+Train accuarcate: 99.87%
+
+
+Test accuarcate: 95.41%
+
+
+iteration:
+  485
+    0   478   bit_w: 1  loss: 0.01557
+    1   219   bit_w: 1  loss: 0.01555
+    2   553   bit_w: 1  loss: 0.01556
+    3   456   bit_w:-1  loss: 0.01553
+    4   291   bit_w: 1  loss: 0.01553
+     65      2     26     39     24    163     32     15     73      2
+Train accuarcate: 99.87%
+
+
+Test accuarcate: 95.42%
+
+
+iteration:
+  486
+    0   478   bit_w: 1  loss: 0.01553
+    1   218   bit_w: 1  loss: 0.01552
+    2   553   bit_w: 1  loss: 0.01552
+    3    51   bit_w: 1  loss: 0.01552
+    4   192   bit_w:-1  loss: 0.01552
+     27      0     18      2      2     10      5      0      6      0
+Train accuarcate: 99.87%
+
+
+Test accuarcate: 95.42%
+
+
+iteration:
+  487
+    0   478   bit_w: 1  loss: 0.01551
+    1   736   bit_w: 1  loss: 0.01551
+    2   433   bit_w: 1  loss: 0.01550
+    3   327   bit_w:-1  loss: 0.01543
+    4   157   bit_w: 1  loss: 0.01547
+      5    366    131     91     43     77    186      2    184      8
+Train accuarcate: 99.88%
+
+
+Test accuarcate: 95.34%
+
+
+iteration:
+  488
+    0   478   bit_w: 1  loss: 0.01546
+    1   719   bit_w: 1  loss: 0.01546
+    2   232   bit_w:-1  loss: 0.01545
+    3   716   bit_w: 1  loss: 0.01543
+    4   206   bit_w:-1  loss: 0.01544
+      0      0      1      6     18      6      0     55      1    135
+Train accuarcate: 99.88%
+
+
+Test accuarcate: 95.33%
+
+
+iteration:
+  489
+    0   105   bit_w: 1  loss: 0.01544
+    1   220   bit_w: 1  loss: 0.01543
+    2   438   bit_w: 1  loss: 0.01543
+    3   624   bit_w: 1  loss: 0.01539
+    4   625   bit_w:-1  loss: 0.01541
+      6      1     21     14     35     46     34      1      8      0
+Train accuarcate: 99.88%
+
+
+Test accuarcate: 95.31%
+
+
+iteration:
+  490
+    0   501   bit_w: 1  loss: 0.01541
+    1   101   bit_w: 1  loss: 0.01540
+    2   548   bit_w:-1  loss: 0.01540
+    3   684   bit_w: 1  loss: 0.01539
+    4   378   bit_w:-1  loss: 0.01538
+    104      1     55     43     68     63     88    184     71     74
+Train accuarcate: 99.88%
+
+
+Test accuarcate: 95.29%
+
+
+iteration:
+  491
+    0   676   bit_w: 1  loss: 0.01537
+    1   650   bit_w: 1  loss: 0.01537
+    2   705   bit_w: 1  loss: 0.01537
+    3   548   bit_w:-1  loss: 0.01536
+    4   549   bit_w: 1  loss: 0.01536
+      9      0      3     41      0      4      0      9      5      3
+Train accuarcate: 99.88%
+
+
+Test accuarcate: 95.29%
+
+
+iteration:
+  492
+    0   676   bit_w: 1  loss: 0.01536
+    1   740   bit_w: 1  loss: 0.01535
+    2   374   bit_w: 1  loss: 0.01535
+    3   627   bit_w:-1  loss: 0.01532
+    4   628   bit_w: 1  loss: 0.01533
+     14      2      3     22     87     24     69     92     44    106
+Train accuarcate: 99.88%
+
+
+Test accuarcate: 95.30%
+
+
+iteration:
+  493
+    0   676   bit_w: 1  loss: 0.01532
+    1   172   bit_w: 1  loss: 0.01532
+    2   499   bit_w:-1  loss: 0.01532
+    3   554   bit_w: 1  loss: 0.01530
+    4   323   bit_w:-1  loss: 0.01530
+     17      0    122     33      9     33     21      1     11      3
+Train accuarcate: 99.88%
+
+
+Test accuarcate: 95.30%
+
+
+iteration:
+  494
+    0   676   bit_w: 1  loss: 0.01530
+    1   737   bit_w: 1  loss: 0.01529
+    2   406   bit_w: 1  loss: 0.01529
+    3   399   bit_w: 1  loss: 0.01525
+    4   410   bit_w:-1  loss: 0.01525
+      9      0     18     14     36     22     43     11     21     48
+Train accuarcate: 99.89%
+
+
+Test accuarcate: 95.29%
+
+
+iteration:
+  495
+    0   676   bit_w: 1  loss: 0.01525
+    1   304   bit_w: 1  loss: 0.01524
+    2   540   bit_w:-1  loss: 0.01524
+    3    97   bit_w: 1  loss: 0.01523
+    4   156   bit_w:-1  loss: 0.01522
+     16      6     21      9      6     15    108      6      7      1
+Train accuarcate: 99.89%
+
+
+Test accuarcate: 95.29%
+
+
+iteration:
+  496
+    0   676   bit_w: 1  loss: 0.01522
+    1   556   bit_w: 1  loss: 0.01521
+    2   540   bit_w:-1  loss: 0.01521
+    3   412   bit_w: 1  loss: 0.01520
+    4   126   bit_w: 1  loss: 0.01521
+     26      1     36     37      1     23    150      1      7      1
+Train accuarcate: 99.89%
+
+
+Test accuarcate: 95.29%
+
+
+iteration:
+  497
+    0   676   bit_w: 1  loss: 0.01520
+    1   707   bit_w: 1  loss: 0.01520
+    2   324   bit_w: 1  loss: 0.01520
+    3   371   bit_w: 1  loss: 0.01518
+    4   494   bit_w:-1  loss: 0.01517
+     30      0      1     30     44     17     19     46     12     64
+Train accuarcate: 99.89%
+
+
+Test accuarcate: 95.29%
+
+
+iteration:
+  498
+    0   249   bit_w: 1  loss: 0.01517
+    1   248   bit_w: 1  loss: 0.01516
+    2   546   bit_w: 1  loss: 0.01515
+    3   657   bit_w: 1  loss: 0.01513
+    4   237   bit_w:-1  loss: 0.01510
+      8    164     13     22    170    132      4     72     80     27
+Train accuarcate: 99.88%
+
+
+Test accuarcate: 95.27%
+
+
+iteration:
+  499
+    0   676   bit_w: 1  loss: 0.01509
+    1   712   bit_w: 1  loss: 0.01508
+    2   240   bit_w:-1  loss: 0.01508
+    3   526   bit_w: 1  loss: 0.01506
+    4   319   bit_w: 1  loss: 0.01504
+     11      0      5     20     22     29     51     33      7     33
+Train accuarcate: 99.89%
+
+
+Test accuarcate: 95.27%
+
+
+iteration:
+  500
+    0   676   bit_w: 1  loss: 0.01503
+    1   121   bit_w: 1  loss: 0.01503
+    2   434   bit_w:-1  loss: 0.01502
+    3    15   bit_w: 1  loss: 0.01502
+    4   663   bit_w:-1  loss: 0.01502
+      8      0     40     51      2      5     14      2      2      0
+Train accuarcate: 99.89%
+
+
+Test accuarcate: 95.28%
+
+
+iteration:
+  501
+    0   676   bit_w: 1  loss: 0.01502
+    1   739   bit_w: 1  loss: 0.01501
+    2   268   bit_w:-1  loss: 0.01501
+    3   294   bit_w: 1  loss: 0.01498
+    4   378   bit_w: 1  loss: 0.01493
+      6    337     22     66     15     36     52      9     91     25
+Train accuarcate: 99.89%
+
+
+Test accuarcate: 95.29%
+
+
+iteration:
+  502
+    0   676   bit_w: 1  loss: 0.01493
+    1   721   bit_w: 1  loss: 0.01493
+    2   426   bit_w:-1  loss: 0.01493
+    3   357   bit_w: 1  loss: 0.01492
+    4   291   bit_w:-1  loss: 0.01491
+     79      1     88     37     13      7     54     30     56     26
+Train accuarcate: 99.89%
+
+
+Test accuarcate: 95.29%
+
+
+iteration:
+  503
+    0   227   bit_w: 1  loss: 0.01491
+    1   103   bit_w: 1  loss: 0.01491
+    2   466   bit_w: 1  loss: 0.01491
+    3   438   bit_w:-1  loss: 0.01489
+    4   319   bit_w: 1  loss: 0.01489
+     95      1     15     21     24     49    166     12     42      2
+Train accuarcate: 99.89%
+
+
+Test accuarcate: 95.29%
+
+
+iteration:
+  504
+    0   227   bit_w: 1  loss: 0.01489
+    1   175   bit_w: 1  loss: 0.01488
+    2   351   bit_w:-1  loss: 0.01489
+    3   535   bit_w: 1  loss: 0.01487
+    4   602   bit_w:-1  loss: 0.01488
+      3      1     62     42     41      9      2     22      6      3
+Train accuarcate: 99.89%
+
+
+Test accuarcate: 95.28%
+
+
+iteration:
+  505
+    0    68   bit_w: 1  loss: 0.01487
+    1   416   bit_w: 1  loss: 0.01487
+    2   317   bit_w:-1  loss: 0.01487
+    3   320   bit_w: 1  loss: 0.01486
+    4   297   bit_w: 1  loss: 0.01476
+     76     13     28    171     80     80     19     54    167     52
+Train accuarcate: 99.90%
+
+
+Test accuarcate: 95.29%
+
+
+iteration:
+  506
+    0   676   bit_w: 1  loss: 0.01476
+    1   164   bit_w: 1  loss: 0.01476
+    2   457   bit_w:-1  loss: 0.01476
+    3   102   bit_w: 1  loss: 0.01475
+    4   459   bit_w:-1  loss: 0.01474
+      7      6     12     16      4     51     25      2      4      0
+Train accuarcate: 99.90%
+
+
+Test accuarcate: 95.29%
+
+
+iteration:
+  507
+    0    68   bit_w: 1  loss: 0.01473
+    1   743   bit_w: 1  loss: 0.01472
+    2   402   bit_w: 1  loss: 0.01472
+    3   331   bit_w: 1  loss: 0.01471
+    4   603   bit_w: 1  loss: 0.01471
+     67      0      0      0      6      1     23      9     14     17
+Train accuarcate: 99.90%
+
+
+Test accuarcate: 95.27%
+
+
+iteration:
+  508
+    0    68   bit_w: 1  loss: 0.01471
+    1   332   bit_w: 1  loss: 0.01470
+    2   434   bit_w: 1  loss: 0.01470
+    3   344   bit_w: 1  loss: 0.01470
+    4   324   bit_w: 1  loss: 0.01468
+      9      1     18      5    117      9     41     16     67    108
+Train accuarcate: 99.90%
+
+
+Test accuarcate: 95.22%
+
+
+iteration:
+  509
+    0    66   bit_w: 1  loss: 0.01468
+    1   743   bit_w: 1  loss: 0.01466
+    2   402   bit_w: 1  loss: 0.01466
+    3   577   bit_w:-1  loss: 0.01464
+    4   321   bit_w: 1  loss: 0.01463
+     86      7     16     59     78    139    113     39     37     42
+Train accuarcate: 99.90%
+
+
+Test accuarcate: 95.18%
+
+
+iteration:
+  510
+    0    66   bit_w: 1  loss: 0.01463
+    1   708   bit_w: 1  loss: 0.01462
+    2   543   bit_w:-1  loss: 0.01462
+    3   418   bit_w: 1  loss: 0.01461
+    4   435   bit_w: 1  loss: 0.01461
+      0      0      0     16      2      4      2     59      0     33
+Train accuarcate: 99.90%
+
+
+Test accuarcate: 95.18%
+
+
+iteration:
+  511
+    0   478   bit_w: 1  loss: 0.01461
+    1   717   bit_w: 1  loss: 0.01461
+    2   179   bit_w:-1  loss: 0.01460
+    3   456   bit_w: 1  loss: 0.01458
+    4   296   bit_w: 1  loss: 0.01458
+    119      2     37     16    127     23     13     84     22    151
+Train accuarcate: 99.90%
+
+
+Test accuarcate: 95.17%
+
+
+iteration:
+  512
+    0   105   bit_w: 1  loss: 0.01458
+    1   358   bit_w: 1  loss: 0.01457
+    2   125   bit_w: 1  loss: 0.01457
+    3    72   bit_w: 1  loss: 0.01457
+    4   434   bit_w:-1  loss: 0.01457
+     88      1      6      0      1      2     35      0      1      0
+Train accuarcate: 99.90%
+
+
+Test accuarcate: 95.16%
+
+
+iteration:
+  513
+    0   105   bit_w: 1  loss: 0.01457
+    1   556   bit_w: 1  loss: 0.01456
+    2   128   bit_w:-1  loss: 0.01456
+    3   127   bit_w: 1  loss: 0.01453
+    4   516   bit_w:-1  loss: 0.01453
+     70     63     63     66      6     23     54      1     16      2
+Train accuarcate: 99.90%
+
+
+Test accuarcate: 95.16%
+
+
+iteration:
+  514
+    0   105   bit_w: 1  loss: 0.01453
+    1   312   bit_w: 1  loss: 0.01452
+    2   471   bit_w: 1  loss: 0.01453
+    3   629   bit_w:-1  loss: 0.01451
+    4   608   bit_w:-1  loss: 0.01450
+     50      1     73      4     22      1    136     53      5      2
+Train accuarcate: 99.90%
+
+
+Test accuarcate: 95.17%
+
+
+iteration:
+  515
+    0   105   bit_w: 1  loss: 0.01450
+    1   556   bit_w: 1  loss: 0.01450
+    2   540   bit_w:-1  loss: 0.01450
+    3   128   bit_w: 1  loss: 0.01447
+    4   127   bit_w:-1  loss: 0.01446
+     24    101     54     31     16     23    110      0     26      0
+Train accuarcate: 99.90%
+
+
+Test accuarcate: 95.19%
+
+
+iteration:
+  516
+    0   105   bit_w: 1  loss: 0.01446
+    1   638   bit_w: 1  loss: 0.01445
+    2   468   bit_w:-1  loss: 0.01445
+    3    99   bit_w: 1  loss: 0.01444
+    4   205   bit_w: 1  loss: 0.01444
+      7      3     62      2      3     11     15      0      5      1
+Train accuarcate: 99.90%
+
+
+Test accuarcate: 95.19%
+
+
+iteration:
+  517
+    0   105   bit_w: 1  loss: 0.01444
+    1   341   bit_w: 1  loss: 0.01444
+    2   314   bit_w:-1  loss: 0.01444
+    3   247   bit_w: 1  loss: 0.01443
+    4   275   bit_w:-1  loss: 0.01444
+     11      2     15      7     50    145     57     17     41      4
+Train accuarcate: 99.90%
+
+
+Test accuarcate: 95.18%
+
+
+iteration:
+  518
+    0   501   bit_w: 1  loss: 0.01444
+    1   121   bit_w: 1  loss: 0.01443
+    2   148   bit_w:-1  loss: 0.01443
+    3     6   bit_w: 1  loss: 0.01443
+    4   216   bit_w:-1  loss: 0.01443
+      2      1     73      9      3      3     20      1      0      0
+Train accuarcate: 99.90%
+
+
+Test accuarcate: 95.16%
+
+
+iteration:
+  519
+    0    68   bit_w: 1  loss: 0.01442
+    1   415   bit_w: 1  loss: 0.01441
+    2   343   bit_w:-1  loss: 0.01442
+    3    71   bit_w: 1  loss: 0.01441
+    4   537   bit_w:-1  loss: 0.01441
+     29      0     25      3     20      0    190     12      7      1
+Train accuarcate: 99.90%
+
+
+Test accuarcate: 95.15%
+
+
+iteration:
+  520
+    0   478   bit_w: 1  loss: 0.01441
+    1   707   bit_w: 1  loss: 0.01441
+    2   625   bit_w:-1  loss: 0.01440
+    3   655   bit_w: 1  loss: 0.01434
+    4   684   bit_w:-1  loss: 0.01436
+     52    186     29     80     94     47      4    165    104     95
+Train accuarcate: 99.91%
+
+
+Test accuarcate: 95.13%
+
+
+iteration:
+  521
+    0   227   bit_w: 1  loss: 0.01436
+    1   129   bit_w: 1  loss: 0.01435
+    2   371   bit_w: 1  loss: 0.01436
+    3   155   bit_w:-1  loss: 0.01435
+    4   128   bit_w: 1  loss: 0.01435
+    101     48     63     17     17     12     77      0      8      0
+Train accuarcate: 99.91%
+
+
+Test accuarcate: 95.10%
+
+
+iteration:
+  522
+    0   227   bit_w: 1  loss: 0.01434
+    1   739   bit_w: 1  loss: 0.01434
+    2   630   bit_w:-1  loss: 0.01434
+    3   152   bit_w: 1  loss: 0.01432
+    4   150   bit_w:-1  loss: 0.01431
+     22     22    170     58     48     14    133     94     64     30
+Train accuarcate: 99.91%
+
+
+Test accuarcate: 95.11%
+
+
+iteration:
+  523
+    0   227   bit_w: 1  loss: 0.01431
+    1   741   bit_w: 1  loss: 0.01430
+    2   375   bit_w: 1  loss: 0.01430
+    3   258   bit_w: 1  loss: 0.01429
+    4   325   bit_w: 1  loss: 0.01428
+      3      0      3     22     14      2      0     86     13     25
+Train accuarcate: 99.91%
+
+
+Test accuarcate: 95.09%
+
+
+iteration:
+  524
+    0   227   bit_w: 1  loss: 0.01428
+    1   304   bit_w: 1  loss: 0.01427
+    2   217   bit_w:-1  loss: 0.01427
+    3   677   bit_w: 1  loss: 0.01427
+    4   654   bit_w:-1  loss: 0.01427
+      7      1      5     12      7     26      5     25     12      1
+Train accuarcate: 99.91%
+
+
+Test accuarcate: 95.09%
+
+
+iteration:
+  525
+    0   105   bit_w: 1  loss: 0.01427
+    1   103   bit_w: 1  loss: 0.01426
+    2   380   bit_w:-1  loss: 0.01426
+    3   624   bit_w: 1  loss: 0.01424
+    4   458   bit_w: 1  loss: 0.01424
+    122      4    116     10      3     40    126      0     32      2
+Train accuarcate: 99.91%
+
+
+Test accuarcate: 95.05%
+
+
+iteration:
+  526
+    0   676   bit_w: 1  loss: 0.01423
+    1   131   bit_w: 1  loss: 0.01421
+    2   597   bit_w:-1  loss: 0.01423
+    3   123   bit_w: 1  loss: 0.01421
+    4   235   bit_w:-1  loss: 0.01421
+     20     29     97     68     38     13    157      0     32      0
+Train accuarcate: 99.91%
+
+
+Test accuarcate: 95.05%
+
+
+iteration:
+  527
+    0   676   bit_w: 1  loss: 0.01421
+    1   715   bit_w: 1  loss: 0.01420
+    2   238   bit_w:-1  loss: 0.01421
+    3   693   bit_w: 1  loss: 0.01419
+    4   182   bit_w: 1  loss: 0.01420
+      0      0      2     13      3      7      0      2      6     42
+Train accuarcate: 99.91%
+
+
+Test accuarcate: 95.06%
+
+
+iteration:
+  528
+    0   676   bit_w: 1  loss: 0.01420
+    1   712   bit_w: 1  loss: 0.01418
+    2   410   bit_w:-1  loss: 0.01418
+    3   253   bit_w: 1  loss: 0.01416
+    4   349   bit_w: 1  loss: 0.01415
+      1      3      0     12      1      7      0      2      6     13
+Train accuarcate: 99.91%
+
+
+Test accuarcate: 95.06%
+
+
+iteration:
+  529
+    0   676   bit_w: 1  loss: 0.01415
+    1   527   bit_w: 1  loss: 0.01414
+    2   552   bit_w:-1  loss: 0.01414
+    3   148   bit_w: 1  loss: 0.01413
+    4   431   bit_w:-1  loss: 0.01412
+     38      3     94     55      6     18     21      8      7      1
+Train accuarcate: 99.91%
+
+
+Test accuarcate: 95.06%
+
+
+iteration:
+  530
+    0   534   bit_w: 1  loss: 0.01412
+    1   101   bit_w: 1  loss: 0.01411
+    2   466   bit_w:-1  loss: 0.01411
+    3   230   bit_w: 1  loss: 0.01410
+    4   262   bit_w:-1  loss: 0.01408
+     10      6     79     49     13      8    136     20     18      2
+Train accuarcate: 99.91%
+
+
+Test accuarcate: 95.06%
+
+
+iteration:
+  531
+    0   534   bit_w: 1  loss: 0.01408
+    1   132   bit_w: 1  loss: 0.01407
+    2   597   bit_w:-1  loss: 0.01407
+    3   314   bit_w: 1  loss: 0.01406
+    4   182   bit_w: 1  loss: 0.01406
+     21      0     13     18      4     10     21      3     32     45
+Train accuarcate: 99.91%
+
+
+Test accuarcate: 95.06%
+
+
+iteration:
+  532
+    0   534   bit_w: 1  loss: 0.01406
+    1   739   bit_w: 1  loss: 0.01405
+    2   520   bit_w:-1  loss: 0.01405
+    3   385   bit_w: 1  loss: 0.01404
+    4   328   bit_w:-1  loss: 0.01403
+    104      0      6     22     31     25     87     47     32     23
+Train accuarcate: 99.91%
+
+
+Test accuarcate: 95.05%
+
+
+iteration:
+  533
+    0   361   bit_w: 1  loss: 0.01403
+    1    97   bit_w: 1  loss: 0.01402
+    2   462   bit_w:-1  loss: 0.01402
+    3   130   bit_w: 1  loss: 0.01401
+    4   217   bit_w:-1  loss: 0.01399
+     89     25     96    107      8     80    166      0     33      0
+Train accuarcate: 99.91%
+
+
+Test accuarcate: 95.01%
+
+
+iteration:
+  534
+    0   361   bit_w: 1  loss: 0.01399
+    1   102   bit_w: 1  loss: 0.01398
+    2   155   bit_w:-1  loss: 0.01398
+    3   153   bit_w: 1  loss: 0.01397
+    4   578   bit_w:-1  loss: 0.01397
+     30    137     69     53     43     16    145      8     49      7
+Train accuarcate: 99.91%
+
+
+Test accuarcate: 95.00%
+
+
+iteration:
+  535
+    0   361   bit_w: 1  loss: 0.01396
+    1   148   bit_w: 1  loss: 0.01395
+    2   245   bit_w: 1  loss: 0.01396
+    3   679   bit_w: 1  loss: 0.01396
+    4   573   bit_w:-1  loss: 0.01396
+      9      3      5     28     10      7      0     16     24      5
+Train accuarcate: 99.91%
+
+
+Test accuarcate: 94.98%
+
+
+iteration:
+  536
+    0   361   bit_w: 1  loss: 0.01395
+    1   718   bit_w: 1  loss: 0.01394
+    2   323   bit_w:-1  loss: 0.01394
+    3   232   bit_w: 1  loss: 0.01391
+    4   350   bit_w: 1  loss: 0.01393
+      1      2      5     24     14     32      6     21     38     40
+Train accuarcate: 99.91%
+
+
+Test accuarcate: 94.97%
+
+
+iteration:
+  537
+    0   361   bit_w: 1  loss: 0.01392
+    1   709   bit_w: 1  loss: 0.01392
+    2   214   bit_w:-1  loss: 0.01391
+    3   684   bit_w: 1  loss: 0.01389
+    4   655   bit_w:-1  loss: 0.01391
+      3     31      4     49     53     19      4    150     21     56
+Train accuarcate: 99.91%
+
+
+Test accuarcate: 94.94%
+
+
+iteration:
+  538
+    0   361   bit_w: 1  loss: 0.01391
+    1   162   bit_w: 1  loss: 0.01390
+    2   159   bit_w:-1  loss: 0.01390
+    3   190   bit_w: 1  loss: 0.01390
+    4   219   bit_w:-1  loss: 0.01386
+     27     30     28     18    142    123     12      7     53      2
+Train accuarcate: 99.91%
+
+
+Test accuarcate: 94.91%
+
+
+iteration:
+  539
+    0   676   bit_w: 1  loss: 0.01386
+    1   719   bit_w: 1  loss: 0.01386
+    2   406   bit_w:-1  loss: 0.01386
+    3   432   bit_w: 1  loss: 0.01385
+    4   400   bit_w: 1  loss: 0.01382
+     26      0     20      8    181     50     15      8     15     90
+Train accuarcate: 99.91%
+
+
+Test accuarcate: 94.92%
+
+
+iteration:
+  540
+    0   676   bit_w: 1  loss: 0.01382
+    1   175   bit_w: 1  loss: 0.01382
+    2   245   bit_w: 1  loss: 0.01382
+    3   627   bit_w:-1  loss: 0.01381
+    4   398   bit_w: 1  loss: 0.01381
+     49      0     13      7    115      6     13     18      1     27
+Train accuarcate: 99.91%
+
+
+Test accuarcate: 94.89%
+
+
+iteration:
+  541
+    0   676   bit_w: 1  loss: 0.01381
+    1   709   bit_w: 1  loss: 0.01380
+    2   180   bit_w: 1  loss: 0.01380
+    3   530   bit_w: 1  loss: 0.01378
+    4   599   bit_w:-1  loss: 0.01378
+      1      0      2     22      0      7      0      2      0      0
+Train accuarcate: 99.91%
+
+
+Test accuarcate: 94.89%
+
+
+iteration:
+  542
+    0   676   bit_w: 1  loss: 0.01378
+    1   678   bit_w: 1  loss: 0.01377
+    2   401   bit_w: 1  loss: 0.01377
+    3   321   bit_w: 1  loss: 0.01374
