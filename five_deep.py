@@ -14,14 +14,14 @@ np.random.seed(0)
 torch.manual_seed(0)
 
 IF_SAVE = 1
-SAVE_NAME = 'five_2layer.npy'
+SAVE_NAME = 'five_deep_2layer.npy'
 ITERATION = 784 
 TOP_K_RATE = 0.005
 
 
 dl = DataLoader(True,cuda = 1)
 images,labels = dl.get_all()
-images, labels = images[:10000],labels[:10000]
+images, labels = images[:18000],labels[:18000]
 dl_test = DataLoader(False,cuda = 1)
 images_t,labels_t = dl_test.get_all()
 images_t, labels_t = images_t,labels_t
@@ -48,8 +48,8 @@ def get_layer_output(inputs, data):
         aide[:,i] = result
     return torch.cat([inputs,aide],1)
 
-images = get_layer_output(images, np.load('./five_v1.npy')[:216])
-images_t = get_layer_output(images_t, np.load('./five_v1.npy')[:216])
+images = get_layer_output(images, np.load('./five_v2.npy')[:172])
+images_t = get_layer_output(images_t, np.load('./five_v2.npy')[:172])
 
 
 def get_similarity_table(o1,o2):
