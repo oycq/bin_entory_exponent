@@ -10,7 +10,7 @@ import time
 from tqdm import tqdm
 
 IF_SAVE = 1
-SAVE_NAME = 'five_direct_v1'
+SAVE_NAME = 'direct_self_l2'
 ITERATION = 400
 random.seed(0)
 np.random.seed(0)
@@ -29,6 +29,21 @@ accumulate_t = torch.ones((labels_t.shape[0],CLASS),dtype = torch.float32).cuda(
 
 saved_data = np.zeros((ITERATION,5,2),dtype = int)
 saved_mask = np.zeros((ITERATION,CLASS),dtype = int)
+
+
+def get_layer_output(inputs, data):
+    aide = inputs[:,:data.shape[0]].clone()
+    for i in range(data.shape[0]):
+        out_sum = 0
+        for j in range(5):
+            out_sum += inputs[:,data[i, j, 0]] * data[i,j,1]
+        result = (out_sum > 0).float()
+        result = result * 2 - 1
+        aide[:,i] = result
+    return torch.cat([inputs,aide],1)
+
+images = get_layer_output(images, np.load('direct_v1_data.npy')[:156])
+images_t = get_layer_output(images_t, np.load('direct_v1_data.npy')[:156])
 
 
 def get_loss(o, labels, accum, pretrained_mask = None):
