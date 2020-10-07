@@ -10,7 +10,7 @@ import time
 from tqdm import tqdm
 
 IF_SAVE = 1
-SAVE_NAME = 'direct_self_l2'
+SAVE_NAME = 'five_direct_l3'
 ITERATION = 400
 random.seed(0)
 np.random.seed(0)
@@ -42,8 +42,11 @@ def get_layer_output(inputs, data):
         aide[:,i] = result
     return torch.cat([inputs,aide],1)
 
-images = get_layer_output(images, np.load('direct_v1_data.npy')[:156])
-images_t = get_layer_output(images_t, np.load('direct_v1_data.npy')[:156])
+images = get_layer_output(images, np.load('five_direct_v1_data.npy')[:])
+images_t = get_layer_output(images_t, np.load('five_direct_v1_data.npy')[:])
+images = get_layer_output(images, np.load('five_direct_l2_data.npy')[:])
+images_t = get_layer_output(images_t, np.load('five_direct_l2_data.npy')[:])
+
 
 
 def get_loss(o, labels, accum, pretrained_mask = None):
