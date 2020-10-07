@@ -9,7 +9,7 @@ import torch
 import time
 from tqdm import tqdm
 
-IF_SAVE = 1
+IF_SAVE = 0
 SAVE_NAME = 'five_direct_l3'
 ITERATION = 400
 random.seed(0)
@@ -48,35 +48,31 @@ images = get_layer_output(images, np.load('five_direct_l2_data.npy')[:])
 images_t = get_layer_output(images_t, np.load('five_direct_l2_data.npy')[:])
 
 
+broadcast_mask = torch.zeros((CLASS, 3 , 1, CLASS)).cuda()
+for i in range(10):
+    for j in range(3):
+        broadcast_mask[i,j,0,i] = j - 1
 
-def get_loss(o, labels, accum, pretrained_mask = None):
+def get_loss(o, labels, accum, pretrained_mask = None, exp_k = 0.25):
     if pretrained_mask is None:
-        mask = []
-        for i in range(CLASS):
-            best = {'j':0, 'loss':9999}
-            for j in [0,1,-1]:
-                score_table = accum.clone()
-                score_table[:,i] += ((j * o) > 0).float()
-                score_table = torch.exp(score_table / 4)
-                score_table = score_table / score_table.sum(1).unsqueeze(1)
-                loss = -torch.sum(torch.log(score_table) * labels,1)
-                loss = loss.mean()
-                if loss < best['loss']:
-                    best['loss'] = loss
-                    best['j'] = j
-            mask.append(best['j'])
+        broadcast = (o.unsqueeze(1).matmul(broadcast_mask) > 0).float()
+        broadcast += accum.unsqueeze(0).unsqueeze(0)
+        loss = torch.exp(broadcast * exp_k)
+        loss = loss / loss.sum(3).unsqueeze(3)
+        loss = -torch.sum(torch.log(loss) * labels,3)
+        loss = loss.mean(2)
+        mask = loss.argmin(1).float() - 1
     else:
         mask = pretrained_mask
 
     score_table = accum.clone() 
-    for i in range(CLASS):
-        score_table[:,i] += ((mask[i] * o) > 0).float()
-    ret_score_table = score_table.clone()
-    score_table = torch.exp(score_table / 4)
-    score_table = score_table / score_table.sum(1).unsqueeze(1)
-    loss = -torch.sum(torch.log(score_table) * labels,1)
+    score_table += (o.unsqueeze(1).mm(mask.unsqueeze(0)) > 0).float()
+    loss = torch.exp(score_table * exp_k)
+    loss = loss / loss.sum(1).unsqueeze(1)
+    loss = -torch.sum(torch.log(loss) * labels,1)
     loss = loss.mean()
-    return {'loss':loss,'score_table':ret_score_table,'mask':np.asarray(mask, dtype=np.int8)}
+    return {'loss':loss,'score_table':score_table,'mask':mask}
+
 
 def show_gather(o, labels, mask):
     r = o.unsqueeze(0).mm(labels)
@@ -128,7 +124,7 @@ if __name__ == '__main__':
                         best['score_table'] = r['score_table']
             saved_data[iteration,f,0] = best['column']
             saved_data[iteration,f,1] = best['bit_w']
-            saved_mask[iteration] = best['mask']
+            saved_mask[iteration] = best['mask'].cpu()
             print('%5d %5d   bit_w:%2d  loss:%8.5f'%\
                     (f,best['column'],best['bit_w'],best['loss']))
             out_accumu += images[:,best['column']] * best['bit_w']
