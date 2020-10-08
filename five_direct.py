@@ -9,8 +9,8 @@ import torch
 import time
 from tqdm import tqdm
 
-IF_SAVE = 0
-SAVE_NAME = 'five_direct_l3'
+IF_SAVE = 1
+SAVE_NAME = 'five_direct_l3_0.1'
 ITERATION = 400
 random.seed(0)
 np.random.seed(0)
@@ -53,7 +53,7 @@ for i in range(10):
     for j in range(3):
         broadcast_mask[i,j,0,i] = j - 1
 
-def get_loss(o, labels, accum, pretrained_mask = None, exp_k = 0.25):
+def get_loss(o, labels, accum, pretrained_mask = None, exp_k = 0.1):
     if pretrained_mask is None:
         broadcast = (o.unsqueeze(1).matmul(broadcast_mask) > 0).float()
         broadcast += accum.unsqueeze(0).unsqueeze(0)
