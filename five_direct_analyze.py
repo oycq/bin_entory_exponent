@@ -25,6 +25,22 @@ images_t,labels_t = dl_test.get_all()
 accumulate = torch.ones((labels.shape[0],CLASS),dtype = torch.float32).cuda()
 accumulate_t = torch.ones((labels_t.shape[0],CLASS),dtype = torch.float32).cuda()
 
+def get_layer_output(inputs, data):
+    aide = inputs[:,:data.shape[0]].clone()
+    for i in range(data.shape[0]):
+        out_sum = 0
+        for j in range(5):
+            out_sum += inputs[:,data[i, j, 0]] * data[i,j,1]
+        result = (out_sum > 0).float()
+        result = result * 2 - 1
+        aide[:,i] = result
+    return torch.cat([inputs,aide],1)
+
+images = get_layer_output(images, np.load('five_direct_v1_data.npy')[:])
+images_t = get_layer_output(images_t, np.load('five_direct_v1_data.npy')[:])
+images = get_layer_output(images, np.load('five_direct_l2_data.npy')[:])
+images_t = get_layer_output(images_t, np.load('five_direct_l2_data.npy')[:])
+
 
 def load_accumulate(inputs, data, mask):
     aide = inputs[:,:data.shape[0]].clone()
@@ -41,11 +57,13 @@ def load_accumulate(inputs, data, mask):
     r = r + 1
     return r
 
-LOAD_LEN = 1 
-data = np.load('five_direct_v1_data.npy')[:LOAD_LEN]
-mask = torch.from_numpy((np.load('five_direct_v1_mask.npy')[:LOAD_LEN])).cuda().float()
+LOAD_LEN = 400
+data = np.load('five_direct_l3_data.npy')[:LOAD_LEN]
+mask = torch.from_numpy((np.load('five_direct_l3_mask.npy')[:LOAD_LEN])).cuda().float()
+
 accumulate = load_accumulate(images, data, mask)
 accumulate_t = load_accumulate(images_t, data, mask)
+
 
 
 def get_loss(accumulate, labels):
@@ -70,60 +88,6 @@ accuarcate_t = get_accuarcate(accumulate_t, labels_t)
 test_loss = get_loss(accumulate_t, labels_t)
 print(test_loss)
 print('Test accuarcate:%6.2f%%'%(accuarcate_t))
-
-
-class Enhacne(nn.Module):
-    def __init__(self):
-        super(Enhacne, self).__init__()
-        self.fc1 = nn.Linear(10, 128)
-        self.fc2 = nn.Linear(128, 128)
-        self.fc3 = nn.Linear(128, 10)
-        self._initialize_weights()
-
-    def forward(self, x):
-        x = F.relu(self.fc1(x))
-        x = F.relu(self.fc2(x))
-        x = self.fc3(x)
-        return x
-
-    def _initialize_weights(self):
-        for i,m in enumerate(self.modules()):
-            if isinstance(m, nn.Conv2d):
-                nn.init.kaiming_normal_(m.weight, mode='fan_out', nonlinearity='relu')
-                if m.bias is not None:
-                    nn.init.constant_(m.bias, 0)
-            elif isinstance(m, nn.BatchNorm2d):
-                if m.weight is not None:
-                   nn.init.constant_(m.weight, 1)
-                if m.bias is not None:
-                    nn.init.constant_(m.bias, 0)
-            elif isinstance(m, nn.Linear):
-                nn.init.normal_(m.weight, 0, 0.01)
-                nn.init.constant_(m.bias, 0)
-
-model = Enhacne().cuda()
-optimizer = optim.Adam(model.parameters())
-for i in range(10000):
-    r = model(accumulate/50)
-    loss = get_loss(r, labels)
-    optimizer.zero_grad() 
-    loss.backward()
-    optimizer.step()
-    acc = get_accuarcate(r, labels)
-    if i % 100 == 0:
-        r = model(accumulate_t/50)
-        loss_t = get_loss(r, labels_t)
-        acc_t = get_accuarcate(r, labels_t)
-        print(i)
-        print('train %8.4f %9.4f'%(loss,acc))
-        print('test  %8.4f %9.4f'%(loss_t,acc_t))
-        print('')
-
-    
-
-    
-
-
 
 
 
