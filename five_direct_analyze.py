@@ -11,6 +11,7 @@ from tqdm import tqdm
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
+import cv2
 
 random.seed(0)
 np.random.seed(0)
@@ -21,6 +22,41 @@ dl = DataLoader(True,cuda = 1)
 images,labels = dl.get_all()
 dl_test = DataLoader(False,cuda = 1)
 images_t,labels_t = dl_test.get_all()
+
+def shift_images(images, shift_step):
+    a = shift_step
+    img = images.reshape(-1, 28, 28)
+    img[:, :28-a, :28-a] = img[:, a:,a:].clone()
+    img[:, 28-a:, 28-a:] = -1 
+    img = img.reshape(-1, 784)
+    return img
+
+def add_noise_to_image(images, count):
+    img = images.clone()
+    mask = torch.cuda.FloatTensor(img.shape).uniform_() > (count / 784.0)
+    mask = mask.float()
+    mask = (mask * 2) - 1
+    img = img * mask
+    return img
+
+def visual(before, after):
+    a = before.cpu().numpy().reshape(-1, 28, 28)
+    b = after.cpu().numpy().reshape(-1, 28, 28)
+    a = (a + 1) / 2
+    b = (b + 1) / 2
+    for i in range(100000):
+        cv2.imshow('before', cv2.resize(a[i], (112,112)))
+        cv2.imshow('after', cv2.resize(b[i], (112,112)))
+        key = cv2.waitKey(0)
+        if key == ord('q'):
+            sys.exit(0)
+
+before = images.clone()
+#images = add_noise_to_image(images, 10)
+#images_t = add_noise_to_image(images_t, 10)
+images = shift_images(images,1)
+images_t = shift_images(images_t,1)
+#visual(before, images)
 
 accumulate = torch.ones((labels.shape[0],CLASS),dtype = torch.float32).cuda()
 accumulate_t = torch.ones((labels_t.shape[0],CLASS),dtype = torch.float32).cuda()
