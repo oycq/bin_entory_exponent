@@ -85,22 +85,11 @@ class DataFeeder():
 
 if __name__ == '__main__':
     BATCH_SIZE = 10000
-    dataset = Dataset(True, 3, 0.05)
-    loader = torch.utils.data.DataLoader(dataset, BATCH_SIZE,\
-        shuffle = True, num_workers = 6, drop_last =  True) 
-    loader_iter = iter(loader)
-    t1 = time.time()
-    for i in range(100):
-        try:
-            a,_ = next(loader_iter)
-        except StopIteration:
-            loader_iter = iter(loader)
-            a,_ = next(loader_iter)
-        visual(a[i])
-        #print(a[0][:20])
-        print(a.shape)
-
-
-    t2 = time.time()
-    print(t2-t1)
+    dataset = MyDataset(True, 3, 0.05)
+    feeder = DataFeeder(dataset, BATCH_SIZE, 0)
+    for i in range(10):
+        t1 = time.time() * 1000
+        a = feeder.feed()
+        t2 = time.time() * 1000
+        print(t2-t1)
 

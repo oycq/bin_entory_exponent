@@ -15,22 +15,20 @@ np.random.seed(0)
 torch.manual_seed(0)
 
 IF_SAVE = 0
-LAYER_UNITS = 400
-LAYERS = 5
+LAYER_UNITS = 1000
+LAYERS = 3 
 CLASS = 10
-BATCH_SIZE = 10000
-BASE_SPLIT = 50
-LAYER_NAME = 'five_sophisticate_layer'
+BATCH_SIZE = 5000
+LAYER_NAME = 'new_sophisticate_layer'
+CONSISTENT_THRESH = 4
+ALTER_RATE_THRESH = 0.99
+WORKERS = 12
 
 
 dataset = my_dataset.MyDataset(train = True, margin = 3, noise_rate = 0.05)
 dataset_test = my_dataset.MyDataset(train = False)
-data_feeder = my_dataset.DataFeeder(dataset, BATCH_SIZE, num_workers = 0)
+data_feeder = my_dataset.DataFeeder(dataset, BATCH_SIZE, num_workers = WORKERS)
 images_t,labels_t = dataset_test.get_all()
-
-#dataset = my_dataset.MyDataset(train = True, margin = 1, noise_rate = 0.05)
-#data_feeder = my_dataset.DataFeeder(dataset, 60000, num_workers = 0)
-#images_t,labels_t = data_feeder.feed()
 
 class Layer():
     def __init__(self, hidden_units = 400):
@@ -83,12 +81,18 @@ class Layer():
         print('Save %s Done ..'%(name))
         
 
-
-class Preprocess():
+class Drillmaster():
     def __init__(self, layers = []):
         self.layers = layers
         self.excitation = torch.eye(CLASS,CLASS).unsqueeze(1).cuda()
-
+        self.reflect_columns = torch.zeros((5), dtype=torch.long).cuda()
+        self.reflect_bits_w = torch.zeros((5)).cuda()
+        self.current_loss = 0
+        self.base_influence = 0
+        self.base_loss = 0
+        self.previous_mask = 0
+        self.f_index = 0
+        self.avoid_repeat = []
 
     def add_layer(self, layer):
         self.layers.append(layer)
@@ -118,74 +122,114 @@ class Preprocess():
         accuarcate = torch.mean((a==b).float())*100
         return accuarcate
 
-    def refine(self, inputs, labels):
-        accumulate, whole_base = self.forward(inputs)
-        reflect_columns = torch.zeros((5), dtype=torch.long).cuda()
-        reflect_bits_w = torch.zeros((5)).cuda()
-        avoid_repeat = []
-        for f in range(5):
-            reflection = (whole_base[:,reflect_columns] * reflect_bits_w).sum(1)
-            best = {'column':None, 'mask':None, 'loss':99999}
-            for bit_w in [-1,1]:
-                foo = whole_base.t() * bit_w + reflection
-                equivalent_whole_base = (foo > 0).float() - (foo < 0).float()
-                split_bias = -BASE_SPLIT
-                for base in torch.split(equivalent_whole_base, BASE_SPLIT, dim=0):
-                    split_bias += BASE_SPLIT
-                    loss_ori = self._crorss_entropy(accumulate, labels)
-                    new_accumulate = self.excitation + accumulate 
-                    loss_new = self._crorss_entropy(new_accumulate, labels).t()
-                    loss_delta = loss_ori.unsqueeze(1) - loss_new
-                    loss_delta_sum = loss_delta.sum(0)
-                    base_positive_influence = base.mm(loss_delta)
-                    base_negtive_influence = loss_delta_sum - base_positive_influence
-                    base_no_influence = torch.zeros_like(base_positive_influence)
-                    base_influence = torch.cat((base_negtive_influence.unsqueeze(-1),\
-                                           base_no_influence.unsqueeze(-1),\
-                                           base_positive_influence.unsqueeze(-1)), 2) 
-                    base_mask = torch.argmax(base_influence, -1) - 1
-                    base_mask = base_mask.float()
-                    accumulate_new = (base.unsqueeze(-1).bmm(
-                            base_mask.unsqueeze(1)) > 0).float() + accumulate
-                    base_loss = self._crorss_entropy(accumulate_new, labels).mean(-1)
-                    best_index = base_loss.argmin()
-                    best_loss = base_loss[best_index]
-                    column = best_index + split_bias
-                    if best_loss < best['loss'] and column not in avoid_repeat:
-                        best['loss'] = best_loss
-                        best['column'] = best_index + split_bias 
-                        best['mask'] = base_mask[best_index]
-                        best['bit_w'] = bit_w
-                        avoid_repeat.append(column)
-            reflect_columns[f] = best['column']
-            reflect_bits_w[f] = best['bit_w']
-            print(best['column'].item(), best['bit_w'],best['loss'].item())
-        self.layers[-1].append(reflect_columns, reflect_bits_w, best['mask'])
+    def _get_acucumulate_and_base(self, inputs, labels):
+        accumulate, base = self.forward(inputs)
+        base = base.unsqueeze(-1).repeat(1,1,2)
+        base[:,:,1] *= -1
+        base = base.reshape((base.shape[0], -1))
+        reflection = (base[:,2*self.reflect_columns] * self.reflect_bits_w).sum(1)
+        foo = base.t() + reflection
+        base = (foo > 0).float() - (foo < 0).float()
+        return accumulate, base
 
+    def carving_mask(self, inputs, labels):
+        accumulate, base = self._get_acucumulate_and_base(inputs, labels)
+        new_accumulate = self.excitation + accumulate 
+        loss_ori = self._crorss_entropy(accumulate, labels)
+        loss_new = self._crorss_entropy(new_accumulate, labels).t()
+        loss_delta = loss_ori.unsqueeze(1) - loss_new
+        loss_delta_sum = loss_delta.sum(0)
 
-preprocess = Preprocess([Layer(LAYER_UNITS)])
-images, labels = data_feeder.feed()
+        base_positive_influence = base.mm(loss_delta)
+        base_negtive_influence = loss_delta_sum - base_positive_influence
+        base_no_influence = torch.zeros_like(base_positive_influence)
+        self.base_influence += torch.cat((base_negtive_influence.unsqueeze(-1),\
+                               base_no_influence.unsqueeze(-1),\
+                               base_positive_influence.unsqueeze(-1)), 2) 
+        mask = torch.argmax(self.base_influence, -1) - 1
+        alter_rate = 1 - ((mask - self.previous_mask).float() / 2).abs().mean()
+        self.previous_mask = mask
+        return alter_rate
+
+    def dissecting_column(self, inputs, labels):
+        accumulate, base = self._get_acucumulate_and_base(inputs, labels)
+        base_mask = torch.argmax(self.base_influence, -1) - 1
+        base_mask = base_mask.float()
+        new_accumulate = (base.unsqueeze(-1).bmm(
+                        base_mask.unsqueeze(1)) > 0).float() + accumulate
+        current_base_loss = self._crorss_entropy(new_accumulate, labels).mean(-1) 
+        self.base_loss += current_base_loss
+        for avoid_column in self.avoid_repeat:
+            bar = avoid_column * 2
+            self.base_loss[bar:bar+2] *= 0
+            self.base_loss[bar:bar+2] += 99
+        best_index = self.base_loss.argmin()
+        self.current_loss = current_base_loss[best_index]
+        column = best_index // 2
+        mask = base_mask[best_index]
+        bit_w = (best_index % 2) * (-2) + 1
+        return column.item()
+
+    def dissecting_confirm(self, hook_time = 0):
+        base_mask = torch.argmax(self.base_influence, -1) - 1
+        best_index = self.base_loss.argmin()
+        loss = self.current_loss
+        column = best_index // 2
+        self.avoid_repeat.append(column)
+        bit_w = (best_index % 2) * (-2) + 1
+        mask = base_mask[best_index]
+        self.reflect_columns[self.f_index] = column
+        self.reflect_bits_w[self.f_index] = bit_w
+        self.base_influence = 0
+        self.base_loss = 0
+        self.previous_mask = 0
+        self.f_index += 1
+        print('%5d  %2d  %8.5f %5d'%(column, bit_w, loss, hook_time))
+        if self.f_index == 5:
+            f_index = 0
+            self.layers[-1].append(self.reflect_columns, \
+            self.reflect_bits_w, mask)
+            self.reflect_columns = torch.zeros((5), dtype=torch.long).cuda()
+            self.reflect_bits_w = torch.zeros((5)).cuda()
+            self.f_index = 0
+            self.avoid_repeat = []
+        
+
+drillmaster = Drillmaster([Layer(LAYER_UNITS)])
 for j in range(LAYERS):
-    for i in range(LAYER_UNITS):
+    for l in range(LAYER_UNITS):
+        print('l%du%d'%(j+1,l+1))
         t1 = time.time() * 1000
-        preprocess.refine(images, labels)
-        a = preprocess.get_accurate(images, labels)
-        b = preprocess.get_accurate(images_t, labels_t)
+        for k in range(5):
+            hook_time = 0
+            while(1):
+                hook_time += 1
+                images, labels = data_feeder.feed()
+                alter_rate = drillmaster.carving_mask(images, labels)
+                if alter_rate > ALTER_RATE_THRESH:
+                    break
+            previous_column = 0
+            consistent = 0
+            while(1):
+                hook_time += 1
+                images, labels = data_feeder.feed()
+                alter_rate = drillmaster.carving_mask(images, labels)
+                column = drillmaster.dissecting_column(images, labels)
+                if previous_column == column:
+                    consistent += 1
+                else:
+                    consistent = 0
+                previous_column = column
+                if consistent >= CONSISTENT_THRESH:
+                    break
+            drillmaster.dissecting_confirm(hook_time)
+        apple = drillmaster.get_accurate(images, labels)
+        banana = drillmaster.get_accurate(images_t, labels_t)
+        print('Train accurate =%8.3f%%'%(apple))
+        print('Test  accurate =%8.3f%%'%(banana))
         t2 = time.time() * 1000
-        print('l%dh%d   %5d'%(j,i,t2-t1))
-        print('Train accurate=%8.3f%%'%(a))
-        print('Test accurate=%8.3f%%'%(b))
-        print('')
+        print('Caculate  time =%7dms\n'%(t2-t1))
     if IF_SAVE:
-        preprocess.save_last_layer(LAYER_NAME+'%d'%j)
-        preprocess.add_layer(Layer(LAYER_UNITS))
-
-
-
-
-
-
-
-
-
+        drillmaster.save_last_layer(LAYER_NAME+'%d'%j)
+    drillmaster.add_layer(Layer(LAYER_UNITS))
 
