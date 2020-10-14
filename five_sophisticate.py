@@ -14,6 +14,7 @@ random.seed(0)
 np.random.seed(0)
 torch.manual_seed(0)
 
+IF_WANDB = 1
 IF_SAVE = 0
 LAYER_UNITS = 1000
 LAYERS = 3 
@@ -24,6 +25,9 @@ CONSISTENT_THRESH = 4
 ALTER_RATE_THRESH = 0.99
 WORKERS = 12
 
+if IF_WANDB:
+    import wandb
+    wandb.init()
 
 dataset = my_dataset.MyDataset(train = True, margin = 3, noise_rate = 0.05)
 dataset_test = my_dataset.MyDataset(train = False)
@@ -223,10 +227,13 @@ for j in range(LAYERS):
                 if consistent >= CONSISTENT_THRESH:
                     break
             drillmaster.dissecting_confirm(hook_time)
-        apple = drillmaster.get_accurate(images, labels)
-        banana = drillmaster.get_accurate(images_t, labels_t)
-        print('Train accurate =%8.3f%%'%(apple))
-        print('Test  accurate =%8.3f%%'%(banana))
+        train_accurate = drillmaster.get_accurate(images, labels)
+        test_accurate = drillmaster.get_accurate(images_t, labels_t)
+        if IF_WANDB:
+            wandb.log({'train':train_accurate})
+            wandb.log({'test':test_accurate})
+        print('Train accurate =%8.3f%%'%(train_accurate))
+        print('Test  accurate =%8.3f%%'%(test_accurate))
         t2 = time.time() * 1000
         print('Caculate  time =%7dms\n'%(t2-t1))
     if IF_SAVE:
