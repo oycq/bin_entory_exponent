@@ -15,15 +15,16 @@ np.random.seed(0)
 torch.manual_seed(0)
 
 IF_WANDB = 1
-IF_SAVE = 0
-LAYER_UNITS = 1000
+IF_SAVE = 1
+LAYER_UNITS = 2000
 LAYERS = 3 
 CLASS = 10
-BATCH_SIZE = 5000
-LAYER_NAME = 'new_sophisticate_layer'
-CONSISTENT_THRESH = 4
+BATCH_SIZE = 3000
+LAYER_NAME = 'new_sophisticate_layer_2000_0.05'
+CONSISTENT_THRESH = 5
 ALTER_RATE_THRESH = 0.99
-WORKERS = 12
+WORKERS = 15
+EXP_K = 0.05
 
 if IF_WANDB:
     import wandb
@@ -112,8 +113,9 @@ class Drillmaster():
         accumulate = self.layers[-1].get_accumulate(base)
         return accumulate, base
 
-    def _crorss_entropy(self, score_table, labels, exp_k=0.25):
-        entropy = torch.exp(score_table * exp_k)
+    def _crorss_entropy(self, score_table, labels, exp_k=EXP_K):
+        a = score_table - score_table.mean(-1).unsqueeze(-1)
+        entropy = torch.exp(a * exp_k)
         entropy = entropy / entropy.sum(-1).unsqueeze(-1)
         entropy = -torch.log(entropy)
         cross_entropy = (entropy * labels).sum(-1)
