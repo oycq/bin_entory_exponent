@@ -35,6 +35,7 @@ class MyDataset(Dataset):
             self.MARGIN = 0
             self.noise_rate = 0
             _, _, self.images, self.labels = mnist_web.mnist(path='.')
+        self.labels = np.sum(self.labels * np.arange(0,10),1).reshape(-1,1)
         self.len = self.labels.shape[0]
         self.images *= 255
         self.images[self.images<=128] = -1
@@ -47,7 +48,7 @@ class MyDataset(Dataset):
                 (self.MARGIN,self.MARGIN,self.MARGIN,self.MARGIN), "constant", -1)
 
     def get_all(self):
-        return self.images_raw.cuda().float(), self.labels.cuda().float()
+        return self.images_raw.cuda().float(), self.labels.cuda().type(torch.long).squeeze(-1)
 
     def __len__(self):
         return 100 * self.len
@@ -80,7 +81,7 @@ class DataFeeder():
             data  = next(self.dl_iter)
         images, labels = data
         images = images.cuda().float()
-        labels = labels.cuda().float()
+        labels = labels.cuda().type(torch.long).squeeze(-1)
         return images, labels
 
 if __name__ == '__main__':
