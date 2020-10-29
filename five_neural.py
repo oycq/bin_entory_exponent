@@ -250,11 +250,11 @@ class Drillmaster():
         self._init_net()
 
 
-master = Drillmaster([Layer(200)], 200, 100)
+master = Drillmaster([Layer(200)], 1000, 100)
 for hid in range(200):
     print('\n%5d'%hid)
     for f in range(5):
-        for i in range(400):
+        for i in range(4000):
             images, labels = data_feeder.feed()
             master.dissecting_column(images, labels)
             #if i % 1000 == 999:
