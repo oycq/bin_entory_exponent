@@ -1,0 +1,1600 @@
+
+    0
+  372    bit_w  1    loss  2.26610 accurate     14.913
+  456    bit_w  1    loss  2.24548 accurate     16.827
+  399    bit_w  1    loss  2.25272 accurate     15.480
+  401    bit_w  1    loss  2.23919 accurate     16.523
+  113    bit_w -1    loss  2.24320 accurate     15.876
+Save neural_400_100_LAYER0 Done ..
+
+    1
+  540    bit_w  1    loss  2.20216 accurate     19.293
+  595    bit_w  1    loss  2.18138 accurate     20.433
+  569    bit_w  1    loss  2.18482 accurate     20.231
+  594    bit_w  1    loss  2.16996 accurate     20.944
+  769    bit_w -1    loss  2.17500 accurate     20.490
+Save neural_400_100_LAYER0 Done ..
+
+    2
+  486    bit_w -1    loss  2.13366 accurate     22.685
+  403    bit_w -1    loss  2.10415 accurate     23.339
+  487    bit_w -1    loss  2.12357 accurate     22.064
+  431    bit_w -1    loss  2.09573 accurate     22.796
+  683    bit_w  1    loss  2.11688 accurate     22.250
+Save neural_400_100_LAYER0 Done ..
+
+    3
+  348    bit_w  1    loss  2.07176 accurate     25.058
+  375    bit_w  1    loss  2.05324 accurate     26.498
+  347    bit_w  1    loss  2.05623 accurate     24.192
+  349    bit_w  1    loss  2.05138 accurate     24.783
+  456    bit_w -1    loss  2.05200 accurate     24.440
+Save neural_400_100_LAYER0 Done ..
+
+    4
+  462    bit_w -1    loss  2.01615 accurate     28.106
+  407    bit_w -1    loss  1.98920 accurate     28.668
+  424    bit_w  1    loss  1.99719 accurate     28.567
+  518    bit_w -1    loss  1.98312 accurate     29.024
+  397    bit_w  1    loss  1.99661 accurate     28.843
+Save neural_400_100_LAYER0 Done ..
+
+    5
+  264    bit_w  1    loss  1.95879 accurate     31.364
+  208    bit_w  1    loss  1.92846 accurate     32.734
+  424    bit_w -1    loss  1.93932 accurate     32.464
+  152    bit_w  1    loss  1.91873 accurate     32.819
+  425    bit_w -1    loss  1.92673 accurate     32.633
+Save neural_400_100_LAYER0 Done ..
+
+    6
+  495    bit_w -1    loss  1.89795 accurate     34.147
+  579    bit_w -1    loss  1.86343 accurate     34.798
+   87    bit_w  1    loss  1.87617 accurate     34.544
+  440    bit_w -1    loss  1.85833 accurate     34.962
+  552    bit_w -1    loss  1.87045 accurate     34.870
+Save neural_400_100_LAYER0 Done ..
+
+    7
+  543    bit_w  1    loss  1.83425 accurate     36.424
+  545    bit_w  1    loss  1.81362 accurate     37.248
+  736    bit_w -1    loss  1.82054 accurate     37.037
+  542    bit_w  1    loss  1.81002 accurate     37.485
+  344    bit_w -1    loss  1.81660 accurate     37.149
+Save neural_400_100_LAYER0 Done ..
+
+    8
+  433    bit_w  1    loss  1.77845 accurate     38.917
+  377    bit_w  1    loss  1.75777 accurate     39.219
+  405    bit_w  1    loss  1.76656 accurate     38.923
+  460    bit_w  1    loss  1.74961 accurate     39.321
+  385    bit_w -1    loss  1.76226 accurate     38.975
+Save neural_400_100_LAYER0 Done ..
+
+    9
+  294    bit_w -1    loss  1.72106 accurate     40.667
+  238    bit_w -1    loss  1.70396 accurate     41.356
+  267    bit_w -1    loss  1.71946 accurate     40.590
+  322    bit_w -1    loss  1.70268 accurate     41.174
+  614    bit_w  1    loss  1.71581 accurate     40.870
+Save neural_400_100_LAYER0 Done ..
+
+   10
+  127    bit_w -1    loss  1.67393 accurate     42.449
+  683    bit_w  1    loss  1.64431 accurate     43.710
+  183    bit_w -1    loss  1.65827 accurate     42.981
+  685    bit_w  1    loss  1.63541 accurate     43.952
+   70    bit_w -1    loss  1.64598 accurate     43.646
+Save neural_400_100_LAYER0 Done ..
+
+   11
+  243    bit_w -1    loss  1.60383 accurate     45.345
+  241    bit_w -1    loss  1.58139 accurate     46.073
+  270    bit_w -1    loss  1.59920 accurate     45.776
+  244    bit_w -1    loss  1.57487 accurate     46.470
+   28    bit_w  1    loss  1.57800 accurate     46.226
+Save neural_400_100_LAYER0 Done ..
+
+   12
+  353    bit_w -1    loss  1.54180 accurate     47.654
+  351    bit_w -1    loss  1.52786 accurate     48.133
+  380    bit_w -1    loss  1.52931 accurate     48.007
+  324    bit_w -1    loss  1.51995 accurate     48.162
+  690    bit_w  1    loss  1.52862 accurate     47.994
+Save neural_400_100_LAYER0 Done ..
+
+   13
+  212    bit_w  1    loss  1.48628 accurate     49.536
+  157    bit_w  1    loss  1.46743 accurate     50.286
+   45    bit_w -1    loss  1.48246 accurate     50.014
+  240    bit_w  1    loss  1.46877 accurate     50.276
+  185    bit_w  1    loss  1.47308 accurate     50.195
+Save neural_400_100_LAYER0 Done ..
+
+   14
+  327    bit_w  1    loss  1.43370 accurate     51.609
+  301    bit_w  1    loss  1.42124 accurate     52.212
+  355    bit_w  1    loss  1.42644 accurate     51.836
+  329    bit_w  1    loss  1.40559 accurate     52.770
+   36    bit_w -1    loss  1.41024 accurate     52.577
+Save neural_400_100_LAYER0 Done ..
+
+   15
+  296    bit_w -1    loss  1.38424 accurate     53.617
+  189    bit_w  1    loss  1.36904 accurate     54.173
+  297    bit_w -1    loss  1.38159 accurate     53.663
+  217    bit_w  1    loss  1.35883 accurate     54.577
+  295    bit_w -1    loss  1.38088 accurate     53.813
+Save neural_400_100_LAYER0 Done ..
+
+   16
+  520    bit_w  1    loss  1.35047 accurate     54.703
+  603    bit_w  1    loss  1.34138 accurate     55.069
+  313    bit_w -1    loss  1.34356 accurate     54.892
+  261    bit_w -1    loss  1.33609 accurate     55.201
+  577    bit_w  1    loss  1.34032 accurate     54.899
+Save neural_400_100_LAYER0 Done ..
+
+   17
+  627    bit_w  1    loss  1.30567 accurate     56.114
+  681    bit_w  1    loss  1.29650 accurate     56.387
+   72    bit_w -1    loss  1.29885 accurate     56.486
+  625    bit_w  1    loss  1.28361 accurate     56.768
+  777    bit_w -1    loss  1.28973 accurate     56.784
+Save neural_400_100_LAYER0 Done ..
+
+   18
+  436    bit_w  1    loss  1.27184 accurate     57.082
+  410    bit_w  1    loss  1.25243 accurate     58.061
+  408    bit_w  1    loss  1.26438 accurate     57.468
+  438    bit_w  1    loss  1.24381 accurate     58.228
+  391    bit_w -1    loss  1.24986 accurate     58.051
+Save neural_400_100_LAYER0 Done ..
+
+   19
+  318    bit_w -1    loss  1.23569 accurate     58.676
+  315    bit_w -1    loss  1.21490 accurate     59.239
+  584    bit_w  1    loss  1.22488 accurate     58.865
+  289    bit_w -1    loss  1.21665 accurate     59.171
+  288    bit_w -1    loss  1.21293 accurate     59.241
+Save neural_400_100_LAYER0 Done ..
+
+   20
+  659    bit_w  1    loss  1.18684 accurate     60.150
+  657    bit_w  1    loss  1.18166 accurate     60.187
+  102    bit_w -1    loss  1.18226 accurate     60.240
+  661    bit_w  1    loss  1.16312 accurate     60.878
+   97    bit_w -1    loss  1.16977 accurate     60.672
+Save neural_400_100_LAYER0 Done ..
+
+   21
+  489    bit_w  1    loss  1.14558 accurate     61.601
+  463    bit_w  1    loss  1.14531 accurate     61.600
+  160    bit_w -1    loss  1.14321 accurate     61.576
+  191    bit_w -1    loss  1.14215 accurate     61.653
+  367    bit_w  1    loss  1.14421 accurate     61.604
+Save neural_400_100_LAYER0 Done ..
+
+   22
+  292    bit_w  1    loss  1.13448 accurate     62.047
+  178    bit_w -1    loss  1.12004 accurate     62.513
+  232    bit_w -1    loss  1.12644 accurate     62.243
+  291    bit_w  1    loss  1.10257 accurate     63.041
+  207    bit_w -1    loss  1.10753 accurate     62.846
+Save neural_400_100_LAYER0 Done ..
+
+   23
+  546    bit_w  1    loss  1.09344 accurate     63.348
+  601    bit_w  1    loss  1.08891 accurate     63.440
+  751    bit_w -1    loss  1.08664 accurate     63.503
+  572    bit_w  1    loss  1.08288 accurate     63.602
+  602    bit_w  1    loss  1.08528 accurate     63.683
+Save neural_400_100_LAYER0 Done ..
+
+   24
+  237    bit_w -1    loss  1.06812 accurate     64.325
+  235    bit_w -1    loss  1.05250 accurate     64.708
+   92    bit_w  1    loss  1.05406 accurate     64.809
+  181    bit_w -1    loss  1.06279 accurate     64.316
+  238    bit_w -1    loss  1.05879 accurate     64.600
+Save neural_400_100_LAYER0 Done ..
+
+   25
+  123    bit_w -1    loss  1.04020 accurate     65.262
+  125    bit_w -1    loss  1.03155 accurate     65.533
+  151    bit_w -1    loss  1.03972 accurate     65.216
+  124    bit_w -1    loss  1.02695 accurate     65.654
+  359    bit_w  1    loss  1.02475 accurate     65.711
+Save neural_400_100_LAYER0 Done ..
+
+   26
+  350    bit_w -1    loss  1.01521 accurate     66.066
+  406    bit_w -1    loss  1.00945 accurate     66.167
+  325    bit_w  1    loss  1.01976 accurate     65.862
+  149    bit_w -1    loss  1.01247 accurate     66.162
+  274    bit_w  1    loss  1.01867 accurate     65.889
+Save neural_400_100_LAYER0 Done ..
+
+   27
+  515    bit_w -1    loss  1.00038 accurate     66.515
+  570    bit_w -1    loss  0.98096 accurate     67.214
+  708    bit_w  1    loss  0.99481 accurate     66.701
+  484    bit_w -1    loss  0.99916 accurate     66.575
+  513    bit_w -1    loss  0.99246 accurate     66.695
+Save neural_400_100_LAYER0 Done ..
+
+   28
+  402    bit_w  1    loss  0.98551 accurate     67.260
+  374    bit_w  1    loss  0.97877 accurate     67.308
+  430    bit_w  1    loss  0.96747 accurate     67.739
+  589    bit_w -1    loss  0.96720 accurate     67.711
+  214    bit_w  1    loss  0.97796 accurate     67.317
+Save neural_400_100_LAYER0 Done ..
+
+   29
+  635    bit_w  1    loss  0.95652 accurate     67.965
+  637    bit_w  1    loss  0.95532 accurate     68.171
+  607    bit_w  1    loss  0.95504 accurate     68.182
+   22    bit_w -1    loss  0.95295 accurate     68.234
+  664    bit_w  1    loss  0.94513 accurate     68.485
+Save neural_400_100_LAYER0 Done ..
+
+   30
+  483    bit_w  1    loss  0.93396 accurate     68.792
+  457    bit_w  1    loss  0.93716 accurate     68.714
+  560    bit_w -1    loss  0.92781 accurate     68.919
+  454    bit_w  1    loss  0.92667 accurate     68.980
+  363    bit_w -1    loss  0.92709 accurate     69.125
+Save neural_400_100_LAYER0 Done ..
+
+   31
+  492    bit_w  1    loss  0.92015 accurate     69.117
+  548    bit_w  1    loss  0.91043 accurate     69.608
+  190    bit_w -1    loss  0.91473 accurate     69.417
+  493    bit_w  1    loss  0.90654 accurate     69.749
+  246    bit_w -1    loss  0.90808 accurate     69.664
+Save neural_400_100_LAYER0 Done ..
+
+   32
+  239    bit_w  1    loss  0.90190 accurate     70.002
+  211    bit_w  1    loss  0.89271 accurate     70.228
+  330    bit_w -1    loss  0.89624 accurate     70.070
+  182    bit_w  1    loss  0.89659 accurate     70.131
+  674    bit_w -1    loss  0.89659 accurate     70.040
+Save neural_400_100_LAYER0 Done ..
+
+   33
+  292    bit_w  1    loss  0.88557 accurate     70.471
+  188    bit_w -1    loss  0.88245 accurate     70.665
+  290    bit_w  1    loss  0.88131 accurate     70.620
+  264    bit_w  1    loss  0.88228 accurate     70.653
+  133    bit_w -1    loss  0.88102 accurate     70.706
+Save neural_400_100_LAYER0 Done ..
+
+   34
+  488    bit_w  1    loss  0.86861 accurate     71.109
+  516    bit_w  1    loss  0.86676 accurate     71.180
+  517    bit_w  1    loss  0.86733 accurate     71.133
+  290    bit_w -1    loss  0.85277 accurate     71.661
+  636    bit_w  1    loss  0.86173 accurate     71.266
+Save neural_400_100_LAYER0 Done ..
+
+   35
+  293    bit_w  1    loss  0.85970 accurate     71.445
+  349    bit_w  1    loss  0.85535 accurate     71.680
+  320    bit_w  1    loss  0.86094 accurate     71.385
+  240    bit_w -1    loss  0.85206 accurate     71.763
+  295    bit_w  1    loss  0.85367 accurate     71.635
+Save neural_400_100_LAYER0 Done ..
+
+   36
+  459    bit_w  1    loss  0.84776 accurate     71.882
+  461    bit_w  1    loss  0.84137 accurate     72.119
+  416    bit_w -1    loss  0.84405 accurate     72.054
+  352    bit_w -1    loss  0.84586 accurate     71.925
+   72    bit_w  1    loss  0.84999 accurate     71.686
+Save neural_400_100_LAYER0 Done ..
+
+   37
+  286    bit_w -1    loss  0.84203 accurate     72.161
+  342    bit_w -1    loss  0.83873 accurate     72.233
+  341    bit_w -1    loss  0.83672 accurate     72.176
+  284    bit_w -1    loss  0.83103 accurate     72.433
+  363    bit_w  1    loss  0.82599 accurate     72.613
+Save neural_400_100_LAYER0 Done ..
+
+   38
+  273    bit_w  1    loss  0.81980 accurate     72.886
+  275    bit_w  1    loss  0.81362 accurate     73.042
+  764    bit_w -1    loss  0.80912 accurate     73.065
+  219    bit_w  1    loss  0.80742 accurate     73.179
+  110    bit_w -1    loss  0.81033 accurate     73.154
+Save neural_400_100_LAYER0 Done ..
+
+   39
+  709    bit_w  1    loss  0.80078 accurate     73.397
+  130    bit_w -1    loss  0.80871 accurate     73.111
+  102    bit_w -1    loss  0.80882 accurate     73.250
+  157    bit_w -1    loss  0.80357 accurate     73.361
+  417    bit_w -1    loss  0.80411 accurate     73.429
+Save neural_400_100_LAYER0 Done ..
+
+   40
+  298    bit_w  1    loss  0.79421 accurate     73.717
+  650    bit_w  1    loss  0.79442 accurate     73.825
+  326    bit_w  1    loss  0.79886 accurate     73.728
+  714    bit_w -1    loss  0.78841 accurate     73.858
+  768    bit_w -1    loss  0.79425 accurate     73.748
+Save neural_400_100_LAYER0 Done ..
+
+   41
+  268    bit_w  1    loss  0.78515 accurate     74.086
+  715    bit_w  1    loss  0.78084 accurate     74.194
+  240    bit_w  1    loss  0.78353 accurate     74.101
+  163    bit_w -1    loss  0.77971 accurate     74.268
+  335    bit_w -1    loss  0.78810 accurate     74.019
+Save neural_400_100_LAYER0 Done ..
+
+   42
+  214    bit_w  1    loss  0.78233 accurate     74.178
+  159    bit_w  1    loss  0.76879 accurate     74.472
+  708    bit_w -1    loss  0.76841 accurate     74.576
+  714    bit_w -1    loss  0.77126 accurate     74.447
+  730    bit_w  1    loss  0.77397 accurate     74.469
+Save neural_400_100_LAYER0 Done ..
+
+   43
+  379    bit_w  1    loss  0.76884 accurate     74.576
+  546    bit_w -1    loss  0.76463 accurate     74.658
+  434    bit_w  1    loss  0.76810 accurate     74.609
+  435    bit_w  1    loss  0.76454 accurate     74.750
+  123    bit_w -1    loss  0.75794 accurate     74.903
+Save neural_400_100_LAYER0 Done ..
+
+   44
+  412    bit_w  1    loss  0.76205 accurate     74.843
+  414    bit_w  1    loss  0.75044 accurate     75.316
+  118    bit_w -1    loss  0.75719 accurate     75.099
+  677    bit_w -1    loss  0.75301 accurate     75.158
+  383    bit_w  1    loss  0.75656 accurate     75.019
+Save neural_400_100_LAYER0 Done ..
+
+   45
+  688    bit_w -1    loss  0.74126 accurate     75.592
+  203    bit_w  1    loss  0.73926 accurate     75.594
+  634    bit_w -1    loss  0.73914 accurate     75.623
+  658    bit_w -1    loss  0.73488 accurate     75.644
+  298    bit_w  1    loss  0.73887 accurate     75.645
+Save neural_400_100_LAYER0 Done ..
+
+   46
+  491    bit_w -1    loss  0.73407 accurate     75.703
+   46    bit_w  1    loss  0.73039 accurate     75.924
+    3    bit_w -1    loss  0.73217 accurate     75.797
+  340    bit_w -1    loss  0.73850 accurate     75.712
+  196    bit_w  1    loss  0.73735 accurate     75.760
+Save neural_400_100_LAYER0 Done ..
+
+   47
+  382    bit_w  1    loss  0.72922 accurate     75.964
+  269    bit_w -1    loss  0.73029 accurate     75.817
+  186    bit_w  1    loss  0.73645 accurate     75.848
+  120    bit_w  1    loss  0.72835 accurate     75.930
+   20    bit_w -1    loss  0.74193 accurate     75.607
+Save neural_400_100_LAYER0 Done ..
+
+   48
+  132    bit_w -1    loss  0.73137 accurate     75.870
+  263    bit_w  1    loss  0.73078 accurate     75.991
+  650    bit_w  1    loss  0.73338 accurate     75.715
+  403    bit_w  1    loss  0.72994 accurate     75.949
+  654    bit_w  1    loss  0.72938 accurate     76.011
+Save neural_400_100_LAYER0 Done ..
+
+   49
+  598    bit_w  1    loss  0.71255 accurate     76.538
+  609    bit_w  1    loss  0.71870 accurate     76.321
+   33    bit_w -1    loss  0.72032 accurate     76.236
+  571    bit_w  1    loss  0.72138 accurate     76.098
+  534    bit_w -1    loss  0.71861 accurate     76.335
+Save neural_400_100_LAYER0 Done ..
+
+   50
+  629    bit_w -1    loss  0.71105 accurate     76.454
+  682    bit_w -1    loss  0.71368 accurate     76.408
+  141    bit_w  1    loss  0.71160 accurate     76.429
+  580    bit_w -1    loss  0.70949 accurate     76.548
+  701    bit_w -1    loss  0.72280 accurate     76.195
+Save neural_400_100_LAYER0 Done ..
+
+   51
+  154    bit_w -1    loss  0.71017 accurate     76.539
+  153    bit_w -1    loss  0.70195 accurate     76.745
+  400    bit_w -1    loss  0.70587 accurate     76.649
+   84    bit_w  1    loss  0.70778 accurate     76.625
+  780    bit_w -1    loss  0.70633 accurate     76.792
+Save neural_400_100_LAYER0 Done ..
+
+   52
+  148    bit_w -1    loss  0.69798 accurate     76.937
+  713    bit_w -1    loss  0.70209 accurate     76.829
+  218    bit_w  1    loss  0.70877 accurate     76.656
+  466    bit_w  1    loss  0.69583 accurate     77.090
+  177    bit_w -1    loss  0.70089 accurate     76.876
+Save neural_400_100_LAYER0 Done ..
+
+   53
+  518    bit_w  1    loss  0.70405 accurate     76.891
+  180    bit_w -1    loss  0.69656 accurate     76.989
+  232    bit_w  1    loss  0.70191 accurate     76.905
+  436    bit_w -1    loss  0.69877 accurate     76.890
+  697    bit_w -1    loss  0.69951 accurate     76.946
+Save neural_400_100_LAYER0 Done ..
+
+   54
+  464    bit_w  1    loss  0.68541 accurate     77.377
+  155    bit_w  1    loss  0.69477 accurate     77.137
+  120    bit_w -1    loss  0.69534 accurate     77.041
+  712    bit_w  1    loss  0.69663 accurate     76.950
+   13    bit_w -1    loss  0.69526 accurate     76.921
+Save neural_400_100_LAYER0 Done ..
+
+   55
+  576    bit_w  1    loss  0.68968 accurate     77.193
+  187    bit_w -1    loss  0.68988 accurate     77.296
+  538    bit_w  1    loss  0.69430 accurate     77.065
+    0    bit_w -1    loss  0.68575 accurate     77.316
+  614    bit_w  1    loss  0.69425 accurate     77.106
+Save neural_400_100_LAYER0 Done ..
+
+   56
+  345    bit_w -1    loss  0.68942 accurate     77.269
+  346    bit_w -1    loss  0.68162 accurate     77.654
+   88    bit_w  1    loss  0.67858 accurate     77.708
+  304    bit_w -1    loss  0.67972 accurate     77.455
+   75    bit_w  1    loss  0.67885 accurate     77.788
+Save neural_400_100_LAYER0 Done ..
+
+   57
+  262    bit_w  1    loss  0.68016 accurate     77.708
+  377    bit_w -1    loss  0.67533 accurate     77.746
+  720    bit_w -1    loss  0.67434 accurate     77.734
+  157    bit_w  1    loss  0.67485 accurate     77.665
+  105    bit_w -1    loss  0.68226 accurate     77.506
+Save neural_400_100_LAYER0 Done ..
+
+   58
+  539    bit_w -1    loss  0.67661 accurate     77.706
+  679    bit_w -1    loss  0.67763 accurate     77.793
+  570    bit_w  1    loss  0.67801 accurate     77.575
+  766    bit_w -1    loss  0.67648 accurate     77.750
+  538    bit_w -1    loss  0.67699 accurate     77.673
+Save neural_400_100_LAYER0 Done ..
+
+   59
+  578    bit_w  1    loss  0.66833 accurate     77.894
+  744    bit_w -1    loss  0.66999 accurate     77.915
+  604    bit_w  1    loss  0.67282 accurate     77.811
+  496    bit_w  1    loss  0.66875 accurate     78.042
+  570    bit_w  1    loss  0.67093 accurate     77.821
+Save neural_400_100_LAYER0 Done ..
+
+   60
+  204    bit_w -1    loss  0.66332 accurate     78.238
+  299    bit_w -1    loss  0.66015 accurate     78.323
+  613    bit_w  1    loss  0.66618 accurate     78.021
+  147    bit_w -1    loss  0.66548 accurate     78.121
+  691    bit_w  1    loss  0.66451 accurate     78.089
+Save neural_400_100_LAYER0 Done ..
+
+   61
+  547    bit_w -1    loss  0.66184 accurate     78.122
+  386    bit_w -1    loss  0.66213 accurate     78.124
+  240    bit_w -1    loss  0.66298 accurate     78.135
+  751    bit_w -1    loss  0.65640 accurate     78.361
+  246    bit_w -1    loss  0.65989 accurate     78.304
+Save neural_400_100_LAYER0 Done ..
+
+   62
+  180    bit_w -1    loss  0.65645 accurate     78.289
+  236    bit_w -1    loss  0.65530 accurate     78.297
+  646    bit_w  1    loss  0.65607 accurate     78.368
+  649    bit_w -1    loss  0.65563 accurate     78.436
+  206    bit_w -1    loss  0.65802 accurate     78.306
+Save neural_400_100_LAYER0 Done ..
+
+   63
+  265    bit_w -1    loss  0.65072 accurate     78.662
+  293    bit_w -1    loss  0.65184 accurate     78.610
+  777    bit_w  1    loss  0.65516 accurate     78.359
+  449    bit_w -1    loss  0.64635 accurate     78.919
+  231    bit_w  1    loss  0.65237 accurate     78.654
+Save neural_400_100_LAYER0 Done ..
+
+   64
+   98    bit_w  1    loss  0.64889 accurate     78.681
+  330    bit_w -1    loss  0.64776 accurate     78.777
+  426    bit_w  1    loss  0.64257 accurate     78.866
+   96    bit_w  1    loss  0.63810 accurate     79.040
+  459    bit_w  1    loss  0.64762 accurate     78.828
+Save neural_400_100_LAYER0 Done ..
+
+   65
+  100    bit_w  1    loss  0.64701 accurate     78.779
+  638    bit_w -1    loss  0.64572 accurate     78.833
+  202    bit_w  1    loss  0.64716 accurate     78.763
+  537    bit_w  1    loss  0.64589 accurate     78.760
+  198    bit_w -1    loss  0.64180 accurate     78.858
+Save neural_400_100_LAYER0 Done ..
+
+   66
+  631    bit_w -1    loss  0.63822 accurate     78.861
+  517    bit_w  1    loss  0.63178 accurate     79.199
+  630    bit_w -1    loss  0.64191 accurate     79.008
+  411    bit_w -1    loss  0.64400 accurate     78.930
+  214    bit_w -1    loss  0.63704 accurate     79.099
+Save neural_400_100_LAYER0 Done ..
+
+   67
+  458    bit_w  1    loss  0.63837 accurate     79.011
+  263    bit_w  1    loss  0.63624 accurate     79.168
+  340    bit_w -1    loss  0.63256 accurate     79.146
+  233    bit_w  1    loss  0.63823 accurate     78.939
+  632    bit_w -1    loss  0.63363 accurate     79.186
+Save neural_400_100_LAYER0 Done ..
+
+   68
+  553    bit_w -1    loss  0.64439 accurate     78.867
+  695    bit_w -1    loss  0.63301 accurate     79.275
+  230    bit_w  1    loss  0.63838 accurate     79.123
+  381    bit_w  1    loss  0.62804 accurate     79.352
+  717    bit_w  1    loss  0.63619 accurate     79.083
+Save neural_400_100_LAYER0 Done ..
+
+   69
+  404    bit_w -1    loss  0.62784 accurate     79.261
+  305    bit_w -1    loss  0.62435 accurate     79.435
+  447    bit_w  1    loss  0.62650 accurate     79.267
+  429    bit_w -1    loss  0.62785 accurate     79.390
+   44    bit_w  1    loss  0.62136 accurate     79.609
+Save neural_400_100_LAYER0 Done ..
+
+   70
+  206    bit_w -1    loss  0.62557 accurate     79.457
+  162    bit_w -1    loss  0.62106 accurate     79.655
+  605    bit_w  1    loss  0.62349 accurate     79.578
+  725    bit_w  1    loss  0.62786 accurate     79.374
+  554    bit_w  1    loss  0.62561 accurate     79.388
+Save neural_400_100_LAYER0 Done ..
+
+   71
+  269    bit_w -1    loss  0.62265 accurate     79.545
+  101    bit_w  1    loss  0.62280 accurate     79.561
+  435    bit_w  1    loss  0.62210 accurate     79.558
+  191    bit_w  1    loss  0.62034 accurate     79.626
+  155    bit_w -1    loss  0.61995 accurate     79.614
+Save neural_400_100_LAYER0 Done ..
+
+   72
+  596    bit_w  1    loss  0.62248 accurate     79.629
+  397    bit_w  1    loss  0.62115 accurate     79.539
+  160    bit_w -1    loss  0.62576 accurate     79.284
+  350    bit_w -1    loss  0.62048 accurate     79.640
+  540    bit_w  1    loss  0.63003 accurate     79.330
+Save neural_400_100_LAYER0 Done ..
+
+   73
+  435    bit_w  1    loss  0.61536 accurate     79.729
+  633    bit_w -1    loss  0.61752 accurate     79.768
+  708    bit_w -1    loss  0.61742 accurate     79.715
+  165    bit_w  1    loss  0.62280 accurate     79.550
+  101    bit_w -1    loss  0.61516 accurate     79.870
+Save neural_400_100_LAYER0 Done ..
+
+   74
+  599    bit_w -1    loss  0.61636 accurate     79.781
+  742    bit_w  1    loss  0.61322 accurate     79.861
+  683    bit_w -1    loss  0.61675 accurate     79.735
+  189    bit_w -1    loss  0.61375 accurate     79.982
+  353    bit_w -1    loss  0.61645 accurate     79.797
+Save neural_400_100_LAYER0 Done ..
+
+   75
+  299    bit_w -1    loss  0.61373 accurate     79.904
+  234    bit_w  1    loss  0.61200 accurate     79.800
+  126    bit_w -1    loss  0.60993 accurate     79.880
+  191    bit_w  1    loss  0.60987 accurate     80.005
+  105    bit_w  1    loss  0.61258 accurate     79.940
+Save neural_400_100_LAYER0 Done ..
+
+   76
+  656    bit_w -1    loss  0.60508 accurate     80.126
+  599    bit_w -1    loss  0.60907 accurate     79.987
+  688    bit_w  1    loss  0.60981 accurate     79.990
+  281    bit_w -1    loss  0.60603 accurate     80.003
+  490    bit_w  1    loss  0.60699 accurate     79.984
+Save neural_400_100_LAYER0 Done ..
+
+   77
+  297    bit_w  1    loss  0.60779 accurate     80.057
+  689    bit_w  1    loss  0.61028 accurate     79.963
+  656    bit_w -1    loss  0.60936 accurate     79.992
+  455    bit_w -1    loss  0.60910 accurate     79.984
+  524    bit_w  1    loss  0.60527 accurate     80.146
+Save neural_400_100_LAYER0 Done ..
+
+   78
+  739    bit_w -1    loss  0.59881 accurate     80.413
+  711    bit_w -1    loss  0.60295 accurate     80.159
+  743    bit_w -1    loss  0.60596 accurate     80.141
+  392    bit_w  1    loss  0.60409 accurate     80.163
+  659    bit_w -1    loss  0.60333 accurate     80.275
+Save neural_400_100_LAYER0 Done ..
+
+   79
+  272    bit_w -1    loss  0.59933 accurate     80.362
+  378    bit_w  1    loss  0.59787 accurate     80.408
+  620    bit_w  1    loss  0.59615 accurate     80.455
+   40    bit_w -1    loss  0.59895 accurate     80.332
+  388    bit_w -1    loss  0.60263 accurate     80.282
+Save neural_400_100_LAYER0 Done ..
+
+   80
+  155    bit_w -1    loss  0.60122 accurate     80.267
+  210    bit_w -1    loss  0.58907 accurate     80.641
+  200    bit_w  1    loss  0.59608 accurate     80.362
+  355    bit_w  1    loss  0.58998 accurate     80.533
+  694    bit_w -1    loss  0.59261 accurate     80.530
+Save neural_400_100_LAYER0 Done ..
+
+   81
+  384    bit_w -1    loss  0.58614 accurate     80.852
+  370    bit_w -1    loss  0.58903 accurate     80.640
+  623    bit_w  1    loss  0.59989 accurate     80.390
+  316    bit_w -1    loss  0.59597 accurate     80.443
+  727    bit_w  1    loss  0.59506 accurate     80.458
+Save neural_400_100_LAYER0 Done ..
+
+   82
+  547    bit_w  1    loss  0.59352 accurate     80.533
+  518    bit_w  1    loss  0.58580 accurate     80.795
+  370    bit_w -1    loss  0.59052 accurate     80.696
+  706    bit_w -1    loss  0.58846 accurate     80.720
+   78    bit_w -1    loss  0.58292 accurate     80.818
+Save neural_400_100_LAYER0 Done ..
+
+   83
+  214    bit_w  1    loss  0.58919 accurate     80.674
+  176    bit_w  1    loss  0.58726 accurate     80.847
+   82    bit_w -1    loss  0.58389 accurate     80.822
+  178    bit_w  1    loss  0.58639 accurate     80.728
+  433    bit_w -1    loss  0.59096 accurate     80.683
+Save neural_400_100_LAYER0 Done ..
+
+   84
+  494    bit_w -1    loss  0.58572 accurate     80.774
+  497    bit_w -1    loss  0.57707 accurate     81.119
+  196    bit_w  1    loss  0.58773 accurate     80.733
+  465    bit_w -1    loss  0.57811 accurate     80.999
+  557    bit_w  1    loss  0.58791 accurate     80.637
+Save neural_400_100_LAYER0 Done ..
+
+   85
+  105    bit_w  1    loss  0.58085 accurate     80.965
+  494    bit_w  1    loss  0.58058 accurate     81.101
+  133    bit_w  1    loss  0.58165 accurate     80.906
+  549    bit_w -1    loss  0.58153 accurate     80.887
+  485    bit_w -1    loss  0.58162 accurate     80.992
+Save neural_400_100_LAYER0 Done ..
+
+   86
+  387    bit_w  1    loss  0.57718 accurate     81.078
+  256    bit_w  1    loss  0.57727 accurate     81.034
+  772    bit_w -1    loss  0.57612 accurate     81.039
+  536    bit_w -1    loss  0.57520 accurate     81.219
+  591    bit_w -1    loss  0.57963 accurate     80.862
+Save neural_400_100_LAYER0 Done ..
+
+   87
+  575    bit_w -1    loss  0.57850 accurate     81.064
+  321    bit_w  1    loss  0.57280 accurate     81.173
+  160    bit_w  1    loss  0.57560 accurate     81.042
+  544    bit_w -1    loss  0.57587 accurate     81.125
+  326    bit_w  1    loss  0.57955 accurate     80.938
+Save neural_400_100_LAYER0 Done ..
+
+   88
+  679    bit_w -1    loss  0.56825 accurate     81.390
+  745    bit_w  1    loss  0.57748 accurate     81.204
+  718    bit_w -1    loss  0.58022 accurate     81.082
+  128    bit_w  1    loss  0.57405 accurate     81.117
+  184    bit_w  1    loss  0.57574 accurate     81.088
+Save neural_400_100_LAYER0 Done ..
+
+   89
+  209    bit_w -1    loss  0.57067 accurate     81.328
+  319    bit_w  1    loss  0.57477 accurate     81.157
+  344    bit_w  1    loss  0.56871 accurate     81.411
+  782    bit_w  1    loss  0.56835 accurate     81.412
+   88    bit_w -1    loss  0.56765 accurate     81.373
+Save neural_400_100_LAYER0 Done ..
+
+   90
+  382    bit_w -1    loss  0.56932 accurate     81.366
+  652    bit_w  1    loss  0.56708 accurate     81.425
+   98    bit_w  1    loss  0.56435 accurate     81.494
+  720    bit_w -1    loss  0.56270 accurate     81.578
+  718    bit_w -1    loss  0.56946 accurate     81.429
+Save neural_400_100_LAYER0 Done ..
+
+   91
+  645    bit_w  1    loss  0.57137 accurate     81.298
+  352    bit_w  1    loss  0.56335 accurate     81.538
+   45    bit_w -1    loss  0.56580 accurate     81.490
+  542    bit_w  1    loss  0.56559 accurate     81.517
+   66    bit_w -1    loss  0.56524 accurate     81.544
+Save neural_400_100_LAYER0 Done ..
+
+   92
+  202    bit_w  1    loss  0.56523 accurate     81.382
+  550    bit_w -1    loss  0.56354 accurate     81.548
+  489    bit_w  1    loss  0.56263 accurate     81.476
+  349    bit_w -1    loss  0.56454 accurate     81.569
+  756    bit_w -1    loss  0.56660 accurate     81.573
+Save neural_400_100_LAYER0 Done ..
+
+   93
+  677    bit_w  1    loss  0.56165 accurate     81.692
+  715    bit_w  1    loss  0.56344 accurate     81.595
+  778    bit_w -1    loss  0.55485 accurate     81.783
+  448    bit_w -1    loss  0.56349 accurate     81.493
+  716    bit_w  1    loss  0.56541 accurate     81.401
+Save neural_400_100_LAYER0 Done ..
+
+   94
+  185    bit_w  1    loss  0.56088 accurate     81.662
+  179    bit_w -1    loss  0.55781 accurate     81.749
+  119    bit_w -1    loss  0.56344 accurate     81.571
+  713    bit_w  1    loss  0.55510 accurate     81.895
+   99    bit_w -1    loss  0.55978 accurate     81.751
+Save neural_400_100_LAYER0 Done ..
+
+   95
+  160    bit_w -1    loss  0.55817 accurate     81.689
+  566    bit_w -1    loss  0.55485 accurate     81.725
+  349    bit_w  1    loss  0.55849 accurate     81.658
+  386    bit_w  1    loss  0.56143 accurate     81.633
+  731    bit_w  1    loss  0.55988 accurate     81.714
+Save neural_400_100_LAYER0 Done ..
+
+   96
+  428    bit_w  1    loss  0.55525 accurate     81.906
+  684    bit_w  1    loss  0.55868 accurate     81.842
+  669    bit_w -1    loss  0.55903 accurate     81.673
+  651    bit_w  1    loss  0.55491 accurate     81.874
+  723    bit_w -1    loss  0.55681 accurate     81.845
+Save neural_400_100_LAYER0 Done ..
+
+   97
+  597    bit_w -1    loss  0.55816 accurate     81.818
+  549    bit_w  1    loss  0.55513 accurate     81.912
+  226    bit_w -1    loss  0.55438 accurate     81.855
+  743    bit_w  1    loss  0.54844 accurate     81.978
+  323    bit_w -1    loss  0.55595 accurate     81.854
+Save neural_400_100_LAYER0 Done ..
+
+   98
+  350    bit_w -1    loss  0.54741 accurate     82.055
+   74    bit_w  1    loss  0.55507 accurate     81.838
+  298    bit_w -1    loss  0.55690 accurate     81.785
+  733    bit_w -1    loss  0.54438 accurate     82.118
+  311    bit_w -1    loss  0.55062 accurate     82.020
+Save neural_400_100_LAYER0 Done ..
+
+   99
+  442    bit_w -1    loss  0.54649 accurate     82.060
+  131    bit_w -1    loss  0.55510 accurate     81.937
+  572    bit_w  1    loss  0.55590 accurate     81.786
+  304    bit_w  1    loss  0.54823 accurate     82.018
+  427    bit_w  1    loss  0.54543 accurate     82.149
+Save neural_400_100_LAYER0 Done ..
+
+  100
+  601    bit_w -1    loss  0.55249 accurate     81.967
+  737    bit_w -1    loss  0.54808 accurate     82.028
+  187    bit_w  1    loss  0.55030 accurate     82.005
+  287    bit_w  1    loss  0.55125 accurate     82.039
+  727    bit_w  1    loss  0.54912 accurate     82.036
+Save neural_400_100_LAYER0 Done ..
+
+  101
+  432    bit_w -1    loss  0.54823 accurate     81.997
+  523    bit_w  1    loss  0.54634 accurate     82.139
+  303    bit_w -1    loss  0.54561 accurate     82.139
+  132    bit_w -1    loss  0.54711 accurate     82.079
+  415    bit_w  1    loss  0.54680 accurate     82.112
+Save neural_400_100_LAYER0 Done ..
+
+  102
+  295    bit_w  1    loss  0.54604 accurate     82.151
+  482    bit_w  1    loss  0.54405 accurate     82.121
+  549    bit_w -1    loss  0.54924 accurate     82.008
+  561    bit_w  1    loss  0.54739 accurate     82.032
+  602    bit_w -1    loss  0.54389 accurate     82.327
+Save neural_400_100_LAYER0 Done ..
+
+  103
+  572    bit_w  1    loss  0.54478 accurate     82.125
+  269    bit_w  1    loss  0.54674 accurate     82.082
+  211    bit_w -1    loss  0.54737 accurate     82.100
+  382    bit_w -1    loss  0.54523 accurate     82.112
+  423    bit_w  1    loss  0.53912 accurate     82.349
+Save neural_400_100_LAYER0 Done ..
+
+  104
+  262    bit_w  1    loss  0.53928 accurate     82.379
+  291    bit_w  1    loss  0.54022 accurate     82.326
+  195    bit_w  1    loss  0.53844 accurate     82.447
+  302    bit_w -1    loss  0.54385 accurate     82.172
+  482    bit_w -1    loss  0.53929 accurate     82.328
+Save neural_400_100_LAYER0 Done ..
+
+  105
+  319    bit_w -1    loss  0.53672 accurate     82.456
+  447    bit_w -1    loss  0.54077 accurate     82.269
+  646    bit_w  1    loss  0.53991 accurate     82.274
+  401    bit_w  1    loss  0.54412 accurate     82.152
+    1    bit_w -1    loss  0.53844 accurate     82.317
+Save neural_400_100_LAYER0 Done ..
+
+  106
+  692    bit_w  1    loss  0.53789 accurate     82.344
+  428    bit_w -1    loss  0.53814 accurate     82.427
+  317    bit_w  1    loss  0.54056 accurate     82.382
+  508    bit_w -1    loss  0.53729 accurate     82.329
+  596    bit_w  1    loss  0.54023 accurate     82.381
+Save neural_400_100_LAYER0 Done ..
+
+  107
+  259    bit_w  1    loss  0.53966 accurate     82.340
+  132    bit_w -1    loss  0.53507 accurate     82.448
+   64    bit_w  1    loss  0.53500 accurate     82.511
+  203    bit_w  1    loss  0.53730 accurate     82.502
+   37    bit_w -1    loss  0.53352 accurate     82.587
+Save neural_400_100_LAYER0 Done ..
+
+  108
+  113    bit_w  1    loss  0.53215 accurate     82.609
+  653    bit_w -1    loss  0.53028 accurate     82.638
+  571    bit_w -1    loss  0.52924 accurate     82.579
+  530    bit_w -1    loss  0.53592 accurate     82.535
+  193    bit_w  1    loss  0.53063 accurate     82.655
+Save neural_400_100_LAYER0 Done ..
+
+  109
+  129    bit_w  1    loss  0.53799 accurate     82.313
+  626    bit_w  1    loss  0.53478 accurate     82.540
+  265    bit_w -1    loss  0.52984 accurate     82.652
+  396    bit_w -1    loss  0.52858 accurate     82.669
+  213    bit_w  1    loss  0.52952 accurate     82.691
+Save neural_400_100_LAYER0 Done ..
+
+  110
+  570    bit_w -1    loss  0.52637 accurate     82.795
+  354    bit_w  1    loss  0.52531 accurate     82.970
+  629    bit_w -1    loss  0.53036 accurate     82.753
+  501    bit_w  1    loss  0.53032 accurate     82.581
+  760    bit_w  1    loss  0.52646 accurate     82.808
+Save neural_400_100_LAYER0 Done ..
+
+  111
+  546    bit_w  1    loss  0.52475 accurate     82.802
+  490    bit_w  1    loss  0.52590 accurate     82.761
+  410    bit_w -1    loss  0.52587 accurate     82.900
+  672    bit_w -1    loss  0.51979 accurate     82.975
+   12    bit_w  1    loss  0.53251 accurate     82.541
+Save neural_400_100_LAYER0 Done ..
+
+  112
+   65    bit_w -1    loss  0.52773 accurate     82.683
+  430    bit_w  1    loss  0.52276 accurate     82.909
+  377    bit_w  1    loss  0.52638 accurate     82.859
+  628    bit_w  1    loss  0.52718 accurate     82.766
+  440    bit_w  1    loss  0.52213 accurate     82.875
+Save neural_400_100_LAYER0 Done ..
+
+  113
+  357    bit_w  1    loss  0.52602 accurate     82.795
+   81    bit_w -1    loss  0.51975 accurate     83.097
+   76    bit_w  1    loss  0.53106 accurate     82.687
+  117    bit_w  1    loss  0.52623 accurate     82.808
+   78    bit_w -1    loss  0.52325 accurate     82.869
+Save neural_400_100_LAYER0 Done ..
+
+  114
+  628    bit_w  1    loss  0.52585 accurate     82.818
+  332    bit_w -1    loss  0.51829 accurate     83.031
+  772    bit_w -1    loss  0.52081 accurate     82.937
+  117    bit_w  1    loss  0.52361 accurate     82.897
+  515    bit_w -1    loss  0.52695 accurate     82.777
+Save neural_400_100_LAYER0 Done ..
+
+  115
+  272    bit_w  1    loss  0.51968 accurate     83.099
+  396    bit_w -1    loss  0.52400 accurate     82.869
+  349    bit_w  1    loss  0.51749 accurate     83.057
+  375    bit_w  1    loss  0.51529 accurate     83.179
+  696    bit_w  1    loss  0.51664 accurate     82.977
+Save neural_400_100_LAYER0 Done ..
+
+  116
+   43    bit_w  1    loss  0.51798 accurate     83.122
+  469    bit_w  1    loss  0.51933 accurate     83.017
+  332    bit_w -1    loss  0.52170 accurate     82.925
+  655    bit_w  1    loss  0.51667 accurate     82.955
+  583    bit_w  1    loss  0.51715 accurate     82.974
+Save neural_400_100_LAYER0 Done ..
+
+  117
+  215    bit_w  1    loss  0.51893 accurate     83.000
+  573    bit_w  1    loss  0.51492 accurate     83.081
+  138    bit_w -1    loss  0.51480 accurate     83.183
+  591    bit_w  1    loss  0.51674 accurate     83.059
+  388    bit_w -1    loss  0.51736 accurate     83.075
+Save neural_400_100_LAYER0 Done ..
+
+  118
+  405    bit_w  1    loss  0.51458 accurate     83.097
+  642    bit_w -1    loss  0.51825 accurate     83.123
+  713    bit_w -1    loss  0.51649 accurate     83.091
+  738    bit_w -1    loss  0.51191 accurate     83.343
+  161    bit_w  1    loss  0.52298 accurate     82.918
+Save neural_400_100_LAYER0 Done ..
+
+  119
+  303    bit_w -1    loss  0.51620 accurate     83.177
+  186    bit_w -1    loss  0.51519 accurate     83.253
+  274    bit_w -1    loss  0.51189 accurate     83.315
+  471    bit_w  1    loss  0.51934 accurate     82.982
+  469    bit_w  1    loss  0.51216 accurate     83.275
+Save neural_400_100_LAYER0 Done ..
+
+  120
+  359    bit_w -1    loss  0.51291 accurate     83.195
+  302    bit_w -1    loss  0.51170 accurate     83.307
+  146    bit_w  1    loss  0.50991 accurate     83.241
+  394    bit_w -1    loss  0.51402 accurate     83.306
+  200    bit_w  1    loss  0.51478 accurate     83.243
+Save neural_400_100_LAYER0 Done ..
+
+  121
+  707    bit_w -1    loss  0.51468 accurate     83.325
+  742    bit_w  1    loss  0.50443 accurate     83.444
+  229    bit_w  1    loss  0.50922 accurate     83.348
+  287    bit_w  1    loss  0.51187 accurate     83.324
+  422    bit_w -1    loss  0.51451 accurate     83.181
+Save neural_400_100_LAYER0 Done ..
+
+  122
+  331    bit_w  1    loss  0.50683 accurate     83.338
+    7    bit_w  1    loss  0.50948 accurate     83.338
+  510    bit_w -1    loss  0.50733 accurate     83.459
+  248    bit_w  1    loss  0.51425 accurate     83.144
+  544    bit_w  1    loss  0.51459 accurate     83.154
+Save neural_400_100_LAYER0 Done ..
+
+  123
+  233    bit_w -1    loss  0.50945 accurate     83.383
+  351    bit_w  1    loss  0.50943 accurate     83.361
+  487    bit_w  1    loss  0.50156 accurate     83.576
+  283    bit_w -1    loss  0.50806 accurate     83.495
+  162    bit_w -1    loss  0.50855 accurate     83.408
+Save neural_400_100_LAYER0 Done ..
+
+  124
+  693    bit_w  1    loss  0.50941 accurate     83.375
+  614    bit_w  1    loss  0.51220 accurate     83.313
+  373    bit_w  1    loss  0.50921 accurate     83.454
+  318    bit_w  1    loss  0.50998 accurate     83.355
+  372    bit_w  1    loss  0.50805 accurate     83.451
+Save neural_400_100_LAYER0 Done ..
+
+  125
+  459    bit_w  1    loss  0.50516 accurate     83.541
+   37    bit_w  1    loss  0.50599 accurate     83.369
+  413    bit_w  1    loss  0.50964 accurate     83.425
+  370    bit_w -1    loss  0.50955 accurate     83.398
+  613    bit_w -1    loss  0.50377 accurate     83.545
+Save neural_400_100_LAYER0 Done ..
+
+  126
+  242    bit_w  1    loss  0.50247 accurate     83.515
+  733    bit_w  1    loss  0.50990 accurate     83.345
+  494    bit_w  1    loss  0.50209 accurate     83.627
+  623    bit_w -1    loss  0.50172 accurate     83.586
+  677    bit_w  1    loss  0.50477 accurate     83.460
+Save neural_400_100_LAYER0 Done ..
+
+  127
+  527    bit_w  1    loss  0.50587 accurate     83.553
+   74    bit_w -1    loss  0.50450 accurate     83.630
+  740    bit_w -1    loss  0.50595 accurate     83.499
+  200    bit_w -1    loss  0.49788 accurate     83.663
+   20    bit_w  1    loss  0.50441 accurate     83.473
+Save neural_400_100_LAYER0 Done ..
+
+  128
+  230    bit_w -1    loss  0.50221 accurate     83.597
+  182    bit_w  1    loss  0.50446 accurate     83.462
+  671    bit_w  1    loss  0.49917 accurate     83.702
+  661    bit_w -1    loss  0.50247 accurate     83.638
+  574    bit_w -1    loss  0.50583 accurate     83.509
+Save neural_400_100_LAYER0 Done ..
+
+  129
+  623    bit_w  1    loss  0.50202 accurate     83.643
+   51    bit_w -1    loss  0.49709 accurate     83.708
+  278    bit_w  1    loss  0.50361 accurate     83.584
+  593    bit_w  1    loss  0.50324 accurate     83.556
+  366    bit_w  1    loss  0.50136 accurate     83.565
+Save neural_400_100_LAYER0 Done ..
+
+  130
+  432    bit_w  1    loss  0.50166 accurate     83.587
+  328    bit_w -1    loss  0.49920 accurate     83.663
+  637    bit_w  1    loss  0.50301 accurate     83.526
+  350    bit_w -1    loss  0.50307 accurate     83.558
+  278    bit_w -1    loss  0.50214 accurate     83.529
+Save neural_400_100_LAYER0 Done ..
+
+  131
+  680    bit_w  1    loss  0.50489 accurate     83.440
+  628    bit_w  1    loss  0.49953 accurate     83.779
+  244    bit_w -1    loss  0.50109 accurate     83.706
+  489    bit_w -1    loss  0.49646 accurate     83.789
+  338    bit_w -1    loss  0.49954 accurate     83.669
+Save neural_400_100_LAYER0 Done ..
+
+  132
+  245    bit_w  1    loss  0.49620 accurate     83.869
+  272    bit_w  1    loss  0.49521 accurate     83.784
+  283    bit_w -1    loss  0.49316 accurate     83.890
+  108    bit_w  1    loss  0.49477 accurate     83.899
+  115    bit_w  1    loss  0.49795 accurate     83.828
+Save neural_400_100_LAYER0 Done ..
+
+  133
+  288    bit_w -1    loss  0.49696 accurate     83.752
+  208    bit_w -1    loss  0.49707 accurate     83.726
+  396    bit_w  1    loss  0.49409 accurate     83.815
+  549    bit_w  1    loss  0.49458 accurate     83.855
+  678    bit_w -1    loss  0.49965 accurate     83.632
+Save neural_400_100_LAYER0 Done ..
+
+  134
+  466    bit_w  1    loss  0.49993 accurate     83.633
+  529    bit_w -1    loss  0.49478 accurate     83.878
+   94    bit_w  1    loss  0.49442 accurate     83.869
+   92    bit_w  1    loss  0.49680 accurate     83.809
+   70    bit_w -1    loss  0.50044 accurate     83.634
+Save neural_400_100_LAYER0 Done ..
+
+  135
+  579    bit_w -1    loss  0.50149 accurate     83.634
+  686    bit_w  1    loss  0.49471 accurate     83.836
+  346    bit_w  1    loss  0.48897 accurate     83.917
+  259    bit_w  1    loss  0.49584 accurate     83.782
+  753    bit_w  1    loss  0.49541 accurate     83.836
+Save neural_400_100_LAYER0 Done ..
+
+  136
+  378    bit_w  1    loss  0.49223 accurate     83.967
+  299    bit_w -1    loss  0.49512 accurate     83.887
+  597    bit_w -1    loss  0.49498 accurate     83.819
+  478    bit_w  1    loss  0.49102 accurate     84.040
+  733    bit_w  1    loss  0.49684 accurate     83.756
+Save neural_400_100_LAYER0 Done ..
+
+  137
+  708    bit_w  1    loss  0.49738 accurate     83.820
+  511    bit_w -1    loss  0.48638 accurate     84.136
+  684    bit_w  1    loss  0.49040 accurate     83.877
+  563    bit_w -1    loss  0.49099 accurate     83.989
+  489    bit_w  1    loss  0.48827 accurate     84.009
+Save neural_400_100_LAYER0 Done ..
+
+  138
+  138    bit_w  1    loss  0.49090 accurate     83.993
+  403    bit_w  1    loss  0.48775 accurate     84.052
+   14    bit_w -1    loss  0.49261 accurate     83.970
+  211    bit_w -1    loss  0.48848 accurate     84.002
+  382    bit_w  1    loss  0.48897 accurate     83.984
+Save neural_400_100_LAYER0 Done ..
+
+  139
+  324    bit_w  1    loss  0.48573 accurate     84.065
+  241    bit_w  1    loss  0.48989 accurate     83.990
+   97    bit_w -1    loss  0.48965 accurate     84.057
+  460    bit_w -1    loss  0.48910 accurate     84.028
+  755    bit_w -1    loss  0.48231 accurate     84.209
+Save neural_400_100_LAYER0 Done ..
+
+  140
+  101    bit_w -1    loss  0.49283 accurate     83.963
+  415    bit_w  1    loss  0.48390 accurate     84.183
+  113    bit_w  1    loss  0.48648 accurate     84.120
+  354    bit_w  1    loss  0.48552 accurate     84.177
+  624    bit_w  1    loss  0.48450 accurate     84.211
+Save neural_400_100_LAYER0 Done ..
+
+  141
+  242    bit_w  1    loss  0.49273 accurate     84.013
+  756    bit_w -1    loss  0.48665 accurate     84.141
+  517    bit_w -1    loss  0.48300 accurate     84.257
+  392    bit_w -1    loss  0.48809 accurate     84.103
+  172    bit_w  1    loss  0.48979 accurate     83.982
+Save neural_400_100_LAYER0 Done ..
+
+  142
+  661    bit_w  1    loss  0.49016 accurate     84.178
+  405    bit_w  1    loss  0.48512 accurate     84.255
+  205    bit_w  1    loss  0.48366 accurate     84.112
+  700    bit_w -1    loss  0.48638 accurate     84.129
+  450    bit_w  1    loss  0.48348 accurate     84.138
+Save neural_400_100_LAYER0 Done ..
+
+  143
+  154    bit_w  1    loss  0.48651 accurate     84.207
+   69    bit_w  1    loss  0.48869 accurate     84.092
+  344    bit_w -1    loss  0.48327 accurate     84.258
+  353    bit_w  1    loss  0.48462 accurate     84.228
+  545    bit_w -1    loss  0.48230 accurate     84.368
+Save neural_400_100_LAYER0 Done ..
+
+  144
+  212    bit_w  1    loss  0.48577 accurate     84.209
+  582    bit_w -1    loss  0.48126 accurate     84.292
+  565    bit_w  1    loss  0.48477 accurate     84.207
+   36    bit_w  1    loss  0.48468 accurate     84.140
+  769    bit_w -1    loss  0.48274 accurate     84.295
+Save neural_400_100_LAYER0 Done ..
+
+  145
+  652    bit_w  1    loss  0.48599 accurate     84.114
+   12    bit_w -1    loss  0.48065 accurate     84.238
+  338    bit_w  1    loss  0.48478 accurate     84.160
+  416    bit_w -1    loss  0.48670 accurate     84.079
+  244    bit_w  1    loss  0.48520 accurate     84.254
+Save neural_400_100_LAYER0 Done ..
+
+  146
+  734    bit_w -1    loss  0.48150 accurate     84.308
+  373    bit_w -1    loss  0.48261 accurate     84.277
+  211    bit_w  1    loss  0.48000 accurate     84.350
+  424    bit_w  1    loss  0.48562 accurate     84.227
+  370    bit_w  1    loss  0.47888 accurate     84.246
+Save neural_400_100_LAYER0 Done ..
+
+  147
+  656    bit_w  1    loss  0.48718 accurate     84.137
+  514    bit_w -1    loss  0.48361 accurate     84.205
+  643    bit_w  1    loss  0.48102 accurate     84.309
+  477    bit_w -1    loss  0.48254 accurate     84.294
+  282    bit_w -1    loss  0.48005 accurate     84.349
+Save neural_400_100_LAYER0 Done ..
+
+  148
+  730    bit_w  1    loss  0.48251 accurate     84.342
+  371    bit_w -1    loss  0.48341 accurate     84.294
+  342    bit_w -1    loss  0.47616 accurate     84.432
+   96    bit_w -1    loss  0.48061 accurate     84.325
+  660    bit_w  1    loss  0.48596 accurate     84.111
+Save neural_400_100_LAYER0 Done ..
+
+  149
+  374    bit_w -1    loss  0.47146 accurate     84.586
+  324    bit_w  1    loss  0.47474 accurate     84.504
+  696    bit_w  1    loss  0.47689 accurate     84.418
+  231    bit_w -1    loss  0.47455 accurate     84.575
+  391    bit_w  1    loss  0.47960 accurate     84.388
+Save neural_400_100_LAYER0 Done ..
+
+  150
+  632    bit_w  1    loss  0.47380 accurate     84.521
+    7    bit_w  1    loss  0.47753 accurate     84.462
+   90    bit_w -1    loss  0.47804 accurate     84.318
+  685    bit_w  1    loss  0.47360 accurate     84.530
+  743    bit_w -1    loss  0.47458 accurate     84.607
+Save neural_400_100_LAYER0 Done ..
+
+  151
+  353    bit_w -1    loss  0.47306 accurate     84.600
+  137    bit_w  1    loss  0.47604 accurate     84.514
+  111    bit_w  1    loss  0.47548 accurate     84.439
+  391    bit_w  1    loss  0.47038 accurate     84.624
+  421    bit_w -1    loss  0.47946 accurate     84.337
+Save neural_400_100_LAYER0 Done ..
+
+  152
+  678    bit_w -1    loss  0.46965 accurate     84.669
+  213    bit_w -1    loss  0.47606 accurate     84.501
+  400    bit_w  1    loss  0.47484 accurate     84.519
+  642    bit_w -1    loss  0.47504 accurate     84.494
+  277    bit_w -1    loss  0.47798 accurate     84.397
+Save neural_400_100_LAYER0 Done ..
+
+  153
+  109    bit_w -1    loss  0.47450 accurate     84.532
+  513    bit_w  1    loss  0.47694 accurate     84.553
+   22    bit_w  1    loss  0.47228 accurate     84.575
+  751    bit_w -1    loss  0.47284 accurate     84.659
+   10    bit_w  1    loss  0.47519 accurate     84.461
+Save neural_400_100_LAYER0 Done ..
+
+  154
+  149    bit_w  1    loss  0.47183 accurate     84.596
+  753    bit_w  1    loss  0.47547 accurate     84.423
+  722    bit_w  1    loss  0.47381 accurate     84.580
+  482    bit_w -1    loss  0.47835 accurate     84.377
+   39    bit_w -1    loss  0.47157 accurate     84.552
+Save neural_400_100_LAYER0 Done ..
+
+  155
+  499    bit_w -1    loss  0.47125 accurate     84.607
+  687    bit_w  1    loss  0.47282 accurate     84.655
+  582    bit_w  1    loss  0.47434 accurate     84.529
+  130    bit_w  1    loss  0.46868 accurate     84.710
+  707    bit_w -1    loss  0.47251 accurate     84.599
+Save neural_400_100_LAYER0 Done ..
+
+  156
+  266    bit_w  1    loss  0.47413 accurate     84.599
+  379    bit_w -1    loss  0.47071 accurate     84.569
+  413    bit_w -1    loss  0.47052 accurate     84.660
+  136    bit_w  1    loss  0.47006 accurate     84.695
+  269    bit_w  1    loss  0.47458 accurate     84.521
+Save neural_400_100_LAYER0 Done ..
+
+  157
+  398    bit_w  1    loss  0.46502 accurate     84.756
+  375    bit_w  1    loss  0.46793 accurate     84.737
+  560    bit_w -1    loss  0.46944 accurate     84.653
+  279    bit_w  1    loss  0.47129 accurate     84.639
+  735    bit_w  1    loss  0.47336 accurate     84.608
+Save neural_400_100_LAYER0 Done ..
+
+  158
+  346    bit_w -1    loss  0.47082 accurate     84.495
+  345    bit_w  1    loss  0.47052 accurate     84.715
+  258    bit_w  1    loss  0.47030 accurate     84.628
+  143    bit_w  1    loss  0.46764 accurate     84.796
+  372    bit_w  1    loss  0.47603 accurate     84.444
+Save neural_400_100_LAYER0 Done ..
+
+  159
+  119    bit_w  1    loss  0.47247 accurate     84.602
+  425    bit_w  1    loss  0.46664 accurate     84.836
+  705    bit_w -1    loss  0.46921 accurate     84.761
+  613    bit_w  1    loss  0.46850 accurate     84.746
+  689    bit_w -1    loss  0.47324 accurate     84.589
+Save neural_400_100_LAYER0 Done ..
+
+  160
+  691    bit_w  1    loss  0.46784 accurate     84.803
+  544    bit_w -1    loss  0.46593 accurate     84.818
+  622    bit_w  1    loss  0.47049 accurate     84.630
+  294    bit_w -1    loss  0.47092 accurate     84.719
+  545    bit_w -1    loss  0.46762 accurate     84.768
+Save neural_400_100_LAYER0 Done ..
+
+  161
+  174    bit_w  1    loss  0.46684 accurate     84.783
+  240    bit_w  1    loss  0.46633 accurate     84.799
+  151    bit_w -1    loss  0.46718 accurate     84.880
+  426    bit_w -1    loss  0.46533 accurate     84.892
+  525    bit_w  1    loss  0.46321 accurate     85.013
+Save neural_400_100_LAYER0 Done ..
+
+  162
+  185    bit_w  1    loss  0.46937 accurate     84.779
+  702    bit_w  1    loss  0.46343 accurate     84.877
+  678    bit_w -1    loss  0.46696 accurate     84.832
+  523    bit_w -1    loss  0.46306 accurate     84.944
+  461    bit_w  1    loss  0.46575 accurate     84.800
+Save neural_400_100_LAYER0 Done ..
+
+  163
+  720    bit_w  1    loss  0.47205 accurate     84.580
+  320    bit_w -1    loss  0.46264 accurate     84.919
+  424    bit_w  1    loss  0.47018 accurate     84.622
+   58    bit_w -1    loss  0.46498 accurate     84.764
+  212    bit_w -1    loss  0.46565 accurate     84.823
+Save neural_400_100_LAYER0 Done ..
+
+  164
+  653    bit_w -1    loss  0.47161 accurate     84.668
+  222    bit_w -1    loss  0.46415 accurate     84.959
+  255    bit_w -1    loss  0.46246 accurate     84.964
+  732    bit_w -1    loss  0.47177 accurate     84.637
+  367    bit_w  1    loss  0.46624 accurate     84.711
+Save neural_400_100_LAYER0 Done ..
+
+  165
+  274    bit_w  1    loss  0.46941 accurate     84.683
+  661    bit_w  1    loss  0.46242 accurate     84.938
+  774    bit_w -1    loss  0.46500 accurate     84.903
+  327    bit_w  1    loss  0.46166 accurate     84.946
+  689    bit_w  1    loss  0.46979 accurate     84.683
+Save neural_400_100_LAYER0 Done ..
+
+  166
+  431    bit_w  1    loss  0.46183 accurate     84.914
+   44    bit_w -1    loss  0.47196 accurate     84.658
+  596    bit_w  1    loss  0.46297 accurate     84.970
+  436    bit_w  1    loss  0.46838 accurate     84.854
+  766    bit_w  1    loss  0.46365 accurate     84.835
+Save neural_400_100_LAYER0 Done ..
+
+  167
+  740    bit_w  1    loss  0.46435 accurate     84.831
+  688    bit_w -1    loss  0.46827 accurate     84.699
+  299    bit_w -1    loss  0.46130 accurate     84.974
+  663    bit_w -1    loss  0.46190 accurate     84.873
+  101    bit_w -1    loss  0.46216 accurate     84.923
+Save neural_400_100_LAYER0 Done ..
+
+  168
+  605    bit_w  1    loss  0.46576 accurate     84.871
+  701    bit_w  1    loss  0.46104 accurate     84.886
+  747    bit_w  1    loss  0.46870 accurate     84.775
+  426    bit_w  1    loss  0.46175 accurate     84.869
+  260    bit_w -1    loss  0.46356 accurate     84.876
+Save neural_400_100_LAYER0 Done ..
+
+  169
+  271    bit_w  1    loss  0.45926 accurate     85.002
+  147    bit_w  1    loss  0.46150 accurate     85.001
+  517    bit_w  1    loss  0.46228 accurate     84.971
+  352    bit_w -1    loss  0.46193 accurate     84.921
+  633    bit_w -1    loss  0.46227 accurate     84.952
+Save neural_400_100_LAYER0 Done ..
+
+  170
+  389    bit_w  1    loss  0.46609 accurate     84.868
+  355    bit_w -1    loss  0.45901 accurate     84.996
+  642    bit_w  1    loss  0.46323 accurate     84.840
+  213    bit_w  1    loss  0.46425 accurate     84.928
+  262    bit_w -1    loss  0.46904 accurate     84.743
+Save neural_400_100_LAYER0 Done ..
+
+  171
+  166    bit_w -1    loss  0.45999 accurate     85.026
+  216    bit_w -1    loss  0.45749 accurate     85.164
+   28    bit_w  1    loss  0.46501 accurate     84.905
+  299    bit_w -1    loss  0.46018 accurate     85.019
+  274    bit_w -1    loss  0.46328 accurate     84.872
+Save neural_400_100_LAYER0 Done ..
+
+  172
+  567    bit_w -1    loss  0.46757 accurate     84.717
+   87    bit_w -1    loss  0.46220 accurate     84.975
+  428    bit_w -1    loss  0.46181 accurate     85.025
+  663    bit_w -1    loss  0.46610 accurate     84.809
+   24    bit_w  1    loss  0.46441 accurate     84.928
+Save neural_400_100_LAYER0 Done ..
+
+  173
+  344    bit_w -1    loss  0.46273 accurate     84.992
+  199    bit_w  1    loss  0.45911 accurate     84.925
+  201    bit_w  1    loss  0.46069 accurate     84.972
+  235    bit_w  1    loss  0.45808 accurate     85.120
+    0    bit_w -1    loss  0.46135 accurate     85.072
+Save neural_400_100_LAYER0 Done ..
+
+  174
+  598    bit_w  1    loss  0.46002 accurate     84.941
+  714    bit_w  1    loss  0.45618 accurate     85.109
+  770    bit_w -1    loss  0.46329 accurate     84.992
+  501    bit_w  1    loss  0.46297 accurate     84.944
+  716    bit_w  1    loss  0.45809 accurate     84.899
+Save neural_400_100_LAYER0 Done ..
+
+  175
+   74    bit_w -1    loss  0.45875 accurate     85.059
+  352    bit_w -1    loss  0.46483 accurate     84.853
+  499    bit_w -1    loss  0.46009 accurate     84.985
+  718    bit_w -1    loss  0.45577 accurate     85.089
+  160    bit_w  1    loss  0.45701 accurate     85.041
+Save neural_400_100_LAYER0 Done ..
+
+  176
+  340    bit_w  1    loss  0.46133 accurate     84.843
+  479    bit_w  1    loss  0.45954 accurate     85.010
+   56    bit_w -1    loss  0.45609 accurate     85.136
+  694    bit_w  1    loss  0.45523 accurate     85.175
+   94    bit_w -1    loss  0.45800 accurate     85.139
+Save neural_400_100_LAYER0 Done ..
+
+  177
+  325    bit_w -1    loss  0.45661 accurate     85.108
+  364    bit_w -1    loss  0.45513 accurate     85.156
+   47    bit_w  1    loss  0.45413 accurate     85.273
+  677    bit_w -1    loss  0.45696 accurate     85.046
+  370    bit_w -1    loss  0.45053 accurate     85.345
+Save neural_400_100_LAYER0 Done ..
+
+  178
+  551    bit_w -1    loss  0.45921 accurate     85.051
+  633    bit_w -1    loss  0.45595 accurate     85.099
+  400    bit_w  1    loss  0.45341 accurate     85.202
+  170    bit_w  1    loss  0.45501 accurate     85.237
+  107    bit_w -1    loss  0.45875 accurate     85.001
+Save neural_400_100_LAYER0 Done ..
+
+  179
+  263    bit_w  1    loss  0.45803 accurate     85.007
+  111    bit_w  1    loss  0.45536 accurate     85.159
+  616    bit_w -1    loss  0.45664 accurate     85.185
+  236    bit_w  1    loss  0.45822 accurate     85.195
+  601    bit_w -1    loss  0.45829 accurate     85.127
+Save neural_400_100_LAYER0 Done ..
+
+  180
+  500    bit_w -1    loss  0.45390 accurate     85.348
+  355    bit_w -1    loss  0.45328 accurate     85.240
+  126    bit_w  1    loss  0.45180 accurate     85.224
+  290    bit_w  1    loss  0.45640 accurate     85.168
+  617    bit_w  1    loss  0.45396 accurate     85.160
+Save neural_400_100_LAYER0 Done ..
+
+  181
+  185    bit_w  1    loss  0.45479 accurate     85.167
+  285    bit_w -1    loss  0.45503 accurate     85.137
+  637    bit_w  1    loss  0.45449 accurate     85.215
+  158    bit_w  1    loss  0.44848 accurate     85.352
+  217    bit_w  1    loss  0.45134 accurate     85.350
+Save neural_400_100_LAYER0 Done ..
+
+  182
+  702    bit_w -1    loss  0.45460 accurate     85.242
+  394    bit_w  1    loss  0.45343 accurate     85.175
+  528    bit_w  1    loss  0.45019 accurate     85.364
+  232    bit_w -1    loss  0.45371 accurate     85.201
+  328    bit_w  1    loss  0.45540 accurate     85.215
+Save neural_400_100_LAYER0 Done ..
+
+  183
+  292    bit_w  1    loss  0.45083 accurate     85.410
+  547    bit_w  1    loss  0.45347 accurate     85.264
+  278    bit_w -1    loss  0.45369 accurate     85.166
+  469    bit_w  1    loss  0.45213 accurate     85.311
+  509    bit_w  1    loss  0.44975 accurate     85.321
+Save neural_400_100_LAYER0 Done ..
+
+  184
+  151    bit_w -1    loss  0.44578 accurate     85.476
+  323    bit_w  1    loss  0.45029 accurate     85.344
+  531    bit_w  1    loss  0.44899 accurate     85.375
+  373    bit_w  1    loss  0.44866 accurate     85.302
+  690    bit_w -1    loss  0.45399 accurate     85.184
+Save neural_400_100_LAYER0 Done ..
+
+  185
+  448    bit_w -1    loss  0.44491 accurate     85.440
+  748    bit_w -1    loss  0.45648 accurate     85.237
+  559    bit_w -1    loss  0.45141 accurate     85.252
+  612    bit_w -1    loss  0.45158 accurate     85.313
+  157    bit_w -1    loss  0.45069 accurate     85.368
+Save neural_400_100_LAYER0 Done ..
+
+  186
+  634    bit_w -1    loss  0.44723 accurate     85.402
+  119    bit_w  1    loss  0.44990 accurate     85.336
+  195    bit_w -1    loss  0.45007 accurate     85.332
+   33    bit_w -1    loss  0.44720 accurate     85.445
+  106    bit_w  1    loss  0.45064 accurate     85.367
+Save neural_400_100_LAYER0 Done ..
+
+  187
+  209    bit_w -1    loss  0.44687 accurate     85.404
+  506    bit_w -1    loss  0.45061 accurate     85.318
+  770    bit_w  1    loss  0.44592 accurate     85.493
+  582    bit_w  1    loss  0.44976 accurate     85.291
+   14    bit_w -1    loss  0.44988 accurate     85.349
+Save neural_400_100_LAYER0 Done ..
+
+  188
+  217    bit_w -1    loss  0.44686 accurate     85.436
+  555    bit_w  1    loss  0.45256 accurate     85.307
+  209    bit_w -1    loss  0.45101 accurate     85.401
+  736    bit_w -1    loss  0.44627 accurate     85.564
+   88    bit_w -1    loss  0.44950 accurate     85.452
+Save neural_400_100_LAYER0 Done ..
+
+  189
+   64    bit_w -1    loss  0.44785 accurate     85.490
+  626    bit_w -1    loss  0.44789 accurate     85.462
+  428    bit_w  1    loss  0.44532 accurate     85.540
+  571    bit_w -1    loss  0.45338 accurate     85.275
+  434    bit_w  1    loss  0.44433 accurate     85.539
+Save neural_400_100_LAYER0 Done ..
+
+  190
+  190    bit_w  1    loss  0.44947 accurate     85.410
+  710    bit_w -1    loss  0.44273 accurate     85.567
+  484    bit_w  1    loss  0.45154 accurate     85.384
+   70    bit_w -1    loss  0.45234 accurate     85.262
+  388    bit_w -1    loss  0.44470 accurate     85.563
+Save neural_400_100_LAYER0 Done ..
+
+  191
+  569    bit_w -1    loss  0.44110 accurate     85.666
+  367    bit_w -1    loss  0.44628 accurate     85.457
+  720    bit_w  1    loss  0.44885 accurate     85.361
+  368    bit_w  1    loss  0.44322 accurate     85.615
+  640    bit_w -1    loss  0.44691 accurate     85.629
+Save neural_400_100_LAYER0 Done ..
+
+  192
+  406    bit_w  1    loss  0.44687 accurate     85.498
+  409    bit_w  1    loss  0.44692 accurate     85.516
+   62    bit_w -1    loss  0.44541 accurate     85.470
+  497    bit_w -1    loss  0.45141 accurate     85.285
+  456    bit_w  1    loss  0.44560 accurate     85.510
+Save neural_400_100_LAYER0 Done ..
+
+  193
+  547    bit_w -1    loss  0.43945 accurate     85.732
+  516    bit_w  1    loss  0.45053 accurate     85.375
+  491    bit_w -1    loss  0.43950 accurate     85.761
+  398    bit_w  1    loss  0.44546 accurate     85.461
+  564    bit_w -1    loss  0.44918 accurate     85.356
+Save neural_400_100_LAYER0 Done ..
+
+  194
+  398    bit_w -1    loss  0.44438 accurate     85.563
+  759    bit_w  1    loss  0.44201 accurate     85.552
+  453    bit_w -1    loss  0.44263 accurate     85.660
+  102    bit_w  1    loss  0.43965 accurate     85.766
+  209    bit_w -1    loss  0.44532 accurate     85.454
+Save neural_400_100_LAYER0 Done ..
+
+  195
+  185    bit_w -1    loss  0.44177 accurate     85.640
+  195    bit_w  1    loss  0.44579 accurate     85.472
+  129    bit_w  1    loss  0.44396 accurate     85.610
+  386    bit_w -1    loss  0.44316 accurate     85.532
+  689    bit_w  1    loss  0.44163 accurate     85.651
+Save neural_400_100_LAYER0 Done ..
+
+  196
+  610    bit_w  1    loss  0.44181 accurate     85.686
+  352    bit_w -1    loss  0.44100 accurate     85.565
+  685    bit_w  1    loss  0.43549 accurate     85.749
+  163    bit_w  1    loss  0.44354 accurate     85.578
+  730    bit_w -1    loss  0.43982 accurate     85.719
+Save neural_400_100_LAYER0 Done ..
+
+  197
+  413    bit_w -1    loss  0.44540 accurate     85.555
+  359    bit_w -1    loss  0.44447 accurate     85.528
+  630    bit_w -1    loss  0.44123 accurate     85.638
+  589    bit_w  1    loss  0.44044 accurate     85.671
+  356    bit_w -1    loss  0.43341 accurate     85.820
+Save neural_400_100_LAYER0 Done ..
+
+  198
+  154    bit_w  1    loss  0.43831 accurate     85.587
+  346    bit_w  1    loss  0.43992 accurate     85.667
+  545    bit_w -1    loss  0.43861 accurate     85.683
+  481    bit_w  1    loss  0.43445 accurate     85.921
+  449    bit_w  1    loss  0.44032 accurate     85.748
+Save neural_400_100_LAYER0 Done ..
+
+  199
+   98    bit_w -1    loss  0.44023 accurate     85.742
+  497    bit_w  1    loss  0.43859 accurate     85.735
+  741    bit_w  1    loss  0.43954 accurate     85.738
+   80    bit_w -1    loss  0.44089 accurate     85.646
+  247    bit_w  1    loss  0.44541 accurate     85.462
+Save neural_400_100_LAYER0 Done ..

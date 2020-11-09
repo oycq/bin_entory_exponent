@@ -1,0 +1,7000 @@
+Test accuarcate: 10.81%
+
+
+Test accuarcate: 10.65%
+
+
+loss:  3.6889   train: 10.8133  test: 10.6500
+Test accuarcate: 25.86%
+
+
+Test accuarcate: 26.30%
+
+
+loss:  2.5634   train: 25.8650  test: 26.3000
+Test accuarcate: 35.72%
+
+
+Test accuarcate: 35.82%
+
+
+loss:  1.9983   train: 35.7233  test: 35.8200
+Test accuarcate: 50.10%
+
+
+Test accuarcate: 49.71%
+
+
+loss:  1.5698   train: 50.1017  test: 49.7100
+Test accuarcate: 58.07%
+
+
+Test accuarcate: 57.40%
+
+
+loss:  1.3302   train: 58.0750  test: 57.4000
+Test accuarcate: 62.43%
+
+
+Test accuarcate: 62.43%
+
+
+loss:  1.1861   train: 62.4267  test: 62.4300
+Test accuarcate: 66.78%
+
+
+Test accuarcate: 67.21%
+
+
+loss:  1.0504   train: 66.7833  test: 67.2100
+Test accuarcate: 69.75%
+
+
+Test accuarcate: 69.95%
+
+
+loss:  0.9372   train: 69.7517  test: 69.9500
+Test accuarcate: 72.96%
+
+
+Test accuarcate: 73.22%
+
+
+loss:  0.8420   train: 72.9617  test: 73.2200
+Test accuarcate: 74.81%
+
+
+Test accuarcate: 74.72%
+
+
+loss:  0.7799   train: 74.8083  test: 74.7200
+Test accuarcate: 76.22%
+
+
+Test accuarcate: 76.32%
+
+
+loss:  0.7347   train: 76.2167  test: 76.3200
+Test accuarcate: 78.50%
+
+
+Test accuarcate: 78.95%
+
+
+loss:  0.6904   train: 78.5033  test: 78.9500
+Test accuarcate: 78.86%
+
+
+Test accuarcate: 79.39%
+
+
+loss:  0.6692   train: 78.8567  test: 79.3900
+Test accuarcate: 79.79%
+
+
+Test accuarcate: 80.21%
+
+
+loss:  0.6398   train: 79.7867  test: 80.2100
+Test accuarcate: 80.86%
+
+
+Test accuarcate: 80.72%
+
+
+loss:  0.6203   train: 80.8550  test: 80.7200
+Test accuarcate: 80.99%
+
+
+Test accuarcate: 80.36%
+
+
+loss:  0.6070   train: 80.9850  test: 80.7200
+Test accuarcate: 81.80%
+
+
+Test accuarcate: 82.14%
+
+
+loss:  0.5914   train: 81.8033  test: 82.1400
+Test accuarcate: 81.88%
+
+
+Test accuarcate: 81.84%
+
+
+loss:  0.5824   train: 81.8850  test: 82.1400
+Test accuarcate: 82.32%
+
+
+Test accuarcate: 82.19%
+
+
+loss:  0.5705   train: 82.3217  test: 82.1900
+Test accuarcate: 83.17%
+
+
+Test accuarcate: 83.23%
+
+
+loss:  0.5545   train: 83.1683  test: 83.2300
+Test accuarcate: 83.29%
+
+
+Test accuarcate: 83.97%
+
+
+loss:  0.5422   train: 83.2933  test: 83.9700
+Test accuarcate: 83.29%
+
+
+Test accuarcate: 83.97%
+
+
+loss:  0.5422   train: 83.2933  test: 83.9700
+Test accuarcate: 83.78%
+
+
+Test accuarcate: 83.55%
+
+
+loss:  0.5334   train: 83.7833  test: 83.9700
+Test accuarcate: 83.99%
+
+
+Test accuarcate: 83.45%
+
+
+loss:  0.5252   train: 83.9917  test: 83.9700
+Test accuarcate: 84.12%
+
+
+Test accuarcate: 83.92%
+
+
+loss:  0.5192   train: 84.1250  test: 83.9700
+Test accuarcate: 84.08%
+
+
+Test accuarcate: 84.28%
+
+
+loss:  0.5157   train: 84.1250  test: 84.2800
+Test accuarcate: 84.45%
+
+
+Test accuarcate: 84.52%
+
+
+loss:  0.5090   train: 84.4517  test: 84.5200
+Test accuarcate: 84.45%
+
+
+Test accuarcate: 84.52%
+
+
+loss:  0.5090   train: 84.4517  test: 84.5200
+Test accuarcate: 84.63%
+
+
+Test accuarcate: 84.09%
+
+
+loss:  0.5035   train: 84.6267  test: 84.5200
+Test accuarcate: 84.88%
+
+
+Test accuarcate: 84.91%
+
+
+loss:  0.4914   train: 84.8767  test: 84.9100
+Test accuarcate: 84.95%
+
+
+Test accuarcate: 84.50%
+
+
+loss:  0.4863   train: 84.9483  test: 84.9100
+Test accuarcate: 85.11%
+
+
+Test accuarcate: 84.15%
+
+
+loss:  0.4859   train: 85.1083  test: 84.9100
+Test accuarcate: 85.51%
+
+
+Test accuarcate: 85.12%
+
+
+loss:  0.4824   train: 85.5067  test: 85.1200
+Test accuarcate: 85.51%
+
+
+Test accuarcate: 85.12%
+
+
+loss:  0.4824   train: 85.5067  test: 85.1200
+Test accuarcate: 85.14%
+
+
+Test accuarcate: 85.31%
+
+
+loss:  0.4815   train: 85.5067  test: 85.3100
+Test accuarcate: 85.14%
+
+
+Test accuarcate: 85.31%
+
+
+loss:  0.4815   train: 85.5067  test: 85.3100
+Test accuarcate: 85.20%
+
+
+Test accuarcate: 85.25%
+
+
+loss:  0.4756   train: 85.5067  test: 85.3100
+Test accuarcate: 85.20%
+
+
+Test accuarcate: 85.25%
+
+
+loss:  0.4756   train: 85.5067  test: 85.3100
+Test accuarcate: 85.20%
+
+
+Test accuarcate: 85.25%
+
+
+loss:  0.4756   train: 85.5067  test: 85.3100
+Test accuarcate: 85.65%
+
+
+Test accuarcate: 85.53%
+
+
+loss:  0.4730   train: 85.6483  test: 85.5300
+Test accuarcate: 85.44%
+
+
+Test accuarcate: 85.40%
+
+
+loss:  0.4671   train: 85.6483  test: 85.5300
+Test accuarcate: 85.91%
+
+
+Test accuarcate: 85.38%
+
+
+loss:  0.4588   train: 85.9133  test: 85.5300
+Test accuarcate: 85.91%
+
+
+Test accuarcate: 85.38%
+
+
+loss:  0.4588   train: 85.9133  test: 85.5300
+Test accuarcate: 85.91%
+
+
+Test accuarcate: 85.38%
+
+
+loss:  0.4588   train: 85.9133  test: 85.5300
+Test accuarcate: 85.97%
+
+
+Test accuarcate: 86.53%
+
+
+loss:  0.4585   train: 85.9650  test: 86.5300
+Test accuarcate: 86.17%
+
+
+Test accuarcate: 85.74%
+
+
+loss:  0.4511   train: 86.1650  test: 86.5300
+Test accuarcate: 86.17%
+
+
+Test accuarcate: 85.74%
+
+
+loss:  0.4511   train: 86.1650  test: 86.5300
+Test accuarcate: 86.17%
+
+
+Test accuarcate: 85.74%
+
+
+loss:  0.4511   train: 86.1650  test: 86.5300
+Test accuarcate: 86.30%
+
+
+Test accuarcate: 86.45%
+
+
+loss:  0.4482   train: 86.3000  test: 86.5300
+Test accuarcate: 86.32%
+
+
+Test accuarcate: 86.08%
+
+
+loss:  0.4474   train: 86.3233  test: 86.5300
+Test accuarcate: 86.17%
+
+
+Test accuarcate: 86.13%
+
+
+loss:  0.4454   train: 86.3233  test: 86.5300
+Test accuarcate: 86.43%
+
+
+Test accuarcate: 85.95%
+
+
+loss:  0.4443   train: 86.4333  test: 86.5300
+Test accuarcate: 86.37%
+
+
+Test accuarcate: 86.20%
+
+
+loss:  0.4430   train: 86.4333  test: 86.5300
+Test accuarcate: 86.37%
+
+
+Test accuarcate: 86.20%
+
+
+loss:  0.4430   train: 86.4333  test: 86.5300
+Test accuarcate: 86.31%
+
+
+Test accuarcate: 86.14%
+
+
+loss:  0.4410   train: 86.4333  test: 86.5300
+Test accuarcate: 86.38%
+
+
+Test accuarcate: 86.10%
+
+
+loss:  0.4381   train: 86.4333  test: 86.5300
+Test accuarcate: 86.38%
+
+
+Test accuarcate: 86.10%
+
+
+loss:  0.4381   train: 86.4333  test: 86.5300
+Test accuarcate: 86.38%
+
+
+Test accuarcate: 86.28%
+
+
+loss:  0.4360   train: 86.4333  test: 86.5300
+Test accuarcate: 86.38%
+
+
+Test accuarcate: 86.28%
+
+
+loss:  0.4360   train: 86.4333  test: 86.5300
+Test accuarcate: 86.62%
+
+
+Test accuarcate: 86.43%
+
+
+loss:  0.4315   train: 86.6167  test: 86.5300
+Test accuarcate: 86.62%
+
+
+Test accuarcate: 86.43%
+
+
+loss:  0.4315   train: 86.6167  test: 86.5300
+Test accuarcate: 86.62%
+
+
+Test accuarcate: 86.43%
+
+
+loss:  0.4315   train: 86.6167  test: 86.5300
+Test accuarcate: 86.75%
+
+
+Test accuarcate: 86.45%
+
+
+loss:  0.4279   train: 86.7450  test: 86.5300
+Test accuarcate: 86.75%
+
+
+Test accuarcate: 86.45%
+
+
+loss:  0.4279   train: 86.7450  test: 86.5300
+Test accuarcate: 86.75%
+
+
+Test accuarcate: 86.45%
+
+
+loss:  0.4279   train: 86.7450  test: 86.5300
+Test accuarcate: 86.75%
+
+
+Test accuarcate: 86.45%
+
+
+loss:  0.4279   train: 86.7450  test: 86.5300
+Test accuarcate: 86.75%
+
+
+Test accuarcate: 86.45%
+
+
+loss:  0.4279   train: 86.7450  test: 86.5300
+Test accuarcate: 86.75%
+
+
+Test accuarcate: 86.45%
+
+
+loss:  0.4279   train: 86.7450  test: 86.5300
+Test accuarcate: 86.75%
+
+
+Test accuarcate: 86.45%
+
+
+loss:  0.4279   train: 86.7450  test: 86.5300
+Test accuarcate: 86.75%
+
+
+Test accuarcate: 86.45%
+
+
+loss:  0.4279   train: 86.7450  test: 86.5300
+Test accuarcate: 86.75%
+
+
+Test accuarcate: 86.45%
+
+
+loss:  0.4279   train: 86.7450  test: 86.5300
+Test accuarcate: 86.75%
+
+
+Test accuarcate: 86.45%
+
+
+loss:  0.4279   train: 86.7450  test: 86.5300
+Test accuarcate: 86.75%
+
+
+Test accuarcate: 86.45%
+
+
+loss:  0.4279   train: 86.7450  test: 86.5300
+Test accuarcate: 86.75%
+
+
+Test accuarcate: 86.45%
+
+
+loss:  0.4279   train: 86.7450  test: 86.5300
+Test accuarcate: 86.75%
+
+
+Test accuarcate: 86.45%
+
+
+loss:  0.4279   train: 86.7450  test: 86.5300
+Test accuarcate: 86.75%
+
+
+Test accuarcate: 86.45%
+
+
+loss:  0.4279   train: 86.7450  test: 86.5300
+Test accuarcate: 86.75%
+
+
+Test accuarcate: 86.45%
+
+
+loss:  0.4279   train: 86.7450  test: 86.5300
+Test accuarcate: 86.75%
+
+
+Test accuarcate: 86.45%
+
+
+loss:  0.4279   train: 86.7450  test: 86.5300
+Test accuarcate: 86.75%
+
+
+Test accuarcate: 86.45%
+
+
+loss:  0.4279   train: 86.7450  test: 86.5300
+Test accuarcate: 86.75%
+
+
+Test accuarcate: 86.45%
+
+
+loss:  0.4279   train: 86.7450  test: 86.5300
+Test accuarcate: 86.75%
+
+
+Test accuarcate: 86.45%
+
+
+loss:  0.4279   train: 86.7450  test: 86.5300
+Test accuarcate: 86.75%
+
+
+Test accuarcate: 86.45%
+
+
+loss:  0.4279   train: 86.7450  test: 86.5300
+Test accuarcate: 86.75%
+
+
+Test accuarcate: 86.45%
+
+
+loss:  0.4279   train: 86.7450  test: 86.5300
+Test accuarcate: 86.75%
+
+
+Test accuarcate: 86.45%
+
+
+loss:  0.4279   train: 86.7450  test: 86.5300
+Test accuarcate: 86.75%
+
+
+Test accuarcate: 86.45%
+
+
+loss:  0.4279   train: 86.7450  test: 86.5300
+Test accuarcate: 86.75%
+
+
+Test accuarcate: 86.45%
+
+
+loss:  0.4279   train: 86.7450  test: 86.5300
+Test accuarcate: 86.75%
+
+
+Test accuarcate: 86.45%
+
+
+loss:  0.4279   train: 86.7450  test: 86.5300
+Test accuarcate: 86.75%
+
+
+Test accuarcate: 86.45%
+
+
+loss:  0.4279   train: 86.7450  test: 86.5300
+Test accuarcate: 87.00%
+
+
+Test accuarcate: 86.43%
+
+
+loss:  0.4277   train: 86.9983  test: 86.5300
+Test accuarcate: 86.85%
+
+
+Test accuarcate: 86.64%
+
+
+loss:  0.4264   train: 86.9983  test: 86.6400
+Test accuarcate: 86.85%
+
+
+Test accuarcate: 86.64%
+
+
+loss:  0.4264   train: 86.9983  test: 86.6400
+Test accuarcate: 86.85%
+
+
+Test accuarcate: 86.64%
+
+
+loss:  0.4264   train: 86.9983  test: 86.6400
+Test accuarcate: 86.85%
+
+
+Test accuarcate: 86.64%
+
+
+loss:  0.4264   train: 86.9983  test: 86.6400
+Test accuarcate: 87.06%
+
+
+Test accuarcate: 86.70%
+
+
+loss:  0.4196   train: 87.0633  test: 86.7000
+Test accuarcate: 87.06%
+
+
+Test accuarcate: 86.70%
+
+
+loss:  0.4196   train: 87.0633  test: 86.7000
+Test accuarcate: 87.42%
+
+
+Test accuarcate: 86.81%
+
+
+loss:  0.4183   train: 87.4150  test: 86.8100
+Test accuarcate: 87.42%
+
+
+Test accuarcate: 86.81%
+
+
+loss:  0.4183   train: 87.4150  test: 86.8100
+Test accuarcate: 87.42%
+
+
+Test accuarcate: 86.81%
+
+
+loss:  0.4183   train: 87.4150  test: 86.8100
+Test accuarcate: 87.42%
+
+
+Test accuarcate: 86.81%
+
+
+loss:  0.4183   train: 87.4150  test: 86.8100
+Test accuarcate: 87.42%
+
+
+Test accuarcate: 86.81%
+
+
+loss:  0.4183   train: 87.4150  test: 86.8100
+Test accuarcate: 87.42%
+
+
+Test accuarcate: 86.81%
+
+
+loss:  0.4183   train: 87.4150  test: 86.8100
+Test accuarcate: 87.42%
+
+
+Test accuarcate: 86.81%
+
+
+loss:  0.4183   train: 87.4150  test: 86.8100
+Test accuarcate: 87.42%
+
+
+Test accuarcate: 86.81%
+
+
+loss:  0.4183   train: 87.4150  test: 86.8100
+Test accuarcate: 87.42%
+
+
+Test accuarcate: 86.81%
+
+
+loss:  0.4183   train: 87.4150  test: 86.8100
+Test accuarcate: 87.42%
+
+
+Test accuarcate: 86.81%
+
+
+loss:  0.4183   train: 87.4150  test: 86.8100
+Test accuarcate: 87.42%
+
+
+Test accuarcate: 86.81%
+
+
+loss:  0.4183   train: 87.4150  test: 86.8100
+Test accuarcate: 87.42%
+
+
+Test accuarcate: 86.81%
+
+
+loss:  0.4183   train: 87.4150  test: 86.8100
+Test accuarcate: 87.42%
+
+
+Test accuarcate: 86.81%
+
+
+loss:  0.4183   train: 87.4150  test: 86.8100
+Test accuarcate: 87.42%
+
+
+Test accuarcate: 86.81%
+
+
+loss:  0.4183   train: 87.4150  test: 86.8100
+Test accuarcate: 87.42%
+
+
+Test accuarcate: 86.81%
+
+
+loss:  0.4183   train: 87.4150  test: 86.8100
+Test accuarcate: 87.42%
+
+
+Test accuarcate: 86.81%
+
+
+loss:  0.4183   train: 87.4150  test: 86.8100
+Test accuarcate: 87.42%
+
+
+Test accuarcate: 86.81%
+
+
+loss:  0.4183   train: 87.4150  test: 86.8100
+Test accuarcate: 87.42%
+
+
+Test accuarcate: 86.81%
+
+
+loss:  0.4183   train: 87.4150  test: 86.8100
+Test accuarcate: 87.42%
+
+
+Test accuarcate: 86.81%
+
+
+loss:  0.4183   train: 87.4150  test: 86.8100
+Test accuarcate: 87.42%
+
+
+Test accuarcate: 86.81%
+
+
+loss:  0.4183   train: 87.4150  test: 86.8100
+Test accuarcate: 87.42%
+
+
+Test accuarcate: 86.81%
+
+
+loss:  0.4183   train: 87.4150  test: 86.8100
+Test accuarcate: 87.42%
+
+
+Test accuarcate: 86.81%
+
+
+loss:  0.4183   train: 87.4150  test: 86.8100
+Test accuarcate: 87.42%
+
+
+Test accuarcate: 86.81%
+
+
+loss:  0.4183   train: 87.4150  test: 86.8100
+Test accuarcate: 87.42%
+
+
+Test accuarcate: 86.81%
+
+
+loss:  0.4183   train: 87.4150  test: 86.8100
+Test accuarcate: 87.42%
+
+
+Test accuarcate: 86.81%
+
+
+loss:  0.4183   train: 87.4150  test: 86.8100
+Test accuarcate: 87.42%
+
+
+Test accuarcate: 86.81%
+
+
+loss:  0.4183   train: 87.4150  test: 86.8100
+Test accuarcate: 87.42%
+
+
+Test accuarcate: 86.81%
+
+
+loss:  0.4183   train: 87.4150  test: 86.8100
+Test accuarcate: 87.42%
+
+
+Test accuarcate: 86.81%
+
+
+loss:  0.4183   train: 87.4150  test: 86.8100
+Test accuarcate: 87.42%
+
+
+Test accuarcate: 86.81%
+
+
+loss:  0.4183   train: 87.4150  test: 86.8100
+Test accuarcate: 87.42%
+
+
+Test accuarcate: 86.81%
+
+
+loss:  0.4183   train: 87.4150  test: 86.8100
+Test accuarcate: 87.42%
+
+
+Test accuarcate: 86.81%
+
+
+loss:  0.4183   train: 87.4150  test: 86.8100
+Test accuarcate: 87.42%
+
+
+Test accuarcate: 86.81%
+
+
+loss:  0.4183   train: 87.4150  test: 86.8100
+Test accuarcate: 87.42%
+
+
+Test accuarcate: 86.81%
+
+
+loss:  0.4183   train: 87.4150  test: 86.8100
+Test accuarcate: 87.42%
+
+
+Test accuarcate: 86.81%
+
+
+loss:  0.4183   train: 87.4150  test: 86.8100
+Test accuarcate: 87.42%
+
+
+Test accuarcate: 86.81%
+
+
+loss:  0.4183   train: 87.4150  test: 86.8100
+Test accuarcate: 87.42%
+
+
+Test accuarcate: 86.81%
+
+
+loss:  0.4183   train: 87.4150  test: 86.8100
+Test accuarcate: 86.84%
+
+
+Test accuarcate: 86.40%
+
+
+loss:  0.4177   train: 87.4150  test: 86.8100
+Test accuarcate: 86.84%
+
+
+Test accuarcate: 86.40%
+
+
+loss:  0.4177   train: 87.4150  test: 86.8100
+Test accuarcate: 87.29%
+
+
+Test accuarcate: 86.75%
+
+
+loss:  0.4120   train: 87.4150  test: 86.8100
+Test accuarcate: 87.29%
+
+
+Test accuarcate: 86.75%
+
+
+loss:  0.4120   train: 87.4150  test: 86.8100
+Test accuarcate: 87.29%
+
+
+Test accuarcate: 86.75%
+
+
+loss:  0.4120   train: 87.4150  test: 86.8100
+Test accuarcate: 87.29%
+
+
+Test accuarcate: 86.75%
+
+
+loss:  0.4120   train: 87.4150  test: 86.8100
+Test accuarcate: 87.29%
+
+
+Test accuarcate: 86.75%
+
+
+loss:  0.4120   train: 87.4150  test: 86.8100
+Test accuarcate: 87.29%
+
+
+Test accuarcate: 86.75%
+
+
+loss:  0.4120   train: 87.4150  test: 86.8100
+Test accuarcate: 87.29%
+
+
+Test accuarcate: 86.75%
+
+
+loss:  0.4120   train: 87.4150  test: 86.8100
+Test accuarcate: 87.29%
+
+
+Test accuarcate: 86.75%
+
+
+loss:  0.4120   train: 87.4150  test: 86.8100
+Test accuarcate: 87.29%
+
+
+Test accuarcate: 86.75%
+
+
+loss:  0.4120   train: 87.4150  test: 86.8100
+Test accuarcate: 87.29%
+
+
+Test accuarcate: 86.75%
+
+
+loss:  0.4120   train: 87.4150  test: 86.8100
+Test accuarcate: 87.29%
+
+
+Test accuarcate: 86.75%
+
+
+loss:  0.4120   train: 87.4150  test: 86.8100
+Test accuarcate: 87.29%
+
+
+Test accuarcate: 86.75%
+
+
+loss:  0.4120   train: 87.4150  test: 86.8100
+Test accuarcate: 87.29%
+
+
+Test accuarcate: 86.75%
+
+
+loss:  0.4120   train: 87.4150  test: 86.8100
+Test accuarcate: 87.29%
+
+
+Test accuarcate: 86.75%
+
+
+loss:  0.4120   train: 87.4150  test: 86.8100
+Test accuarcate: 87.29%
+
+
+Test accuarcate: 86.75%
+
+
+loss:  0.4120   train: 87.4150  test: 86.8100
+Test accuarcate: 87.29%
+
+
+Test accuarcate: 86.75%
+
+
+loss:  0.4120   train: 87.4150  test: 86.8100
+Test accuarcate: 87.29%
+
+
+Test accuarcate: 86.75%
+
+
+loss:  0.4120   train: 87.4150  test: 86.8100
+Test accuarcate: 87.29%
+
+
+Test accuarcate: 86.75%
+
+
+loss:  0.4120   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 86.96%
+
+
+Test accuarcate: 86.47%
+
+
+loss:  0.4106   train: 87.4150  test: 86.8100
+Test accuarcate: 87.18%
+
+
+Test accuarcate: 87.36%
+
+
+loss:  0.4099   train: 87.4150  test: 87.3600
+Test accuarcate: 87.18%
+
+
+Test accuarcate: 87.36%
+
+
+loss:  0.4099   train: 87.4150  test: 87.3600
+Test accuarcate: 87.18%
+
+
+Test accuarcate: 87.36%
+
+
+loss:  0.4099   train: 87.4150  test: 87.3600
+Test accuarcate: 87.18%
+
+
+Test accuarcate: 87.36%
+
+
+loss:  0.4099   train: 87.4150  test: 87.3600
+Test accuarcate: 87.18%
+
+
+Test accuarcate: 87.36%
+
+
+loss:  0.4099   train: 87.4150  test: 87.3600
+Test accuarcate: 87.18%
+
+
+Test accuarcate: 87.36%
+
+
+loss:  0.4099   train: 87.4150  test: 87.3600
+Test accuarcate: 87.18%
+
+
+Test accuarcate: 87.36%
+
+
+loss:  0.4099   train: 87.4150  test: 87.3600
+Test accuarcate: 87.18%
+
+
+Test accuarcate: 87.36%
+
+
+loss:  0.4099   train: 87.4150  test: 87.3600
+Test accuarcate: 87.18%
+
+
+Test accuarcate: 87.36%
+
+
+loss:  0.4099   train: 87.4150  test: 87.3600
+Test accuarcate: 87.18%
+
+
+Test accuarcate: 87.36%
+
+
+loss:  0.4099   train: 87.4150  test: 87.3600
+Test accuarcate: 87.18%
+
+
+Test accuarcate: 87.36%
+
+
+loss:  0.4099   train: 87.4150  test: 87.3600
+Test accuarcate: 87.18%
+
+
+Test accuarcate: 87.36%
+
+
+loss:  0.4099   train: 87.4150  test: 87.3600
+Test accuarcate: 87.18%
+
+
+Test accuarcate: 87.36%
+
+
+loss:  0.4099   train: 87.4150  test: 87.3600
+Test accuarcate: 87.18%
+
+
+Test accuarcate: 87.36%
+
+
+loss:  0.4099   train: 87.4150  test: 87.3600
+Test accuarcate: 87.18%
+
+
+Test accuarcate: 87.36%
+
+
+loss:  0.4099   train: 87.4150  test: 87.3600
+Test accuarcate: 87.18%
+
+
+Test accuarcate: 87.36%
+
+
+loss:  0.4099   train: 87.4150  test: 87.3600
+Test accuarcate: 87.18%
+
+
+Test accuarcate: 87.36%
+
+
+loss:  0.4099   train: 87.4150  test: 87.3600
+Test accuarcate: 87.18%
+
+
+Test accuarcate: 87.36%
+
+
+loss:  0.4099   train: 87.4150  test: 87.3600
+Test accuarcate: 87.18%
+
+
+Test accuarcate: 87.36%
+
+
+loss:  0.4099   train: 87.4150  test: 87.3600
+Test accuarcate: 87.18%
+
+
+Test accuarcate: 87.36%
+
+
+loss:  0.4099   train: 87.4150  test: 87.3600
+Test accuarcate: 87.18%
+
+
+Test accuarcate: 87.36%
+
+
+loss:  0.4099   train: 87.4150  test: 87.3600
+Test accuarcate: 87.18%
+
+
+Test accuarcate: 87.36%
+
+
+loss:  0.4099   train: 87.4150  test: 87.3600
+Test accuarcate: 87.47%
+
+
+Test accuarcate: 87.51%
+
+
+loss:  0.4095   train: 87.4717  test: 87.5100
+Test accuarcate: 87.33%
+
+
+Test accuarcate: 86.74%
+
+
+loss:  0.4090   train: 87.4717  test: 87.5100
+Test accuarcate: 87.36%
+
+
+Test accuarcate: 86.98%
+
+
+loss:  0.4069   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
+Test accuarcate: 87.44%
+
+
+Test accuarcate: 86.89%
+
+
+loss:  0.4056   train: 87.4717  test: 87.5100
