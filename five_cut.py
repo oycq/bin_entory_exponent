@@ -15,18 +15,18 @@ random.seed(0)
 np.random.seed(0)
 torch.manual_seed(0)
 
-IF_WANDB = 0
-IF_SAVE = 0
+IF_WANDB = 1
+IF_SAVE = 1
 LAYER_UNITS = 2000
 LAYERS = 3 
 CLASS = 10
-BATCH_SIZE = 80
+BATCH_SIZE = 3000
 NAME = 'neural_400_100'
 WORKERS = 15
 
 if IF_WANDB:
     import wandb
-    wandb.init(project = 'neural', name = NAME)
+    wandb.init(project = 'cut', name = NAME)
 
 dataset = my_dataset.MyDataset(train = True, margin = 3, noise_rate = 0.05)
 dataset_test = my_dataset.MyDataset(train = False)
@@ -107,28 +107,27 @@ class BLayer(nn.Module):
         return x, mask_loss
 
 class Net(nn.Module):
-    def __init__(self, hid=100, f=[800,600,400],out_features=100):
+    def __init__(self, hid=100, f=[800,600,400, 300]):
         super(Net, self).__init__()
         self.b0 = BLayer(784,f[0], hid)
         self.b1 = BLayer(f[0],f[1], hid)
         self.b2 = BLayer(f[1],f[2], hid)
-        self.b3 = BLayer(f[2],out_features * 10, hid)
+        self.b3 = BLayer(f[2],f[3], hid)
         self.score_K = torch.zeros(1) + 15
         self.score_K = torch.nn.Parameter(self.score_K)
 
 
     def forward(self, inputs, debug = 0):
-        l1,l2,l3,l4 = 0,0,0,0
+        x_list = []
         x, l1 = self.b0(inputs,debug)
-        #x, l2 = self.b1(x,debug)
-        #x, l3 = self.b2(x,debug)
-        #x, l4 = self.b3(x,debug)
-        x = x.reshape(x.shape[0],10,-1)
-        x = x.mean(-1) * self.score_K
-        if debug:
-            print(x[0])
-            print('k %5.2f'%(self.score_K))
-        return x, (l1+l2+l3+l4)/4
+        x_list.append(x.reshape(x.shape[0],10,-1).mean(-1) * self.score_K)
+        x, l2 = self.b1(x,debug)
+        x_list.append(x.reshape(x.shape[0],10,-1).mean(-1) * self.score_K)
+        x, l3 = self.b2(x,debug)
+        x_list.append(x.reshape(x.shape[0],10,-1).mean(-1) * self.score_K)
+        x, l4 = self.b3(x,debug)
+        x_list.append(x.reshape(x.shape[0],10,-1).mean(-1) * self.score_K)
+        return x_list, (l1+l2+l3+l4)/4
 
 
 def get_loss_acc(x, labels):
@@ -139,19 +138,27 @@ def get_loss_acc(x, labels):
     loss = (x * labels).sum(-1).mean()
     return loss, accurate
 
-net = Net(100, [800,600,400],100).cuda()
+k = 0.3
+net = Net(100, [int(k*800),int(k*600),int(k*400),int(k*300)]).cuda()
 optimizer = optim.Adam(net.parameters())
 for i in range(100000):
     debug = 0
     if i % 10 == 0:
         debug = 1
     images, labels = data_feeder.feed()
-    x, mask_loss = net(images,debug)
-    loss, accurate = get_loss_acc(x, labels)
-    loss += mask_loss * 0.01
-    if debug:
-        print('%d %10.3f %10.3f %10.3f\n'%(i, loss, accurate, mask_loss))
+    x_list, mask_loss = net(images,debug)
+    loss_sum = 0
+    for j in range(4):
+        loss, accurate = get_loss_acc(x_list[j], labels)
+        loss_sum += 0.1*loss*(j+1)
+        if debug:
+            print('%d %d %10.3f %10.3f\n'%(i,j, loss, accurate))
+        if IF_WANDB:
+            wandb.log({'acc%d'%j:accurate})
+    loss_sum += mask_loss * 0.01
     optimizer.zero_grad()
-    loss.backward()
+    loss_sum.backward()
     optimizer.step()
+    if i % 2000 == 0:
+        torch.save(net.state_dict(), 'five_cut.model')
  
