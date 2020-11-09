@@ -20,7 +20,7 @@ IF_SAVE = 0
 LAYER_UNITS = 2000
 LAYERS = 3 
 CLASS = 10
-BATCH_SIZE = 100
+BATCH_SIZE = 80
 NAME = 'neural_400_100'
 WORKERS = 15
 
@@ -47,7 +47,7 @@ class BLayer(nn.Module):
     def __init__(self, in_features, out_features, hid):
         super(BLayer, self).__init__()
         mask = torch.randn(out_features, in_features)
-        mask_u = torch.zeros(out_features, 1)
+        mask_u = torch.zeros(out_features, 1) - 5
         mask_sigma = torch.zeros(out_features, 1) + 1
         self.mask = torch.nn.Parameter(mask)
         self.mask_u = torch.nn.Parameter(mask_u)
@@ -82,6 +82,7 @@ class BLayer(nn.Module):
         mask = (mask - mean) / std
         mask = (mask * self.mask_sigma) + self.mask_u
         mask = self.sigmoid(mask)
+
         mask_loss = (mask.sum(-1) - 5)
         mask_loss = (mask_loss * mask_loss).mean(-1)
         mask = (self.quantized(mask) + 1) / 2
@@ -102,7 +103,7 @@ class BLayer(nn.Module):
         #x       : [out_features, batch, 1] -> [batch, out_features]
         x = self.sigmoid(x)
         x = x.squeeze(-1).t()
-        #x = self.quantized(x)
+        x = self.quantized(x)
         return x, mask_loss
 
 class Net(nn.Module):
@@ -112,15 +113,16 @@ class Net(nn.Module):
         self.b1 = BLayer(f[0],f[1], hid)
         self.b2 = BLayer(f[1],f[2], hid)
         self.b3 = BLayer(f[2],out_features * 10, hid)
-        self.score_K = torch.zeros(1) + 1
+        self.score_K = torch.zeros(1) + 15
         self.score_K = torch.nn.Parameter(self.score_K)
 
 
     def forward(self, inputs, debug = 0):
+        l1,l2,l3,l4 = 0,0,0,0
         x, l1 = self.b0(inputs,debug)
-        x, l2 = self.b1(x,debug)
-        x, l3 = self.b2(x,debug)
-        x, l4 = self.b3(x,debug)
+        #x, l2 = self.b1(x,debug)
+        #x, l3 = self.b2(x,debug)
+        #x, l4 = self.b3(x,debug)
         x = x.reshape(x.shape[0],10,-1)
         x = x.mean(-1) * self.score_K
         if debug:
@@ -137,7 +139,7 @@ def get_loss_acc(x, labels):
     loss = (x * labels).sum(-1).mean()
     return loss, accurate
 
-net = Net(100, [800,600,400],200).cuda()
+net = Net(100, [800,600,400],100).cuda()
 optimizer = optim.Adam(net.parameters())
 for i in range(100000):
     debug = 0
@@ -146,8 +148,7 @@ for i in range(100000):
     images, labels = data_feeder.feed()
     x, mask_loss = net(images,debug)
     loss, accurate = get_loss_acc(x, labels)
-    if i > 2000:
-        loss += mask_loss * 0.01
+    loss += mask_loss * 0.01
     if debug:
         print('%d %10.3f %10.3f %10.3f\n'%(i, loss, accurate, mask_loss))
     optimizer.zero_grad()
