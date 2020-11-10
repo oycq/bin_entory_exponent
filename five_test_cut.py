@@ -15,8 +15,8 @@ random.seed(0)
 np.random.seed(0)
 torch.manual_seed(0)
 
-IF_WANDB = 1
-IF_SAVE = 1
+IF_WANDB = 0
+IF_SAVE = 0
 LAYER_UNITS = 2000
 LAYERS = 3 
 CLASS = 10
@@ -47,7 +47,7 @@ class BLayer(nn.Module):
     def __init__(self, in_features, out_features, hid):
         super(BLayer, self).__init__()
         mask = torch.randn(out_features, in_features)
-        mask_u = torch.log(torch.zeros(out_features, 1)+in_features/5-1)/-0.84737
+        mask_u = torch.zeros(out_features, 1) - 5
         mask_sigma = torch.zeros(out_features, 1) + 1
         self.mask = torch.nn.Parameter(mask)
         self.mask_u = torch.nn.Parameter(mask_u)
@@ -75,25 +75,18 @@ class BLayer(nn.Module):
         return x
 
 
-    def _quantized_mask(self, debug = 0):
+    def _quantized_mask(self):
         mask = self.mask
-        mean = mask.mean(-1).unsqueeze(-1)
-        std = mask.std(-1).unsqueeze(-1)
-        mask = (mask - mean) / std
-        mask = (mask * self.mask_sigma) + self.mask_u
-        mask = self.sigmoid(mask)
+        _,idx = torch.topk(mask,5,-1)
+        m = torch.zeros_like(mask)
+        m = m.scatter(1,idx, 1)
+        return m, 0
 
-        mask_loss = (mask.sum(-1) - 5)
-        mask_loss = (mask_loss * mask_loss).mean(-1)
-        mask = (self.quantized(mask) + 1) / 2
-        if debug:
-            print('%6.3f %6.3f %6.3f'%(self.mask_sigma[0], self.mask_u[0],mask.sum(-1).mean()))
-        return mask, mask_loss
-
-    def forward(self, inputs, debug = 0):
+    def forward(self, inputs):
         #inputs  : [batch, in_features] -> [in_features, batch, 1]
         inputs = inputs.t().unsqueeze(-1)
-        mask, mask_loss = self._quantized_mask(debug)
+        mask, mask_loss = self._quantized_mask()
+        #print(mask[0,:])
         #mask    : [out_features, in_features] -> [in_features, 1, out_features]
         mask = mask.t().unsqueeze(1)
         x = inputs.bmm(mask)
@@ -117,16 +110,16 @@ class Net(nn.Module):
         self.score_K = torch.nn.Parameter(self.score_K)
 
 
-    def forward(self, inputs, debug = 0):
+    def forward(self, inputs):
         x_list = []
-        x, l1 = self.b0(inputs,debug)
-        x_list.append(x.reshape(x.shape[0],10,-1).mean(-1) * self.score_K)
-        x, l2 = self.b1(x,debug)
-        x_list.append(x.reshape(x.shape[0],10,-1).mean(-1) * self.score_K)
-        x, l3 = self.b2(x,debug)
-        x_list.append(x.reshape(x.shape[0],10,-1).mean(-1) * self.score_K)
-        x, l4 = self.b3(x,debug)
-        x_list.append(x.reshape(x.shape[0],10,-1).mean(-1) * self.score_K)
+        x, l1 = self.b0(inputs)
+        x_list.append(x.reshape(x.shape[0],10,-1).sum(-1))
+        x, l2 = self.b1(x)
+        x_list.append(x.reshape(x.shape[0],10,-1).sum(-1))
+        x, l3 = self.b2(x)
+        x_list.append(x.reshape(x.shape[0],10,-1).sum(-1))
+        x, l4 = self.b3(x)
+        x_list.append(x.reshape(x.shape[0],10,-1).sum(-1))
         return x_list, (l1+l2+l3+l4)/4
 
 
@@ -140,25 +133,22 @@ def get_loss_acc(x, labels):
 
 k = 0.3
 net = Net(100, [int(k*800),int(k*600),int(k*400),int(k*300)]).cuda()
-optimizer = optim.Adam(net.parameters())
-for i in range(100000):
-    debug = 0
-    if i % 10 == 0:
-        debug = 1
-    images, labels = data_feeder.feed()
-    x_list, mask_loss = net(images,debug)
-    loss_sum = 0
-    for j in range(4):
-        loss, accurate = get_loss_acc(x_list[j], labels)
-        loss_sum += 0.1*loss*(j+1)
-        if debug:
-            print('%d %d %10.3f %10.3f\n'%(i,j, loss, accurate))
-        if IF_WANDB:
-            wandb.log({'acc%d'%j:accurate})
-    loss_sum += mask_loss * 0.01
-    optimizer.zero_grad()
-    loss_sum.backward()
-    optimizer.step()
-    if i % 2000 == 0:
-        torch.save(net.state_dict(), 'five_cut.model')
- 
+net.load_state_dict(torch.load('./five_cut2.model'))
+
+acc = 0
+with torch.no_grad():
+    for i in range(4):
+        #images, labels = data_feeder.feed()
+        a = i * 2500
+        b = i * 2500 + 2500
+        images, labels = images_t[a:b], labels_t[a:b]
+        x_list, mask_loss = net(images)
+        for j in range(4):
+            loss, accurate = get_loss_acc(x_list[j], labels)
+            print('%d %10.3f %10.3f'%(j, loss, accurate))
+            if j == 3:
+                print(x_list[j][0])
+                acc += accurate.item() * 0.25
+        print('')
+print(acc)
+
