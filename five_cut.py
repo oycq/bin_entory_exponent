@@ -23,6 +23,7 @@ CLASS = 10
 BATCH_SIZE = 3000
 NAME = 'neural_400_100'
 WORKERS = 15
+FIVE = 6
 
 if IF_WANDB:
     import wandb
@@ -47,7 +48,7 @@ class BLayer(nn.Module):
     def __init__(self, in_features, out_features, hid):
         super(BLayer, self).__init__()
         mask = torch.randn(out_features, in_features)
-        mask_u = torch.log(torch.zeros(out_features, 1)+in_features/5-1)/-0.84737
+        mask_u = torch.log(torch.zeros(out_features, 1)+in_features/FIVE-1)/-0.84737
         mask_sigma = torch.zeros(out_features, 1) + 1
         self.mask = torch.nn.Parameter(mask)
         self.mask_u = torch.nn.Parameter(mask_u)
@@ -83,7 +84,7 @@ class BLayer(nn.Module):
         mask = (mask * self.mask_sigma) + self.mask_u
         mask = self.sigmoid(mask)
 
-        mask_loss = (mask.sum(-1) - 5)
+        mask_loss = (mask.sum(-1) - FIVE)
         mask_loss = (mask_loss * mask_loss).mean(-1)
         mask = (self.quantized(mask) + 1) / 2
         if debug:
@@ -155,10 +156,10 @@ for i in range(100000):
             print('%d %d %10.3f %10.3f\n'%(i,j, loss, accurate))
         if IF_WANDB:
             wandb.log({'acc%d'%j:accurate})
-    loss_sum += mask_loss * 0.01
+    loss_sum += mask_loss * 1
     optimizer.zero_grad()
     loss_sum.backward()
     optimizer.step()
     if i % 2000 == 0:
-        torch.save(net.state_dict(), 'five_cut.model')
+        torch.save(net.state_dict(), 'five_cut_6.model')
  

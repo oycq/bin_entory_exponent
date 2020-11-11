@@ -23,6 +23,7 @@ CLASS = 10
 BATCH_SIZE = 3000
 NAME = 'neural_400_100'
 WORKERS = 15
+FIVE = 6
 
 if IF_WANDB:
     import wandb
@@ -77,7 +78,7 @@ class BLayer(nn.Module):
 
     def _quantized_mask(self):
         mask = self.mask
-        _,idx = torch.topk(mask,5,-1)
+        _,idx = torch.topk(mask,FIVE,-1)
         m = torch.zeros_like(mask)
         m = m.scatter(1,idx, 1)
         return m, 0
@@ -133,7 +134,7 @@ def get_loss_acc(x, labels):
 
 k = 0.3
 net = Net(100, [int(k*800),int(k*600),int(k*400),int(k*300)]).cuda()
-net.load_state_dict(torch.load('./five_cut2.model'))
+net.load_state_dict(torch.load('./five_cut_6.model'))
 
 acc = 0
 with torch.no_grad():
