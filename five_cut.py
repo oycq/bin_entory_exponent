@@ -108,7 +108,7 @@ class BLayer(nn.Module):
         return x, mask_loss
 
 class Net(nn.Module):
-    def __init__(self, hid=100, f=[800,600,400, 300]):
+    def __init__(self, hid=100, f=[800,800,800, 800]):
         super(Net, self).__init__()
         self.b0 = BLayer(784,f[0], hid)
         self.b1 = BLayer(f[0],f[1], hid)
@@ -140,7 +140,7 @@ def get_loss_acc(x, labels):
     return loss, accurate
 
 k = 0.3
-net = Net(100, [int(k*800),int(k*600),int(k*400),int(k*300)]).cuda()
+net = Net(100, [int(k*800),int(k*800),int(k*800),int(k*800)]).cuda()
 optimizer = optim.Adam(net.parameters())
 for i in range(100000):
     debug = 0
