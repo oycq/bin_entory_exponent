@@ -29,7 +29,7 @@ if IF_WANDB:
     import wandb
     wandb.init(project = 'cut', name = NAME)
 
-dataset = my_dataset.MyDataset(train = True, margin = 3, noise_rate = 0.05)
+dataset = my_dataset.MyDataset(train = True, margin = 0, noise_rate = 0)
 dataset_test = my_dataset.MyDataset(train = False)
 data_feeder = my_dataset.DataFeeder(dataset, BATCH_SIZE, num_workers = WORKERS)
 images_t,labels_t = dataset_test.get_all()

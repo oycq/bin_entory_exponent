@@ -134,7 +134,7 @@ def get_loss_acc(x, labels):
 
 k = 0.3
 net = Net(100, [int(k*800),int(k*800),int(k*800),int(k*800)]).cuda()
-net.load_state_dict(torch.load('./five_cut_6_2.model'))
+net.load_state_dict(torch.load('./five_cut_6_6.model'))
 
 acc = 0
 with torch.no_grad():
