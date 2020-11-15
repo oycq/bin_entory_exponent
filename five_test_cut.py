@@ -83,7 +83,7 @@ class BLayer(nn.Module):
         m = m.scatter(1,idx, 1)
         return m, 0
 
-    def forward(self, inputs):
+    def forward(self, inputs, debug=0):
         #inputs  : [batch, in_features] -> [in_features, batch, 1]
         inputs = inputs.t().unsqueeze(-1)
         mask, mask_loss = self._quantized_mask()
@@ -111,16 +111,16 @@ class Net(nn.Module):
         self.score_K = torch.nn.Parameter(self.score_K)
 
 
-    def forward(self, inputs):
+    def forward(self, inputs, debug = 0):
         x_list = []
-        x, l1 = self.b0(inputs)
-        x_list.append(x.reshape(x.shape[0],10,-1).sum(-1))
-        x, l2 = self.b1(x)
-        x_list.append(x.reshape(x.shape[0],10,-1).sum(-1))
-        x, l3 = self.b2(x)
-        x_list.append(x.reshape(x.shape[0],10,-1).sum(-1))
-        x, l4 = self.b3(x)
-        x_list.append(x.reshape(x.shape[0],10,-1).sum(-1))
+        x, l1 = self.b0(inputs,debug)
+        x_list.append(x.reshape(x.shape[0],10,-1).mean(-1) * self.score_K)
+        x, l2 = self.b1(x,debug)
+        x_list.append(x.reshape(x.shape[0],10,-1).mean(-1) * self.score_K)
+        x, l3 = self.b2(x,debug)
+        x_list.append(x.reshape(x.shape[0],10,-1).mean(-1) * self.score_K)
+        x, l4 = self.b3(x,debug)
+        x_list.append(x.reshape(x.shape[0],10,-1).mean(-1) * self.score_K)
         return x_list, (l1+l2+l3+l4)/4
 
 
@@ -132,24 +132,25 @@ def get_loss_acc(x, labels):
     loss = (x * labels).sum(-1).mean()
     return loss, accurate
 
-k = 0.3
-net = Net(100, [int(k*800),int(k*800),int(k*800),int(k*800)]).cuda()
-net.load_state_dict(torch.load('./five_cut_6_6.model'))
+k = 1
+net = Net(50, [int(k*800),int(k*800),int(k*800),int(k*800)]).cuda()
+net.load_state_dict(torch.load('./five_cut_6_a.model'))
+print(net.score_K)
 
 acc = 0
 with torch.no_grad():
-    for i in range(4):
+    for i in range(10):
         #images, labels = data_feeder.feed()
-        a = i * 2500
-        b = i * 2500 + 2500
+        a = i * 1000
+        b = i * 1000 + 1000
         images, labels = images_t[a:b], labels_t[a:b]
         x_list, mask_loss = net(images)
         for j in range(4):
             loss, accurate = get_loss_acc(x_list[j], labels)
             print('%d %10.3f %10.3f'%(j, loss, accurate))
-            if j == 3:
+            if j == 2:
                 print(x_list[j][0])
-                acc += accurate.item() * 0.25
+                acc += accurate.item() * 0.1
         print('')
 print(acc)
 

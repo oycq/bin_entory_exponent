@@ -20,7 +20,7 @@ IF_SAVE = 1
 LAYER_UNITS = 2000
 LAYERS = 3 
 CLASS = 10
-BATCH_SIZE = 3000
+BATCH_SIZE = 300
 NAME = 'neural_400_100'
 WORKERS = 15
 FIVE = 6
@@ -139,8 +139,8 @@ def get_loss_acc(x, labels):
     loss = (x * labels).sum(-1).mean()
     return loss, accurate
 
-k = 0.3
-net = Net(100, [int(k*800),int(k*800),int(k*800),int(k*800)]).cuda()
+k = 1
+net = Net(50, [int(k*800),int(k*800),int(k*800),int(k*800)]).cuda()
 optimizer = optim.Adam(net.parameters())
 for i in range(100000):
     debug = 0
