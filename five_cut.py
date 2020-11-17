@@ -10,6 +10,7 @@ import my_dataset
 import torch.nn.functional as F
 import torch.optim as optim
 import torch.nn as nn
+import math
 
 random.seed(0)
 np.random.seed(0)
@@ -23,11 +24,11 @@ CLASS = 10
 BATCH_SIZE = 300
 NAME = 'neural_400_100'
 WORKERS = 15
-FIVE = 6
+FIVE = 200 
 
 if IF_WANDB:
     import wandb
-    wandb.init(project = 'cut', name = NAME)
+    wandb.init(project = 'res', name = NAME)
 
 dataset = my_dataset.MyDataset(train = True, margin = 0, noise_rate = 0)
 dataset_test = my_dataset.MyDataset(train = False)
@@ -48,7 +49,7 @@ class BLayer(nn.Module):
     def __init__(self, in_features, out_features, hid):
         super(BLayer, self).__init__()
         mask = torch.randn(out_features, in_features)
-        mask_u = torch.log(torch.zeros(out_features, 1)+in_features/FIVE-1)/-0.84737
+        mask_u = torch.log(torch.zeros(out_features, 1)+in_features*1.0/FIVE-1)/-0.84737
         mask_sigma = torch.zeros(out_features, 1) + 1
         self.mask = torch.nn.Parameter(mask)
         self.mask_u = torch.nn.Parameter(mask_u)
@@ -76,25 +77,35 @@ class BLayer(nn.Module):
         return x
 
 
-    def _quantized_mask(self, debug = 0):
+    def _quantized_mask(self, debug = 0, test = 0):
         mask = self.mask
-        mean = mask.mean(-1).unsqueeze(-1)
-        std = mask.std(-1).unsqueeze(-1)
-        mask = (mask - mean) / std
-        mask = (mask * self.mask_sigma) + self.mask_u
-        mask = self.sigmoid(mask)
+        if not test:
+            mean = mask.mean(-1).unsqueeze(-1)
+            std = mask.std(-1).unsqueeze(-1)
+            mask = (mask - mean) / std
+            #mask = (mask * self.mask_sigma) + self.mask_u
+            mask = (mask * 1) + self.mask_u
+            mask = self.sigmoid(mask)
 
-        mask_loss = (mask.sum(-1) - FIVE)
-        mask_loss = (mask_loss * mask_loss).mean(-1)
-        mask = (self.quantized(mask) + 1) / 2
-        if debug:
-            print('%6.3f %6.3f %6.3f'%(self.mask_sigma[0], self.mask_u[0],mask.sum(-1).mean()))
-        return mask, mask_loss
+            mask_loss = (mask.sum(-1) - FIVE)
+            mask_loss = (mask_loss * mask_loss).mean(-1)
+            mask = (self.quantized(mask) + 1) / 2
+            if debug:
+                print('%6.3f %6.3f %6.3f'%(self.mask_sigma[0], self.mask_u[0],mask.sum(-1).mean()))
+            return mask, mask_loss
+        else:
+            mask = self.mask
+            _,idx = torch.topk(mask,int(FIVE),-1)
+            m = torch.zeros_like(mask)
+            m = m.scatter(1,idx, 1)
+            return m, 0
 
-    def forward(self, inputs, debug = 0):
+
+
+    def forward(self, inputs, debug = 0, test=0):
         #inputs  : [batch, in_features] -> [in_features, batch, 1]
         inputs = inputs.t().unsqueeze(-1)
-        mask, mask_loss = self._quantized_mask(debug)
+        mask, mask_loss = self._quantized_mask(debug, test)
         #mask    : [out_features, in_features] -> [in_features, 1, out_features]
         mask = mask.t().unsqueeze(1)
         x = inputs.bmm(mask)
@@ -102,8 +113,8 @@ class BLayer(nn.Module):
         x = x.permute(2,1,0)
         x = self._s(x)
         #x       : [out_features, batch, 1] -> [batch, out_features]
-        x = self.sigmoid(x)
         x = x.squeeze(-1).t()
+        x = self.sigmoid(x)
         x = self.quantized(x)
         return x, mask_loss
 
@@ -113,22 +124,17 @@ class Net(nn.Module):
         self.b0 = BLayer(784,f[0], hid)
         self.b1 = BLayer(f[0],f[1], hid)
         self.b2 = BLayer(f[1],f[2], hid)
-        self.b3 = BLayer(f[2],f[3], hid)
         self.score_K = torch.zeros(1) + 15
         self.score_K = torch.nn.Parameter(self.score_K)
 
 
-    def forward(self, inputs, debug = 0):
+    def forward(self, inputs, debug = 0, test=0):
         x_list = []
-        x, l1 = self.b0(inputs,debug)
-        x_list.append(x.reshape(x.shape[0],10,-1).mean(-1) * self.score_K)
-        x, l2 = self.b1(x,debug)
-        x_list.append(x.reshape(x.shape[0],10,-1).mean(-1) * self.score_K)
-        x, l3 = self.b2(x,debug)
-        x_list.append(x.reshape(x.shape[0],10,-1).mean(-1) * self.score_K)
-        x, l4 = self.b3(x,debug)
-        x_list.append(x.reshape(x.shape[0],10,-1).mean(-1) * self.score_K)
-        return x_list, (l1+l2+l3+l4)/4
+        x, l1 = self.b0(inputs,debug,test)
+        x, l2 = self.b1(x,debug,test)
+        x, l3 = self.b2(x,debug,test)
+        x = x.reshape(x.shape[0],10,-1).mean(-1) * self.score_K
+        return x, (l1+l2+l3)/2
 
 
 def get_loss_acc(x, labels):
@@ -139,27 +145,46 @@ def get_loss_acc(x, labels):
     loss = (x * labels).sum(-1).mean()
     return loss, accurate
 
-k = 1
-net = Net(50, [int(k*800),int(k*800),int(k*800),int(k*800)]).cuda()
+def get_test_acc():
+    acc = 0
+    with torch.no_grad():
+        for i in range(50):
+            #images, labels = data_feeder.feed()
+            a = i * 200 
+            b = i * 200 + 200
+            images, labels = images_t[a:b], labels_t[a:b]
+            x, mask_loss = net(images,test=1)
+            loss, accurate = get_loss_acc(x, labels)
+            acc += accurate.item() * 0.02
+    print('test:%8.3f%%'%acc)
+    if IF_WANDB:
+        wandb.log({'acc_test':acc})
+
+
+k = 0.3
+net = Net(50, [int(k*800),int(k*800),int(k*800)]).cuda()
 optimizer = optim.Adam(net.parameters())
-for i in range(100000):
+for i in range(1000000):
     debug = 0
     if i % 10 == 0:
         debug = 1
     images, labels = data_feeder.feed()
-    x_list, mask_loss = net(images,debug)
-    loss_sum = 0
-    for j in range(4):
-        loss, accurate = get_loss_acc(x_list[j], labels)
-        loss_sum += 0.1*loss*(j+1)
-        if debug:
-            print('%d %d %10.3f %10.3f\n'%(i,j, loss, accurate))
-        if IF_WANDB:
-            wandb.log({'acc%d'%j:accurate})
-    loss_sum += mask_loss * 1
+    x, mask_loss = net(images,debug)
+    mask_loss = mask_loss * 0.1
+    loss, accurate = get_loss_acc(x, labels)
+    loss = loss + mask_loss
+    if debug:
+        print('%d %5.2f %10.3f %10.3f %10.3f\n'%(i, FIVE, loss-mask_loss,mask_loss, accurate))
+    if IF_WANDB:
+        wandb.log({'acc':accurate})
     optimizer.zero_grad()
-    loss_sum.backward()
+    loss.backward()
+    FIVE = 200 * math.exp(-3.5*i/80000)
+    if FIVE < 6:
+        FIVE = 6
+        if i % 200 == 0:
+            get_test_acc()
     optimizer.step()
-    if i % 2000 == 0:
+    if IF_SAVE and i % 2000 == 0:
         torch.save(net.state_dict(), 'five_cut_6.model')
  
