@@ -38,7 +38,7 @@ class Quantized(torch.autograd.Function):
     @staticmethod
     def forward(ctx, input):
         r = torch.cuda.FloatTensor(input.shape).uniform_()
-        return (input >= r).float() * 2 -1
+        return (input >= 0.5).float() * 2 -1
 
     @staticmethod
     def backward(ctx, grad_output):
@@ -141,9 +141,8 @@ def get_loss_acc(x, labels):
     loss = (x * labels).sum(-1).mean()
     return loss, accurate
 
-k = 0.3
-net = Net(50, [int(k*800),int(k*800),int(k*800),int(k*800)]).cuda()
-net.load_state_dict(torch.load('./five_cut_0.3.model'))
+net = Net(50, [1000,1000,1000]).cuda()
+net.load_state_dict(torch.load('./five_1000.model'))
 print(net.score_K)
 
 

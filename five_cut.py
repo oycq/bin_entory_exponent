@@ -161,8 +161,7 @@ def get_test_acc():
         wandb.log({'acc_test':acc})
 
 
-k = 0.3
-net = Net(50, [int(k*800),int(k*800),int(k*800)]).cuda()
+net = Net(50, [1000,1000,1000]).cuda()
 optimizer = optim.Adam(net.parameters())
 for i in range(1000000):
     debug = 0
@@ -182,7 +181,7 @@ for i in range(1000000):
     FIVE = 200 * math.exp(-3.5*i/80000)
     if FIVE < 6:
         FIVE = 6
-        if i % 200 == 0:
+        if i % 400 == 0:
             get_test_acc()
     optimizer.step()
     if IF_SAVE and i % 2000 == 0:
