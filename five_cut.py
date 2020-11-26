@@ -11,6 +11,7 @@ import torch.nn.functional as F
 import torch.optim as optim
 import torch.nn as nn
 import math
+import cv2
 
 random.seed(0)
 np.random.seed(0)
@@ -18,6 +19,7 @@ torch.manual_seed(0)
 
 IF_WANDB = 1
 IF_SAVE = 1
+IF_WRITE_JPG = 0
 LAYER_UNITS = 2000
 LAYERS = 3 
 CLASS = 10
@@ -100,6 +102,18 @@ class BLayer(nn.Module):
             m = m.scatter(1,idx, 1)
             return m, 0
 
+    def write_mask(self, log_i):
+        mask = self.mask
+        mean = mask.mean(-1).unsqueeze(-1)
+        std = mask.std(-1).unsqueeze(-1)
+        mask = (mask - mean) / std
+        mask = (mask * 1) + self.mask_u
+        mask = self.sigmoid(mask)
+        for i in range(10):
+            a= mask[i].reshape(28,28).cpu().detach().numpy()
+            a = cv2.resize(a,(112,112),interpolation = cv2.INTER_NEAREST)
+            a = (a * 255).astype(np.uint8)
+            cv2.imwrite('./mask/%d%d.jpg'%((i+1)*10000000,log_i),a)
 
 
     def forward(self, inputs, debug = 0, test=0):
@@ -161,10 +175,12 @@ def get_test_acc():
         wandb.log({'acc_test':acc})
 
 
-net = Net(50, [1000,1000,1000]).cuda()
+net = Net(50, [240,240,240]).cuda()
 optimizer = optim.Adam(net.parameters())
 for i in range(1000000):
     debug = 0
+    if i % 500 == 0:
+        net.b0.write_mask(i/100)
     if i % 10 == 0:
         debug = 1
     images, labels = data_feeder.feed()
