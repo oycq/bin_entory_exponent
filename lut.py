@@ -108,15 +108,20 @@ class Net(nn.Module):
         self.connect_1 = torch.randint(input_size, (f[0], SIX))
         self.connect_2 = torch.randint(f[0], (f[1], SIX))
         self.connect_3 = torch.randint(f[1], (f[2], SIX))
+        self.norm1 = nn.BatchNorm1d(f[0])
+        self.norm2 = nn.BatchNorm1d(f[1])
+        self.norm3 = nn.BatchNorm1d(f[2])
         self.sigmoid = torch.nn.Sigmoid()
 
     def forward(self, inputs, debug = 0, test=0):
         x = ((inputs + 1))/2
         x = x[:, self.connect_1]
         x = self.lut_layer(x, self.lut1)
+#        x = self.norm1(x)
         x = self.sigmoid(x)
         x = x[:, self.connect_2]
         x = self.lut_layer(x, self.lut2)
+#        x = self.norm2(x)
         x = self.sigmoid(x)
         x = x[:, self.connect_3]
         x = self.lut_layer(x, self.lut3)
