@@ -12,8 +12,8 @@ import torch.nn as nn
 import math
 import cv2
 
-IF_WANDB = 1
-IF_SAVE = 1
+IF_WANDB = 0
+IF_SAVE = 0
 SIX = 6
 BATCH_SIZE = 1000
 WORKERS = 15
@@ -117,20 +117,20 @@ class Net(nn.Module):
         x = ((inputs + 1))/2
         x = x[:, self.connect_1]
         x = self.lut_layer(x, self.lut1)
-#        x = self.norm1(x)
+        x = self.norm1(x)
         x = self.sigmoid(x)
         x = x[:, self.connect_2]
         x = self.lut_layer(x, self.lut2)
-#        x = self.norm2(x)
+        x = self.norm2(x)
         x = self.sigmoid(x)
         x = x[:, self.connect_3]
         x = self.lut_layer(x, self.lut3)
-        #x = self.sigmoid(x)
+        x = self.sigmoid(x)
         return x
 
 def get_loss_acc(x, labels):
     x = x.view(x.shape[0], CLASS, -1)
-    x = x.mean(-1)
+    x = x.sum(-1)
     accurate = (x.argmax(-1) == labels.argmax(-1)).float().mean() * 100
     x = x.exp()
     x = x / x.sum(-1).unsqueeze(-1)
@@ -151,8 +151,6 @@ def get_test_acc():
     print('test:%8.3f%%'%acc)
     if IF_WANDB:
         wandb.log({'acc_test':acc})
-
-
 
 
 net = Net([240,240,240],784).cuda()
