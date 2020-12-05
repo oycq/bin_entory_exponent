@@ -12,8 +12,8 @@ import torch.nn as nn
 import math
 import cv2
 
-IF_WANDB = 0
-IF_SAVE = 0
+IF_WANDB = 1
+IF_SAVE = 1
 SIX = 6
 BATCH_SIZE = 1000
 WORKERS = 15
@@ -22,7 +22,7 @@ import cv2
 
 if IF_WANDB:
     import wandb
-    wandb.init(project = 'lut_test')#, name = '.')
+    wandb.init(project = 'lut_quant')#, name = '.')
 
 
 dataset = my_dataset.MyDataset(train = True, margin = 0, noise_rate = 0)
@@ -43,6 +43,17 @@ for i in range(2 ** SIX):
             high = k
         delta_map[i,j,0] = low
         delta_map[i,j,1] = high
+
+class Quantized(torch.autograd.Function):
+    @staticmethod
+    def forward(ctx, input):
+        r = torch.cuda.FloatTensor(input.shape).uniform_()
+        return (input >= r).float()
+
+    @staticmethod
+    def backward(ctx, grad_output):
+        return grad_output
+
 
 class LutLayer(torch.autograd.Function):
     @staticmethod
@@ -188,13 +199,14 @@ class CNNLayer(nn.Module):
         self.sigmoid = torch.nn.Sigmoid()
 
     def forward(self, x):
-        x = self.conect_layer1.infer(x)
+        #x = self.conect_layer1.infer(x)
+        x = self.conect_layer1(x)
         x = self.lut_layer(x, self.lut)
         x = self.norm(x)
         x = self.sigmoid(x)
         return x
 
-    def infer(self, x):
+    def infer(self, x, fixed_connect = True):
         r_std = (self.norm.running_var.unsqueeze(-1)) ** 0.5
         r_mean = self.norm.running_mean.unsqueeze(-1)
         k = self.norm.weight.unsqueeze(-1)
@@ -203,7 +215,10 @@ class CNNLayer(nn.Module):
         lut_infer = torch.zeros_like(self.lut)
         lut_infer[lut_norm > 0] = 1
 
-        x = self.conect_layer1.infer(x)
+        if fixed_connect:
+            x = self.conect_layer1.infer(x)
+        else:
+            x = self.conect_layer1(x)
         x = self.lut_layer(x, lut_infer)
         return x
 
@@ -215,7 +230,8 @@ class Net(nn.Module):
         self.cnn2 = CNNLayer(12,8,6,1,16)
         self.cnn3 = CNNLayer(7,16,4,1,64)
         self.cnn4 = CNNLayer(4,64,4,1,500)
-        score_K = torch.zeros(1) + 10
+        self.quantized = Quantized.apply
+        score_K = torch.zeros(1) + 3
         self.score_K = torch.nn.Parameter(score_K)
 
     def forward(self, inputs):
@@ -224,16 +240,17 @@ class Net(nn.Module):
         x = self.cnn2(x)
         x = self.cnn3(x)
         x = self.cnn4(x)
+        x = self.quantized(x)
         x = (x - 0.5) * self.score_K
         return x
 
-    def infer(self, inputs):
+    def infer(self, inputs, fixed_connect=True):
         with torch.no_grad():
             x = ((inputs + 1))/2
-            x = self.cnn1.infer(x)
-            x = self.cnn2.infer(x)
-            x = self.cnn3.infer(x)
-            x = self.cnn4.infer(x)
+            x = self.cnn1.infer(x,fixed_connect)
+            x = self.cnn2.infer(x,fixed_connect)
+            x = self.cnn3.infer(x,fixed_connect)
+            x = self.cnn4.infer(x,fixed_connect)
         return x
 
 
@@ -247,25 +264,32 @@ def get_loss_acc(x, labels):
     loss = (x * labels).sum(-1).mean()
     return loss, accurate
 
-def get_test_acc():
+def get_test_acc(fixed_connect=True):
     acc = 0
     with torch.no_grad():
         for i in range(50):
             a = i * 200 
             b = i * 200 + 200
             images, labels = images_t[a:b], labels_t[a:b]
-            x = net.infer(images)
+            x = net.infer(images,fixed_connect)
             loss, accurate = get_loss_acc(x, labels)
             acc += accurate.item() * 0.02
-    print('test:%8.3f%%'%acc)
-    if IF_WANDB:
-        wandb.log({'acc_test':acc})
+    if fixed_connect:
+        print('test_fix:%8.3f%%'%acc)
+        if IF_WANDB:
+            wandb.log({'acc_test_fix':acc})
+    else:
+        print('test_flex:%8.3f%%'%acc)
+        if IF_WANDB:
+            wandb.log({'acc_test_flex':acc})
+
+
 
 
 net = Net().cuda()
 optimizer = optim.Adam(net.parameters())
-net.load_state_dict(torch.load('./lut_cnn2.model'))
-get_test_acc()
+#net.load_state_dict(torch.load('./lut_cnn_quant.model'))
+#get_test_acc()
 
 for i in range(9000000):
     images, labels = data_feeder.feed()
@@ -278,10 +302,11 @@ for i in range(9000000):
         if IF_WANDB:
             wandb.log({'acc':acc})
     if i % 300 == 0:
-        get_test_acc()
+        get_test_acc(fixed_connect=True)
+        get_test_acc(fixed_connect=False)
         print(net.score_K.item())
     if IF_SAVE and i % 10000 == 0:
-        torch.save(net.state_dict(), 'lut_cnn.model')
+        torch.save(net.state_dict(), 'lut_cnn_quant.model')
 
     optimizer.step()
 
