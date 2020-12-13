@@ -30,19 +30,6 @@ dataset_test = my_dataset.MyDataset(train = False)
 data_feeder = my_dataset.DataFeeder(dataset, BATCH_SIZE, num_workers = WORKERS)
 images_t,labels_t = dataset_test.get_all()
 
-delta_map = torch.zeros(2 ** SIX, SIX,2).long().cuda()
-for i in range(2 ** SIX):
-    bins = ('{0:0%db}'%SIX).format(i)
-    for j in range(SIX):
-        k = 2 ** j
-        if bins[SIX-1-j] == '1':
-            low = - k
-            high = 0
-        else:
-            low = 0
-            high = k
-        delta_map[i,j,0] = low
-        delta_map[i,j,1] = high
 
 class Quantized(torch.autograd.Function):
     @staticmethod
@@ -55,57 +42,40 @@ class Quantized(torch.autograd.Function):
         return grad_output
 
 
-class LutLayer(torch.autograd.Function):
-    @staticmethod
-    def forward(ctx, inputs, lut):
-        #inputs  : [batch, features, SIX] 
-        r = torch.cuda.FloatTensor(inputs.shape).uniform_()
-        #r       : [batch, features, SIX] 
-        inputs = (inputs>= r).long()
-        #inputs  : [batch, features, SIX] 
-        k1 = 2 ** torch.arange(0,SIX).cuda()
-        #k1      : [SIX,]
-        k2 = torch.arange(0, inputs.shape[1]).cuda() * (2 ** SIX)
-        #k2      : [output_features,]
-        lut_idx = inputs.long() *  k1
-        #lut_idx : [batch, features, SIX]
-        lut_idx = lut_idx.sum(-1) + k2
-        #lut_idx : [batch, features]
-        lut = lut.view(-1).clone()
-        #lut     : [features * ( 2 ** SIX), ]
-        output = lut[lut_idx]
-        ctx.save_for_backward(inputs, lut, lut_idx)
+class LutLayer(nn.Module):
+    def __init__(self):
+        super(LutLayer, self).__init__()
+        p_q_2_lut_table = torch.zeros(SIX*2, 2**SIX)
+        for i in range(2**SIX):
+            bins = ('{0:0%db}'%SIX).format(i)
+            for j in range(SIX):
+                if bins[j] == '0':
+                    p_q_2_lut_table[j+SIX][i] = 1
+                else:
+                    p_q_2_lut_table[j][i] = 1
+        self.p_q_2_lut_table = p_q_2_lut_table.cuda()
+
+
+    def forward(self, inputs, lut):
+        eps = 1e-7
+        p_q = inputs.unsqueeze(2).repeat(1,1,2,1)
+        p_q[:,:,0,:] = 1 - p_q[:,:,0,:]
+        p_q = torch.nn.functional.relu(p_q) + eps
+        p_q = p_q.view(p_q.shape[0], p_q.shape[1], -1)
+        p_q_log = p_q.log()
+        lut_p = (p_q_log.matmul(self.p_q_2_lut_table)).exp()
+        output = (lut_p * torch.sigmoid(lut)).sum(-1)
         return output
-        #out     : [batch, features]
 
-
-    @staticmethod
-    def backward(ctx, grad_father):
-        #grad_father   : [batch, features]
-        inputs, lut, lut_idx = ctx.saved_tensors
-        #lut           : [features * ( 2 ** SIX), ]
-        lut_grad = torch.zeros_like(lut)
-        lut_grad = lut_grad.unsqueeze(0).repeat(inputs.shape[0],1)
-        #lut_grad      : [batch, features * ( 2 ** SIX)]
-        lut_grad.scatter_(-1, lut_idx, grad_father)
-        lut_grad = lut_grad.sum(0)
-        #lut_grad      : [features * ( 2 ** SIX)]
-        lut_grad = lut_grad.view(-1,2**SIX)
-        #lut_grad      : [features , ( 2 ** SIX)]
-
-        delta_map_idx = lut_idx % (2 ** SIX)
-        #delta_map_idx : [batch, features]
-        delta = delta_map[delta_map_idx,:,:]
-        #delta         : [batch, features, SIX, 2]
-        grad_pair_idx = delta + lut_idx.unsqueeze(-1).unsqueeze(-1)
-        #grad_pair_idx : [batch, features, SIX, 2]
-        grad_pair = lut[grad_pair_idx]
-        #grad_pair     : [batch, features, SIX, 2]
-        input_grad = grad_pair[:,:,:,1] - grad_pair[:,:,:,0]
-        input_grad = input_grad * grad_father.unsqueeze(-1)
-        return input_grad, lut_grad
-        #input_grad    : [batch, features, SIX]
-        #lut_grad      : [features , ( 2 ** SIX)]
+    def infer(self, inputs, lut):
+        inputs = (inputs < 0.5).long()
+        k1 = 2 ** (5 - torch.arange(0,SIX).cuda())
+        k2 = torch.arange(0, inputs.shape[1]).cuda() * (2 ** SIX)
+        lut_idx = inputs *  k1
+        lut_idx = lut_idx.sum(-1) + k2
+        lut = lut.view(-1).clone()
+        output = lut[lut_idx]
+        return output
 
 class ConnectLayer(nn.Module):
     def __init__(self, input_r=28, input_depth = 1, kernel_size=7, stride=3, output_depth=4):
@@ -119,7 +89,7 @@ class ConnectLayer(nn.Module):
             print('stride error')
             sys.exit(0)
         output_r = int(output_r)
-        connect_w = torch.zeros((output_r**2)*output_depth*SIX, (input_r**2)*input_depth)
+        connect_w = torch.randn((output_r**2)*output_depth*SIX, (input_r**2)*input_depth) * 2
         connect_mask = torch.zeros_like(connect_w)
         for i in range(output_r):
             for j in range(output_r):
@@ -160,66 +130,35 @@ class ConnectLayer(nn.Module):
         x = x.view(x.shape[0],-1,SIX)
         return x
 
-    def visual(self, x):
-        connect_w = self.connect_w
-        max_idx = connect_w.argmax(-1)
-        connect_w = torch.zeros_like(connect_w).scatter(1, max_idx.unsqueeze(1), 1.0)
-        i = 0
-        while(1):
-            print(i)
-            s = 0
-            for j in range(6):
-                a = connect_w[i*6+j]
-                a = a.view(28,28).cpu().numpy()
-                s = s + a
-                cv2.imshow('%d'%j, cv2.resize(a,(640,640),interpolation = cv2.INTER_AREA))
-            s[s>1] = 1
-            cv2.imshow('s', cv2.resize(s,(640,640),interpolation = cv2.INTER_AREA))
-            key = cv2.waitKey(0)
-            if key == ord('q'):
-                sys.exit(0)
-                break
-            if key == ord('-'):
-                i += 1
-            if key == ord('='):
-                i -= 1
-        sys.exit(0)
-
 
 class CNNLayer(nn.Module):
     def __init__(self, input_r, input_depth, kernel_size, stride, output_depth):
         super(CNNLayer, self).__init__()
-        self.lut_layer = LutLayer.apply
+        self.lut_layer = LutLayer()
         output_r = (input_r - kernel_size) / stride + 1
         output_len = output_r * output_r * output_depth
-        lut = torch.zeros(output_len, 2 ** SIX)
+        lut = torch.randn(output_len, 2 ** SIX) * 2
         self.lut = torch.nn.Parameter(lut)
         self.conect_layer1 = ConnectLayer(input_r,input_depth,kernel_size,stride,output_depth)
         self.norm = nn.BatchNorm1d(output_len)
         self.sigmoid = torch.nn.Sigmoid()
+        self.quantized = Quantized.apply
 
     def forward(self, x):
         #x = self.conect_layer1.infer(x)
         x = self.conect_layer1(x)
         x = self.lut_layer(x, self.lut)
-        x = self.norm(x)
-        x = self.sigmoid(x)
+        #x = self.quantized(x)
         return x
 
     def infer(self, x, fixed_connect = True):
-        r_std = (self.norm.running_var.unsqueeze(-1)) ** 0.5
-        r_mean = self.norm.running_mean.unsqueeze(-1)
-        k = self.norm.weight.unsqueeze(-1)
-        b = self.norm.bias.unsqueeze(-1)
-        lut_norm = ((self.lut - r_mean)/r_std)*k+b
-        lut_infer = torch.zeros_like(self.lut)
-        lut_infer[lut_norm > 0] = 1
-
+        lut_infer = torch.zeros_like(self.lut) 
+        lut_infer[self.lut > 0] = 1
         if fixed_connect:
             x = self.conect_layer1.infer(x)
         else:
             x = self.conect_layer1(x)
-        x = self.lut_layer(x, lut_infer)
+        x = self.lut_layer.infer(x, lut_infer)
         return x
 
 
@@ -235,10 +174,13 @@ class Net(nn.Module):
         self.score_K = torch.nn.Parameter(score_K)
 
     def forward(self, inputs):
-        x = ((inputs + 1))/2
+        x = (inputs + 1)/2
         x = self.cnn1(x)
+        x = self.quantized(x)
         x = self.cnn2(x)
+        x = self.quantized(x)
         x = self.cnn3(x)
+        x = self.quantized(x)
         x = self.cnn4(x)
         x = self.quantized(x)
         x = (x - 0.5) * self.score_K
@@ -246,7 +188,7 @@ class Net(nn.Module):
 
     def infer(self, inputs, fixed_connect=True):
         with torch.no_grad():
-            x = ((inputs + 1))/2
+            x = ((inputs + 1))/2 
             x = self.cnn1.infer(x,fixed_connect)
             x = self.cnn2.infer(x,fixed_connect)
             x = self.cnn3.infer(x,fixed_connect)
@@ -288,10 +230,10 @@ def get_test_acc(fixed_connect=True):
 
 net = Net().cuda()
 optimizer = optim.Adam(net.parameters())
-#net.load_state_dict(torch.load('./lut_cnn_quant.model'))
+#net.load_state_dict(torch.load('./lut_fail.model'))
 #get_test_acc()
 
-for i in range(60000000):
+for i in range(100000000):
     images, labels = data_feeder.feed()
     x = net(images)
     loss,acc = get_loss_acc(x,labels)
@@ -305,8 +247,8 @@ for i in range(60000000):
         get_test_acc(fixed_connect=True)
         get_test_acc(fixed_connect=False)
         print(net.score_K.item())
-    if IF_SAVE and i % 10000 == 0:
-        torch.save(net.state_dict(), 'lut_hard.model')
+    if i % 5000 == 4999:
+        torch.save(net.state_dict(), 'lut_fail.model')
 
     optimizer.step()
 
