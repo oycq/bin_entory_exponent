@@ -124,6 +124,7 @@ class ConnectLayer(nn.Module):
 
     def infer(self, x):
         connect_w = self.connect_w
+        connect_w = connect_w * self.connect_mask
         max_idx = connect_w.argmax(-1)
         connect_w = torch.zeros_like(connect_w).scatter(1, max_idx.unsqueeze(1), 1.0)
         x = x.mm(connect_w.t())
@@ -248,7 +249,7 @@ for i in range(100000000):
         get_test_acc(fixed_connect=False)
         print(net.score_K.item())
     if i % 5000 == 4999:
-        torch.save(net.state_dict(), 'lut_fail.model')
+        torch.save(net.state_dict(), 'lut_new.model')
 
     optimizer.step()
 
