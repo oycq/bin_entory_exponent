@@ -10,29 +10,26 @@ import my_dataset
 import torch.nn.functional as F
 import torch.optim as optim
 import torch.nn as nn
-import math
-import cv2
 
 random.seed(0)
 np.random.seed(0)
 torch.manual_seed(0)
 
-IF_WANDB = 1
-IF_SAVE = 1
-IF_WRITE_JPG = 0
+IF_WANDB = 0
+IF_SAVE = 0
 LAYER_UNITS = 2000
 LAYERS = 3 
 CLASS = 10
-BATCH_SIZE = 300
+BATCH_SIZE = 3000
 NAME = 'neural_400_100'
 WORKERS = 15
-FIVE = 200 
+FIVE = 6
 
 if IF_WANDB:
     import wandb
-    wandb.init(project = 'res', name = NAME)
+    wandb.init(project = 'cut', name = NAME)
 
-dataset = my_dataset.MyDataset(train = True, margin = 0, noise_rate = 0)
+dataset = my_dataset.MyDataset(train = True, margin = 3, noise_rate = 0.05)
 dataset_test = my_dataset.MyDataset(train = False)
 data_feeder = my_dataset.DataFeeder(dataset, BATCH_SIZE, num_workers = WORKERS)
 images_t,labels_t = dataset_test.get_all()
@@ -41,7 +38,7 @@ class Quantized(torch.autograd.Function):
     @staticmethod
     def forward(ctx, input):
         r = torch.cuda.FloatTensor(input.shape).uniform_()
-        return (input >= r).float() * 2 -1
+        return (input >= 0.5).float() * 2 -1
 
     @staticmethod
     def backward(ctx, grad_output):
@@ -79,47 +76,31 @@ class BLayer(nn.Module):
         return x
 
 
-    def _quantized_mask(self, debug = 0, test = 0):
+    def _quantized_mask(self, debug = 0):
+        #mask = self.mask
+        #mean = mask.mean(-1).unsqueeze(-1)
+        #std = mask.std(-1).unsqueeze(-1)
+        #mask = (mask - mean) / std
+        #mask = (mask * self.mask_sigma) + self.mask_u
+        #mask = self.sigmoid(mask)
+
+        #mask_loss = (mask.sum(-1) - FIVE)
+        #mask_loss = (mask_loss * mask_loss).mean(-1)
+        #mask = (self.quantized(mask) + 1) / 2
+        #if debug:
+        #    print('%6.3f %6.3f %6.3f'%(self.mask_sigma[0], self.mask_u[0],mask.sum(-1).mean()))
+        #return mask, mask_loss
         mask = self.mask
-        if not test:
-            mean = mask.mean(-1).unsqueeze(-1)
-            std = mask.std(-1).unsqueeze(-1)
-            mask = (mask - mean) / std
-            #mask = (mask * self.mask_sigma) + self.mask_u
-            mask = (mask * 1) + self.mask_u
-            mask = self.sigmoid(mask)
-
-            mask_loss = (mask.sum(-1) - FIVE)
-            mask_loss = (mask_loss * mask_loss).mean(-1)
-            mask = (self.quantized(mask) + 1) / 2
-            if debug:
-                print('%6.3f %6.3f %6.3f'%(self.mask_sigma[0], self.mask_u[0],mask.sum(-1).mean()))
-            return mask, mask_loss
-        else:
-            mask = self.mask
-            _,idx = torch.topk(mask,int(FIVE),-1)
-            m = torch.zeros_like(mask)
-            m = m.scatter(1,idx, 1)
-            return m, 0
-
-    def write_mask(self, log_i):
-        mask = self.mask
-        mean = mask.mean(-1).unsqueeze(-1)
-        std = mask.std(-1).unsqueeze(-1)
-        mask = (mask - mean) / std
-        mask = (mask * 1) + self.mask_u
-        mask = self.sigmoid(mask)
-        for i in range(10):
-            a= mask[i].reshape(28,28).cpu().detach().numpy()
-            a = cv2.resize(a,(112,112),interpolation = cv2.INTER_NEAREST)
-            a = (a * 255).astype(np.uint8)
-            cv2.imwrite('./mask/%d%d.jpg'%((i+1)*10000000,log_i),a)
+        _,idx = torch.topk(mask,FIVE,-1)
+        m = torch.zeros_like(mask)
+        m = m.scatter(1,idx, 1)
+        return m, 0
 
 
-    def forward(self, inputs, debug = 0, test=0):
+    def forward(self, inputs, debug = 0):
         #inputs  : [batch, in_features] -> [in_features, batch, 1]
         inputs = inputs.t().unsqueeze(-1)
-        mask, mask_loss = self._quantized_mask(debug, test)
+        mask, mask_loss = self._quantized_mask(debug)
         #mask    : [out_features, in_features] -> [in_features, 1, out_features]
         mask = mask.t().unsqueeze(1)
         x = inputs.bmm(mask)
@@ -127,8 +108,8 @@ class BLayer(nn.Module):
         x = x.permute(2,1,0)
         x = self._s(x)
         #x       : [out_features, batch, 1] -> [batch, out_features]
-        x = x.squeeze(-1).t()
         x = self.sigmoid(x)
+        x = x.squeeze(-1).t()
         x = self.quantized(x)
         return x, mask_loss
 
@@ -142,13 +123,14 @@ class Net(nn.Module):
         self.score_K = torch.nn.Parameter(self.score_K)
 
 
-    def forward(self, inputs, debug = 0, test=0):
+    def forward(self, inputs, debug = 0):
         x_list = []
-        x, l1 = self.b0(inputs,debug,test)
-        x, l2 = self.b1(x,debug,test)
-        x, l3 = self.b2(x,debug,test)
+        x, l1 = self.b0(inputs,debug)
+        x, l2 = self.b1(x,debug)
+        x, l3 = self.b2(x,debug)
         x = x.reshape(x.shape[0],10,-1).mean(-1) * self.score_K
         return x, (l1+l2+l3)/2
+
 
 
 def get_loss_acc(x, labels):
@@ -159,6 +141,11 @@ def get_loss_acc(x, labels):
     loss = (x * labels).sum(-1).mean()
     return loss, accurate
 
+net = Net(50, [1000,1000,1000]).cuda()
+net.load_state_dict(torch.load('./five_1000.model'))
+print(net.score_K)
+
+
 def get_test_acc():
     acc = 0
     with torch.no_grad():
@@ -167,39 +154,12 @@ def get_test_acc():
             a = i * 200 
             b = i * 200 + 200
             images, labels = images_t[a:b], labels_t[a:b]
-            x, mask_loss = net(images,test=1)
+            x, mask_loss = net(images)
             loss, accurate = get_loss_acc(x, labels)
+            print('%10.3f %10.3f'%(loss, accurate))
             acc += accurate.item() * 0.02
-    print('test:%8.3f%%'%acc)
-    if IF_WANDB:
-        wandb.log({'acc_test':acc})
+            print('')
+    print(acc)
 
+get_test_acc()
 
-net = Net(50, [240,240,240]).cuda()
-optimizer = optim.Adam(net.parameters())
-for i in range(1000000):
-    debug = 0
-    if i % 500 == 0:
-        net.b0.write_mask(i/100)
-    if i % 10 == 0:
-        debug = 1
-    images, labels = data_feeder.feed()
-    x, mask_loss = net(images,debug)
-    mask_loss = mask_loss * 0.1
-    loss, accurate = get_loss_acc(x, labels)
-    loss = loss + mask_loss
-    if debug:
-        print('%d %5.2f %10.3f %10.3f %10.3f\n'%(i, FIVE, loss-mask_loss,mask_loss, accurate))
-    if IF_WANDB:
-        wandb.log({'acc':accurate})
-    optimizer.zero_grad()
-    loss.backward()
-    FIVE = 200 * math.exp(-3.5*i/80000)
-    if FIVE < 6:
-        FIVE = 6
-        if i % 400 == 0:
-            get_test_acc()
-    optimizer.step()
-    if IF_SAVE and i % 2000 == 0:
-        torch.save(net.state_dict(), 'five_cut_6.model')
- 
