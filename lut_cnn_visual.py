@@ -4,10 +4,11 @@ import torch.nn as nn
 import torch.optim as optim
 import sys
 import my_dataset 
+import cv2
 torch.manual_seed(0)
 
-IF_WANDB = 1
-IF_SAVE = 1
+IF_WANDB = 0
+IF_SAVE = 0
 SIX = 6
 BATCH_SIZE = 1000
 WORKERS = 15
@@ -108,6 +109,24 @@ class MyCNN(nn.Module):
         x = x.view(output_shape).permute(0,3,1,2)
         return x
 
+def show_layers(x, input_img):
+    x = x.detach().cpu().numpy()
+    input_img = input_img.detach().cpu().numpy()
+    i = 0
+    while(1):
+        for j in range(x.shape[1]):
+            img = x[i][j]
+            cv2.imshow('%d'%j, cv2.resize(img,(640,640),interpolation = cv2.INTER_AREA))
+        cv2.imshow('raw', cv2.resize(input_img[i][0],(640,640),interpolation = cv2.INTER_AREA))
+        print(i)
+        key = cv2.waitKey(0)
+        if key == ord('q'):
+            break
+        if key == ord('='):
+            i =( i+1) % x.shape[0]
+        if key == ord('-'):
+            i =( i-1) % x.shape[0]
+
 
 class Net(nn.Module):
     def __init__(self, input_size=784):
@@ -123,7 +142,9 @@ class Net(nn.Module):
     def forward(self, inputs, infer=False):
         x = (inputs + 1)/2
         x = x.view(x.shape[0], 1, 28, 28)
+        input_img = x
         x = self.cnn1(x,infer)
+        show_layers(x, input_img)
         #x = self.cnns(x)
         x = self.cnn2(x,infer)
         x = self.cnn3(x,infer)
@@ -158,22 +179,10 @@ def get_test_acc():
 
 
 net = Net().cuda()
+net.load_state_dict(torch.load('./lut_cnn.model'))
 optimizer = optim.Adam(net.parameters())
 
-for i in range(100000000):
-    images, labels = data_feeder.feed()
-    x = net(images)
-    loss,acc = get_loss_acc(x,labels)
-    optimizer.zero_grad()
-    loss.backward()
-    if i % 50 == 0:
-        print('%5d  %7.3f  %7.4f'%(i,acc,loss))
-        if IF_WANDB:
-            wandb.log({'acc':acc})
-    if i % 400 == 0:
-        get_test_acc()
-    if i % 5000 == 4999:
-        torch.save(net.state_dict(), 'lut_cnn.model')
-    optimizer.step()
+images, labels = data_feeder.feed()
+x = net(images)
 
 
