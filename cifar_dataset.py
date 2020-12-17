@@ -16,24 +16,31 @@ torch.manual_seed(0)
 
 class MyDataset(Dataset):
     def __init__(self, train = True, margin = 0, noise_rate = 0):
-        data_dict = self.unpickle('./data_batch_1')
-        images = data_dict['data'][:10000]
-        images = images.reshape(images.shape[0],3,-1).transpose((0,2,1))
-        images = np.expand_dims(images, -1)[:,:,0]
-        images = np.unpackbits(images, axis=-1)
-        images = images.reshape(images.shape[0], -1)
-        images = torch.from_numpy(images).float()
-        labels = torch.zeros(images.shape[0], 10)
-        l = data_dict['labels'][:10000]
-        for i in range(len(l)):
-            labels[i,l[i]] = 1
-        self.images = images
-        self.labels = labels
-        
+        self.train = train
+        data_dict_list = []
         if train:
-            self.train = True
+            data_dict_list.append(self.unpickle('./cifar_data/data_batch_1'))
+            data_dict_list.append(self.unpickle('./cifar_data/data_batch_2'))
+            data_dict_list.append(self.unpickle('./cifar_data/data_batch_3'))
+            data_dict_list.append(self.unpickle('./cifar_data/data_batch_4'))
+            data_dict_list.append(self.unpickle('./cifar_data/data_batch_5'))
         else:
-            self.train = False
+            data_dict_list.append(self.unpickle('./cifar_data/test_batch'))
+        self.images_list = []
+        self.labels_list = []
+        for data_dict in data_dict_list:
+            images = data_dict['data']
+            images = images.reshape(images.shape[0],3,-1).transpose((0,2,1))
+            images = np.unpackbits(images, axis=-1).transpose((0,2,1)).reshape(-1,24,32,32)
+            images = torch.from_numpy(images).float()
+            labels = torch.zeros(images.shape[0], 10)
+            l = data_dict['labels']
+            for i in range(len(l)):
+                labels[i,l[i]] = 1
+            self.images_list.append(images)
+            self.labels_list.append(labels)
+        self.images = torch.cat(self.images_list, 0)
+        self.labels = torch.cat(self.labels_list, 0)
         self.len = self.labels.shape[0]
 
     def unpickle(self, file_name):
