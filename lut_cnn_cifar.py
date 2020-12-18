@@ -14,12 +14,13 @@ SIX = 6
 BATCH_SIZE = 100
 WORKERS = 15
 CLASS = 10
+TESTING_LEN = 10000
 LUT_RANDN_K = 4
 CONNECT_RANDN_K = 4
 
 if IF_WANDB:
     import wandb
-    wandb.init(project = 'lut_hard')#, name = '.')
+    wandb.init(project = 'lut_cifar')#, name = '.')
 
 
 
@@ -92,7 +93,7 @@ class MyCNN(nn.Module):
         connect_kernal_infer = connect_kernal_infer.view(connect_kernal_shape)
         return connect_kernal_infer
 
-    def forward(self, inputs, infer=False):
+    def forward(self, inputs, infer=False, quant=False):
         connect_kernal_shape = self.connect_kernal.shape
         connect_kernal= self.connect_kernal.exp()
         connect_kernal = connect_kernal.view(self.kernal_d*SIX, -1)
@@ -107,7 +108,8 @@ class MyCNN(nn.Module):
         output_shape = (x.shape[0],x.shape[1],x.shape[2],self.kernal_d)
         x = x.reshape(-1, self.kernal_d, SIX)
         x = self.lut_layer(x, infer)
-        x = self.quantized(x)
+        if quant:
+            x = self.quantized(x)
         x = x.view(output_shape).permute(0,3,1,2)
         return x
 
@@ -125,31 +127,14 @@ class Net(nn.Module):
 
     def forward(self, inputs, infer=False):
         x = inputs
-        x = self.cnn1(x,infer)
-        x = self.cnn2(x,infer)
-        x = self.cnn3(x,infer)
-        x = self.cnn4(x,infer)
-        x = self.cnn5(x,infer)
+        x = self.cnn1(x,infer,quant=True)
+        x = self.cnn2(x,infer,quant=True)
+        x = self.cnn3(x,infer,quant=True)
+        x = self.cnn4(x,infer,quant=True)
+        x = self.cnn5(x,infer,quant=True)
         x = x.view(x.shape[0], -1)
         x = (x - 0.5) * self.score_K
         return x
-
-#class Net(nn.Module):
-#    def __init__(self, input_size=784):
-#        super(Net, self).__init__()
-#        self.cnn1 = MyCNN(inputs_d=24, kernal_d=8,  kernal_a=1, stride = 1) #(32,32,8)8192
-#        self.cnn2 = MyCNN(inputs_d=8, kernal_d=500,  kernal_a=32, stride = 1) #(14,14,16)3136
-#        score_K = torch.zeros(1) + 3
-#        self.score_K = torch.nn.Parameter(score_K)
-#
-#    def forward(self, inputs, infer=False):
-#        x = inputs
-#        x = self.cnn1(x,infer)
-#        x = self.cnn2(x,infer)
-#        x = x.view(x.shape[0], -1)
-#        x = (x - 0.5) * self.score_K
-#        return x
-#
 
 
 def get_loss_acc(x, labels):
@@ -162,19 +147,28 @@ def get_loss_acc(x, labels):
     loss = (x * labels).sum(-1).mean()
     return loss, accurate
 
-def get_test_acc():
+def get_fpga_acc(train=True):
     acc = 0
     with torch.no_grad():
-        for i in range(50):
-            a = i * 200 
-            b = i * 200 + 200
-            images, labels = images_t[a:b], labels_t[a:b]
+        for i in range(TESTING_LEN//BATCH_SIZE):
+            if train:
+                images, labels = data_feeder.feed()
+            else:
+                a = i * BATCH_SIZE
+                b = i * BATCH_SIZE + BATCH_SIZE
+                images, labels = images_t[a:b], labels_t[a:b]
             x = net(images,infer=True)
             loss, accurate = get_loss_acc(x, labels)
-            acc += accurate.item() * 0.02
-    print('test_acc:%8.3f%%   test_loss:%8.3f'%(acc,loss))
-    if IF_WANDB:
-        wandb.log({'acc_test_fix':acc})
+            acc += accurate.item() * 1.0 * BATCH_SIZE / TESTING_LEN
+    if train:
+        print('train_acc:%8.3f%%   train_loss:%8.3f'%(acc,loss))
+        if IF_WANDB:
+            wandb.log({'train_acc':acc})
+    else:
+        print(' test_acc:%8.3f%%    test_loss:%8.3f'%(acc,loss))
+        if IF_WANDB:
+            wandb.log({'test_acc':acc})
+
 
 
 net = Net().cuda()
@@ -182,16 +176,17 @@ optimizer = optim.Adam(net.parameters())
 
 for i in range(100000000):
     images, labels = data_feeder.feed()
+    optimizer.zero_grad()
     x = net(images)
     loss,acc = get_loss_acc(x,labels)
-    optimizer.zero_grad()
     loss.backward()
     if i % 50 == 0:
         print('%5d  %7.3f  %7.4f'%(i,acc,loss))
         if IF_WANDB:
             wandb.log({'acc':acc})
-    if i % 400 == 0:
-        get_test_acc()
+    if i % 500 == 0:
+        get_fpga_acc(train = True)
+        get_fpga_acc(train = False)
     if i % 4999 == 0 and IF_SAVE:
         torch.save(net.state_dict(), 'lut_cnn_cifar.model')
     optimizer.step()
